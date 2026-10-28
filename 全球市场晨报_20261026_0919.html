@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 · 2026年10月26日 · 周一</title>
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --red: #f85149; --green: #3fb950;
+    --accent: #58a6ff; --gold: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.7; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  .disclaimer { color: var(--muted); font-size: 0.78rem; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 16px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; }
+  .card h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 10px; }
+  .card h3 { font-size: 0.95rem; color: var(--gold); margin: 12px 0 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--border); color: var(--muted); font-weight: 600; }
+  td { padding: 8px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .up { color: var(--red); font-weight: 600; }
+  .down { color: var(--green); font-weight: 600; }
+  .flat { color: var(--muted); }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+  .badge-up { background: rgba(248,81,73,0.15); color: var(--red); }
+  .badge-down { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge-neutral { background: rgba(139,148,158,0.15); color: var(--muted); }
+  .badge-warn { background: rgba(210,153,34,0.15); color: var(--gold); }
+  .quick-read { border-left: 3px solid var(--accent); padding-left: 14px; }
+  .quick-read p { margin-bottom: 6px; }
+  ul { padding-left: 18px; }
+  li { margin-bottom: 4px; font-size: 0.9rem; }
+  .note { color: var(--muted); font-size: 0.82rem; margin-top: 8px; }
+  .source { font-size: 0.78rem; color: var(--muted); }
+  .section-title { font-size: 1.2rem; font-weight: 700; margin: 24px 0 12px; color: var(--text); border-left: 3px solid var(--accent); padding-left: 10px; }
+  .avoid { color: var(--green); }
+  .active { color: var(--red); }
+  @media (max-width: 760px) {
+    .wrap { padding: 12px 10px 40px; }
+    .card { padding: 12px 14px; }
+    table { font-size: 0.82rem; }
+  }
+</style>
+
+<style>
+.mb-toc{position:fixed;top:12px;right:12px;max-width:240px;max-height:80vh;overflow:auto;
+  background:var(--card,#fff);border:1px solid var(--line,#e5e7eb);border-radius:10px;padding:10px 12px;
+  font:12px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:9999;color:var(--txt,#1f2937)}
+.mb-toc h4{margin:0 0 6px;font-size:12px;color:var(--sub,#6b7280)}
+.mb-toc ol{margin:0;padding-left:18px}
+.mb-toc a{color:var(--accent,#2563eb);text-decoration:none}
+.mb-toc a:hover{text-decoration:underline}
+.mb-toc a.active{font-weight:700;text-decoration:underline}
+.mb-top{position:fixed;bottom:16px;right:16px;width:42px;height:42px;border-radius:50%;
+  background:var(--accent,#2563eb);color:#fff;border:none;cursor:pointer;font-size:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:9999}
+.mb-toc-toggle{top:12px;right:12px;bottom:auto;display:none;width:38px;height:38px;font-size:15px}
+.mb-spark{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:0 0 14px;padding:10px 12px;
+  background:var(--card,#161f2e);border:1px solid var(--line,#2a3850);border-radius:10px}
+.mb-spark h4{width:100%;margin:0 0 2px;font-size:12px;font-weight:600;color:var(--sub,#9fb0c8)}
+.mb-spark-item{display:flex;flex-direction:column;gap:2px;min-width:108px;padding:6px 9px;
+  background:var(--card2,#1c2738);border:1px solid var(--line,#2a3850);border-radius:8px}
+.mb-spark-name{font-size:11px;color:var(--sub,#9fb0c8)}
+.mb-spark-val{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--txt,#e8edf5)}
+.mb-spark-val.up{color:var(--up,#dc2626)}
+.mb-spark-val.down{color:var(--down,#16a34a)}
+.mb-spark-chg{font-size:11px;font-weight:600;margin-left:4px}
+.mb-spark-pct{font-size:10.5px;color:var(--sub,#9fb0c8)}
+.mb-spark-svg{display:block;margin-top:2px}
+@media(min-width:761px){.mb-spark{margin-right:264px}}
+@media(max-width:760px){
+  .mb-spark{margin-right:0}
+  .mb-toc{transform:translateX(115%);transition:transform .18s ease;max-width:210px}
+  .mb-toc.mb-toc-open{transform:none}
+  .mb-toc-toggle{display:block}
+}
+</style>
+</head>
+<body>
+<nav class="mb-toc"><h4>目录</h4><ol><li><a href="#sec-1">三句速读</a></li><li><a href="#sec-2">待核实 / 数据说明</a></li></ol></nav>
+<div class="wrap">
+<section class="mb-spark"><h4>指标近况</h4><span class="mb-spark-item" title="恒生指数 26,166.03（较前日 +0.76%）"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val up">26,166.03<span class="mb-spark-chg">+0.76%</span></span><span class="mb-spark-pct">近20日 P100</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,17.1 13.6,16.5 25.2,18.6 36.8,17.9 48.4,17.7 60.0,17.7 71.6,3.2 83.2,21.7 94.8,27.0 106.4,4.5 118.0,3.0"/></svg></span><span class="mb-spark-item" title="上证指数 3,690.48（较前日 +0.00%）"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val up">3,690.48<span class="mb-spark-chg">+0.00%</span></span><span class="mb-spark-pct">近20日 P20</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.6 13.6,3.0 25.2,18.7 36.8,17.2 48.4,17.2 60.0,17.2 71.6,14.0 83.2,17.8 94.8,27.0 106.4,21.5 118.0,21.5"/></svg></span><span class="mb-spark-item" title="纳斯达克 25,955.34（较前日 +0.00%）"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val up">25,955.34<span class="mb-spark-chg">+0.00%</span></span><span class="mb-spark-pct">近20日 P10</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 13.6,3.0 25.2,12.9 36.8,23.6 48.4,23.6 60.0,23.6 71.6,18.3 83.2,13.1 94.8,26.0 106.4,27.0 118.0,27.0"/></svg></span><span class="mb-spark-item" title="布伦特原油 116.72（较前日 +0.02%）"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val up">116.72<span class="mb-spark-chg">+0.02%</span></span><span class="mb-spark-pct">近20日 P100</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,24.9 13.6,27.0 25.2,26.5 36.8,18.3 48.4,18.3 60.0,17.8 71.6,24.3 83.2,20.2 94.8,10.7 106.4,3.0 118.0,3.0"/></svg></span><span class="mb-spark-item" title="现货黄金 3,995.38（较前日 +0.00%）"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val up">3,995.38<span class="mb-spark-chg">+0.00%</span></span><span class="mb-spark-pct">近20日 P10</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 13.6,4.6 25.2,3.5 36.8,4.0 48.4,4.0 60.0,3.7 71.6,7.1 83.2,7.9 94.8,22.9 106.4,27.0 118.0,27.0"/></svg></span></section>
+
+<h1>全球市场晨报</h1>
+<p class="subtitle">2026年10月26日 · 周一 ｜ 盘前速读版</p>
+
+<!-- ═══════════════════════════════ 三句速读 ═══════════════════════════════ -->
+<div class="card quick-read">
+  <h2 id="sec-1">三句速读</h2>
+  <p><strong>① 美股周五收跌：</strong>道指 52,215（-1.23%），纳指 25,955（-0.21%），标普 7,624（-0.52%）；Meta巨额AI资本开支担忧延续，科技股普跌，存储龙头SK海力士逆势+4.05%。</p>
+  <p><strong>② 油价地缘推升，黄金失守4000：</strong>布油 116.72（+3.14%，6个月新高）；现货金 3,995（-0.69%，周累跌约4%）；美联储10/28按兵不动概率90.6%，12月加息25bp概率升至67.5%。</p>
+  <p><strong>③ A股周五探底回升科技反攻：</strong>沪指 3,690（+0.89%），创业板 2,684（+4.16%），成交放量1.97万亿；人形机器人、算力链领涨，今日央行7000亿MLF+指数编制新规落地，科技成长有望延续。</p>
+</div>
+
+<!-- ═══════════════════════════════ 一、隔夜美股 ═══════════════════════════════ -->
+<div class="section-title">一、隔夜美股（10/23 周五收盘）</div>
+<div class="card">
+  <table>
+    <tr><th>指数</th><th>收盘</th><th>涨跌幅</th><th>周累</th></tr>
+    <tr><td>道琼斯</td><td>52,215.16</td><td class="down">-1.23% <span class="badge badge-down">跌</span></td><td class="up">+0.41%</td></tr>
+    <tr><td>标普500</td><td>7,623.68</td><td class="down">-0.52% <span class="badge badge-down">跌</span></td><td class="down">-0.47%</td></tr>
+    <tr><td>纳斯达克</td><td>25,955.34</td><td class="down">-0.21% <span class="badge badge-down">跌</span></td><td class="down">-0.71%</td></tr>
+    <tr><td>费城半导体</td><td>—</td><td class="up">+0.44% <span class="badge badge-up">涨</span></td><td>—</td></tr>
+    <tr><td>中概金龙指数</td><td>—</td><td class="down">-0.84% <span class="badge badge-down">跌</span></td><td>—</td></tr>
+  </table>
+  <div class="note">数据来源：中新经纬 / 大河财立方 / 每日经济新闻（多源一致）；周累数据来自华尔街见闻早餐 10/26</div>
+
+  <h3>科技七巨头（周五）</h3>
+  <table>
+    <tr><th>个股</th><th>涨跌幅</th><th>备注</th></tr>
+    <tr><td>微软</td><td class="up">+0.66%</td><td>本周财报前瞻，AI商业化进度最受关注</td></tr>
+    <tr><td>苹果</td><td class="down">-0.14%</td><td>折叠屏iPhone全球多市场报裂屏问题（苹果首款折叠屏出师不利）</td></tr>
+    <tr><td>英伟达</td><td class="down">-0.59%</td><td>GTC柏林（10/20-22）后市场消化期</td></tr>
+    <tr><td>特斯拉</td><td class="down">-0.63%</td><td>—</td></tr>
+    <tr><td>亚马逊</td><td class="down">-0.95%</td><td>AWS产能被抢空（至2028年），CEO称AI年化收入超250亿美元</td></tr>
+    <tr><td>Meta</td><td class="down">-0.96%</td><td>巨额AI资本开支引发融资担忧，上周纳指重挫直接导火索</td></tr>
+    <tr><td>谷歌</td><td class="down">-1.08%</td><td>本周财报焦点</td></tr>
+  </table>
+
+  <h3>存储芯片（逆势走高）</h3>
+  <table>
+    <tr><th>个股</th><th>涨跌幅</th><th>逻辑</th></tr>
+    <tr><td>SK海力士</td><td class="up">+4.05%</td><td>Q4服务器DRAM合约价预期+13~18%</td></tr>
+    <tr><td>美光科技</td><td class="up">+2.46%</td><td>—</td></tr>
+    <tr><td>闪迪</td><td class="down">-1.82%</td><td>—</td></tr>
+    <tr><td>西部数据</td><td class="down">-2.97%</td><td>—</td></tr>
+  </table>
+
+  <h3>活跃3方向</h3>
+  <ul>
+    <li class="active"><strong>存储芯片</strong>：SK海力士/美光逆势走高，AI服务器DRAM供需偏紧，Q4合约价预期上调；TrendForce预测Q4 DRAM季增10-15%、NAND合约价季增15-20%</li>
+    <li class="active"><strong>油气能源</strong>：雪佛龙+2.89%、埃克森美孚+2.79%、康菲石油+3.56%；布油站上116美元，地缘溢价持续</li>
+    <li class="active"><strong>医药/消费防御</strong>：科技股承压下资金轮动至低估值防御板块</li>
+  </ul>
+  <h3>回避2方向</h3>
+  <ul>
+    <li class="avoid"><strong>黄金矿业股</strong>：纽蒙特矿业-4.60%、黄金股全线收跌，金价失守4000关口压制板块盈利预期</li>
+    <li class="avoid"><strong>大型科技股整体</strong>：Meta巨额资本开支引发AI融资成本担忧，美股科技七巨头本周密集财报，高利率环境下回报率存疑</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════ 二、港股 ═══════════════════════════════ -->
+<div class="section-title">二、港股（10/23 周五收盘）</div>
+<div class="card">
+  <table>
+    <tr><th>指数</th><th>收盘</th><th>涨跌幅</th></tr>
+    <tr><td>恒生指数</td><td>26,166.03</td><td class="up">+0.74% <span class="badge badge-up">涨</span></td></tr>
+    <tr><td>恒生科技</td><td>6,059.89</td><td class="up">+1.82% <span class="badge badge-up">涨</span></td></tr>
+    <tr><td>国企指数</td><td>9,363.00</td><td class="up">+0.68% <span class="badge badge-up">涨</span></td></tr>
+    <tr><td>主板成交</td><td colspan="2">约 2,266 亿港元</td></tr>
+  </table>
+  <div class="note">数据来源：每经（10/24 报 10/23 收盘）/ 濠江日报（10/24）；10/24 周六港股休市，此为最新交易日数据</div>
+
+  <h3>板块亮点</h3>
+  <ul>
+    <li>半导体全线大涨：华虹半导体+13%、中芯国际+8%、上海复旦+5%</li>
+    <li>科网尾盘走强：哔哩哔哩+3%、阿里巴巴+2%、腾讯音乐/百度跟涨</li>
+    <li>中资券商午后拉升：中金公司+4%、中信/东方/广发证券+3%</li>
+    <li>黄金/铜/铝有色齐涨；军工股集体活跃</li>
+  </ul>
+
+  <h3>活跃3方向</h3>
+  <ul>
+    <li class="active"><strong>半导体/AI算力链</strong>：华虹+13%、中芯+8%领涨，A股算力链联动（长鑫科技+7.93%、中际旭创CPO订单强劲）</li>
+    <li class="active"><strong>科网反弹延续</strong>：阿里/腾讯/京东/百度等龙头，APEC"习特会"后中美经贸预期略有修复</li>
+    <li class="active"><strong>石油能源（中海油/中石油/中石化）</strong>：布油站上116美元，油气板块受益</li>
+  </ul>
+  <h3>回避2方向</h3>
+  <ul>
+    <li class="avoid"><strong>高估值AI概念（缺乏业绩支撑）</strong>：美股Meta资本开支担忧外溢，港股无业绩AI概念股补跌风险</li>
+    <li class="avoid"><strong>黄金/贵金属相关</strong>：金价周累跌约4%，失守4000关口，贵金属股盈利预期承压</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════ 三、A股 ═══════════════════════════════ -->
+<div class="section-title">三、A股（10/23 周五收盘）</div>
+<div class="card">
+  <table>
+    <tr><th>指数</th><th>收盘</th><th>涨跌幅</th></tr>
+    <tr><td>上证指数</td><td>3,690.48</td><td class="up">+0.89% <span class="badge badge-up">涨</span></td></tr>
+    <tr><td>深证成指</td><td>11,673.83</td><td class="up">+2.79% <span class="badge badge-up">涨</span></td></tr>
+    <tr><td>创业板指</td><td>2,684.10</td><td class="up">+4.16% <span class="badge badge-up">大涨</span></td></tr>
+    <tr><td>科创综指</td><td>1,606.48</td><td class="up">+3.68% <span class="badge badge-up">涨</span></td></tr>
+    <tr><td>沪深北成交</td><td colspan="2">1.97 万亿元（放量约 4,310 亿）</td></tr>
+  </table>
+  <div class="note">数据来源：上证报/新华财经/中国经济网（多源一致）；全市场超4500只个股上涨，逾80只涨停</div>
+
+  <h3>今日新增催化（10/26 周一）</h3>
+  <ul>
+    <li><strong>央行7000亿MLF操作</strong>（10/26 落地，10月共9000亿到期，缩量2000亿，引导短端利率适度回升）</li>
+    <li><strong>上证系列综合指数编制方案修订正式实施</strong>（单一样本权重上限15%、风险警示证券剔除规则调整）</li>
+    <li><strong>富时中国A50期指</strong>上周五夜盘微跌0.37%，未触及低开阈值，指引今日平开或小幅低开</li>
+    <li><strong>中概金龙指数</strong>周五+3.31%（单源待核实），外资偏好略有改善</li>
+  </ul>
+
+  <h3>活跃3方向</h3>
+  <ul>
+    <li class="active"><strong>人形机器人/物理AI</strong>：宇树科技20%涨停、凡拓数创+20%，板块延续10/23以来的强势；本周GTC柏林（10/20-22）物理AI/机器人技术议题催化</li>
+    <li class="active"><strong>算力硬件（CPO/光模块/存储）</strong>：长鑫科技+7.93%（Q3预增1310-1325亿扭亏，总市值重回A股首位）、中际旭创6家光模块厂"订单强劲"，TrendForce Q4 DRAM/NAND涨价预期持续</li>
+    <li class="active"><strong>石油石化/煤炭</strong>：布油116美元+6个月新高，油气板块受益；煤炭板块10/23领涨（+1.75%）</li>
+  </ul>
+  <h3>回避2方向</h3>
+  <ul>
+    <li class="avoid"><strong>黄金/贵金属</strong>：现货金失守4000关口（3,995），周累跌约4%，金价下行周期对贵金属开采股盈利预期形成压制</li>
+    <li class="avoid"><strong>高估值AI概念（缺乏业绩验证）</strong>：美股Meta资本开支担忧+美联储12月加息预期升温（67.5%），高估值无业绩支撑标的补跌风险</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════ 四、商品与汇率 ═══════════════════════════════ -->
+<div class="section-title">四、大宗商品与汇率（10/23 周五收盘）</div>
+<div class="card">
+  <table>
+    <tr><th>品种</th><th>收盘/最新</th><th>涨跌幅</th><th>备注</th></tr>
+    <tr><td>布伦特原油</td><td>116.72 美元/桶</td><td class="up">+3.14% <span class="badge badge-up">周累+6.24%</span></td><td>6个月新高；沙特阿美Shaybah油田遭无人机袭击+胡塞袭延布港</td></tr>
+    <tr><td>WTI原油</td><td>103.27 美元/桶</td><td class="up">+3.82% <span class="badge badge-up">周累+4.29%</span></td><td>—</td></tr>
+    <tr><td>现货黄金</td><td>3,995.38 美元/盎司</td><td class="down">-0.69% <span class="badge badge-down">周累约-4%</span></td><td>失守4000关口；油价通胀+12月加息预期压制</td></tr>
+    <tr><td>COMEX黄金（10月合约）</td><td>3,991.10 美元/盎司</td><td class="down">-1.28%</td><td>—</td></tr>
+    <tr><td>现货白银</td><td>53.83 美元/盎司</td><td class="down">-1.37%</td><td>周累跌约5.8%</td></tr>
+    <tr><td>美元指数</td><td>101.75</td><td class="up">+0.18%</td><td>连续第二周下跌（周线）</td></tr>
+    <tr><td>离岸人民币（USD/CNH）</td><td>6.67</td><td class="flat">持平</td><td>—</td></tr>
+    <tr><td>10Y美债收益率</td><td>4.995–5.001%</td><td class="up">+约4bp</td><td>全周累计降约8bp；30Y美债5.32%创2004年来新高</td></tr>
+  </table>
+  <div class="note">数据来源：华尔街见闻早餐 10/26 / 每日经济新闻 / 大河财立方（多源一致）；30Y美债5.32%为2004年以来新高（致富证券 10/25 确认）</div>
+</div>
+
+<!-- ═══════════════════════════════ 五、今日关键日历 ═══════════════════════════════ -->
+<div class="section-title">五、今日关键日历（10/26 周一）</div>
+<div class="card">
+  <table>
+    <tr><th>时间</th><th>事件</th><th>重要性</th></tr>
+    <tr><td>10:00</td><td>中国10月Q4前瞻数据（若统计口径已更新）</td><td><span class="badge badge-neutral">中</span></td></tr>
+    <tr><td>全天</td><td>央行7000亿元MLF操作（1年期，固定数量利率招标）</td><td><span class="badge badge-up">高</span></td></tr>
+    <tr><td>全天</td><td>上证系列综合指数编制方案修订正式实施（权重上限15%）</td><td><span class="badge badge-up">高</span></td></tr>
+    <tr><td>21:00</td><td>美联储10/27-28议息会议前瞻（华尔街见闻/同花顺确认：本周焦点）</td><td><span class="badge badge-up">极高</span></td></tr>
+    <tr><td>下周</td><td>谷歌/微软/亚马逊/英特尔/SK海力士密集财报</td><td><span class="badge badge-up">高</span></td></tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════ 六、政策动态 ═══════════════════════════════ -->
+<div class="section-title">六、政策动态</div>
+<div class="card">
+  <h3>中国（10/24-10/25 周末要闻）</h3>
+  <ul>
+    <li><strong>国常会（10/23）</strong>：李强主持，研究统筹人口与经济社会发展；加快建设生育友好型社会，努力稳定新出生人口规模；加力推进服务业扩能提质</li>
+    <li><strong>国办</strong>：印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，部署6方面18项任务，建立AI就业风险评估机制</li>
+    <li><strong>央行</strong>：10/26 开展7000亿元MLF操作；10月有9000亿MLF到期，缩量2000亿，有助于引导货币市场短端利率适度回升</li>
+    <li><strong>财政部</strong>：前三季度证券交易印花税2,391亿元，同比+65.1%（全年收入17.23万亿+5.1%）</li>
+    <li><strong>商务部</strong>：回应美财政部新版对外投资限制拟议规则，批评"歧视性扩大对华投资限制范围"，保留采取相应措施权利</li>
+    <li><strong>证监会</strong>：核准设立花旗证券（中国）有限公司，成为国内第七家外资独资券商</li>
+    <li><strong>发改委</strong>：《能源保供中长期合同管理办法（试行）》自12/1施行；首批136项标志性重大应用场景项目清单发布（涉新技术1700余项、新产品1200余项）</li>
+    <li><strong>《国家信息化"十五五"规划》</strong>：到2030年适时启动6G商用，陆海空天立体化网络体系基本形成</li>
+  </ul>
+
+  <h3>美国/全球</h3>
+  <ul>
+    <li><strong>美联储</strong>（10/28议息）：CME维持不变概率90.6%；12月加息25bp概率67.5%（路透调查100位经济学家全部预计12月加息，9月为首次加息3.75%→4.00%）</li>
+    <li><strong>伊朗/中东</strong>：特朗普称可能对伊发动小规模"史诗怒火"行动；伊朗总统称希望与美国谈判；霍尔木兹海峡油轮触雷事件未平息</li>
+    <li><strong>欧洲</strong>：法国国债收益率破5%（债务压力）；欧洲气价飙至近四年高位</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════ 七、外围速览 ═══════════════════════════════ -->
+<div class="section-title">七、外围速览（10/23 周五收盘）</div>
+<div class="card">
+  <table>
+    <tr><th>市场</th><th>指数</th><th>收盘</th><th>涨跌幅</th></tr>
+    <tr><td>日经225</td><td>62,693.16</td><td>—</td><td class="down">-0.34%</td></tr>
+    <tr><td>韩国KOSPI</td><td>5,550.30</td><td>—</td><td class="up">+0.30%</td></tr>
+    <tr><td>德国DAX</td><td>25,181.65</td><td>—</td><td class="down">-0.75%</td></tr>
+    <tr><td>法国CAC40</td><td>7,782.82</td><td>—</td><td class="down">-0.36%</td></tr>
+    <tr><td>英国富时100</td><td>10,690.36</td><td>—</td><td class="down">-0.32%</td></tr>
+    <tr><td>欧洲STOXX 50</td><td>6,068.22</td><td>—</td><td class="down">-0.36%</td></tr>
+  </table>
+  <div class="note">日韩：日经10/23小幅回调，KOSPI企稳（较6月高点9,114.55回撤39%后企稳）；欧股普跌，法国国债债务压力+气价近四年高位承压</div>
+</div>
+
+<!-- ═══════════════════════════════ 八、今日交易主线 ═══════════════════════════════ -->
+<div class="section-title">八、今日交易主线（5条）</div>
+<div class="card">
+  <table>
+    <tr><th>#</th><th>主线</th><th>核心逻辑</th><th>风险边界</th></tr>
+    <tr>
+      <td>1</td>
+      <td><strong>A股科技独立反攻 vs 美股AI融资成本冲击</strong></td>
+      <td>A股周五探底回升（创业板+4.16%、成交放量4310亿至1.97万亿），人形机器人/算力链领涨；美股科技七巨头本周密集财报，高利率环境下AI资本开支回报率存疑（Meta巨额支出引燃抛售）</td>
+      <td>A50期指微跌0.37%未触发低开阈值，今日平开概率大；若谷歌/微软财报（下周）不及预期，科技链二次补跌风险</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>油价地缘溢价 + 中东冲突升级</strong></td>
+      <td>布油116.72（6个月新高），沙特Shaybah油田遭无人机袭击+胡塞袭延布港+特朗普拟"史诗怒火"行动；油气板块直接受益，通胀粘性格局加剧</td>
+      <td>美伊实质谈判→油价回吐3-5%；霍尔木兹航运中断→冲120+；注意欧洲气价近四年高位的连锁效应</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>央行7000亿MLF + 指数编制新规落地</strong></td>
+      <td>央行缩量2000亿MLF引导短端利率适度回升；上证系列综合指数单一样本权重上限15%新规今日实施，对权重股（茅台/宁德时代等）配置影响值得关注</td>
+      <td>MLF缩量2000亿为有序操作，非紧缩信号；指数调整属技术性修正，短期影响有限</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><strong>美联储10/28议息窗口临近，12月加息预期升温</strong></td>
+      <td>CME 10月按兵概率90.6%，12月加息25bp概率67.5%（路透调查100位经济学家一致预期12月加息）；沃什不给出前瞻指引，市场需自行研判；30Y美债5.32%创2004年来新高</td>
+      <td>若沃什意外释放鹰派信号，10月加息概率骤升（当前仅9.4%），全球科技股估值承压</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>黄金失守4000，无息资产走弱</strong></td>
+      <td>现货金3,995（周累约-4%），油价通胀+12月加息预期+科技股保证金压力三重压制；金银比（金/银）持续走扩</td>
+      <td>若美伊冲突升级→避险资金回流黄金；若沃什释放鸽派信号→12月加息预期回落，金价或反弹</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════ 待核实 ═══════════════════════════════ -->
+<div class="card">
+  <h2 id="sec-2">待核实 / 数据说明</h2>
+  <ul>
+    <li>中概金龙指数10/23周五收盘+3.31%（单源，富时中国A50盘前数据，待确认）</li>
+    <li>恒生指数10/23收盘26,166.03（每经/濠江日报），部分来源显示25,967.98（上周五特刊确认值），存在口径差异，本报告采用每经/濠江日报数据</li>
+    <li>费城半导体指数10/23周五收盘点位（仅涨跌幅+0.44%，点位缺失）</li>
+    <li>美联储10/28按兵不动概率90.6%（CME FedWatch 10/24数据），为最新可信参考值</li>
+  </ul>
+</div>
+
+<div class="disclaimer">
+  <strong>合规声明：</strong>本报告仅供参考，不构成投资建议。所有数据来自公开网络检索，不确定数据已标注「待核实」。市场有风险，投资需谨慎。
+</div>
+
+<!--mb-signals {"美股":{"direction":-1,"active3":["存储芯片","油气能源","医药消费防御"],"avoid2":["黄金矿业股","大型科技股整体"]},"港股":{"direction":1,"active3":["半导体/AI算力链","科网反弹延续","石油能源"],"avoid2":["无业绩AI概念","黄金贵金属"]},"A股":{"direction":1,"active3":["人形机器人/物理AI","算力硬件CPO/光模块/存储","石油石化/煤炭"],"avoid2":["黄金/贵金属","高估值无业绩AI概念"]}}-->
+
+</div>
+<button class="mb-top" onclick="window.scrollTo(0,0)" title="回到顶部">↑顶</button>
+<button class="mb-top mb-toc-toggle" onclick="var n=document.querySelector('.mb-toc');if(n)n.classList.toggle('mb-toc-open')" title="目录">☰</button>
+<!--mb-spy--><script>
+(function(){try{
+var links=document.querySelectorAll('.mb-toc a');var map={};
+links.forEach(function(a){var id=a.getAttribute('href');if(id&&id.charAt(0)==='#'){map[id.slice(1)]=a;}});
+function spy(){var cur=null;var y=(window.scrollY||0)+120;
+Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=y){cur=id;}});
+links.forEach(function(a){a.classList.remove('active');});
+if(cur&&map[cur]){map[cur].classList.add('active');}}
+window.addEventListener('scroll',spy,{passive:true});window.addEventListener('resize',spy,{passive:true});spy();
+}catch(e){}})();
+</script>
+</body>
+</html>

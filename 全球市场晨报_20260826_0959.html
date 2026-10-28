@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 | 2026年8月26日 星期三</title>
+<style>
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --up: #dc2626;
+  --down: #16a34a;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --warning: #f59e0b;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 14px; line-height: 1.6; }
+a { color: var(--accent); text-decoration: none; }
+.container { max-width: 900px; margin: 0 auto; padding: 16px; }
+
+/* Header */
+.header { background: var(--card); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.header .date { color: var(--muted); font-size: 13px; }
+.header .tag { display: inline-block; background: var(--accent); color: #fff; border-radius: 4px; padding: 2px 8px; font-size: 11px; margin-left: 8px; vertical-align: middle; }
+
+/* Quote cards */
+.quote-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 12px; }
+.quote-card { background: var(--card); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.quote-card .label { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+.quote-card .value { font-size: 18px; font-weight: 700; }
+.quote-card .change { font-size: 12px; margin-top: 2px; }
+.up { color: var(--up); }
+.down { color: var(--down); }
+
+/* Section card */
+.section { background: var(--card); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.section h2 { font-size: 15px; font-weight: 600; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); display: flex; align-items: center; gap: 6px; }
+.section h2 .icon { font-size: 16px; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th { background: #f8fafc; color: var(--muted); font-weight: 500; text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
+tbody td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: #f8fafc; }
+.tag-up { background: #fef2f2; color: var(--up); padding: 1px 6px; border-radius: 3px; font-size: 11px; }
+.tag-down { background: #f0fdf4; color: var(--down); padding: 1px 6px; border-radius: 3px; font-size: 11px; }
+
+/* Highlight box */
+.highlight { background: var(--accent-light); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 0 var(--radius) var(--radius) 0; margin: 8px 0; font-size: 13px; }
+.highlight.warning { background: #fffbeb; border-left-color: var(--warning); }
+.highlight.danger { background: #fef2f2; border-left-color: var(--up); }
+
+/* Direction tags */
+.dir-box { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+.dir-tag { font-size: 12px; padding: 4px 10px; border-radius: 4px; font-weight: 500; }
+.dir-active { background: #fef2f2; color: var(--up); border: 1px solid #fecaca; }
+.dir-avoid { background: #f0fdf4; color: var(--down); border: 1px solid #bbf7d0; }
+
+/* Three-line summary */
+.summary { background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%); color: #fff; border-radius: var(--radius); padding: 16px 20px; margin-bottom: 12px; }
+.summary h3 { font-size: 13px; color: rgba(255,255,255,.6); margin-bottom: 10px; font-weight: 400; }
+.summary .item { display: flex; gap: 8px; margin-bottom: 6px; font-size: 13px; }
+.summary .num { color: #60a5fa; font-weight: 700; min-width: 18px; }
+
+/* Two-col layout */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* Footer */
+.footer { text-align: center; color: var(--muted); font-size: 11px; padding: 12px; }
+
+/* Responsive */
+@media (max-width: 760px) {
+  .container { padding: 10px; }
+  .two-col { grid-template-columns: 1fr; }
+  .quote-row { grid-template-columns: 1fr 1fr; }
+  table { font-size: 12px; }
+  thead th, tbody td { padding: 6px 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <h1>全球市场晨报 <span class="tag">盘前速读</span></h1>
+  <div class="date">2026年8月26日 星期三 · 数据来源：公开市场实时检索，截至8月25日收盘及8月26日亚盘早段</div>
+</div>
+
+<!-- 三句速读 -->
+<div class="summary">
+  <h3>📌 今日三句速读</h3>
+  <div class="item"><span class="num">①</span><span><strong>霍尔木兹临时通航协议落地</strong>，美伊停火条款已达成共识，WTI原油单日暴跌3.12%至82.36美元；全球油价中枢面临实质性下压，能源链逻辑短期逆转。</span></div>
+  <div class="item"><span class="num">②</span><span><strong>英伟达今日盘后发布Q2财报</strong>，预期营收920亿美元（同比+96%），毛利率维持75%——AI板块季度全民投票，指引与毛利率信号比数字本身更重要。</span></div>
+  <div class="item"><span class="num">③</span><span><strong>A股量能萎缩至1.83万亿</strong>（创下半年地量），高低切换完成，农林牧渔/CRO/液冷服务器接力领涨，贵金属/锂矿获利了结。</span></div>
+</div>
+
+<!-- 行情总览 -->
+<div class="quote-row">
+  <div class="quote-card">
+    <div class="label">道琼斯</div>
+    <div class="value">53,577.40</div>
+    <div class="change up">▲ +0.30%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">标普500</div>
+    <div class="value">7,677.28</div>
+    <div class="change up">▲ +0.32%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">纳斯达克</div>
+    <div class="value">26,151.30</div>
+    <div class="change up">▲ +0.66%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">上证综指</div>
+    <div class="value">3,889.44</div>
+    <div class="change up">▲ +0.19%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">恒生指数</div>
+    <div class="value">25,511.10</div>
+    <div class="change down">▼ -0.02%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">WTI原油</div>
+    <div class="value">$82.36</div>
+    <div class="change down">▼ -3.12%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">现货黄金</div>
+    <div class="value">$4,662</div>
+    <div class="change up">▲ +0.21%</div>
+  </div>
+  <div class="quote-card">
+    <div class="label">美元指数</div>
+    <div class="value">98.915</div>
+    <div class="change down">▼ -0.09%</div>
+  </div>
+</div>
+
+<!-- 全球宏观与风险事件 -->
+<div class="section">
+  <h2><span class="icon">🌍</span> 全球宏观与风险事件</h2>
+  <table>
+    <thead>
+      <tr><th>事件</th><th>背景与影响</th><th>市场信号</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>美伊就停火协议达成共识</strong><br><span class="tag-down">待核实细节</span></td>
+        <td>巴媒援引消息人士：停火条款包含霍尔木兹自由通航；伊朗-阿曼已联合发布临时通航走廊框架，明确只允许商船通行、军舰禁行。</td>
+        <td>WTI盘中一度跌破80美元，布鲁特原油收跌3.89%；市场认为"纸面协议"向"实际通航"转化需数周至数月。</td>
+      </tr>
+      <tr>
+        <td><strong>特朗普对加关税提至50%</strong><br><span class="tag-up">2027/1/1生效</span></td>
+        <td>针对汽车、卡车、零部件、钢铁，谈判破裂；加拿大已宣布对约700种美国商品对等反制。</td>
+        <td>北美供应链成本重估，物流股（J.B.Hunt -5.7%）承压；北美制造业出口预期恶化。</td>
+      </tr>
+      <tr>
+        <td><strong>美财政部拟动用TGA万亿回购长债</strong></td>
+        <td>TGA余额约9500亿美元，首次宣布单次回购从20亿翻倍至40亿；9月9日生效。</td>
+        <td>30Y美债由5.33%回落至5.16%（-17bp），但仅维持一日——干预效果有限，长端博弈未结束。</td>
+      </tr>
+      <tr>
+        <td><strong>里士满联储主席巴尔金警告</strong><br><span class="tag-down">鹰派</span></td>
+        <td>公开表示"美国债务问题终将面临清算"，暗示美联储独立性受财政扩张威胁。</td>
+        <td>9月加息预期小幅升温（CME FedWatch 9月按兵不动概率~75%）。</td>
+      </tr>
+      <tr>
+        <td><strong>美联储内部加息派占上风</strong></td>
+        <td>7月纪要3名官员主张加息25bp，"许多官员"称通胀未回落则需收紧；戴利安抚性发言试图压住鹰派声浪。</td>
+        <td>高盛预测2026年底利率维持3.50%-3.75%不变；任何降息推迟至2027年。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 美股摘要 -->
+<div class="section">
+  <h2><span class="icon">🇺🇸</span> 美股摘要（8月25日收盘）</h2>
+  <div class="two-col">
+    <div>
+      <table>
+        <thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th></tr></thead>
+        <tbody>
+          <tr><td>道琼斯工业</td><td>53,577.40</td><td><span class="up">+0.30%</span></td></tr>
+          <tr><td>标普500</td><td>7,677.28</td><td><span class="up">+0.32%</span></td></tr>
+          <tr><td>纳斯达克综合</td><td>26,151.30</td><td><span class="up">+0.66%</span></td></tr>
+          <tr><td>费城半导体</td><td>—</td><td><span class="up">+1.44%</span></td></tr>
+          <tr><td>罗素2000</td><td>2,995.08</td><td><span class="down">-0.76%</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <thead><tr><th>标的</th><th>收盘</th><th>关键变化</th></tr></thead>
+        <tbody>
+          <tr><td>英伟达 (NVDA)</td><td>~$213</td><td><span class="up">+2.19%</span> 终结七连跌，财报前修复</td></tr>
+          <tr><td>AMD</td><td>—</td><td><span class="up">+4.91%</span> 存储涨价逻辑发酵</td></tr>
+          <tr><td>特斯拉 (TSLA)</td><td>—</td><td><span class="up">+0.37%</span> 小幅反弹</td></tr>
+          <tr><td>美光科技 (MU)</td><td>—</td><td><span class="up">+2.48%</span> 存储需求预期改善</td></tr>
+          <tr><td>Meta</td><td>—</td><td><span class="up">+1.97%</span></td></tr>
+          <tr><td>中概金龙指数</td><td>6,268.26</td><td><span class="up">+1.0%+</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="highlight">
+    <strong>今日最可能活跃的3个方向：</strong><br>
+    ① <strong>半导体设备/存储链</strong>：英伟达财报前博弈升级，存储涨价15%+预期强化，AMD/美光/西部数据齐涨；<br>
+    ② <strong>加密货币概念股</strong>：比特币盘中突破81,000美元，Coinbase/Robinhood或延续反弹；<br>
+    ③ <strong>金融/银行股</strong>：长端利率回落+经济软着陆预期，摩根大通/美银领涨。
+  </div>
+  <div class="highlight warning">
+    <strong>今日最该回避的2个方向：</strong><br>
+    ① <strong>能源链</strong>：油价单日暴跌3%+，霍尔木兹通航预期压制，埃克森/雪佛龙承压；<br>
+    ② <strong>高估值AI应用股</strong>：英伟达财报前资金避险，Marvell/Coherent等前期涨幅过大，回调风险显著。
+  </div>
+</div>
+
+<!-- A股摘要 -->
+<div class="section">
+  <h2><span class="icon">🇨🇳</span> A股摘要（8月25日收盘）</h2>
+  <div class="two-col">
+    <div>
+      <table>
+        <thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th></tr></thead>
+        <tbody>
+          <tr><td>上证综指</td><td>3,889.44</td><td><span class="up">+0.19%</span></td></tr>
+          <tr><td>深证成指</td><td>13,745.87</td><td><span class="down">-0.35%</span></td></tr>
+          <tr><td>创业板指</td><td>3,397.52</td><td><span class="down">-1.00%</span></td></tr>
+          <tr><td>科创50</td><td>—</td><td><span class="up">+0.14%</span></td></tr>
+          <tr><td>两市成交</td><td>1.83万亿</td><td><span class="down">缩量1,756亿</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <thead><tr><th>板块</th><th>表现</th><th>领涨/领跌</th></tr></thead>
+        <tbody>
+          <tr><td><span class="up">↑ 农林牧渔</span></td><td>全天强势</td><td>登海种业/万向德农涨停</td></tr>
+          <tr><td><span class="up">↑ CRO/创新药</span></td><td>午后大幅走高</td><td>凯莱英/汉森制药/华森制药涨停</td></tr>
+          <tr><td><span class="up">↑ 液冷服务器</span></td><td>午后拉升</td><td>康盛股份/英维克涨停</td></tr>
+          <tr><td><span class="down">↓ 贵金属</span></td><td>获利了结</td><td>招金黄金/西部黄金领跌</td></tr>
+          <tr><td><span class="down">↓ 锂矿</span></td><td>回调</td><td>—</td></tr>
+          <tr><td>上涨家数</td><td>4,229家</td><td>上涨占比76%，普涨格局</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="highlight">
+    <strong>今日最可能活跃的3个方向：</strong><br>
+    ① <strong>农业/粮食安全</strong>：厄尔尼诺引发多国作物减产预期，化肥成本抬升，政策面持续加码粮食安全；<br>
+    ② <strong>CRO/创新药</strong>：医疗反腐边际出清+医保谈判预期稳定，恒瑞/凯莱英等龙头估值修复；<br>
+    ③ <strong>液冷服务器/散热</strong>：AI数据中心功耗飙升，液冷渗透率加速提升，英维克等标的订单饱满。
+  </div>
+  <div class="highlight warning">
+    <strong>今日最该回避的2个方向：</strong><br>
+    ① <strong>贵金属/黄金股</strong>：金价冲高4,680后回落，WTI暴跌削弱避险需求，短期调整压力大；<br>
+    ② <strong>算力硬件（CPO/光模块）</strong>：中际旭创昨日-7.72%，英伟达财报前资金避险，板块延续调整。
+  </div>
+</div>
+
+<!-- 港股摘要 -->
+<div class="section">
+  <h2><span class="icon">🇭🇰</span> 港股摘要（8月25日收盘）</h2>
+  <div class="two-col">
+    <div>
+      <table>
+        <thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th></tr></thead>
+        <tbody>
+          <tr><td>恒生指数</td><td>25,511.10</td><td><span class="down">-0.02%</span></td></tr>
+          <tr><td>恒生科技</td><td>4,588.54</td><td><span class="down">-0.12%</span></td></tr>
+          <tr><td>恒生国企</td><td>8,445.37</td><td><span class="down">-0.31%</span></td></tr>
+          <tr><td>成交额</td><td>2,540亿港元</td><td>较上日缩量</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <thead><tr><th>标的</th><th>表现</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>阿里巴巴 (09988)</td><td><span class="up">+1.51%</span></td><td>马云/蔡崇信/吴泳铭增持超8亿港元护盘</td></tr>
+          <tr><td>药明生物 (02268)</td><td><span class="up">+7.4%</span></td><td>CDMO龙头估值修复</td></tr>
+          <tr><td>小米集团 (01810)</td><td><span class="down">-4%+</span></td><td>科技股整体承压</td></tr>
+          <tr><td>快手 (01024)</td><td><span class="down">-4%+</span></td><td>科网股回调</td></tr>
+          <tr><td>智谱 (02513)</td><td><span class="down">-10%+</span></td><td>AI模型股延续调整</td></tr>
+          <tr><td>南向资金</td><td>净卖出76亿</td><td>由买转卖</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="highlight">
+    <strong>今日最可能活跃的3个方向：</strong><br>
+    ① <strong>医药/生物科技</strong>：药明系领涨+政策边际回暖，康希诺/百奥赛图等弹性标的活跃；<br>
+    ② <strong>阿里系/AI叙事</strong>：800亿港元配售落地+管理层增持，若Q3业绩验证AI收入增速，催化持续；<br>
+    ③ <strong>消费/旅游</strong>：国庆黄金周预期升温，凯撒旅业/华天酒店等A股联动效应或传导至港股。
+  </div>
+  <div class="highlight warning">
+    <strong>今日最该回避的2个方向：</strong><br>
+    ① <strong>AI大模型概念股</strong>：智谱/MINIMAX昨日双双暴跌超10%，估值泡沫出清未完成；<br>
+    ② <strong>互联网平台（非阿里）</strong>：小米/快手整体承压，广告主预算收紧+竞争加剧，短期难有催化。
+  </div>
+</div>
+
+<!-- 商品与汇率 -->
+<div class="section">
+  <h2><span class="icon">💰</span> 大宗商品与汇率</h2>
+  <table>
+    <thead>
+      <tr><th>品种</th><th>价格</th><th>涨跌</th><th>要点</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>WTI原油</td><td>$82.36/桶</td><td><span class="down">-3.12%</span></td><td>霍尔木兹临时通航协议落地，多头获利了结</td></tr>
+      <tr><td>布伦特原油</td><td>$88.58/桶</td><td><span class="down">-3.89%</span></td><td>阿联酋穆尔班原油单日暴跌8%</td></tr>
+      <tr><td>现货黄金</td><td>$4,662/盎司</td><td><span class="up">+0.21%</span></td><td>盘中触及4,697美元后回落，高盛目标年底$4,900</td></tr>
+      <tr><td>COMEX黄金期货</td><td>$4,715.90</td><td><span class="up">+0.39%</span></td><td>延续反弹但动能减弱</td></tr>
+      <tr><td>美元指数 DXY</td><td>98.915</td><td><span class="down">-0.09%</span></td><td>未收复99关口，美元整体偏弱</td></tr>
+      <tr><td>离岸人民币 USD/CNH</td><td>6.7203</td><td><span class="up">+0.01%</span></td><td>年初至今升值3.72%，人民币资产吸引力上升</td></tr>
+      <tr><td>10年期美债收益率</td><td>4.63%</td><td><span class="down">-7bp</span></td><td>财政部回购操作支撑，但效果仅维持一日</td></tr>
+      <tr><td>30年期美债收益率</td><td>5.16%</td><td><span class="down">-6bp</span></td><td>从5.33%高点回落，牛市平坦化</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 今日日历 -->
+<div class="section">
+  <h2><span class="icon">📅</span> 今日关键日历</h2>
+  <table>
+    <thead>
+      <tr><th>时间（北京时间）</th><th>事件</th><th>重要性</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>21:00</strong></td><td>美国7月个人消费支出物价指数（PCE）——美联储首选通胀指标</td><td><span class="tag-up">⭐⭐⭐ 极高</span></td></tr>
+      <tr><td><strong>盘后</strong></td><td>英伟达（NVDA）Q2 2026财报发布，预期营收~920亿美元</td><td><span class="tag-up">⭐⭐⭐ 极高</span></td></tr>
+      <tr><td>全天</td><td>美联储主席沃什杰克逊霍尔年会演讲（8月28日22:00）预热升温</td><td><span class="tag-up">⭐⭐ 高</span></td></tr>
+      <tr><td>全天</td><td>阿里巴巴800亿港元配售交割完成（8月26日）</td><td><span class="tag-down">⭐ 中</span></td></tr>
+      <tr><td>全天</td><td>央行MLF操作：8月到期5000亿，今日开展5000亿，本月净回笼1000亿</td><td><span class="tag-down">⭐ 中</span></td></tr>
+    </tbody>
+  </table>
+  <div class="highlight danger" style="margin-top:10px;">
+    ⚠️ <strong>风险提示：</strong>今日A股成交量缩至1.83万亿，创下半年地量，增量资金入场意愿极低；英伟达财报+7月PCE数据三重叠加，晚间波动风险显著放大。
+  </div>
+</div>
+
+<!-- 今日主线 -->
+<div class="section">
+  <h2><span class="icon">🔥</span> 今日交易主线（5条）</h2>
+  <table>
+    <thead>
+      <tr><th>主线</th><th>逻辑链条</th><th>影响标的/方向</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>① 霍尔木兹通航落地 vs 实际执行存疑</strong></td>
+        <td>伊朗-阿曼联合声明明确临时通航走廊框架，美伊停火条款达成共识；但伊朗外长强调"美国须先接受条件"，实际通航仍需数周谈判。短期油价下跌已定价，反复风险犹存。</td>
+        <td>油价↓航空↓化工↓ vs 航运↑黄金偏震荡</td>
+      </tr>
+      <tr>
+        <td><strong>② 英伟达财报：业绩超预期≠股价上涨</strong></td>
+        <td>市场预期Q2营收920亿（+96%）、毛利率75%，但过去四季度均超预期后次日股价负反应；真正决定弹性的是Rubin架构进展、对华H200出货、存储成本转嫁能力、5000亿美元AI融资计划性质。</td>
+        <td>NVDA/AMD/MU/SK海力士 vs 光通信/存储ETF</td>
+      </tr>
+      <tr>
+        <td><strong>③ A股缩量地量+高低切换成型</strong></td>
+        <td>成交1.83万亿为下半年最低，融资余额连降4天至2.62万亿；资金从高位算力/资源股撤出，流入农业/CRO/液冷等低位方向；黄线跑赢白线，小微盘活跃度远高于权重。</td>
+        <td>农业/CRO/液冷↑ vs 算力硬件/贵金属↓</td>
+      </tr>
+      <tr>
+        <td><strong>④ 阿里800亿配售：AI叙事 vs 短期稀释</strong></td>
+        <td>港股史上最大宗配售，100%投向全栈AI，近3倍超额认购；但折价8.37%+股本稀释3.57%压制股价；马云/蔡崇信/吴泳铭增持8亿对冲，Michael Burry清仓转做多京东。</td>
+        <td>阿里系↑ BABA/9988 vs 伯里看空逻辑蔓延</td>
+      </tr>
+      <tr>
+        <td><strong>⑤ 杰克逊霍尔+9月FOMC：降息预期 vs 鹰派现实</strong></td>
+        <td>沃什8月28日首次主场演讲，距9月16日议息仅18天；CME定价9月降息概率~75%，但Fed内部3名官员主张加息、点阵图中位数指向年底前再加息一次。高盛预测全年利率维持3.5%-3.75%。</td>
+        <td>美债收益率↓美元↓ vs 利率敏感板块承压</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 中报速递 -->
+<div class="section">
+  <h2><span class="icon">📊</span> 中报速递</h2>
+  <table>
+    <thead>
+      <tr><th>公司</th><th>关键数据</th><th>点评</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>拼多多</strong></td><td>Q2营收1,123.6亿（+8%），经调整净利272亿（-12%），调整后EPS 19.33元超预期</td><td>千亿扶持计划侵蚀利润，但现金流257亿（+19%）、现金储备4,564亿支撑长期生态</td></tr>
+      <tr><td><strong>零跑汽车</strong></td><td>H1营收381.1亿（历史新高），净利2.1亿（连续三半年度盈利），Q2毛利率12.6%</td><td>经营质量逐季改善，四季度挑战单月6万台，明年Robotaxi无安全员载客</td></tr>
+      <tr><td><strong>阿里巴巴</strong></td><td>Q1营收2,689.5亿（+9%），AI相关ARR超495亿，资本开支677亿（+75%）</td><td>800亿港元配售全部投向AI，云收入增速跃居全球第二，2030年外部商业化目标1,000亿美元</td></tr>
+      <tr><td><strong>农夫山泉</strong></td><td>H1营收297.18亿（+16%），净利88.87亿（+16.6%），茶饮料首次超越包装水</td><td>东方树叶持续扩充矩阵，包装水增速放缓至2.1%，功能饮料/果汁双位数增长</td></tr>
+      <tr><td><strong>中科曙光</strong></td><td>H1营收74.66亿（+27.6%），净利9.71亿（+33.3%），Q2单季净利环比+226%</td><td>联营企业海光信息H1净利+49.7%，国产算力核心标的业绩验证</td></tr>
+      <tr><td><strong>北方华创</strong></td><td>H1营收201.61亿（+24.9%），净利33.70亿（+5.05%）</td><td>利润增速显著低于营收，半导体设备价格战压力显现</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 季检提示 -->
+<div class="section">
+  <h2><span class="icon">🏛️</span> 季检与指数调整提示</h2>
+  <table>
+    <thead><tr><th>指数</th><th>调整内容</th><th>生效日</th></tr></thead>
+    <tbody>
+      <tr><td>恒生指数</td><td>纳入华虹宏力、潍柴动力</td><td>2026年9月7日</td></tr>
+      <tr><td>沪深300</td><td>—</td><td>—</td></tr>
+      <tr><td>科创50</td><td>长江存储（科创板IPO已受理，49亿美元）</td><td>待批</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 资金流向 -->
+<div class="section">
+  <h2><span class="icon">💹</span> 资金流向</h2>
+  <table>
+    <thead><tr><th>方向</th><th>数据</th><th>解读</th></tr></thead>
+    <tbody>
+      <tr><td>A股主力资金</td><td>净流出（估计400-500亿）</td><td>指数翻红但资金离场，典型"赚指数不赚钱"背离</td></tr>
+      <tr><td>北向资金</td><td>净流入约53亿（8月24日）</td><td>外资小幅回流，人民币升值预期支撑</td></tr>
+      <tr><td>南向资金</td><td>净卖出76亿（8月25日）</td><td>由买转卖，获利了结迹象明显</td></tr>
+      <tr><td>融资余额</td><td>26,208亿（连降4天）</td><td>杠杆资金谨慎，增量观望</td></tr>
+      <tr><td>沽空比率</td><td>20.8%（港股）</td><td>做空情绪偏高，但马云增持后有所收敛</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 免责声明 -->
+<div class="footer">
+  <p>⚠️ 本报告仅供参考，不构成投资建议。市场有风险，投资需谨慎。数据来源：华尔街见闻、新浪财经、财联社、金十数据、东方财富、证券时报、中新经纬等公开渠道。</p>
+  <p>生成时间：2026-08-26 09:59 GMT+8 | 文件名：全球市场晨报_20260826_0959</p>
+</div>
+
+</div>
+</body>
+</html>

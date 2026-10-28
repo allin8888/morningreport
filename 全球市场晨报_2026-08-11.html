@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 · 2026年8月11日 星期二</title>
+<style>
+  :root{
+    --up:#d8392b;        /* 涨：红 */
+    --down:#1a8a4a;      /* 跌：绿 */
+    --bg:#f4f6f9;
+    --card:#ffffff;
+    --ink:#1f2733;
+    --sub:#5b6b7f;
+    --line:#e3e8ef;
+    --accent:#21457a;
+    --warn:#b8860b;
+    --soft:#eef3fb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.55;font-size:14px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:18px 14px 56px;}
+  header{
+    background:linear-gradient(135deg,#21457a,#2d5da8);
+    color:#fff;border-radius:14px;padding:20px 22px;margin-bottom:16px;
+    box-shadow:0 6px 20px rgba(33,69,122,.18);
+  }
+  header h1{font-size:22px;font-weight:700;letter-spacing:.5px;}
+  header .date{font-size:15px;opacity:.92;margin-top:4px;}
+  .flash{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;
+  }
+  .flash div{background:rgba(255,255,255,.12);border-radius:9px;padding:10px 12px;font-size:12.5px;}
+  .flash b{display:block;font-size:13px;margin-bottom:3px;color:#ffe08a;}
+  section{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px 16px;margin-bottom:14px;box-shadow:0 2px 8px rgba(31,39,51,.04);}
+  section h2{font-size:16px;color:var(--accent);border-left:4px solid var(--accent);padding-left:9px;margin-bottom:11px;font-weight:700;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{background:var(--soft);color:var(--sub);font-weight:600;white-space:nowrap;}
+  tr:last-child td{border-bottom:none;}
+  .up{color:var(--up);font-weight:600;}
+  .down{color:var(--down);font-weight:600;}
+  .flat{color:var(--sub);}
+  .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:20px;background:#eef1f5;color:#566;margin-right:4px;}
+  .tag.risk{background:#fdecea;color:#c0392b;}
+  .tag.act{background:#e8f3ec;color:#1a8a4a;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .box{border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:#fbfcfe;}
+  .box h3{font-size:13.5px;margin-bottom:7px;}
+  .box.act h3{color:#1a8a4a;}
+  .box.avoid h3{color:#c0392b;}
+  .box ol{margin-left:16px;font-size:12.5px;}
+  .box li{margin-bottom:4px;}
+  .themes{display:grid;grid-template-columns:1fr;gap:9px;}
+  .theme{border:1px solid var(--line);border-radius:10px;padding:11px 13px;background:linear-gradient(180deg,#fbfdff,#f6f9fe);}
+  .theme .n{display:inline-block;background:var(--accent);color:#fff;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;font-size:12px;margin-right:8px;}
+  .theme b{font-size:13.5px;}
+  .theme p{font-size:12.5px;color:var(--sub);margin-top:4px;}
+  .note{font-size:11.5px;color:var(--sub);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px;}
+  footer{text-align:center;color:var(--sub);font-size:11.5px;margin-top:8px;}
+  @media (max-width:760px){
+    .flash{grid-template-columns:1fr;}
+    .grid2{grid-template-columns:1fr;}
+    th,td{padding:6px 6px;font-size:12px;}
+    header h1{font-size:19px;}
+    .wrap{padding:12px 9px 40px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>全球市场晨报</h1>
+    <div class="date">2026年8月11日 · 星期二　|　盘前速读版</div>
+    <div class="flash">
+      <div><b>① 霍尔木兹僵局</b>特朗普索偿、伊朗提条件，油价周一暴涨约5%（WTI 82.1 / 布油 87.7），通胀交易回归。</div>
+      <div><b>② 本周CPI定锚</b>8/12美国7月CPI为9月加息与否关键；当前加息25bp概率约51%。</div>
+      <div><b>③ AI硬件分化</b>美股光通信/半导体重挫，A股算力硬件承压，资金高低切向贵金属/油气/低位板块。</div>
+    </div>
+  </header>
+
+  <!-- 1. 全球宏观与风险事件 -->
+  <section>
+    <h2>一、全球宏观与风险事件</h2>
+    <table>
+      <tr><th style="width:18%">主题</th><th style="width:42%">最新进展</th><th>重要性 / 市场影响</th></tr>
+      <tr><td><span class="tag risk">地缘</span>美伊霍尔木兹</td><td>特朗普要求伊朗赔偿；伊方称须美方解除封锁+赔偿+解制裁才重开海峡。胡塞袭沙特Jazan炼厂、ADNOC油轮再遭袭。美SPR降至2.987亿桶，1983年来最低。</td><td>油价风险溢价重回，WTI 82.13(+5.05%)、布油87.72(+4.99%)；推升全球通胀与滞胀担忧。</td></tr>
+      <tr><td><span class="tag risk">美联储</span>加息拉锯</td><td>克利夫兰联储哈马克放鹰"或需多次加息"；9月加息25bp概率51.2%、维持48.8%。10Y美债4.707%(+5.8bp)、2Y 4.245%。特朗普推进罢免理事库克。</td><td>利率上行压制高估值成长；本周CPI/PPI将定调9月路径。</td></tr>
+      <tr><td><span class="tag">数据</span>美国7月CPI</td><td>北京时间8/12晚公布。预期整体同比3.4%(环比+0.2~0.3%)、核心2.5%。6月曾因能源大跌整体环比-0.4%、同比3.5%。</td><td>若升温→美元/美债上行、黄金回落、降息预期退潮；若温和→利好贵金属与成长。</td></tr>
+      <tr><td><span class="tag">科技</span>AI与监管</td><td>英伟达拟联6家金融巨头设5000亿美元AI融资平台（阿波罗+3.59%、黑石+3.3%）；Meta发轻量开源模型Muse Glimmer；微软拟扩产自研Maia 300；欧盟《AI法案》生效，要求AI内容"亮明身份"。</td><td>AI资本开支叙事延续但监管收紧；光通信链遭获利兑现。</td></tr>
+      <tr><td><span class="tag">央行</span>全球</td><td>日央行6月纪要：多名委员呼吁加快加息；澳联储今日(8/11)利率决议；韩国杠杆监管风暴持续。</td><td>全球宽松窗口被迫延后，利差交易波动放大。</td></tr>
+    </table>
+  </section>
+
+  <!-- 2. 美股 -->
+  <section>
+    <h2>二、美股摘要（8/10收盘）</h2>
+    <table>
+      <tr><th style="width:22%">指数 / 标的</th><th style="width:16%">收盘</th><th style="width:14%">涨跌</th><th>要点</th></tr>
+      <tr><td>道琼斯</td><td>53,975.98</td><td class="down">-0.11%</td><td>能源、医疗权重托底，盘中冲高回落。</td></tr>
+      <tr><td>标普500</td><td>7,753.11</td><td class="down">-0.06%</td><td>十一板块六涨五跌；能源+4.63%、医疗+1.68%领涨，房地产-1.23%、公用事业-1.11%领跌。</td></tr>
+      <tr><td>纳斯达克</td><td>26,605.36</td><td class="down">-0.32%</td><td>高估值成长承压；费城半导体-2.94%（30成分股全线跌）。</td></tr>
+      <tr><td>光通信</td><td>—</td><td class="down">重挫</td><td>Coherent -14.24%、Lumentum -8.61%、康宁 -4.78%、Credo -3.98%（AI硬件获利兑现）。</td></tr>
+      <tr><td>能源</td><td>—</td><td class="up">+4.63%</td><td>埃克森/雪佛龙/康菲+4%、西方石油+5%、斯伦贝谢+5%；标普最佳单日。</td></tr>
+      <tr><td>大型科技</td><td>—</td><td class="flat">分化</td><td>亚马逊+1.32%、微软+1.21%、谷歌+0.91%、Meta+0.48%、特斯拉+0.70%；苹果-1.53%（"全玻璃"iPhone因良率取消、杰富瑞下调评级）、英伟达-2.86%、英特尔-4.06%（拟150亿美元增发）。</td></tr>
+      <tr><td>中概</td><td>金龙+1.65%</td><td class="up">逆市</td><td>阿里+3.04%、贝壳+3.58%、京东+1.52%、携程+2.12%、拼多多+1.35%；陆控+12%。SpaceX+4.23%。</td></tr>
+    </table>
+    <div class="grid2" style="margin-top:12px">
+      <div class="box act"><h3>今天最可能活跃 3 方向</h3><ol>
+        <li>能源 / 油服（油价破80/87，能源板块单日+4.63%）</li>
+        <li>中概ADR（金龙指数+1.65%，阿里/京东/携程走强）</li>
+        <li>黄金 / 避险资产（金价盘中破4400，降息预期支撑）</li>
+      </ol></div>
+      <div class="box avoid"><h3>今天最该回避 2 方向</h3><ol>
+        <li>光通信链（Coherent -14%、Lumentum -8.6%，财报前获利了结）</li>
+        <li>半导体 / 费半（-2.94%全线）、英特尔（-4%增发稀释）</li>
+      </ol></div>
+    </div>
+  </section>
+
+  <!-- 3. 港股 -->
+  <section>
+    <h2>三、港股摘要（8/10收涨 · 8/11早盘低开）</h2>
+    <table>
+      <tr><th style="width:22%">指数</th><th style="width:18%">8/10收盘</th><th style="width:14%">涨跌</th><th>8/11早盘动态</th></tr>
+      <tr><td>恒生指数</td><td>25,937.49</td><td class="up">+1.05%</td><td rowspan="3">受美股收跌+油价涨影响小幅低开；能源/保险支撑，金矿与高估值科技分化。南向8/10净卖7.78亿（连3日）。</td></tr>
+      <tr><td>恒生科技</td><td>4,919.46</td><td class="up">+1.26%</td></tr>
+      <tr><td>国企指数</td><td>8,621.84</td><td class="up">+1.06%</td></tr>
+    </table>
+    <table style="margin-top:10px">
+      <tr><th style="width:20%">板块 / 个股</th><th>早盘表现</th><th>解读</th></tr>
+      <tr><td>能源股</td><td class="up">中海油+2.6% / 中石油+1.77%</td><td>油价破80/87直接驱动，红利属性获资金偏好。</td></tr>
+      <tr><td>保险</td><td class="up">友邦+1.6% / 汇控+0.8%</td><td>利率预期与估值修复支撑。</td></tr>
+      <tr><td>半导体制造</td><td class="up">中芯国际逆市+3.14%</td><td>国产替代与产能逻辑独立于外部硬件链。</td></tr>
+      <tr><td>金矿股</td><td class="down">招金-3% / 紫金-2.56% / 山东黄金-3%</td><td>期金跌破4200后高位获利回吐。</td></tr>
+      <tr><td>平台科技</td><td class="down">阿里-1.58% / 百度-3.79%</td><td>获利了结+昆仑芯拟港股上市估值扰动。</td></tr>
+      <tr><td>事件股</td><td class="up">京西国际复牌+83%</td><td>立讯精密收购控股股东股权。</td></tr>
+    </table>
+    <div class="grid2" style="margin-top:12px">
+      <div class="box act"><h3>今天最可能活跃 3 方向</h3><ol>
+        <li>能源股（中海油/中石油，油价驱动+红利）</li>
+        <li>保险 / 友邦（利率与估值修复）</li>
+        <li>中芯等半导体制造（国产替代逆市独立）</li>
+      </ol></div>
+      <div class="box avoid"><h3>今天最该回避 2 方向</h3><ol>
+        <li>金矿股（招金/紫金高位回吐，金价波动）</li>
+        <li>高估值平台科技（阿里/百度低开，获利了结）</li>
+      </ol></div>
+    </div>
+  </section>
+
+  <!-- 4. A股 -->
+  <section>
+    <h2>四、A股摘要（8/10收涨 · 8/11早盘低开）</h2>
+    <table>
+      <tr><th style="width:22%">指数</th><th style="width:18%">8/10收盘</th><th style="width:14%">涨跌</th><th>8/11早盘动态</th></tr>
+      <tr><td>上证指数</td><td>3,966.59</td><td class="up">+0.67%</td><td rowspan="3">8/11集体低开：沪指-0.4%(3950.71)、深成-0.35%、创业板-0.09%；09:41沪指3950.05(-0.42%)。贵金属/油气逆势，卫星互联/商业航天/太空算力领跌。主力净流出约51亿；两融+140亿至2.63万亿；人民币中间价6.7900贬16点。</td></tr>
+      <tr><td>深成指</td><td>14,316.96</td><td class="flat">+0.04%</td></tr>
+      <tr><td>创业板指</td><td>3,537.21</td><td class="down">-0.73%</td></tr>
+    </table>
+    <table style="margin-top:10px">
+      <tr><th style="width:22%">维度</th><th>要点</th></tr>
+      <tr><td>量能 / 资金</td><td>8/10成交2.52万亿（缩量1413亿），4066涨/1386跌；"沪强深弱"，资金从高位科技硬件切向医药/军工/有色/消费。8/11早主力净流出约51亿，央行逆回购零投放、465亿到期。</td></tr>
+      <tr><td>强势板块</td><td>贵金属+1.87%、油气走强（中东驱动避险+通胀交易）；"三桶油"及资源高股息受红利配置青睐。</td></tr>
+      <tr><td>弱势板块</td><td>商业航天-2.21%、卫星互联/太空算力领跌（题材兑现）；隔夜美股AI硬件走弱继续压制算力硬件风险偏好。</td></tr>
+      <tr><td>政策 / 事件</td><td>央行印发"十五五"改革发展规划；宇树科技回拨后中签率0.018%；摩尔线程上半年营收+147%、拟赴港上市；两稀土公司暂停老挝项目。</td></tr>
+    </table>
+    <div class="grid2" style="margin-top:12px">
+      <div class="box act"><h3>今天最可能活跃 3 方向</h3><ol>
+        <li>贵金属 / 有色（金价破4400、央行购金，板块逆势+1.87%）</li>
+        <li>油气 / 煤炭（油价驱动+红利现金流）</li>
+        <li>低位医药 / 消费 / 军工（资金高低切换承接）</li>
+      </ol></div>
+      <div class="box avoid"><h3>今天最该回避 2 方向</h3><ol>
+        <li>商业航天 / 卫星互联 / 太空算力（-2.21%，题材兑现）</li>
+        <li>高位AI硬件 / 算力（英伟达-2.86%带崩、外盘压制）</li>
+      </ol></div>
+    </div>
+  </section>
+
+  <!-- 5. 重要指数速览 -->
+  <section>
+    <h2>五、重要指数速览（截至8/10收盘 / 最新）</h2>
+    <table>
+      <tr><th>市场</th><th>指数</th><th>点位</th><th>涨跌</th><th>备注</th></tr>
+      <tr><td>美股</td><td>道指 / 标普 / 纳指</td><td>53,975.98 / 7,753.11 / 26,605.36</td><td class="down">-0.11% / -0.06% / -0.32%</td><td>高位震荡获利了结</td></tr>
+      <tr><td>欧股</td><td>DAX / CAC / 富时</td><td>26,323.88 / 8,726.03 / 10,862.50</td><td class="flat">+0.02% / +0.13% / -0.35%</td><td>分化</td></tr>
+      <tr><td>亚太</td><td>日经 / 韩国</td><td>66,970.22 / 6,299.66</td><td class="up">+2.08% / +0.65%</td><td>风险偏好回暖</td></tr>
+      <tr><td>A股</td><td>沪指 / 深成 / 创业板</td><td>3,966.59 / 14,316.96 / 3,537.21</td><td class="up">+0.67% / +0.04% / </td><td>创业板<span class="down">-0.73%</span></td></tr>
+      <tr><td>港股</td><td>恒指 / 恒科 / 国企</td><td>25,937.49 / 4,919.46 / 8,621.84</td><td class="up">+1.05% / +1.26% / +1.06%</td><td>8/11早小幅低开</td></tr>
+      <tr><td>汇率</td><td>美元指数 / 在岸人民币</td><td>99.70 / 6.7442</td><td class="flat">+0.16% / 升</td><td>人民币即期创42个月新高</td></tr>
+      <tr><td>债券</td><td>美10Y / 2Y</td><td>4.707% / 4.245%</td><td class="up">+5.8bp / +4.6bp</td><td>油价推升通胀预期</td></tr>
+    </table>
+  </section>
+
+  <!-- 6. 大宗商品与资金 -->
+  <section>
+    <h2>六、大宗商品 / 资金风向</h2>
+    <table>
+      <tr><th style="width:20%">品种</th><th style="width:18%">最新</th><th style="width:14%">涨跌</th><th>逻辑</th></tr>
+      <tr><td>WTI原油</td><td>82.13美元</td><td class="up">+5.05%</td><td rowspan="2">霍尔木兹僵局+胡塞袭炼厂，风险溢价回归；美SPR历史低位。</td></tr>
+      <tr><td>布伦特</td><td>87.72美元</td><td class="up">+4.99%</td></tr>
+      <tr><td>现货黄金</td><td>~4,390-4,400</td><td class="up">+1.1%</td><td>破4400，降息预期+央行购金+避险；关注周三CPI。</td></tr>
+      <tr><td>现货白银</td><td>65.88美元</td><td class="up">+3.75%</td><td>跟随黄金，弹性更大。</td></tr>
+      <tr><td>伦铜 / 伦铝</td><td>14,120 / 3,335</td><td class="up">+0.7% / +1.99%</td><td>供应趋紧+加息担忧缓解支撑。</td></tr>
+      <tr><td>A股主力</td><td>净流出约51亿</td><td class="down">流出</td><td>早盘缩量净流出，调仓为主。</td></tr>
+      <tr><td>两融</td><td>26,282.92亿</td><td class="up">+140亿</td><td>杠杆资金微增，风险偏好未崩。</td></tr>
+    </table>
+  </section>
+
+  <!-- 7. 今日日历 -->
+  <section>
+    <h2>七、今日关注日历（2026-08-11）</h2>
+    <table>
+      <tr><th style="width:14%">时间</th><th style="width:22%">事件</th><th>关注点</th></tr>
+      <tr><td>全天</td><td><span class="tag">央行</span>澳洲联储利率决议</td><td>全球央行紧缩信号</td></tr>
+      <tr><td>全天</td><td><span class="tag">中国</span>央行"十五五"改革发展规划</td><td>中长期金融改革框架</td></tr>
+      <tr><td>晚间</td><td><span class="tag">美国</span>7月NFIB小企业信心、成屋销售</td><td>消费/地产景气度</td></tr>
+      <tr><td>盘后</td><td><span class="tag risk">财报</span>CoreWeave / Lumentum / 超微电脑</td><td>AI硬件链压力测试，定光通信与算力景气</td></tr>
+      <tr><td>本周</td><td><span class="tag risk">关键</span>8/12美国CPI · 8/13 PPI · 8/14零售销售</td><td>联储9月路径核心输入</td></tr>
+      <tr><td>本周</td><td><span class="tag">新股</span>宇树科技申购 · 摩尔线程拟赴港</td><td>机器人/国产算力估值锚</td></tr>
+    </table>
+  </section>
+
+  <!-- 8. 交易主线 -->
+  <section>
+    <h2>八、今日交易主线（5条）</h2>
+    <div class="themes">
+      <div class="theme"><span class="n">1</span><b>霍尔木兹僵局 → 油价破80/87，能源链继续占优</b><p>WTI 82.1(+5%)、布油87.7(+5%)，美SPR历史低位+胡塞袭炼厂。油气开采/油服/煤炭受益，航空/化工承压；通胀交易抬头。</p></div>
+      <div class="theme"><span class="n">2</span><b>本周CPI定锚（8/12）：降息预期与加息现实的拉锯</b><p>9月加息25bp概率约51%。若CPI升温→美元/美债上行、黄金回落；若温和→利好贵金属与成长。当前美债已上破4.7%。</p></div>
+      <div class="theme"><span class="n">3</span><b>AI硬件分化加剧，资金高低切换</b><p>美股光通信/半导体重挫（Coherent -14%、费半 -2.94%），A股算力硬件承压；资金转向贵金属/油气/低位医药消费。英伟达5000亿融资与国产算力中期逻辑未破。</p></div>
+      <div class="theme"><span class="n">4</span><b>贵金属 / 有色强势，避险+降息双击</b><p>金价破4400、央行连续21月购金、弱非农强化宽松预期；A股贵金属逆势+1.87%，为少数量价齐升方向。</p></div>
+      <div class="theme"><span class="n">5</span><b>港股哑铃分化，结构重于方向</b><p>能源/保险支撑、金矿获利回吐、平台科技低开；南向连续净卖后选股聚焦中芯等独立景气与红利。A/H联动看油价与CPI。</p></div>
+    </div>
+  </section>
+
+  <div class="note">数据来源：新华社、财联社、东方财富、新浪财经、证券时报、HKEX、金十、CME FedWatch、汇通等公开资讯（截至2026-08-11 09:41 北京时间）。行情为实时检索结果，非预测；盘中变动以交易所为准。本晨报仅作信息整理，不构成投资建议。</div>
+  <footer>全球市场晨报 · 自动化生成 · 2026-08-11</footer>
+
+</div>
+</body>
+</html>

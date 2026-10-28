@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 | 2026年8月27日 周四</title>
+<style>
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --red: #d32f2f;
+  --green: #2e7d32;
+  --blue: #1565c0;
+  --gold: #f57c00;
+  --purple: #6a1b9a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: "PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif; line-height: 1.6; font-size: 14px; }
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+.header { background: linear-gradient(135deg,#1a1a2e 0%,#16213e 100%); color: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.header .date { font-size: 14px; opacity: 0.85; }
+.header .tag { display: inline-block; background: rgba(255,255,255,0.15); border-radius: 4px; padding: 2px 8px; font-size: 12px; margin-left: 8px; }
+.card { background: var(--card); border-radius: 10px; border: 1px solid var(--border); padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--blue); display: flex; align-items: center; gap: 6px; }
+.card-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+.card-title.red { color: var(--red); border-bottom-color: var(--red); }
+.card-title.red .dot { background: var(--red); }
+.card-title.green { color: var(--green); border-bottom-color: var(--green); }
+.card-title.green .dot { background: var(--green); }
+.card-title.gold { color: var(--gold); border-bottom-color: var(--gold); }
+.card-title.gold .dot { background: var(--gold); }
+.card-title.purple { color: var(--purple); border-bottom-color: var(--purple); }
+.card-title.purple .dot { background: var(--purple); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #f0f4f8; padding: 8px 10px; text-align: left; font-weight: 600; color: #374151; border-bottom: 2px solid var(--border); white-space: nowrap; }
+td { padding: 7px 10px; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f9fafb; }
+.up { color: var(--red); font-weight: 600; }
+.down { color: var(--green); font-weight: 600; }
+.mid { color: var(--muted); }
+.badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+.badge-red { background: #fce4ec; color: var(--red); }
+.badge-green { background: #e8f5e9; color: var(--green); }
+.badge-blue { background: #e3f2fd; color: var(--blue); }
+.badge-gold { background: #fff3e0; color: var(--gold); }
+.badge-purple { background: #f3e5f5; color: var(--purple); }
+.tag-inline { display: inline-block; background: #f0f4f8; border-radius: 3px; padding: 1px 6px; font-size: 11px; color: var(--muted); margin-right: 4px; }
+.speed-read { background: linear-gradient(135deg,#fff8e1,#fff3e0); border: 1px solid #ffe0b2; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; }
+.speed-read h3 { font-size: 14px; color: var(--gold); margin-bottom: 8px; }
+.speed-read ol { padding-left: 18px; }
+.speed-read li { margin-bottom: 4px; font-size: 13px; }
+.themes-list { counter-reset: theme; list-style: none; padding: 0; }
+.themes-list li { counter-increment: theme; margin-bottom: 10px; padding: 10px 14px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--blue); font-size: 13px; }
+.themes-list li::before { content: "主线" counter(theme); display: inline-block; background: var(--blue); color: #fff; border-radius: 3px; padding: 1px 6px; font-size: 11px; margin-right: 8px; font-weight: 600; }
+.themes-list li .sub { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.two-col .card { margin-bottom: 0; }
+.direction-box { background: #f0f4f8; border-radius: 8px; padding: 10px 14px; margin-top: 8px; }
+.direction-box h4 { font-size: 13px; margin-bottom: 6px; }
+.direction-box h4.active { color: var(--red); }
+.direction-box h4.avoid { color: var(--green); }
+.direction-box ul { list-style: none; padding: 0; margin: 0; }
+.direction-box li { font-size: 12px; padding: 2px 0; color: #374151; }
+.direction-box li::before { content: "▪ "; color: var(--muted); }
+.note { background: #fff3e0; border-left: 3px solid var(--gold); padding: 8px 12px; border-radius: 0 6px 6px 0; font-size: 12px; color: #795548; margin-top: 8px; }
+.divider { height: 1px; background: var(--border); margin: 16px 0; }
+.footer { text-align: center; color: var(--muted); font-size: 11px; padding: 12px 0; }
+@media (max-width: 760px) {
+  .two-col { grid-template-columns: 1fr; }
+  .container { padding: 10px; }
+  .card { padding: 12px 14px; }
+  table { font-size: 12px; }
+  th, td { padding: 6px 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>📊 全球市场晨报</h1>
+  <div class="date">2026年8月27日 周四 · 盘前速读</div>
+  <div style="margin-top:8px">
+    <span class="tag">美股盘后英伟达炸裂财报</span>
+    <span class="tag">杰克逊霍尔今日开幕</span>
+    <span class="tag">霍尔木兹谈判再进展</span>
+  </div>
+</div>
+
+<div class="speed-read">
+  <h3>⚡ 三句速读</h3>
+  <ol>
+    <li><strong>英伟达盘后炸裂：</strong>Q2营收962亿美元（+106%YoY）超预期，数据中心890亿（+117%），预计2028财年营收增70%（市场估45%），盘后涨4%+，存储/光通信/AI云全线跟涨。</li>
+    <li><strong>美伊霍尔木兹再进展：</strong>伊朗与阿曼就安全通道收益分配达成共识，但特朗普称"无时间表"，内塔尼亚胡否认达成协议可能，"纸面vs真实"裂口犹存。</li>
+    <li><strong>杰克逊霍尔今日开幕：</strong>美联储主席沃什明晚（8/28 22:00）首秀，市场紧盯其对加息/降息信号；PCE数据略超预期推高9月加息概率至40-42%。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <div class="card-title"><span class="dot"></span>全球宏观与风险事件</div>
+  <table>
+    <thead>
+      <tr><th>事件</th><th>要点</th><th>背景/影响</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="badge badge-red">美伊僵局</span></td>
+        <td>伊朗与阿曼就霍尔木兹安全通道收益分配达成共识；伊朗副外长称"临时措施"，30-60天内谈判永久航线</td>
+        <td>特朗普称"无时间表不着急"，内塔尼亚胡否认达成协议可能，航运巨头称"市场低估持久战风险"</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-gold">PCE数据</span></td>
+        <td>美国7月PCE同比3.7%（预期3.6%），核心PCE同比3.3%持平；Q2 GDP修正值1.5%</td>
+        <td>通胀连续65个月高于2%目标；9月加息概率升至40-42%，CME FedWatch反映</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-blue">杰克逊霍尔</span></td>
+        <td>8/27-29年会开幕，沃什明晚22:00（北京时间）首秀主旨演讲</td>
+        <td>高盛预计重申2%通胀目标但无具体指引；美银警告"模糊信号可能被解读为鸽派"，30Y美债或破5.5%</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-purple">特斯拉新品</span></td>
+        <td>特斯拉中国否认"上海数据中心人去楼空"传闻为不实消息</td>
+        <td>市场此前因传闻扰动；同时苹果9/9将发折叠屏iPhone（新CEO特努斯首秀）</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-green">中印边界</span></td>
+        <td>第25次特代会晤达成8点共识，成立划界专家小组+边境管控小组</td>
+        <td>新增两将军级会谈点及两条边防热线，9月跨境河流专家会，2027印度办第26次</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="two-col">
+  <div class="card">
+    <div class="card-title red"><span class="dot"></span>美股（8/26收盘）</div>
+    <table>
+      <thead><tr><th>指数</th><th>收盘</th><th>涨跌</th></tr></thead>
+      <tbody>
+        <tr><td>道琼斯</td><td>53,463.88</td><td class="down">-0.21%</td></tr>
+        <tr><td>标普500</td><td>7,675.70</td><td class="down">-0.02%</td></tr>
+        <tr><td>纳斯达克</td><td>26,130.20</td><td class="down">-0.08%</td></tr>
+        <tr><td>费城半导体</td><td>—</td><td class="up">+0.20%</td></tr>
+      </tbody>
+    </table>
+    <div class="note">盘后英伟达+4%（Q2超预期），存储/光通信/AI云全线跟涨；纳指期货盘初涨约1%</div>
+    <div class="direction-box">
+      <h4 class="active">今天最可能活跃的3个方向</h4>
+      <ul>
+        <li>英伟达供应链（存储/光通信/AI云）：盘后带动隔夜情绪</li>
+        <li>加密货币股：BTC突破8.1万美元后带动Robinhood/Coinbase反弹</li>
+        <li>能源链：霍尔木兹通航进展若持续缓解，油服股或反弹</li>
+      </ul>
+      <h4 class="avoid">今天最该回避的2个方向</h4>
+      <ul>
+        <li>高位AI概念股：财报后利好出尽风险（英伟达过去四季度均超预期但次日负反应已成常态）</li>
+        <li>美元/美债敏感资产：PCE偏强+加息预期升温压制估值</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title green"><span class="dot"></span>港股（8/26收盘）</div>
+    <table>
+      <thead><tr><th>指数</th><th>收盘</th><th>涨跌</th></tr></thead>
+      <tbody>
+        <tr><td>恒生指数</td><td>25,652.97</td><td class="up">+0.56%</td></tr>
+        <tr><td>恒生科技</td><td>4,626.15</td><td class="up">+0.82%</td></tr>
+        <tr><td>恒生国企</td><td>8,533.84</td><td class="up">+1.05%</td></tr>
+      </tbody>
+    </table>
+    <div class="note">南向资金净买入4.53亿港元；中际旭创今日纳入港股通；恒指季检纳入华虹宏力/潍柴动力（9/7生效）</div>
+    <div class="direction-box">
+      <h4 class="active">今天最可能活跃的3个方向</h4>
+      <ul>
+        <li>有色金属（铜/金）：伦铜创收盘历史新高，洛阳钼业/江西铜业涨停</li>
+        <li>中资券商：中金公司+8%/申万宏源+7%，业绩+分红双轮驱动</li>
+        <li>AI大模型：智谱/MINIMAX或再受英伟达财报提振</li>
+      </ul>
+      <h4 class="avoid">今天最该回避的2个方向</h4>
+      <ul>
+        <li>高估值科网股：英伟达财报后利好兑现风险</li>
+        <li>生物制药CRO：前期涨幅过大，8/26板块分化（诚达药业-5%）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="two-col">
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>A股（8/26收盘）</div>
+    <table>
+      <thead><tr><th>指数</th><th>收盘</th><th>涨跌</th></tr></thead>
+      <tbody>
+        <tr><td>上证指数</td><td>3,912.52</td><td class="up">+0.59%</td></tr>
+        <tr><td>深证成指</td><td>13,841.33</td><td class="up">+0.69%</td></tr>
+        <tr><td>创业板指</td><td>3,414.88</td><td class="up">+0.51%</td></tr>
+        <tr><td>科创50</td><td>1,632.02</td><td class="up">+1.71%</td></tr>
+      </tbody>
+    </table>
+    <div class="note">成交1.81万亿（缩量232亿）；2946股上涨；沪港通：中际旭创8/27纳入港股通标的</div>
+    <div class="direction-box">
+      <h4 class="active">今天最可能活跃的3个方向</h4>
+      <ul>
+        <li>有色金属（铜/贵金属）：伦铜历史新高+江西铜业/洛阳钼业H1业绩炸裂</li>
+        <li>券商/大金融：21家上市券商H1营收+53%/净利+53%，估值修复窗口</li>
+        <li>算力硬件（CPO/液冷）：英伟达盘后利好传导</li>
+      </ul>
+      <h4 class="avoid">今天最该回避的2个方向</h4>
+      <ul>
+        <li>高位题材小票：缩量修复格局下资金聚焦权重，中小票分化明显</li>
+        <li>CRO/医疗服务：前期涨幅过大+中报兑现压力（康龙化成/益诺思跟跌）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title gold"><span class="dot"></span>商品 & 汇率</div>
+    <table>
+      <thead>
+        <tr><th>品种</th><th>价格</th><th>涨跌</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>WTI原油</td><td>82.23 美元/桶</td><td class="down">-0.16%</td></tr>
+        <tr><td>布伦特原油</td><td>87.84 美元/桶</td><td class="down">-0.84%</td></tr>
+        <tr><td>现货黄金</td><td>4,591-4,610 美元/盎司</td><td class="down">-1.0%~-1.4%</td></tr>
+        <tr><td>COMEX黄金期货</td><td>4,653.30 美元/盎司</td><td class="down">-0.88%</td></tr>
+        <tr><td>COMEX白银期货</td><td>68.03 美元/盎司</td><td class="down">-0.96%</td></tr>
+        <tr><td>伦铜</td><td>14,232.50 美元/吨</td><td class="down">-0.64%</td></tr>
+        <tr><td>美元指数</td><td>99.14</td><td class="up">+0.24%</td></tr>
+        <tr><td>在岸人民币</td><td>6.7205</td><td class="up">+24点</td></tr>
+        <tr><td>离岸人民币</td><td>6.7195</td><td class="down">-31点</td></tr>
+        <tr><td>比特币</td><td>78,784 美元</td><td class="up">+0.73%</td></tr>
+        <tr><td>10Y美债收益率</td><td>4.65%</td><td class="up">+1.6bp</td></tr>
+        <tr><td>2Y美债收益率</td><td>4.22%</td><td class="up">+3.7bp</td></tr>
+      </tbody>
+    </table>
+    <div class="note">黄金8月累涨超15%为1999年以来最佳单月；State Street年內看5000美元</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title purple"><span class="dot"></span>今日关键日历</div>
+  <table>
+    <thead>
+      <tr><th>时间（北京时间）</th><th>事件</th><th>关注点</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>今晚（22:00）</td><td><span class="badge badge-gold">杰克逊霍尔年会</span> 沃什主席主旨演讲</td><td>9月加息/降息信号；美银两情景：加息→曲线平坦化 vs 模糊→30Y破5.5%</td></tr>
+      <tr><td>盘后（04:00）</td><td><span class="badge badge-red">英伟达Q2财报公布后</span></td><td>盘后已涨4%+；关注Vera Rubin量产进展/对华H200出货/存储成本转嫁</td></tr>
+      <tr><td>今日</td><td>美伊霍尔木兹谈判持续</td><td>伊朗副外长：临时措施30-60天，永久航线未定；Torm CEO警告"市场低估持久战风险"</td></tr>
+      <tr><td>9月9日</td><td>特斯拉秋季发布会</td><td>首款折叠屏iPhone？新CEO特努斯首秀；同时MEGA新车发布</td></tr>
+      <tr><td>今日生效</td><td>中际旭创纳入沪港通港股通标的</td><td>南向资金或加速流入；中际旭创8/26收涨0.58%报850.9元</td></tr>
+      <tr><td>9月7日</td><td>恒指季检生效（华虹宏力/潍柴动力纳入）</td><td>被动资金配置压力；恒指季检样本调整</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-title"><span class="dot"></span>今日交易主线（5条）</div>
+  <ol class="themes-list">
+    <li>
+      <strong>英伟达财报炸裂≠股价必涨</strong>
+      <span class="sub">Q2营收962亿（+106%）超预期，预计2028财年增70%（市场估45%），盘后涨4%+；但过去四季度均超预期后次日负反应已成常态（AI板块"业绩陷阱"），今日需警惕利好兑现。</span>
+    </li>
+    <li>
+      <strong>霍尔木兹"纸面vs真实"裂口</strong>
+      <span class="sub">伊朗-阿曼达成临时安全通道框架（只允许商船、军舰禁行），但特朗普称"无时间表不着急"，内塔尼亚胡否认协议可能，航运巨头称"市场低估持久战风险"——地缘风险溢价仍在，油价反复。</span>
+    </li>
+    <li>
+      <strong>杰克逊霍尔+9月FOMC：加息vs降息的天平</strong>
+      <span class="sub">PCE 3.7%略超预期推高9月加息概率至40-42%；沃什明晚首秀是关键，美银警告"模糊信号可能被解读为鸽派"，30Y美债或破5.5%——利率风险定价重估。</span>
+    </li>
+    <li>
+      <strong>A股缩量新高+高低切换成型</strong>
+      <span class="sub">沪指3912（+0.59%）险守3900，成交1.81万亿（缩量232亿创下半年地量）；有色/券商权重领涨，中小票分化，融资余额2.66万亿（降4天）——增量资金观望，存量博弈格局。</span>
+    </li>
+    <li>
+      <strong>中报收官+业绩分化</strong>
+      <span class="sub">有色H1业绩炸裂（江西铜业净利+107%/洛阳钼业+86%）、中际旭创H1净利+242%；理想汽车H2亏损15亿由盈转亏、毛利率收窄至9.4%——"业绩验证分化"继续主导资金流向。</span>
+    </li>
+  </ol>
+</div>
+
+<div class="card">
+  <div class="card-title green"><span class="dot"></span>中报亮点速览（8/26更新）</div>
+  <table>
+    <thead>
+      <tr><th>公司</th><th>亮点</th><th>市场影响</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>英伟达NVDA</td><td>Q2营收962亿（+106%YoY），净利597亿（+126%），毛利率75%；Q3指引1080亿超预期；2028财年预计增70%</td><td>盘后+4%，AI产业链全线跟涨</td></tr>
+      <tr><td>江西铜业</td><td>H1营收3072亿（+19.5%），净利86.32亿（+107%）</td><td>8/26涨停，有色板块龙头</td></tr>
+      <tr><td>洛阳钼业</td><td>H1营收1353亿（+42.8%），净利161.52亿（+86.3%）</td><td>港股+7.3%，A股跟涨</td></tr>
+      <tr><td>中际旭创</td><td>H1净利同比+241.7%</td><td>今日纳入港股通，8/26报850.9元</td></tr>
+      <tr><td>理想汽车</td><td>Q2营收256.67亿（-15.1%），经调整净亏损15亿（由盈转亏），毛利率9.4%（收窄）</td><td>美股-1.06%，Q3交付指引低于预期</td></tr>
+      <tr><td>商汤</td><td>H1总收入29.1亿（+23.4%），首次按IFRS盈利6.2亿，海外收入+127%</td><td>港股AI板块情绪支撑</td></tr>
+      <tr><td>阿里</td><td>AI资本开支侵蚀利润，800亿配售折让8.37%，蔡崇信/吴泳铭增持1.2亿护盘</td><td>港股8/21-8.5%，今日涨0.33%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-title"><span class="dot"></span>资金与情绪</div>
+  <table>
+    <thead>
+      <tr><th>指标</th><th>数据</th><th>解读</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>A股融资余额</td><td>2.66万亿（降4天）</td><td class="down">增量资金观望，杠杆情绪降温</td></tr>
+      <tr><td>港股南向净买入</td><td>4.53亿港元</td><td class="mid">由净卖出转为小幅净买入</td></tr>
+      <tr><td>沽空比率</td><td>20.8%</td><td class="down">做空力量仍存，观望情绪浓</td></tr>
+      <tr><td>黄金ETF五日净流入</td><td>70亿美元（含比特币ETF）</td><td class="up">对冲财政风险资金持续涌入</td></tr>
+      <tr><td>全球ETF资产规模</td><td>23.11万亿美元（7月底）</td><td class="up">创历史新高，7月单月净流入3836亿</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-title red"><span class="dot"></span>政策与产业动态</div>
+  <table>
+    <thead>
+      <tr><th>政策/事件</th><th>要点</th><th>市场影响</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="badge badge-blue">工信部</span> 智能网联新能源汽车"十五五"规划</td><td>培育500家零碳工厂，动力电池数字身份证管理制度，2030年废旧电池综合利用量百万吨级</td><td>绿电/电池回收板块政策催化</td></tr>
+      <tr><td><span class="badge badge-purple">上海</span> 战略性新兴产业"十五五"规划</td><td>集成电路/生物医药/AI三大先导产业，2030年增加值达2.1万亿，制造业年均增速10%+</td><td>半导体/AI/创新药中长期利好</td></tr>
+      <tr><td><span class="badge badge-gold">京津冀</span> 脑机接口跨区域质量强链方案</td><td>医疗康复/智能交互/教育娱乐应用，建设技术试验平台</td><td>脑机接口板块主题催化</td></tr>
+      <tr><td><span class="badge badge-green">江苏</span> 生物医药三年行动计划</td><td>2028年产业规模/创新药械数量保持全国领先</td><td>创新药板块政策支撑</td></tr>
+      <tr><td><span class="badge badge-red">特朗普</span> 加关税提至50%</td><td>2027/1/1起对加汽车/钢铁征50%，加拿大反制700种美国商品</td><td>汽车/钢铁/物流股承压（福特-3.3%/JB Hunt-5.7%）</td></tr>
+      <tr><td><span class="badge badge-purple">美财政部</span> Operation Twist变体</td><td>10-30Y国债流动性支持回购，单次规模从20亿翻倍至40亿美元（9/9生效）</td><td>30Y美债从5.28%回落至5.23%后反弹至5.24%——干预效果仅一日</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-title"><span class="dot"></span>隔夜外围市场</div>
+  <table>
+    <thead>
+      <tr><th>市场</th><th>指数</th><th>收盘</th><th>涨跌</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>欧洲</td><td>德国DAX30</td><td>26,315.91</td><td class="up">+0.19%</td></tr>
+      <tr><td>欧洲</td><td>法国CAC40</td><td>8,462.39</td><td class="up">+0.27%</td></tr>
+      <tr><td>欧洲</td><td>英国富时100</td><td>10,878.12</td><td class="down">-0.07%</td></tr>
+      <tr><td>亚太</td><td>日经225</td><td>66,262.16</td><td class="up">+0.62%</td></tr>
+      <tr><td>亚太</td><td>韩国KOSPI</td><td>6,808.21</td><td class="up">+0.97%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  数据来源：华尔街见闻、证券时报、金十数据、东方财富、新浪财经、同花顺、CME FedWatch、Kpler、新华社等<br>
+  数据截至 2026年8月26日全球收盘 + 8月27日亚盘早段 · 本报告不构成投资建议
+</div>
+
+</div>
+</body>
+</html>

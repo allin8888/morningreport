@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2026年7月16日 全球市场晨报：覆盖全球宏观与风险事件、美股/港股/A股动态、重要指数、资金、行业、龙头变化及今日交易主线。" />
+  <meta name="keywords" content="全球市场晨报,美股,港股,A股,宏观,交易主线,2026-07-16" />
+  <title>全球市场晨报｜2026年7月16日 星期四</title>
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --ink: #1f2329;
+      --ink-soft: #5b6168;
+      --line: #e6e8eb;
+      --brand: #c0392b;
+      --brand-soft: #fdecea;
+      --up: #d8392b;      /* 涨 = 红 */
+      --down: #1a9d54;    /* 跌 = 绿 */
+      --warn: #b8860b;
+      --shadow: 0 1px 3px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.04);
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Source Han Sans CN", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px 56px; }
+
+    /* Header */
+    header.site {
+      background: linear-gradient(135deg, #c0392b 0%, #922b21 100%);
+      color: #fff;
+      padding: 28px 16px 24px;
+    }
+    header.site .inner { max-width: 1080px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-block; font-size: 12px; letter-spacing: 2px;
+      background: rgba(255,255,255,.16); padding: 3px 10px; border-radius: 999px; margin-bottom: 10px;
+    }
+    header.site h1 { margin: 0; font-size: 26px; line-height: 1.3; font-weight: 800; }
+    header.site .meta { margin-top: 8px; font-size: 13px; opacity: .92; }
+    header.site .note { margin-top: 12px; font-size: 12.5px; opacity: .85; }
+
+    /* Sections */
+    section { margin-top: 28px; }
+    .sec-head {
+      display: flex; align-items: center; gap: 10px;
+      margin: 0 0 14px; padding-left: 12px;
+      border-left: 4px solid var(--brand);
+    }
+    .sec-head h2 { margin: 0; font-size: 19px; font-weight: 700; }
+    .sec-head .tag { font-size: 12px; color: var(--ink-soft); }
+
+    /* Cards */
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 18px; box-shadow: var(--shadow);
+    }
+
+    /* Tables */
+    .tbl-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 520px; }
+    thead th {
+      background: #fafbfc; text-align: left; font-weight: 700; color: var(--ink-soft);
+      padding: 11px 14px; border-bottom: 1px solid var(--line); white-space: nowrap;
+    }
+    tbody td { padding: 10px 14px; border-bottom: 1px solid #f0f1f3; vertical-align: top; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: #fcfcfd; }
+    .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .up { color: var(--up); font-weight: 700; }
+    .down { color: var(--down); font-weight: 700; }
+    .muted { color: var(--ink-soft); }
+
+    /* Grid of cards (index overview) */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+    .idx {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      padding: 14px; box-shadow: var(--shadow);
+    }
+    .idx .name { font-size: 13px; color: var(--ink-soft); }
+    .idx .val { font-size: 20px; font-weight: 800; margin-top: 4px; font-variant-numeric: tabular-nums; }
+    .idx .chg { font-size: 13px; margin-top: 2px; font-weight: 700; }
+
+    /* Direction boxes */
+    .dirs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .dir-box { border-radius: 12px; padding: 16px; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); }
+    .dir-box h3 { margin: 0 0 10px; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+    .dir-box.go h3 { color: var(--up); }
+    .dir-box.avoid h3 { color: var(--down); }
+    .dir-box ol { margin: 0; padding-left: 18px; }
+    .dir-box li { margin: 6px 0; }
+
+    /* Themes */
+    .themes { counter-reset: t; display: grid; gap: 12px; }
+    .theme {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      padding: 14px 16px 14px 52px; position: relative; box-shadow: var(--shadow);
+    }
+    .theme::before {
+      counter-increment: t; content: counter(t);
+      position: absolute; left: 14px; top: 14px;
+      width: 26px; height: 26px; border-radius: 50%;
+      background: var(--brand); color: #fff; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; font-size: 14px;
+    }
+    .theme b { color: var(--ink); }
+
+    /* News cards */
+    .news { display: grid; gap: 12px; }
+    .news .item { border-left: 3px solid var(--brand); padding: 4px 0 4px 12px; }
+    .news .item .t { font-weight: 700; }
+    .news .item .why { font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+
+    footer.site {
+      margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line);
+      font-size: 12px; color: var(--ink-soft); text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      header.site h1 { font-size: 21px; }
+      .dirs { grid-template-columns: 1fr; }
+      body { font-size: 14px; }
+      table { font-size: 13px; }
+      .idx .val { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="inner">
+      <span class="eyebrow">GLOBAL MARKET MORNING BRIEF</span>
+      <h1>全球市场晨报</h1>
+      <div class="meta">2026年7月16日 星期四</div>
+      <div class="note">盘前速读版。A股、港股已收（7/16 全天），美股为隔夜 7/15 收盘 + 今日重点看今晚美数据与财报。</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <!-- 一、隔夜全球要闻 -->
+    <section>
+      <div class="sec-head"><h2>一、隔夜全球要闻</h2><span class="tag">背景 / 重要性 / 影响</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>事件</th><th>背景</th><th>重要性</th><th>潜在影响</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>美6月PPI环比-0.3%意外降温，同比5.5%低于预期6.2%</td>
+              <td>油价回落为主因；褐皮书称物价温和上行</td>
+              <td><b>加息预期骤降</b>：7/29加息概率从近50%回落至约10%</td>
+              <td>美债/美元回落 → 风险偏好回升，成长股获支撑</td>
+            </tr>
+            <tr>
+              <td>美联储主席沃什国会作证"对通胀零容忍"</td>
+              <td>上任后首次作证，未明确收紧但保留利率选项</td>
+              <td>鹰派基调未变，政策仍看数据</td>
+              <td>本周数据直接定调 7/29 会议</td>
+            </tr>
+            <tr>
+              <td>美对伊朗发动第二波打击（15日）</td>
+              <td>霍尔木兹海峡征20%通行费 + 封锁伊朗船只</td>
+              <td>油价三连涨，WTI 79.6 / 布伦特 84.95</td>
+              <td>能源通胀反复，航空/化工成本承压，避险买盘</td>
+            </tr>
+            <tr>
+              <td>韩国央行加息25bp至2.75%（三年半首加）</td>
+              <td>通胀3.2%两年半高 + 韩元贬值 + 房价债务</td>
+              <td><b>KOSPI暴跌超6%入熊</b>（较6月高 -26%）</td>
+              <td>亚太风险偏好受挫，外溢冲击 A/H 半导体与存储</td>
+            </tr>
+            <tr>
+              <td>全球央行紧缩重启</td>
+              <td>欧/日/韩/新西兰/澳相继偏鹰或加息</td>
+              <td>利率中枢抬升、美元走强</td>
+              <td>高估值成长承压，黄金/资源相对占优</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 二、重要指数速览 -->
+    <section>
+      <div class="sec-head"><h2>二、重要指数速览</h2><span class="tag">收盘 / 涨跌</span></div>
+      <div class="grid">
+        <div class="idx"><div class="name">道指</div><div class="val">52,658.64</div><div class="chg up">+0.29%</div></div>
+        <div class="idx"><div class="name">标普500</div><div class="val">7,572.40</div><div class="chg up">+0.38%</div></div>
+        <div class="idx"><div class="name">纳指</div><div class="val">26,269.23</div><div class="chg up">+0.62%</div></div>
+        <div class="idx"><div class="name">VIX</div><div class="val">15.67</div><div class="chg down">-5.03%</div></div>
+        <div class="idx"><div class="name">恒生指数</div><div class="val">25,206</div><div class="chg up">+2.13%</div></div>
+        <div class="idx"><div class="name">恒生科技</div><div class="val">4,886</div><div class="chg up">+3.08%</div></div>
+        <div class="idx"><div class="name">上证指数</div><div class="val">3,882.41</div><div class="chg down">-1.85%</div></div>
+        <div class="idx"><div class="name">深证成指</div><div class="val">14,488.65</div><div class="chg down">-1.97%</div></div>
+        <div class="idx"><div class="name">创业板指</div><div class="val">3,692.46</div><div class="chg down">-2.95%</div></div>
+        <div class="idx"><div class="name">日经225</div><div class="val">~66,713</div><div class="chg down">-2.79%</div></div>
+        <div class="idx"><div class="name">韩国KOSPI</div><div class="val">~6,914</div><div class="chg down">-6.37%</div></div>
+      </div>
+      <p class="muted" style="margin:10px 2px 0;">A股成交 <b>2.40万亿元</b>（缩量1676亿）；全市场2495涨 / 2860跌。</p>
+    </section>
+
+    <!-- 三、美股摘要 -->
+    <section>
+      <div class="sec-head"><h2>三、美股摘要</h2><span class="tag">隔夜 7/15</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>主线</th><th>表现</th></tr></thead>
+          <tbody>
+            <tr><td>科技七巨头</td><td>+2.47%：苹果 +4.01% 创新高（端侧AI+网信办备案）、谷歌/Meta/亚马逊 +3%、微软 +2.78%、英伟达 +0.33%、特斯拉 -0.43%</td></tr>
+            <tr><td>存储芯片"雪崩"</td><td>SK海力士 -9%、美光 -8%、闪迪 -8.12%、西数 -8.7%、希捷 -5.7%、费半 -2.08%（盘后仍弱）</td></tr>
+            <tr><td>中概</td><td>金龙指数 +2.92%：阿里 +4.8%（千问接入 Apple Intelligence）、名创优品 +9.45%、贝壳 +6%、哔哩哔哩 +4.6%</td></tr>
+            <tr><td>其他</td><td>贝莱德 +6.6%（iShares AUM 破6万亿）；SpaceX 破发 135.27 美元</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dirs" style="margin-top:14px;">
+        <div class="dir-box go"><h3>🔥 今天最可能活跃 3 方向</h3><ol>
+          <li>端侧AI/消费电子（苹果新高 + 7款终端大模型备案）</li>
+          <li>中概互联网/港股通标的（金龙 +2.92%）</li>
+          <li>能源原油链（美伊冲突 + 油价三连涨）</li>
+        </ol></div>
+        <div class="dir-box avoid"><h3>⚠️ 今天最该回避 2 方向</h3><ol>
+          <li>存储芯片/高位半导体（获利了结 + 费半破位）</li>
+          <li>破发次新（SpaceX 做空浮盈近39亿美元）</li>
+        </ol></div>
+      </div>
+    </section>
+
+    <!-- 四、港股摘要 -->
+    <section>
+      <div class="sec-head"><h2>四、港股摘要</h2><span class="tag">7/16</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>主线</th><th>表现</th></tr></thead>
+          <tbody>
+            <tr><td>指数</td><td>恒指 +2.13%、科指 +3.08%；南向连续净买（前两日净买133.64亿港元，加仓阿里/腾讯）</td></tr>
+            <tr><td>科网普涨</td><td>小米 +6.26%、快手 +6.26%、美团 +5.28%、阿里 +4.76%、腾讯 +3.16%、网易 +2.67%</td></tr>
+            <tr><td>汽车</td><td>小鹏 +7%（6月汽车出口103.7万辆 +75.1%，半年度破500万辆）</td></tr>
+            <tr><td>黄金</td><td>紫金黄金国际 +5%</td></tr>
+            <tr><td>半导体</td><td>澜起科技 -17%（韩/美存储杀跌传导）</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dirs" style="margin-top:14px;">
+        <div class="dir-box go"><h3>🔥 今天最可能活跃 3 方向</h3><ol>
+          <li>港股互联网/恒生科技（南向加仓 + Apple×阿里 AI 催化）</li>
+          <li>汽车出口链（出口破百万 + 新能源占比近半）</li>
+          <li>黄金/资源（地缘 + 避险）</li>
+        </ol></div>
+        <div class="dir-box avoid"><h3>⚠️ 今天最该回避 2 方向</h3><ol>
+          <li>半导体/存储（韩美双杀，澜起已 -17%）</li>
+          <li>高杠杆/破发次新（韩国入熊外溢，风险偏好降）</li>
+        </ol></div>
+      </div>
+    </section>
+
+    <!-- 五、A股摘要 -->
+    <section>
+      <div class="sec-head"><h2>五、A股摘要</h2><span class="tag">7/16 收盘</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>主线</th><th>表现</th></tr></thead>
+          <tbody>
+            <tr><td>资金流向</td><td>计算机 +86亿、医药 +50亿、传媒 +40亿净入；非银 -34亿、公用 -13亿净出；<b>存储芯片 -75亿净出</b></td></tr>
+            <tr><td>逆势走强</td><td>中医药（片仔癀/珍宝岛涨停，《中医药振兴十五五规划》批复 + 基药目录扩至794种）；AI应用（紫光股份 +14.55亿居首）；影视院线（上海电影涨停）</td></tr>
+            <tr><td>重挫板块</td><td>半导体/存储（德明利2连跌停、兆易创新跌停）、光伏、锂、稀土、消费电子、商业航天</td></tr>
+            <tr><td>资金面</td><td>北向 + 主力半日罕见同步流出近400亿，为今日主要抛压</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dirs" style="margin-top:14px;">
+        <div class="dir-box go"><h3>🔥 今天最可能活跃 3 方向</h3><ol>
+          <li>中医药/创新药（政策密集利好 + 逆势净流入）</li>
+          <li>端侧AI/AI应用（终端大模型备案 + 紫光吸金）</li>
+          <li>影视传媒/消费（避险 + 内需轮动）</li>
+        </ol></div>
+        <div class="dir-box avoid"><h3>⚠️ 今天最该回避 2 方向</h3><ol>
+          <li>存储芯片/高位半导体（获利盘踩踏 + 北向主力联手出逃）</li>
+          <li>光伏/锂/稀土等周期（需求弱 + 资金净流出）</li>
+        </ol></div>
+      </div>
+    </section>
+
+    <!-- 六、今日重点日历 -->
+    <section>
+      <div class="sec-head"><h2>六、今日重点日历</h2><span class="tag">7/16</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>时间(北京)</th><th>事件</th><th>预期 / 前值</th><th>看点</th></tr></thead>
+          <tbody>
+            <tr><td class="num">20:30</td><td>美国6月零售销售</td><td class="num">+0.2% / +0.9%</td><td>消费降温程度，定调美联储</td></tr>
+            <tr><td class="num">20:30</td><td>核心零售(除汽车)</td><td class="num">0.0% / +0.8%</td><td>核心需求</td></tr>
+            <tr><td class="num">20:30</td><td>初请失业金</td><td class="num">21.6万 / 21.5万</td><td>就业韧性</td></tr>
+            <tr><td class="num">20:30</td><td>费城联储制造业</td><td class="num">12.7 / 10.3</td><td>区域制造</td></tr>
+            <tr><td class="num">22:00</td><td>成屋签约</td><td class="num">-0.5% / +3.8%</td><td>楼市</td></tr>
+            <tr><td>盘后</td><td>财报：奈飞/联合健康/GE/台积电</td><td>—</td><td>台积电 ADR 盘后 -1.4%</td></tr>
+            <tr><td>全天</td><td>美联储 Logan/Schmid 讲话</td><td>—</td><td>加息信号</td></tr>
+            <tr><td>已落地</td><td>韩国加息25bp至2.75%</td><td>符合预期</td><td>亚太风险压制</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 七、今日交易主线 -->
+    <section>
+      <div class="sec-head"><h2>七、今日交易主线</h2><span class="tag">5 条</span></div>
+      <div class="themes">
+        <div class="theme"><b>"紧缩 + 地缘"双主线压制风险偏好</b>：韩国加息、美联储鹰派、油价三连涨 → 高估值成长与周期承压，黄金/能源相对占优。</div>
+        <div class="theme"><b>AI 从"算力/存储"切到"端侧/应用"</b>：苹果新高 + 7款终端大模型备案 + 阿里Qwen接入Apple → 端侧AI、AI应用、消费电子接力，存储芯片获利了结。</div>
+        <div class="theme"><b>中概/港股互联网重估</b>：金龙 +2.92%、南向连续净买、Apple×阿里催化 → 港股科技、中概互联网、汽车出口链。</div>
+        <div class="theme"><b>A股内部分化加剧，资金避高就低</b>：半导体存储踩踏，中医药/AI应用/传媒逆势吸金 → 结构性行情，回避高位赛道。</div>
+        <div class="theme"><b>今晚美国数据定调 7/29 美联储</b>：零售 + 初请若偏弱 → 降息预期回温利好全球；若偏强 → 加息担忧再起，美债美元上行。</div>
+      </div>
+    </section>
+
+    <footer class="site">
+      数据来源：MarketWatch、新华社、腾讯/网易财经、东方财富、BLS、XTB 等实时检索（2026-07-16）。本页仅供信息参考，不构成投资建议。
+    </footer>
+  </div>
+</body>
+</html>

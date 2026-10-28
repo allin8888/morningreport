@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="全球市场晨报 2026年10月3日 星期六 周末特刊 — 面向10月5日盘前速读">
+<meta name="author" content="全球市场晨报自动化任务">
+<meta name="keywords" content="全球市场晨报,美股,港股,A股,非农,美联储,大宗商品,交易主线">
+<title>全球市场晨报 · 2026年10月3日（周六）周末特刊</title>
+<style>
+  :root{
+    --bg:#0f1216; --panel:#171b22; --panel-2:#1d222b; --border:#2a313d;
+    --txt:#e6e9ef; --txt-2:#a6b0c0; --txt-3:#7c8798;
+    --up:#e5484d; --down:#30a46c; --accent:#4a9eff; --warn:#f5a524; --hot:#ff6b35;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.7; font-size:15px; padding:0 0 60px;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{
+    background:linear-gradient(135deg,#1a2332 0%,#2d1a1f 100%);
+    border-bottom:2px solid var(--border); padding:28px 0 22px; margin-bottom:24px;
+  }
+  header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px}
+  h1{font-size:26px;font-weight:700;letter-spacing:.5px}
+  .sub{color:var(--txt-2);font-size:13px;margin-top:6px}
+  .stamp{text-align:right;font-size:13px;color:var(--txt-3)}
+  .stamp strong{display:block;color:var(--accent);font-size:17px;margin-bottom:3px}
+  .notice{
+    background:rgba(245,165,36,.09); border-left:4px solid var(--warn);
+    border-radius:0 6px 6px 0; padding:12px 16px; margin:18px 0 26px; font-size:13.5px; color:var(--txt-2);
+  }
+  .notice b{color:var(--warn)}
+  h2{
+    font-size:19px;margin:34px 0 14px;padding-bottom:9px;
+    border-bottom:1px solid var(--border);display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:4px;height:17px;background:var(--accent);border-radius:2px;flex:0 0 4px}
+  h3{font-size:16px;margin:22px 0 10px;color:var(--accent)}
+  h3 .tag{font-size:12px;background:var(--panel-2);border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--txt-2);margin-left:8px;font-weight:400}
+  table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:13.5px;background:var(--panel);border-radius:8px;overflow:hidden}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+  th{background:var(--panel-2);color:var(--txt-2);font-weight:600;font-size:12.5px;letter-spacing:.3px;white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:rgba(74,158,255,.045)}
+  .up{color:var(--up);font-weight:600}
+  .down{color:var(--down);font-weight:600}
+  .flat{color:var(--txt-2)}
+  .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  ol,ul{margin:10px 0 14px 22px}
+  li{margin-bottom:7px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 18px;margin-bottom:14px}
+  .lead{background:var(--panel);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:14px 18px;margin:14px 0 22px}
+  .lead p{margin-bottom:8px;font-size:14.5px}
+  .lead p:last-child{margin-bottom:0}
+  .box-active{background:rgba(229,72,77,.07);border:1px solid rgba(229,72,77,.28);border-radius:8px;padding:13px 16px;margin:12px 0}
+  .box-avoid{background:rgba(48,164,108,.07);border:1px solid rgba(48,164,108,.28);border-radius:8px;padding:13px 16px;margin:12px 0}
+  .box-active h4,.box-avoid h4{font-size:14px;margin-bottom:8px}
+  .box-active h4{color:var(--up)}
+  .box-avoid h4{color:var(--down)}
+  .box-active ol,.box-avoid ol{margin-left:20px;margin-bottom:0}
+  .risk{color:var(--warn);font-size:13.5px;background:rgba(245,165,36,.07);border-left:3px solid var(--warn);padding:9px 13px;border-radius:0 5px 5px 0;margin-top:11px}
+  .kv{font-size:13.5px;color:var(--txt-2)}
+  .kv b{color:var(--txt)}
+  .foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--border);color:var(--txt-3);font-size:12.5px;text-align:center}
+  code{background:var(--panel-2);padding:1px 5px;border-radius:3px;font-size:12.5px;color:var(--accent)}
+  @media (max-width:760px){
+    body{font-size:14px}
+    .wrap{padding:0 14px}
+    h1{font-size:21px}
+    h2{font-size:17px;margin-top:28px}
+    header .wrap{flex-direction:column;align-items:flex-start}
+    .stamp{text-align:left}
+    table{font-size:12.5px;display:block;overflow-x:auto;white-space:normal}
+    th,td{padding:7px 9px}
+    th{white-space:normal}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div>
+      <h1>全球市场晨报 · 周末特刊</h1>
+      <div class="sub">非农爆冷击碎加息预期 · G7 放储压低油价 · 港股破位 · A股 10/8 复市</div>
+    </div>
+    <div class="stamp">
+      <strong>2026年10月3日 星期六</strong>
+      面向 10月5日（周一）盘前速读<br>
+      生成时间 21:16（北京时间）
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="notice">
+  <b>休市声明</b>：A股 10/1（周四）–10/7（周三）休市，<b>10月8日（周四）复市</b>；港股仅 10/1 休市、<b>10/7（重阳节）休市</b>，10/2、10/5、10/6、10/9 正常交易；港股通 10/1–10/7 不提供服务，10/8 起恢复。美股全周正常交易。<br>
+  <b>数据口径</b>：指数/商品 = 10月2日（周五）收盘；美股已含 10/2 盘后非农（A 股/港股尚未反映）；周末要闻截至 10/3 21:00。
+</div>
+
+<h2>一、三句速读</h2>
+<div class="lead">
+  <p><b>① 非农"爆冷"杀死10月加息</b>：美国9月新增非农仅 <b class="flat">2.9万</b>（预期9万），失业率升至 <b class="flat">4.2%</b>，时薪同比降至3.0%（2021年来最低），7–8月合计下修6万。CME 口径10月加息概率从一周前约64%骤降至 <b class="down">13.8%–28.2%</b>（多源时点差异），纳指应声涨1.19%创盘中历史新高，10Y美债从5.34%回落至5.18%。</p>
+  <p><b>② 港股10/2断崖式调整</b>：恒指单日 <b class="up">-2.60% 报23,972.29</b>（3月23日以来最大跌幅），恒科-2.26%，物理AI次新暴跌47%、内房/航空/医药普跌——9月24日政策脉冲后的拥挤交易在"利率更高更久"面前集中兑现；同期A股10/1已先行回落（沪指3842.19，科创50领跌2.51%）。</p>
+  <p><b>③ G7联手放储+非农降温，油价地缘溢价大幅回吐</b>：布油盘中破100后收102.25（-0.06%），WTI暴跌1.90%至91.11；但欧洲柴油裂解仍在200美元/吨上方、霍尔木兹未完全恢复，<b>成品油紧张才是真痛点</b>。下周A股复市面临"低利率预期+港股获利盘+高油价余震"三重定价。</p>
+</div>
+
+<h2>二、全球宏观与风险事件</h2>
+<table>
+<thead><tr><th>事件</th><th>关键内容</th><th>市场影响路径</th></tr></thead>
+<tbody>
+<tr>
+  <td><b>🔥 美国9月非农爆冷</b></td>
+  <td class="kv">新增2.9万（预期9万）、前值16.2万下修至13.3万；失业率4.2%（预期4.1%）；时薪环比+0.1%/同比3.0%（2021年来最低）；7–8月合计下修6万</td>
+  <td class="kv">10月加息预期"死亡"，成长股贴现率压力缓解；但RSM等指"低招聘低裁员"格局下，年内仍倾向再加一次（<b>12月概率63.1%</b>）</td>
+</tr>
+<tr>
+  <td><b>🔥 G7释放1亿桶战略油储</b></td>
+  <td class="kv">法国总统府宣布，IEA协调下释放1亿桶原油+柴油，为期4个月，前20天集中投放柴油；G7承诺互不实施出口限制；特朗普明确不搞柴油出口禁令</td>
+  <td class="kv">布油盘中破100后回升收102.25，WTI-1.90%；高油价→通胀→加息链条被临时打断</td>
+</tr>
+<tr>
+  <td><b>最高法院保住库克</b></td>
+  <td class="kv">美最高法院裁定暂时维持美联储理事库克职务，口头辩论排至2026年1月</td>
+  <td class="kv">消除"理事被解雇→央行独立性受损"的尾部风险，短期利好美元/美债情绪</td>
+</tr>
+<tr>
+  <td><b>美政府停摆持续</b></td>
+  <td class="kv">约75万联邦雇员停薪休假；副总统万斯警告长期停摆或引发裁员；白宫称裁员"很可能且很快"</td>
+  <td class="kv"><b>经济数据延期/取消风险</b>（含就业、物价、贸易数据）→ 联储决策信息受损，波动率结构性抬升</td>
+</tr>
+<tr>
+  <td><b>特朗普：伊朗战事"很快结束"</b></td>
+  <td class="kv">称伊朗"永远不会拥有核武器"；白宫称美军已开放霍尔木兹海峡</td>
+  <td class="kv">油价地缘溢价上限被压制，但"从未真正关闭"的事实使风险溢价难以归零</td>
+</tr>
+<tr>
+  <td><b>沙特酝酿进攻也门胡塞</b></td>
+  <td class="kv">拟投入10万也门士兵，目标直指曼德海峡，最早未来几周启动（路透报道）</td>
+  <td class="kv">若实施，红海航运再受阻→油运/集运绕行成本上升利多油运，航空利空</td>
+</tr>
+<tr>
+  <td><b>法德利差创2011年来最大</b></td>
+  <td class="kv">10/1 德法10Y利差扩至141bp（+14bp），法国10Y 4.92%、德国10Y 3.51%；法国2027年预算案提交</td>
+  <td class="kv">欧元区主权信用分层，ECB紧缩预期被压制，欧股波动放大</td>
+</tr>
+<tr>
+  <td><b>OPEC+扩产推迟</b></td>
+  <td class="kv">美伊冲突打乱增产节奏，产能审查推迟至11月中旬</td>
+  <td class="kv">中期供给收紧预期，缓冲短期油储投放的利空</td>
+</tr>
+</tbody>
+</table>
+
+<h2>三、美股（10/2 周五收盘）</h2>
+<table>
+<thead><tr><th>指数</th><th class="num">收盘</th><th class="num">涨跌</th><th class="num">周涨跌</th></tr></thead>
+<tbody>
+<tr><td>道琼斯</td><td class="num">51,176.96</td><td class="num up">+0.49%</td><td class="num up">-1.26%</td></tr>
+<tr><td>标普500</td><td class="num">7,722.72</td><td class="num up">+0.73%</td><td class="num up">-0.27%</td></tr>
+<tr><td>纳斯达克</td><td class="num">27,190.86</td><td class="num up">+1.19%（盘中历史新高）</td><td class="num up">+0.45%（周线三连阳）</td></tr>
+<tr><td>罗素2000</td><td class="num">—</td><td class="num up">+0.94%</td><td class="num up">-0.16%</td></tr>
+<tr><td>VIX</td><td class="num">15.36</td><td class="num down">-6.28%</td><td class="num flat">恐慌情绪显著缓解</td></tr>
+</tbody>
+</table>
+
+<h3>主线拆解</h3>
+<ul>
+  <li><b>科技独涨</b>：特斯拉+4.65%（Q3全球交付同比-2%但超预期，欧洲8月注册+53%）、谷歌+1.56%、英伟达+1.34%（盘中237.88美元历史新高，市值近5.7万亿）、亚马逊+1.33%、苹果+1.02%、微软+0.92%；ARM+5.18%、博通+3.35%、阿斯麦+3.25%、台积电+2.99%、AMD+2.95%</li>
+  <li><b>光通信再强</b>：Coherent+5%、Lumentum+3.79%、Ciena+3%（数据中心升级预期）</li>
+  <li><b>存储/HDD 崩盘</b>：希捷 <b class="up">-10.21%</b>、西部数据 <b class="up">-10.22%</b>、闪迪-3.79%、美光-2.05%——东芝拟投600亿日元将菲律宾HDD产能翻倍（2027财年前），供给恐慌主导</li>
+  <li><b>中概继续承压</b>：纳斯达克中国金龙指数 <b class="up">-2.09%</b>，麦思智能-13%、世纪互联-7%、万国数据-7%</li>
+  <li><b>个股分化</b>：耐克-3.6%（Q1营收112.1亿、-4% YoY，全年指引高个位数下滑+裁员）；泰瑞达（Teradyne）+8%（芯片测试需求强）</li>
+  <li><b>美债/美元/黄金</b>：10Y从5.34%（周四盘中，2002年来最高）回落至 <b>5.18%</b>；2Y 4.72%；30Y 5.57%；美元指数自17个月高位回落至101.5附近；现货金盘中冲4227后收 <b>4140.68（-0.88%）</b>，期金全周-3.6%（四个月最大周跌幅）</li>
+</ul>
+
+<div class="box-active">
+  <h4>🔴 今日最可能活跃的 3 个方向</h4>
+  <ol>
+    <li><b>光通信/AI硬件上游</b>（Coherent/Lumentum/Ciena 链）——非农降温+纳指新高，AI 资本开支叙事再燃</li>
+    <li><b>半导体设备与测试</b>（阿斯麦、泰瑞达、应用材料）——业绩指引+板块 beta 双重驱动</li>
+    <li><b>存储/HDD 逆向修复</b>——超跌 10% 后的技术性反弹窗口（东芝扩产利空已被一次性定价）</li>
+  </ol>
+</div>
+<div class="box-avoid">
+  <h4>🟢 今日最该回避的 2 个方向</h4>
+  <ol>
+    <li><b>机械硬盘与存储硬件链</b>（希捷/西部数据）——供给端逻辑未完，趋势仍向下</li>
+    <li><b>中概/中国资产 ADR</b>——金龙指数连续承压，且10月2日港股自身已现破位，跨市场联动为负</li>
+  </ol>
+</div>
+
+<h2>四、港股（10/2 周五收盘）</h2>
+<table>
+<thead><tr><th>指数</th><th class="num">收盘</th><th class="num">涨跌</th></tr></thead>
+<tbody>
+<tr><td>恒生指数</td><td class="num"><b>23,972.29</b></td><td class="num up">-2.60%（-640.98点，3/23以来最大单日跌幅）</td></tr>
+<tr><td>恒生科技</td><td class="num">4,157.94</td><td class="num up">-2.26%</td></tr>
+<tr><td>恒生国企</td><td class="num">8,030.54</td><td class="num up">-2.31%</td></tr>
+</tbody>
+</table>
+
+<div class="kv" style="margin-bottom:12px">
+  <b>背景</b>：9月24日以来"中长期资金入市指导意见"等政策脉冲推动的一波急涨，10/2 集中兑现。A股9/30已先调整（沪指-0.18%），港股滞后补跌。10/1 南向净买入68.64亿港元后，10/2 港股通/A股休市无南向资金承接。
+</div>
+
+<h3>跌因拆解</h3>
+<ul>
+  <li><b>物理AI次新泡沫破裂</b>：欢创科技上市次日 <b class="up">-47.49%</b>（首日曾+265.68%），五一视界-4.42%、图达通-3.61%</li>
+  <li><b>科网股普跌</b>：快手-4.4%、哔哩哔哩-4%+、小米-3.96%、网易/百度-3%+、腾讯/美团/阿里-2%+</li>
+  <li><b>汽车/医药集体调整</b>：理想-5.37%、小鹏-3.96%；诺诚健华-7.84%、百济神州-5.86%、荣昌生物-5.45%</li>
+  <li><b>内房续跌</b>：旭辉控股-17%+、远洋-9%、碧桂园/雅居乐-6%+、融创-4%+</li>
+  <li><b>航空全线下跌</b>：美兰空港-10%+、中国东航/北京首都-5%+、国航-4%+</li>
+  <li><b>唯一亮点：光通信逆势</b>：长飞光纤+4%、剑桥科技+1%、中际旭创+1%</li>
+</ul>
+
+<div class="box-active">
+  <h4>🔴 今日最可能活跃的 3 个方向</h4>
+  <ol>
+    <li><b>光通信产业链</b>（长飞/剑桥/中际旭创）——连续两日逆势，AI 光模块需求外溢</li>
+    <li><b>高股息/红利防御</b>——华泰证券明确建议红利作底仓，股息率优势收敛后转向油气等更高性价比方向</li>
+    <li><b>超跌科网龙头</b>——腾讯/阿里/美团 2%+ 跌幅已计入加息预期最悲观情形，情绪修复弹性大</li>
+  </ol>
+</div>
+<div class="box-avoid">
+  <h4>🟢 今日最该回避的 2 个方向</h4>
+  <ol>
+    <li><b>物理AI/次新股</b>——欢创科技-47%已示范风险定价，泡沫化严重</li>
+    <li><b>内房/航空</b>——内房连跌+航空受高油价+人力成本双重挤压，无明确催化</li>
+  </ol>
+</div>
+
+<h2>五、A股（10/1 收盘，国庆前最后交易日）</h2>
+<table>
+<thead><tr><th>指数</th><th class="num">收盘</th><th class="num">涨跌</th></tr></thead>
+<tbody>
+<tr><td>上证指数</td><td class="num">3,842.19</td><td class="num up">+0.31%</td></tr>
+<tr><td>深证成指</td><td class="num">12,887.62</td><td class="num down">-0.11%</td></tr>
+<tr><td>创业板指</td><td class="num">3,135.28</td><td class="num down">-0.23%</td></tr>
+<tr><td>科创50</td><td class="num">待核实</td><td class="num up">-2.51%（领跌）</td></tr>
+<tr><td>成交额</td><td class="num">约1.44–1.45万亿</td><td class="num flat">放量288亿，超2500股上涨</td></tr>
+</tbody>
+</table>
+
+<div class="kv" style="margin-bottom:12px">
+  <b>结构</b>：防御与红利占优——银行/保险/白酒/汽车/医药强势；CRO 概念集体走强（康希诺20CM涨停、昭衍新药+15.6%）；粮食（亚联发展/登海种业/天虹股份涨停）、乳业、染料活跃；房地产大幅震荡（深物业A地天板）。<b>科技链是重灾区</b>：存储芯片/MLCC/PCB/CPO 低迷，澳弘电子、协和电子跌停，半导体与算力产业链集体大幅下挫。
+</div>
+<div class="kv" style="margin-bottom:12px">
+  <b>央行已备流动性</b>：10/8 将开展 <b>12,000亿元买断式逆回购</b>（3个月期，89天）；此前9/29已下调PSL利率至1.5%、科创再贷款额度扩至1.4万亿（支持比例100%）、支农支小再贷款增5,000亿至4.85万亿。
+</div>
+<div class="kv">
+  <b>基本面</b>：9月制造业PMI <b>50.1%</b>（+0.3pct）、非制造业50.2%（+1.2pct）、综合PMI 50.7%（+1.2pct）——三大指数同步重回扩张区间，但生产指数51.7%（年内最高）强于新订单50.5%（-0.1pct），<b>需求端跟进仍需验证</b>。
+</div>
+
+<div class="box-active">
+  <h4>🔴 10月8日复市后最可能活跃的 3 个方向</h4>
+  <ol>
+    <li><b>创新药/CRO</b>（昭衍新药、康希诺、药明系）——9月已启动，业绩预告期有基本面支撑</li>
+    <li><b>银行/红利资产</b>——央行12,000亿逆回购 + PSL下调，估值底+资金面双支撑</li>
+    <li><b>光通信/PCB 修复</b>——港股长飞+4%与美股光通信链走强形成跨市场共振</li>
+  </ol>
+</div>
+<div class="box-avoid">
+  <h4>🟢 最该回避的 2 个方向</h4>
+  <ol>
+    <li><b>存储/PCB/CPO 高位链</b>——科创50-2.51%已破位，且东芝扩产冲击HDD/存储全球定价</li>
+    <li><b>微盘/次新炒作</b>——港股欢创科技-47%是明确的风险定价警示，题材退潮期</li>
+  </ol>
+</div>
+
+<h2>六、商品与汇率（10/2 收盘）</h2>
+<table>
+<thead><tr><th>品种</th><th class="num">价格</th><th class="num">涨跌</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td>布伦特原油（12月）</td><td class="num"><b>102.25</b> 美元/桶</td><td class="num down">-0.06%</td><td class="kv">盘中破100后回升；G7放储压制，但成品油缺口未补</td></tr>
+<tr><td>WTI原油（11月）</td><td class="num"><b>91.11</b> 美元/桶</td><td class="num up">-1.90%</td><td class="kv">亚洲盘中一度跌超5%</td></tr>
+<tr><td>RBOB汽油</td><td class="num">3.3240 美元/加仑</td><td class="num up">-2.31%</td><td class="kv">燃油累库兑现</td></tr>
+<tr><td>ULSD柴油</td><td class="num">4.5566 美元/加仑</td><td class="num up">-1.84%</td><td class="kv"><b>欧洲柴油裂解仍在200美元/吨上方</b></td></tr>
+<tr><td>COMEX黄金</td><td class="num">4,172.1 美元/盎司</td><td class="num up">-0.72%</td><td class="kv">全周-3.6%，四个月最大周跌幅</td></tr>
+<tr><td>现货黄金</td><td class="num">4,140.68 美元/盎司</td><td class="num up">-0.88%</td><td class="kv">盘中冲4227后大幅回落</td></tr>
+<tr><td>COMEX白银</td><td class="num">60.71 美元/盎司</td><td class="num up">-0.76%</td><td class="kv">全周-7%</td></tr>
+<tr><td>铜</td><td class="num">约6.55 美元/磅</td><td class="num up">-0.8%（周）</td><td class="kv">供给约束+AI/电气化需求</td></tr>
+<tr><td>美元指数</td><td class="num">约101.5</td><td class="num flat">自17个月高位回落</td><td class="kv">非农后走弱</td></tr>
+<tr><td>离岸人民币</td><td class="num">曾逼近6.70</td><td class="num flat">—</td><td class="kv">美元走弱支撑</td></tr>
+</tbody>
+</table>
+<div class="kv" style="margin-top:-6px">波罗的海干散货指数 <b>3,148</b>（+0.25%）。</div>
+
+<h2>七、本周展望（10/5–10/9）</h2>
+<table>
+<thead><tr><th>日期</th><th>事项</th><th>重要性</th></tr></thead>
+<tbody>
+<tr><td><b>10/5（一）</b></td><td class="kv">港股正常交易（A股仍休市）；美股正常交易</td><td class="flat">—</td></tr>
+<tr><td><b>10/6（二）</b></td><td class="kv">港股正常交易；中国9月财新制造业PMI（待核实发布时间）</td><td class="flat">中</td></tr>
+<tr><td><b>10/7（三）</b></td><td class="kv"><b>A股休市（国庆假期最后一日）+ 港股休市（重阳节）</b>；美股正常</td><td class="flat">—</td></tr>
+<tr><td><b>10/8（四）</b></td><td class="kv">🔥 <b>A股复市 + 港股通恢复</b>；央行12,000亿买断式逆回购操作</td><td><b style="color:var(--hot)">高</b></td></tr>
+<tr><td><b>10/8（四）</b></td><td class="kv">美国10月费城联储调查 / EIA原油库存（待核实）</td><td class="flat">中</td></tr>
+<tr><td><b>10/9（五）</b></td><td class="kv">港股正常交易（节后首个完整日）；美国9月CPI（10月13日，待核实具体日期）</td><td class="flat">中</td></tr>
+<tr><td><b>10/12（一）</b></td><td class="kv">⚠️ <b>日本休市</b>（体育假日）</td><td class="flat">中</td></tr>
+<tr><td>美股Q3财报季</td><td class="kv">10/5起密集开启：Constellation Brands(10/6盘后)、APLD(10/7盘后) 等（待核实）</td><td class="flat">中</td></tr>
+<tr><td>中国</td><td class="kv">三季报披露期，40家已预告、预喜率约67.5%</td><td class="flat">中</td></tr>
+</tbody>
+</table>
+
+<h2>八、今日交易主线（5条）</h2>
+
+<div class="card">
+  <h3>主线 1｜非农爆冷 → 10月加息预期基本作废，全球资产贴现率下行</h3>
+  <p class="kv"><b>背景</b>：9月非农2.9万 vs 预期9万，7–8月下修6万，时薪同比降至3.0%创2021年来最低</p>
+  <p class="kv"><b>重要性</b>：这是美联储9月加息25bp至3.75–4.00%后、10月议息前的最后一份重磅就业数据，直接决定10/27–28会议路径</p>
+  <p class="kv"><b>影响</b>：CME 10月加息概率从一周前约64%降至13.8%–28.2%；纳指创历史新高；美债10Y从5.34%（2002年来最高）回落至5.18%；美元跌离17个月高位</p>
+  <div class="risk">⚠️ <b>风险边界</b>：12月加息概率仍高达63.1%，"高通胀+劳动力市场走弱"的两难未解；若9月CPI（10月中）反弹超预期，利率交易将快速反向</div>
+</div>
+
+<div class="card">
+  <h3>主线 2｜G7放储1亿桶 → 油价地缘溢价回吐，但成品油紧张是真正的痛点</h3>
+  <p class="kv"><b>背景</b>：G7在马克龙提议下于IEA框架释放1亿桶原油+柴油，为期4个月，前20天先投柴油</p>
+  <p class="kv"><b>重要性</b>：直接对冲霍尔木兹/曼德海峡的地缘风险溢价，破解"高油价→高通胀→被迫加息"的死循环</p>
+  <p class="kv"><b>影响</b>：布油盘中破100后收102.25，WTI-1.90%；美油盘中一度跌超5%；油气开采股承压，航空/化工下游成本缓解</p>
+  <div class="risk">⚠️ <b>风险边界</b>：欧洲柴油裂解价差仍在200美元/吨上方、柴油日均消费约60万桶（法国）且半数为进口——<b>原油不缺、成品油缺</b>才是真问题；沙特若本月动武，红海航运再受阻将推升绕行成本</div>
+</div>
+
+<div class="card">
+  <h3>主线 3｜港股10/2断崖：政策脉冲后的拥挤交易集中兑现</h3>
+  <p class="kv"><b>背景</b>：9月24日以来"中长期资金入市指导意见"等政策驱动急涨，10/2 单日恒指-2.60%创3个月最大跌幅</p>
+  <p class="kv"><b>重要性</b>：这是9月政策行情的第一次真实压力测试，暴露筹码结构脆弱</p>
+  <p class="kv"><b>影响</b>：物理AI次新-47%示范风险定价；内房/航空/医药普跌；仅光通信逆势+4%</p>
+  <div class="risk">⚠️ <b>风险边界</b>：港股通10/8才恢复，10/5–10/6 港股将"无南向资金"独立定价，流动性薄、抗跌性差；银河证券指需重新定价"更高更久"利率环境</div>
+</div>
+
+<div class="card">
+  <h3>主线 4｜存储/HDD 全球性供给冲击，产业链定价权重排</h3>
+  <p class="kv"><b>背景</b>：东芝拟投600亿日元将菲律宾HDD产能翻倍（2027财年前）</p>
+  <p class="kv"><b>重要性</b>：AI 数据中心需求爆发下的供给端"逆向"信号，首次出现"AI 需求强 + 供给扩张"同框</p>
+  <p class="kv"><b>影响</b>：希捷-10.21%、西部数据-10.22%、闪迪-3.79%、美光-2.05%；A股科创50-2.51%、存储/PCB/CPO 领跌</p>
+  <div class="risk">⚠️ <b>风险边界</b>：摩根士丹利仍看"存储超级周期"（HBM 2023年30亿→2027年530亿美元），本轮更像 <b>HDD（机械盘）与闪存/DRAM 的结构性错配</b>，不构成对全存储板块的证伪</div>
+</div>
+
+<div class="card">
+  <h3>主线 5｜A股10/8复市三重定价：低利率预期 vs 港股获利盘 vs 高油价余震</h3>
+  <p class="kv"><b>背景</b>：央行12,000亿买断式逆回购（3个月）已公告，PSL降至1.5%、再贷款扩容</p>
+  <p class="kv"><b>重要性</b>：节后首个交易日要同时消化外围非农利好与港股破位利空</p>
+  <p class="kv"><b>影响</b>：9月PMI三大指数重回扩张（制造业50.1%），生产强于需求的格局决定反弹高度有限</p>
+  <div class="risk">⚠️ <b>风险边界</b>：10/7 A股（国庆假期）与港股（重阳节）<b>同日休市</b>，10/8 复市当日无港股先行价参照；10/5–10/6 港股独立走弱将直接压制10/8开盘情绪</div>
+</div>
+
+<h2>九、外围市场速览（10/2）</h2>
+<table>
+<thead><tr><th>市场</th><th>指数</th><th class="num">涨跌</th></tr></thead>
+<tbody>
+<tr><td>日本</td><td>日经225（10/2）</td><td class="num up">-0.94% 报68,309.46</td></tr>
+<tr><td>韩国</td><td>KOSPI（10/2）</td><td class="num down">+0.46% 报7,003.74</td></tr>
+<tr><td>英国</td><td>富时100</td><td class="num down">+0.32% 报10,461.95</td></tr>
+<tr><td>法国</td><td>CAC40</td><td class="num down">+0.79% 报7,897.19</td></tr>
+<tr><td>德国</td><td>DAX30</td><td class="num down">+1.17% 报25,231.20</td></tr>
+</tbody>
+</table>
+
+<h2>十、中报/三季报速递</h2>
+<div class="kv" style="margin-bottom:12px">
+  A股三季报预告（截至10/3）：<b>40家披露，27家预增，预喜率67.5%</b>；但环比预增仅15家（37.5%），同环比双增长仅 <b>9家（22.5%）</b>。
+</div>
+<table>
+<thead><tr><th>公司</th><th class="num">预告净利同比</th><th>驱动因素</th></tr></thead>
+<tbody>
+<tr><td>富祥股份</td><td class="num up">+658%~785%</td><td class="kv">锂电池电解液添加剂量价齐升+扭亏</td></tr>
+<tr><td>芯联集成</td><td class="num up">+247%</td><td class="kv">半导体国产替代+高产能利用率+技术授权</td></tr>
+<tr><td>立讯精密</td><td class="num up">+15%~25%</td><td class="kv">消费电子/通信与数据中心/汽车电子三线稳健</td></tr>
+</tbody>
+</table>
+<div class="kv">
+  <b>海外</b>：耐克Q1营收112.1亿美元（-4% YoY）不及预期、指引全年高个位数下滑并裁员；泰瑞达+8%（芯片测试需求强劲）；美光FY26Q4营收542.3亿美元创纪录、下季指引615亿±15亿。
+</div>
+
+<h2>十一、政策与公司要闻</h2>
+<ul>
+  <li><b>央行</b>：10/8 开展12,000亿元买断式逆回购（3个月）；PSL利率降至1.5%、"六张网"纳入PSL支持；科创再贷款额度1.2→1.4万亿（支持比例60%→100%）；支农支小再贷款+5,000亿至4.85万亿</li>
+  <li><b>中欧</b>：艾博生物与诺华达成 <b>78亿美元 mRNA 授权</b>（中国创新药BD出海再下一城）</li>
+  <li><b>英伟达</b>：推出64GB版 DGX Spark（4,999美元起）、128GB版涨价至6,950美元</li>
+  <li><b>特斯拉</b>：Q3全球交付同比-2%但超华尔街预期2万辆以上</li>
+  <li><b>国际</b>：博通联手黑石筹资600亿美元，为 Anthropic 等 AI 公司铺路算力；韩国央行时隔13年重启买金（12月拟购1吨）</li>
+</ul>
+
+<h2>十二、待核实与数据说明</h2>
+<ol>
+  <li><b>本报告严格剔除了检索中混入的 2024/2025 年旧闻</b>（如道指42,156/34,326、标普5,708、纳指17,910/14,566、恒指22,443/27,287、COMEX金3,892/1,760等），采信数据均经"2026年"前缀 + 量级双重校验</li>
+  <li><b>CME 10月加息概率多源差异</b>：13.8%（新浪/第一财经）/ 17%（利率互换）/ 20%（华尔街见闻）/ 22%（marketorganized）/ 28.2%（证券时报，CME直引）——差异源于抓取时点不同，报告取区间 13.8%–28.2%</li>
+  <li><b>9月制造业PMI 50.1%</b>（澎湃/头条财经早餐）——9月29日公布值，需与统计局原始公告复核</li>
+  <li><b>10/6 财新PMI、10/8 费城联储/ EIA、10月CPI具体日期</b>未获权威两源确认，标「待核实」</li>
+  <li><b>美股Q3财报日程</b>（APLD 10/7、Constellation Brands 10/6）来自 Kiplinger 预告，10月6日盘后名单待确认</li>
+  <li><b>科创50 10/1 收盘点位</b>未获两源一致确认，仅取涨跌幅 -2.51%</li>
+  <li><b>本周日历提示</b>：10/7（周三）A股（国庆假期）与港股（重阳节）同日休市，10/8（周四）A股与港股通同时恢复；日本 10/12（体育假日）休市</li>
+  <li>布油/WTI 两源略有差异（102.25 vs 102.61），已取路透结算价口径</li>
+</ol>
+
+<div class="foot">
+  本报告由自动化任务生成，仅供参考，不构成投资建议。市场有风险，决策需谨慎。<br>
+  生成于 2026-10-03 21:16（北京时间）｜ 数据截至 2026-10-02 收盘 + 10/3 晚间要闻
+</div>
+
+</div>
+</body>
+</html>

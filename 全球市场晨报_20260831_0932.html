@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="全球市场晨报 · 2026年8月31日 星期一 · 盘前速读（含 8/31 开盘实况）">
+<meta name="generator" content="WorkBuddy 全球市场晨报 Automation">
+<meta name="robots" content="noindex">
+<title>全球市场晨报 · 2026-08-31（周一）</title>
+<style>
+:root{
+  --bg:#f5f6f8; --panel:#ffffff; --ink:#1a1d23; --ink-2:#4a5058; --ink-3:#767d87;
+  --line:#e3e6ea; --line-2:#eef0f3;
+  --up:#d32029;      /* 涨 = 红 */
+  --down:#0f9960;    /* 跌 = 绿 */
+  --flat:#8a9099;
+  --accent:#1f4e79; --accent-soft:#eaf1f8;
+  --warn:#b8860b; --warn-soft:#fdf6e3;
+  --info:#0b6e99; --info-soft:#e8f4fa;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0; padding:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:14px; line-height:1.65;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:20px 16px 60px;}
+
+/* ---------- Header ---------- */
+header.masthead{
+  background:linear-gradient(135deg,#1f4e79 0%,#2d6ea8 100%);
+  color:#fff; border-radius:10px; padding:22px 24px; margin-bottom:18px;
+}
+header.masthead h1{margin:0 0 6px; font-size:24px; font-weight:700; letter-spacing:.5px;}
+header.masthead .date{font-size:15px; opacity:.95; font-weight:600;}
+header.masthead .sub{font-size:12.5px; opacity:.85; margin-top:6px; line-height:1.6;}
+
+/* ---------- Panels ---------- */
+section.card{
+  background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  margin-bottom:16px; overflow:hidden;
+}
+section.card > h2{
+  margin:0; padding:12px 18px; font-size:15.5px; font-weight:700; color:#fff;
+  background:var(--accent); letter-spacing:.4px;
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+}
+section.card > h2 .tag{
+  font-size:11px; font-weight:600; background:rgba(255,255,255,.22);
+  padding:2px 8px; border-radius:10px; letter-spacing:0;
+}
+section.card > .body{padding:14px 18px 18px;}
+
+/* ---------- Quick read ---------- */
+.quickread{background:var(--warn-soft); border-left:4px solid var(--warn); border-radius:6px; padding:12px 16px; margin-bottom:16px;}
+.quickread h3{margin:0 0 8px; font-size:14.5px; color:var(--warn);}
+.quickread ol{margin:0; padding-left:20px;}
+.quickread li{margin-bottom:6px; font-size:14px; line-height:1.7;}
+.quickread li:last-child{margin-bottom:0;}
+
+/* ---------- Tables ---------- */
+table{width:100%; border-collapse:collapse; font-size:13px; margin:0 0 12px;}
+table:last-child{margin-bottom:0;}
+caption{caption-side:top; text-align:left; font-size:13px; font-weight:700; color:var(--accent); padding:6px 0 8px;}
+th,td{border:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top;}
+thead th{background:#f0f3f6; font-weight:700; color:var(--ink-2); font-size:12.5px; white-space:nowrap;}
+tbody tr:nth-child(even){background:#fbfcfd;}
+tbody tr:hover{background:#f2f7fc;}
+td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap;}
+td.ctr{text-align:center; white-space:nowrap;}
+.up{color:var(--up); font-weight:700;}
+.down{color:var(--down); font-weight:700;}
+.flat{color:var(--flat); font-weight:600;}
+.mono{font-variant-numeric:tabular-nums;}
+.small{font-size:12px; color:var(--ink-3);}
+.note{font-size:12px; color:var(--ink-3); line-height:1.6; margin:8px 0 0;}
+.kv{font-weight:600; color:var(--ink);}
+
+/* ---------- Bullet blocks ---------- */
+ul.tight{margin:6px 0 0; padding-left:19px;}
+ul.tight li{margin-bottom:4px; font-size:13px; line-height:1.6;}
+ul.tight li:last-child{margin-bottom:0;}
+
+.dirgrid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+.dirbox{border:1px solid var(--line); border-radius:8px; padding:10px 13px;}
+.dirbox.go{background:#fdf2f2; border-color:#f3c9cb;}
+.dirbox.no{background:#f0f9f4; border-color:#c2e5d3;}
+.dirbox h4{margin:0 0 6px; font-size:13px; font-weight:700;}
+.dirbox.go h4{color:var(--up);}
+.dirbox.no h4{color:var(--down);}
+.dirbox ol{margin:0; padding-left:18px;}
+.dirbox ol li{font-size:12.5px; margin-bottom:5px; line-height:1.6;}
+.dirbox ol li:last-child{margin-bottom:0;}
+
+/* ---------- Main lines ---------- */
+.line-item{border:1px solid var(--line); border-radius:8px; padding:11px 14px; margin-bottom:10px; background:#fcfdfe;}
+.line-item:last-child{margin-bottom:0;}
+.line-item .lh{font-size:14px; font-weight:700; color:var(--accent); margin-bottom:6px;}
+.line-item .lh .no{
+  display:inline-block; background:var(--accent); color:#fff; width:20px; height:20px;
+  line-height:20px; text-align:center; border-radius:50%; font-size:12px; margin-right:7px;
+}
+.line-item table{margin:6px 0 0;}
+.line-item table th{background:#f6f8fa;}
+
+.badge{display:inline-block; font-size:11px; padding:1px 7px; border-radius:9px; font-weight:600; white-space:nowrap;}
+.b-hot{background:#fdeaea; color:var(--up); border:1px solid #f3c9cb;}
+.b-cold{background:#e9f7f0; color:var(--down); border:1px solid #c2e5d3;}
+.b-neu{background:#eef1f4; color:var(--ink-2); border:1px solid #dde2e7;}
+.b-warn{background:var(--warn-soft); color:var(--warn); border:1px solid #ecd9a0;}
+
+footer{margin-top:22px; padding:14px 18px; background:#eceef1; border-radius:8px; font-size:12px; color:var(--ink-3); line-height:1.75;}
+
+/* ---------- Responsive ---------- */
+@media (max-width:760px){
+  .wrap{padding:12px 10px 40px;}
+  header.masthead{padding:16px 16px; border-radius:8px;}
+  header.masthead h1{font-size:19px;}
+  section.card > h2{font-size:14px; padding:10px 13px;}
+  section.card > .body{padding:11px 13px 14px;}
+  table{font-size:12.5px; display:block; overflow-x:auto; white-space:nowrap;}
+  thead th,td{white-space:normal;}
+  .dirgrid{grid-template-columns:1fr;}
+  body{font-size:13.5px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>全球市场晨报</h1>
+  <div class="date">2026年8月31日 · 星期一 · 09:32（北京时间）</div>
+  <div class="sub">盘前速读（含 8/31 开盘实况）｜ 行情基准：<strong>8月28日（周五）全球收盘</strong> + 8/29–31 隔夜/早盘增量｜ 今日为 8 月收官 + A股中报法定披露截止日 + 8月官方PMI公布日</div>
+</header>
+
+<div class="quickread">
+  <h3>⚡ 三句速读</h3>
+  <ol>
+    <li><strong>中国 8 月官方 PMI 今日 9:30 出炉：制造业 49.8%，较上月回升 0.6pct，好于预期（49.5）但仍处荣枯线下。</strong>生产 50.4%、新订单 50.6%（回升 2.1pct）同步扩张，装备制造 51.4%、高技术制造 52.9% 领跑；非制造业 49.0% 持平、综合 49.5%。<span class="kv">"弱回升"确认扩内需政策发力，但尚不足以触发全面复苏叙事</span>，顺周期（钢铁/有色/化工）与高股息得到边际支撑。</li>
+    <li><strong>A股今日低开、结构极致分化：沪指 -0.65% 报 3926、创业板 -1.67%，地产/种业/煤炭/油气逆势走强，贵金属/半导体/MLCC 重挫。</strong>背景是沃什鹰派二次定价 + 周五夜盘金银暴跌（金 -3.2%/银 -4.2%）的缺口在 A股开盘集中释放；内房股受"房贷 30→40 年"新政催化活跃，黄金股与高位硬科技成杀跌主力。</li>
+    <li><strong>海外风险边际升温：美军 8/30 对霍尔木兹伊朗布雷力量"有限精准"行动，布油周一高开触及 90 美元；美上诉法院 8/30 裁定特朗普大部分全球关税"非法"，中概金龙 8/30 收涨 1.55%、阿里 +13% 创 2023/3 以来最佳。</strong>两条线对冲：地缘推升油价/通胀，关税裁定缓和中美摩擦预期。</li>
+  </ol>
+</div>
+
+<!-- ============ 1. 全球宏观与风险事件 ============ -->
+<section class="card">
+  <h2>一、全球宏观与风险事件 <span class="tag">核心定价事件</span></h2>
+  <div class="body">
+
+    <table>
+      <caption>美联储：沃什鹰派已被周末官员连续"二次确认"，9 月加息定价固化</caption>
+      <thead><tr><th style="width:22%">维度</th><th>内容 / 数据</th><th style="width:26%">市场含义</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="kv">加息定价</td>
+          <td>CME FedWatch：9 月加息 25bp 概率维持 <span class="up">57%–60%</span>（沃什讲话前约 35%）；巴克莱、法兴看 9 月+12 月两次加息；美银称"除非 8 月数据非常疲软，否则 9 月不加息将损其公信力"</td>
+          <td>9/4 非农是唯一"验票"；在此之前所有反弹都是抢跑，波动率系统性偏高</td>
+        </tr>
+        <tr>
+          <td class="kv">周末官员延伸</td>
+          <td>卡什卡利、哈马克重申"通胀仍偏高/加息有必要"；威廉姆斯称"接近降息但不支持立即行动"——彻底粉碎 9 月软化预期</td>
+          <td>沃什"2% 不容更改 / 还有很多工作要做"获委员会背书，鹰派底色更牢</td>
+        </tr>
+        <tr>
+          <td class="kv">利率实况</td>
+          <td>2Y 美债 4.34%（+11bp 月内新高）、10Y 4.72%（+6bp）、30Y 5.21%；美元指数 99.70（+0.55% 两个半月最大单日）；<span class="kv">熊平</span>（短端升幅 &gt; 长端）</td>
+          <td>贴现率上行直接压高估值成长，公用事业周五 -1.14% 已示范</td>
+        </tr>
+        <tr>
+          <td class="kv">数据前置</td>
+          <td>7 月 PCE 同比 3.7%（预期 3.6）、核心 3.3%；7 月非农 -2.3 万、失业率 4.1%；非农基准初修下修 7.9 万（私营 -17.8 万）</td>
+          <td>"通胀粘 + 就业弱"组合下，9/4 非农成单点开关</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>地缘：霍尔木兹再起波澜 + 关税裁定 + 委内瑞拉</caption>
+      <thead><tr><th style="width:18%">事件</th><th>最新进展</th><th style="width:28%">交易含义</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="kv">美军霍尔木兹行动<br><span class="small">8/30</span><br><span class="badge b-hot">周一油价催化</span></td>
+          <td>美军中央司令部称，针对在霍尔木兹海峡构成"迫在眉睫威胁"的伊朗革命卫队布雷力量采取<span class="kv">"有限且精准"行动</span>，称是为保护民用船员与全球贸易通行</td>
+          <td>布油周一高开触及 <span class="up">90.04 美元</span>（+2.21%）、WTI 一度 85.14（+1.9%）；地缘溢价被重新注入，成品油/油服/航运受益，通胀二次风险上升</td>
+        </tr>
+        <tr>
+          <td class="kv">美上诉法院关税裁定<br><span class="small">8/30</span><br><span class="badge b-cold">缓和信号</span></td>
+          <td>裁定特朗普政府<span class="kv">大部分全球关税政策"非法"</span>，需经国会授权；中概金龙指数 8/30 收涨 1.55%、阿里巴巴 +13% 创 2023/3 以来最佳</td>
+          <td>若最高法院维持，中长期缓和中美贸易摩擦预期；出口链/中概情绪改善，但政治不确定性仍高</td>
+        </tr>
+        <tr>
+          <td class="kv">委内瑞拉 + OPEC</td>
+          <td>特朗普称取得其 650 亿桶储量多数控制权、近 1000 亿美元投资；委<span class="kv">考虑退出 OPEC</span>（7 月产约 116 万桶/日，仅为十年前一半）</td>
+          <td>利空油价远端；OPEC+ 9/5–9/6 会议基准情景维持配额暂停至年底</td>
+        </tr>
+        <tr>
+          <td class="kv">成品油暗线<br><span class="badge b-hot">仍被低估</span></td>
+          <td>美国柴油裂解价差 &gt;90 美元/桶（上周触及 100 历史纪录）；柴油库存季节性最低；俄罗斯柴油出口禁令 9/1 到期拟延长</td>
+          <td>危机形态已从"原油供应"迁至"成品油短缺"，油价回落难解炼化/油运毛利逻辑</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>中国：PMI 弱回升 + 地产信贷制度性重构 + 消费贴息升级</caption>
+      <thead><tr><th style="width:20%">事项</th><th>要点</th><th style="width:28%">影响</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="kv">8 月官方 PMI<br><span class="badge b-hot">今日 9:30</span></td>
+          <td>制造业 <span class="up">49.8%</span>（上月 49.2，回升 0.6pct）；非制造业 49.0%（持平）；综合 49.5%（+0.2pct）。生产 50.4%、新订单 50.6%（+2.1pct）；装备制造 51.4%、高技术制造 52.9%；出厂价格指数 50.4% 重返扩张</td>
+          <td>扩内需政策发力确认，但仍在荣枯线下 → 顺周期"边际改善"而非"反转"；工业品价格（有色/化工）受购进价格 56.6% 支撑</td>
+        </tr>
+        <tr>
+          <td class="kv">房贷新政落地<br><span class="badge b-hot">周末最重磅</span></td>
+          <td>央行+金融监管总局：<strong>房贷期限 30→40 年</strong>（百万月供减约 635 元、降 15%）；预售项目竣工备案后才放按揭；月房贷支出/收入比≤50%。建行 8/28 起执行，工/农/交/中跟进。住建部等推"交房即交证"+预售资金全监管；证监会发文支持房企股/债/ABS/REITs 融资</td>
+          <td>"降月供+保交楼+补资本"三件套，非需求强刺激；地产链+银行零售+后周期（家电/家居）估值修复催化，今日盘前内房股已活跃</td>
+        </tr>
+        <tr>
+          <td class="kv">消费贷贴息升级</td>
+          <td>三部门将信用卡分期纳入贴息，年贴息上限 3000→<span class="up">5000 元</span>、比例 1pct、8/1 追溯，覆盖家装/教育/医疗；前 7 月已惠及 1.13 亿人次</td>
+          <td>"金九银十"消费前置信号，利好零售/家电/消费金融</td>
+        </tr>
+        <tr>
+          <td class="kv">流动性</td>
+          <td>央行 8/31 开展 50 亿 7 天逆回购 + <span class="up">4470 亿隔夜逆回购</span>（利率 1.40%）；今日 6730 亿逆回购到期；DR001 1.33%、DR007 1.52% 下方，资金面均衡偏松</td>
+          <td>"以我为主"对冲外部紧缩；跨月无忧，但降准预期未升温</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 2. 美股 ============ -->
+<section class="card">
+  <h2>二、美股：沃什"鹰派二次定价"后，硬科技出清、平台巨头与消费接棒 <span class="tag">8/28 收盘 + 周末延伸</span></h2>
+  <div class="body">
+
+    <table>
+      <caption>主要指数（8/28 周五收盘；全周仍累涨）</caption>
+      <thead><tr><th style="width:20%">指数</th><th class="num">收盘</th><th class="num">当日</th><th class="num">本周</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">道琼斯工业</td><td class="num mono">53,559.99</td><td class="num down">-0.02%</td><td class="num up">+0.53%</td><td>几乎平收</td></tr>
+        <tr><td class="kv">标普 500</td><td class="num mono">7,711.76</td><td class="num down">-0.25%</td><td class="num up">+0.49%</td><td>盘中 V 型后收跌，近历史高位</td></tr>
+        <tr><td class="kv">纳斯达克</td><td class="num mono">26,402.42</td><td class="num down">-0.52%</td><td class="num up">+0.85%</td><td>科技 -1.29% 拖累</td></tr>
+        <tr><td class="kv">罗素 2000</td><td class="num mono">2,972</td><td class="num down">-1.39%</td><td class="num">—</td><td>小盘对利率最敏感</td></tr>
+        <tr><td class="kv">费城半导体</td><td class="num mono">11,470</td><td class="num down">-3.47%</td><td class="num">—</td><td><span class="up">30 只成分股全数下跌</span></td></tr>
+        <tr><td class="kv">中国金龙</td><td class="num mono">—</td><td class="num up">+0.44%（8/28）/ +1.55%（8/30）</td><td class="num">—</td><td>关税裁定后中概情绪改善，阿里 +13%</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>板块与个股：钱从"卖铲人"流向"用铲人"</caption>
+      <thead><tr><th style="width:16%">方向</th><th>标的与幅度</th><th style="width:30%">驱动 / 归因</th></tr></thead>
+      <tbody>
+        <tr><td class="kv up">领涨板块</td><td>可选消费 <span class="up">+1.69%</span>、通信 <span class="up">+1.56%</span>、能源 <span class="up">+0.59%</span></td><td>加息预期下资金切向盈利确定性</td></tr>
+        <tr><td class="kv down">领跌板块</td><td>科技 <span class="down">-1.29%</span>、公用事业 <span class="down">-1.14%</span>、半导体 ETF <span class="down">-3.47%</span></td><td>公用事业为"类债券资产"，加息直接杀估值</td></tr>
+        <tr><td class="kv">大型科技</td><td>亚马逊 <span class="up">+3.97%</span>、微软/苹果/谷歌/Meta <span class="up">+1%~1.7%</span>；特斯拉 <span class="down">-1.71%</span>、英伟达 <span class="down">-4.57%</span></td><td>AI"使用者/平台"逆势收涨，芯片"卖铲人"被杀</td></tr>
+        <tr><td class="kv down">芯片重灾</td><td>迈威尔 <span class="down">-10.28%</span>、英特格 -7.15%、ARM -6.33%、应用材料 -4.29%；PayPal <span class="down">-12.66%</span></td><td>迈威尔业绩超预期仍暴跌="好消息卖事实"，估值透支</td></tr>
+        <tr><td class="kv">关税裁定受益</td><td>中概（阿里 +13%、房多多 +37%）、出口链情绪改善</td><td>美上诉法院裁定大部分全球关税"非法"</td></tr>
+      </tbody>
+    </table>
+
+    <div class="dirgrid">
+      <div class="dirbox go">
+        <h4>✅ 周一（8/31）最可能活跃的 3 个方向</h4>
+        <ol>
+          <li><strong>AI 应用软件 / 云平台</strong>：亚马逊+3.97%、周五软件逆势收涨，资金已从"卖铲人"切向"用铲人"；关税裁定缓和背景下中概云平台（阿里+13%）情绪修复。</li>
+          <li><strong>存储 / HBM 链</strong>：英伟达通知微软/谷歌/甲骨文 2027 年初起 AI 服务器涨价超 15%，Q3 服务器 DRAM 合约价再涨 13–18%；长鑫 H1 净利 776 亿 + 大摩称中国存储 2028 年迎供给转折。涨价能见度最硬。</li>
+          <li><strong>能源 / 油服与炼化</strong>：美军霍尔木兹行动 + 布油周一高开破 90 + 柴油裂解价差 &gt;90 美元/桶 + OPEC+ 9/5–9/6 会议，事件密度最高。</li>
+        </ol>
+      </div>
+      <div class="dirbox no">
+        <h4>⛔ 周一最该回避的 2 个方向</h4>
+        <ol>
+          <li><strong>高久期成长 / 公用事业与 REITs</strong>：2Y 单日 +11bp、9 月加息概率近六成，贴现率上行直接杀估值；在 9/4 非农前任何"加息已定价"抄底都是抢跑。摩根大通称半导体需回调 20% 以上才有配置价值。</li>
+          <li><strong>已兑现利好的高位算力硬件（设备/光通信）</strong>：英伟达 -4.57%、迈威尔 -10.28%、30 只芯片股全绿；"业绩超预期仍暴跌"说明估值透支。叠加特朗普考虑对服务器/笔记本/游戏机芯片成品加征关税的潜在压力。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. 港股 ============ -->
+<section class="card">
+  <h2>三、港股：低开，内房活跃、黄金与硬科技承压 <span class="tag">8/28 收盘 + 8/31 开盘</span></h2>
+  <div class="body">
+
+    <table>
+      <caption>主要指数（8/28 收盘；8/31 开盘为最新实况）</caption>
+      <thead><tr><th style="width:22%">指数</th><th class="num">收盘</th><th class="num">当日</th><th>结构</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">恒生指数</td><td class="num mono">25,584.79</td><td class="num up">+0.07%</td><td>8/28 成交 2,312 亿港元；<span class="down">8/31 开盘 -0.64%</span></td></tr>
+        <tr><td class="kv">恒生科技</td><td class="num mono">4,605.15</td><td class="num down">-0.33%</td><td>8/31 开盘 -0.42%；AI 情绪退潮最明显</td></tr>
+        <tr><td class="kv">国企指数</td><td class="num mono">8,490.39</td><td class="num flat">0.00%</td><td>8/31 开盘 -0.55%</td></tr>
+        <tr><td class="kv">南向资金</td><td class="num mono">—</td><td class="num up">净买入 11.76 亿港元</td><td>连续多日净买入，是 AI 退潮中的稳定器</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>板块与个股（8/28 收盘 + 8/31 开盘）</caption>
+      <thead><tr><th style="width:16%">方向</th><th>标的与幅度</th><th style="width:32%">驱动</th></tr></thead>
+      <tbody>
+        <tr><td class="kv up">8/31 开盘活跃</td><td>内房股：龙湖集团 <span class="up">+5%以上</span>、邮储银行/美团 <span class="up">+2%以上</span></td><td>房贷新政 + 六大行净利增速均超 4% + 美团绩后涨 2.52%</td></tr>
+        <tr><td class="kv down">8/31 开盘承压</td><td>黄金股：老铺黄金、紫金矿业 <span class="down">-4%以上</span>；科网分化（快手/百度 -1%以上，京东/阿里/小米飘红）</td><td>周末金银暴跌缺口的港股映射；黄金股月内涨幅大、回撤空间宽</td></tr>
+        <tr><td class="kv">黄金股（8/28）</td><td>中国黄金国际 <span class="up">+7%</span>（8 月累涨 <span class="up">55%</span> 创历史新高）、招金 +3%</td><td>H1 净利 +153%；但夜盘金银暴跌 → 周一几乎必然补跌</td></tr>
+        <tr><td class="kv">中报亮点</td><td>工商银行净利 1736.82 亿（+3.32%）、建行 1695.64 亿（+4.62%）、邮储 515.03 亿（+4.62%）；美团 Q2 收入 +14.4%、经调利润 +69%；联想控股净利 +219%</td><td>六大国有行中农建交邮储净利增速均超 4%；金融与平台盈利稳健</td></tr>
+        <tr><td class="kv">中报承压</td><td>北京汽车 H1 亏损 15.94 亿（盈转亏）；东方航空亏损 21.79 亿（同比扩大 52%）；中国铁建净利 -18.8%</td><td>汽车/航空仍处周期底部</td></tr>
+        <tr><td class="kv">机构观点</td><td colspan="2">中国银河：外围处美联储政策重定价窗口，未来核心变量转向 8 月非农与 CPI；摩根士丹利：港股下一窗口可能在 9 月中下旬；华泰：9 月事件/政策密集，波动率或仍高，建议均衡（低波红利为底仓）</td></tr>
+      </tbody>
+    </table>
+
+    <div class="dirgrid">
+      <div class="dirbox go">
+        <h4>✅ 周一（8/31）最可能活跃的 3 个方向</h4>
+        <ol>
+          <li><strong>内房 / 内银 / 地产服务链</strong>：房贷 40 年新政 + 六大行净利增速超 4% + 龙湖开盘 +5%；叠加"交房即交证"与房企融资支持，是今日港股最强政策催化。</li>
+          <li><strong>中资券商</strong>：摩根大通上调盈利预测（下半年 +17%、2026 年高于共识 12pct），券商中期拟派现超 273 亿元；港股少有"盈利上修 + 估值未反映"组合。</li>
+          <li><strong>高股息防御（电讯/能源/公用事业-H/银行）</strong>：沃什放鹰压全球成长，港股高股息与美债相关度低于美股同类，南向连续净买入；天风明确点名均衡配置。</li>
+        </ol>
+      </div>
+      <div class="dirbox no">
+        <h4>⛔ 周一最该回避的 2 个方向</h4>
+        <ol>
+          <li><strong>黄金及贵金属股</strong>：8/31 开盘老铺黄金、紫金矿业 -4% 以上；周五夜盘金 -3.2%、银 -4.2%，港股黄金股月内已涨 55%，补跌空间大。</li>
+          <li><strong>半导体与 AI 硬件</strong>：恒生科技五日 -3.47% 杀估值进行中；博通 9/2 财报前缺乏向上催化，且特朗普芯片成品关税传闻压制情绪。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. A股 ============ -->
+<section class="card">
+  <h2>四、A股：8 月收官战低开，风格切向地产/资源、硬科技与黄金杀跌 <span class="tag">8/28 收盘 + 8/31 开盘</span></h2>
+  <div class="body">
+
+    <table>
+      <caption>主要指数（8/28 收盘；8/31 开盘为最新实况）</caption>
+      <thead><tr><th style="width:20%">指数</th><th class="num">收盘</th><th class="num">当日</th><th>结构</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">上证指数</td><td class="num mono">3,952.18</td><td class="num down">-0.11%</td><td>8/31 开盘 <span class="down">-0.65% 报 3926.53</span></td></tr>
+        <tr><td class="kv">深证成指</td><td class="num mono">13,953.07</td><td class="num down">-0.68%</td><td>8/31 开盘 -1.35% 报 13,674.41</td></tr>
+        <tr><td class="kv">创业板指</td><td class="num mono">3,424.40</td><td class="num down">-1.41%</td><td>8/31 开盘 <span class="down">-1.67% 报 3367.04</span></td></tr>
+        <tr><td class="kv">科创 50</td><td class="num mono">1,662.15</td><td class="num down">-1.85%</td><td>领跌；科创样本股调整将调入多只半导体</td></tr>
+        <tr><td class="kv">两市成交</td><td class="num mono">21,017 亿元</td><td class="num down">缩量约 500 亿</td><td>连续两日站上 2.1 万亿；3,013 涨 / 2,390 跌，涨停 83</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>8/31 开盘结构：地产/种业/煤炭/油气走强，贵金属/半导体/MLCC 杀跌</caption>
+      <thead><tr><th style="width:14%">方向</th><th>板块与个股</th><th style="width:36%">催化</th></tr></thead>
+      <tbody>
+        <tr><td class="kv up">8/31 强势</td><td>房地产服务、种业/转基因、煤炭、油气、石化、酒店餐饮</td><td>房贷 40 年新政 + 芝加哥小麦三年新高（周涨 6.8%）+ 布油破 90；资金高低切换</td></tr>
+        <tr><td class="kv down">8/31 弱势</td><td>贵金属、黄金、MLCC、小金属、半导体</td><td>周末金银暴跌缺口集中释放；美考虑芯片成品关税传闻压制硬科技</td></tr>
+        <tr><td class="kv">8/28 强势（延续）</td><td>渔业 +4.55%、房地产服务 +3.75%、化学原料 +2.42%、种植业 +2.16%；化肥 10 只涨停（潞化/泸天化/赤天化）</td><td>农业：芝加哥小麦三年新高、玉米 2023 年来最高；化工全球供给偏紧+库存低位</td></tr>
+        <tr><td class="kv">8/28 弱势</td><td>生物制品 -2.73%、半导体 -2.12%、通信设备 -1.56%；国家大基金/科创次新领跌</td><td>前期涨幅最大的"硬科技+创新药"组合集体调整</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>中报收官：截至 8/28 已披露约 4,700 家（披露率约 85%），8/31 压哨约 160 只（含 23 只市值超 500 亿权重股）</caption>
+      <thead><tr><th style="width:18%">公司 / 板块</th><th>业绩</th><th style="width:30%">解读</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">长鑫科技<br><span class="badge b-hot">最强中报</span></td><td>H1 营收 <strong>1,503 亿</strong>（+873.6%）、归母净利 <strong>776 亿</strong>、毛利率 84.84%；8/29 LPDDR6 量产首发小米 18 Fold</td><td>全 A 业绩兑现最扎实；公司提示"价格持续大涨不可持续"</td></tr>
+        <tr><td class="kv">长存控股</td><td>科创板 IPO 获受理，拟募 <span class="up">330 亿</span>（科创板史上最大芯片 IPO）；Q1 营收 470 亿/净利 334 亿</td><td>存储双雄齐聚资本市场，国产替代情绪催化</td></tr>
+        <tr><td class="kv">中芯国际</td><td>H1 净利 <span class="up">+94%</span>，明确 Q3 提价效果更明显、AI 配套芯片需求旺盛；华虹 H1 营收 95.74 亿（+19.4% 新高）</td><td>半导体景气获龙头业绩确认</td></tr>
+        <tr><td class="kv">六大国有行</td><td>农/中/建/交/邮储净利增速均超 4%；券商中期拟派现超 273 亿</td><td>金融盈利稳健，高股息底仓逻辑延续</td></tr>
+        <tr><td class="kv">行业分化</td><td colspan="2">97% 披露口径下，全 A 非金融 H1 净利 <span class="up">+16.70%</span>；电子、有色（+94%）、非银居前；有色金属上半年利润总额 4,184 亿（+94%）。<strong>消费弹性偏弱</strong></td></tr>
+        <tr><td class="kv">8/31 压哨<br><span class="badge b-warn">风险集中</span></td><td colspan="2">三一重工、长江电力、天风证券、重庆水务等 160 只；航天智造解禁约 60 亿（占总股本 54.74%、占流通市值超 120%）。两类风险：① 尾部爆雷；② 一次性收益调节报表、核心盈利质量回落</td></tr>
+      </tbody>
+    </table>
+
+    <div class="dirgrid">
+      <div class="dirbox go">
+        <h4>✅ 周一（8/31）最可能活跃的 3 个方向</h4>
+        <ol>
+          <li><strong>地产链 + 银行 + 后周期（家电/家居）</strong>：房贷 40 年新政（月供减 635 元）+ 六大行净利增速超 4% + 住建部"交房即交证"；8/31 开盘地产/银行已逆势走强。政策托底最实的方向。</li>
+          <li><strong>农业种植 / 农化 / 化肥 + 煤炭油气</strong>：芝加哥小麦三年新高、彭博谷物指数周涨 6.8%；布油破 90 + 煤炭/油气开盘领涨。这条线与美债利率、AI 情绪脱钩，是加息预期下的天然避风港。</li>
+          <li><strong>存储与国产算力链（设备/材料/封装）</strong>：长鑫 776 亿净利 + 长存 330 亿 IPO 受理 + 大摩称中国存储 2028 年迎供给转折 + 中芯 Q3 提价；CSEAC 半导体设备展（无锡 8/31–9/2）催化。但短期受硬科技整体杀估值拖累，宜低吸不追高。</li>
+        </ol>
+      </div>
+      <div class="dirbox no">
+        <h4>⛔ 周一最该回避的 2 个方向</h4>
+        <ol>
+          <li><strong>黄金珠宝与贵金属（含高位连板情绪股）</strong>：8/31 开盘贵金属/黄金板块直接杀跌，COMEX 金周五 -3.43%、现货银 -4.2%，沪银单日 -6.2%；深中华 A 等 7 连板高标补跌风险最大。</li>
+          <li><strong>高位算力硬件与科创次新（CPO/光模块/MLCC/液冷）</strong>：科创 50 周五 -1.85% 领跌；特朗普考虑对服务器/笔记本/游戏机芯片成品加征关税传闻 + 费半 -3.47% 尚未被 A 股完全消化；叠加 8/31 中报压哨暴雷风险。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. 商品与汇率 ============ -->
+<section class="card">
+  <h2>五、大宗商品与外汇 <span class="tag">沃什冲击 + 周一地缘跳涨</span></h2>
+  <div class="body">
+
+    <table>
+      <caption>贵金属：利率定价压倒"信用重估"叙事，但央行购金长逻辑未破</caption>
+      <thead><tr><th style="width:20%">品种</th><th class="num">收盘价</th><th class="num">当日</th><th class="num">本周</th><th>关键位与逻辑</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">现货黄金</td><td class="num mono">4,454 美元/盎司</td><td class="num down">-3.18%</td><td class="num">—</td><td>失守 4500；8 月仍可能是 1999 年来最大月涨</td></tr>
+        <tr><td class="kv">COMEX 黄金</td><td class="num mono">4,503 美元</td><td class="num down">-3.44%</td><td class="num down">-3.77%</td><td>单日最大跌幅；机构目标高盛 4,900/瑞银 5,400/德银 4,700–5,100</td></tr>
+        <tr><td class="kv">现货/ COMEX 白银</td><td class="num mono">66.3 / 67.1 美元</td><td class="num down">-4.2% / -4.5%</td><td class="num">—</td><td>弹性大于黄金；8/31 早盘一度触及 66 后回落</td></tr>
+        <tr><td class="kv">沪金/沪银（主力）</td><td class="num mono">965 / 16,213 元</td><td class="num down">-3.02% / -6.20%</td><td class="num">—</td><td>内盘跌幅最大，人民币计价放大波动；8/29 周生生足金 -37 元/克</td></tr>
+        <tr><td class="kv">逻辑</td><td colspan="4">沃什鹰派把定价权从"货币贬值交易"抢回给利率；中国央行已连续 21 个月增持黄金（7 月 +约 20 吨，单月最高）。<strong>短期承压、中期向上结构未破</strong></td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>能源与工业品（含 8/31 周一早盘跳涨）</caption>
+      <thead><tr><th style="width:18%">品种</th><th class="num">价格</th><th class="num">变动</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">WTI 原油</td><td class="num mono">84.99 美元</td><td class="num up">早盘 +1.9%（高开 85.14）</td><td>美军霍尔木兹行动催化，由跌转涨</td></tr>
+        <tr><td class="kv">布伦特原油</td><td class="num mono">90.04 美元</td><td class="num up">+2.21%（触及）</td><td>周五周跌 5% 后周一跳涨破 90</td></tr>
+        <tr><td class="kv">INE 原油（夜盘）</td><td class="num mono">—</td><td class="num up">+3.97%</td><td>内盘补涨，与外盘节奏错位</td></tr>
+        <tr><td class="kv">沪铜 / 碳酸锂</td><td class="num mono">108,560 元 / 15.2 万+</td><td class="num down">-0.59% / +3.65%</td><td>铜回落；锂结束连跌，动力电池大会（宜宾 9/3–4）催化</td></tr>
+        <tr><td class="kv">农产品</td><td colspan="3">芝加哥小麦周涨 12.1% 创 2022/3 以来最大周涨幅、年初至今 +54.5%（俄乌+霍尔木兹）；玉米/大豆走强。供给端天气+地缘共振，独立主线</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>外汇与加密</caption>
+      <thead><tr><th style="width:18%">品种</th><th class="num">水平</th><th class="num">当日</th><th>解读</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">美元指数 DXY</td><td class="num mono">99.70</td><td class="num up">+0.55%</td><td>两个半月最大单日；三角形收敛末端向上突破</td></tr>
+        <tr><td class="kv">人民币</td><td class="num mono">中间价 6.7828</td><td class="num down">调贬 17BP</td><td>在岸约 6.72、离岸约 6.721，仍处历史偏强区</td></tr>
+        <tr><td class="kv">美元/日元</td><td class="num mono">160.14</td><td class="num up">跌破 160</td><td>日本 7/30–8/26 干预 15.4 万亿日元（约 964 亿美元）创纪录仍失效</td></tr>
+        <tr><td class="kv">比特币</td><td class="num mono">78,203 美元</td><td class="num up">+0.58%（8/30 企稳）</td><td>8/28 曾 -3.34% 至 7.74 万；24h 爆仓 4.74 亿美元</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 6. 今日日历 ============ -->
+<section class="card">
+  <h2>六、今日关键日历 <span class="tag">2026-08-31 周一</span></h2>
+  <div class="body">
+
+    <table>
+      <caption>经济数据 / 政策 / 会议（北京时间）</caption>
+      <thead><tr><th style="width:12%">时间</th><th style="width:26%">事件</th><th style="width:16%">预期 / 前值</th><th>关注点</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="kv">09:30</td>
+          <td><strong>中国 8 月官方 PMI</strong> <span class="badge b-hot">已公布 ★★★</span></td>
+          <td>制造业 <span class="up">49.8%</span>（前 49.2）；非制造业 49.0%（前 49.0）；综合 49.5%（前 49.3）</td>
+          <td>弱回升确认扩内需发力；仍处荣枯线下 → 顺周期边际支撑而非反转</td>
+        </tr>
+        <tr><td class="kv">全天</td><td><strong>A 股中报法定披露截止</strong> + 基金半年报收官</td><td>约 160 只压哨（含 23 只市值超 500 亿）</td><td>三一重工/长江电力/天风证券/重庆水务等；暴雷与收益质量风险集中</td></tr>
+        <tr><td class="kv">全天</td><td>智谱等 <strong>33 只中国股票纳入 MSCI</strong>，海外被动资金集中调仓</td><td>—</td><td>尾盘（14:00/15:00）或现集中成交扰动</td></tr>
+        <tr><td class="kv">8/31–9/2</td><td><strong>CSEAC 2026 半导体设备展</strong>（无锡）</td><td>1300+ 展商</td><td>设备国产替代情绪催化，与"集成电路利润 +18.5 倍"共振</td></tr>
+        <tr><td class="kv">待定</td><td>德国 8 月 CPI 初值；美国达拉斯联储商业活动指数</td><td>德 CPI 预期 2.9%</td><td>欧元区通胀领先指标</td></tr>
+        <tr><td class="kv">8/31–9/1</td><td>G20 财长与央行行长会议</td><td>—</td><td>美关税裁定后续、全球协同基调</td></tr>
+        <tr><td class="kv">9/1 起</td><td>《2026 版国家基本药物目录》实施（8 年来最大修订，新增 109 品种，创新药首大规模入围）；太阳诱电 MLCC 调价生效</td><td>—</td><td>创新药/医药中期制度利好；MLCC 涨价潮延续（村田+15~35%/三星+30%/国巨+50%）</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>资金面与新股</caption>
+      <thead><tr><th style="width:12%">时间</th><th style="width:24%">事项</th><th>影响</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">8/31</td><td>央行 50 亿 7 天 + 4470 亿隔夜逆回购；<strong>6730 亿逆回购到期</strong></td><td>净投放呵护跨月，资金面均衡偏松</td></tr>
+        <tr><td class="kv">8/31</td><td>航天智造（300446）限售解禁约 60 亿（占总股本 54.74%、占流通市值超 120%）</td><td>警惕集中抛压</td></tr>
+        <tr><td class="kv">8/31</td><td>百迈科（北交所 920268）申购，发行价 17.10 元</td><td>—</td></tr>
+        <tr><td class="kv">9/2–9/3</td><td>燧原科技、信诺维（科创板）申购，与百迈科合计募资约 94 亿</td><td>资金面压力由"温和"转向"集中"</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 7. 今日交易主线 ============ -->
+<section class="card">
+  <h2>七、今日交易主线（5 条） <span class="tag">核心逻辑 + 风险边界</span></h2>
+  <div class="body">
+
+    <div class="line-item">
+      <div class="lh"><span class="no">1</span>中国 PMI 弱回升 + 房贷新政 = "外紧内松"最实在的两块拼图，但都是"托底"非"刺激"</div>
+      <table>
+        <tbody>
+          <tr><th style="width:14%">核心逻辑</th><td>制造业 PMI 49.8%（+0.6pct，好于预期 49.5）确认扩内需政策发力：新订单 50.6%、装备制造 51.4%、高技术制造 52.9%、出厂价格重返扩张。叠加房贷 30→40 年（月供减 635 元）+ 消费贷贴息上限提至 5000 元，是"降月供+保交楼+补资本+促内需"组合拳。<span class="kv">外部却在收紧</span>：沃什鹰派 + 9 月加息近六成。</td></tr>
+          <tr><th>交易映射</th><td>地产链/银行/家电家居（政策托底）+ 顺周期（钢铁/有色/化工，PMI 价格分项支撑）+ 高股息（六大行净利增速超 4%）是今日最强方向；8/31 开盘地产、煤炭、油气已逆势走强验证。</td></tr>
+          <tr><th>风险边界</th><td>① PMI 仍处荣枯线下，"弱回升"不等于复苏，顺周期反弹高度受限；② 房贷新政是"防风险"非"刺激"，不宜线性外推为销售拐点；③ 若 9/4 非农强 → 海外紧缩压制抵消内部托底。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="line-item">
+      <div class="lh"><span class="no">2</span>AI 内部分化固化：芯片"卖铲人"被杀估值，存储"瓶颈者"握定价权</div>
+      <table>
+        <tbody>
+        <tr><th style="width:14%">核心逻辑</th><td>费半 -3.47%（30 只全绿）、英伟达 -4.57%、迈威尔 -10.28%（业绩超预期仍暴跌），而亚马逊 +3.97%、微软/苹果/谷歌/Meta 涨超 1%。分野在"谁承担成本、谁能转嫁"：英伟达通知云厂商 2027 年起 AI 服务器涨价超 15%，真正赢家是存储原厂。TrendForce Q3 服务器 DRAM 合约价再涨 13–18%；长鑫 H1 净利 776 亿 + 大摩称中国存储 2028 年迎供给转折。</td></tr>
+        <tr><th>交易映射</th><td>存储链（长鑫/长存供应链、模组/材料/设备）是 AI 中唯一"业绩已兑现+涨价能见度到 2027"的环节，但 A股硬科技整体杀估值，宜低吸不追高；9/2 博通财报是下一面镜子。</td></tr>
+        <tr><th>风险边界</th><td>① 长鑫提示"价格持续大涨不可持续"，DRAM 强周期；② 特朗普考虑对服务器/笔记本/游戏机芯片成品加征关税，硬件链情绪承压；③ 迈威尔式"好消息卖事实"说明估值已透支。</td></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="line-item">
+      <div class="lh"><span class="no">3</span>贵金属：暴跌是"政策催化技术回调"，长多结构未破但短期回避</div>
+      <table>
+        <tbody>
+        <tr><th style="width:14%">核心逻辑</th><td>沃什鹰派把定价权从"货币贬值交易"抢回给利率，金 -3.2%、银 -4.2%，沪银 -6.2%（8/29 多家金店足金单日 -37 元/克）。但机构中长期目标高盛 4,900/瑞银 5,400/德银 4,700–5,100 未动；中国央行连续 21 个月增持（7 月 +约 20 吨）。</td></tr>
+        <tr><th>交易映射</th><td>短期承压：A股贵金属/黄金股 8/31 开盘直接杀跌、港股老铺/紫金 -4%，回避为上；中期回踩 5/10 日线分批低吸。央行购金 + 美债信用（债务破 40 万亿）长逻辑未破。</td></tr>
+        <tr><th>风险边界</th><td>若 9/4 非农弱 → 加息预期崩塌、黄金 V 型反弹；若非农强 → 黄金测 4,350。短线波动剧烈，高标连板股补跌风险最大。</td></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="line-item">
+      <div class="lh"><span class="no">4</span>油价地缘溢价回归：美军霍尔木兹行动 + 布油破 90，缺口已迁至成品油</div>
+      <table>
+        <tbody>
+        <tr><th style="width:14%">核心逻辑</th><td>美军 8/30 对伊朗布雷力量"有限精准"行动，布油周一高开触及 90.04（+2.21%）、WTI 一度 85.14。但危机形态已变：美国柴油裂解价差 &gt;90 美元/桶（上周触及 100 历史纪录）、柴油库存季节性最低、欧洲七年来首向墨西哥进口柴油、俄柴油出口禁 9/1 拟延长。委内瑞拉"史上最大石油协议"+考虑退 OPEC 则利空远端。</td></tr>
+        <tr><th>交易映射</th><td>原油端偏震荡（EIA Q3 均价约 85 支撑）；真正机会在炼化毛利、油运、油服（斯伦贝谢 +4%）。煤炭/油气 8/31 开盘领涨，与农业同为加息周期独立主线。</td></tr>
+        <tr><th>风险边界</th><td>① 伊朗仍称"完全控制"海峡，物理流量恢复慢、保险费率 prohibitively 高，随时反复；② 美财政部拟要求 G20 切断与伊往来，是油价最大单点上行风险；③ OPEC+ 9/5–9/6 若意外减产。</td></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="line-item">
+      <div class="lh"><span class="no">5</span>中报收官日（8/31）= 业绩"最后审判" + 资金面压力最集中</div>
+      <table>
+        <tbody>
+        <tr><th style="width:14%">核心逻辑</th><td>截至 8/28 已披露约 4,700 家（披露率 85%），8/31 压哨约 160 只（含 23 只市值超 500 亿权重股）。同日：航天智造解禁约 60 亿（占流通市值超 120%）、百迈科申购、CSEAC 开幕、PMI 公布、33 只纳入 MSCI 调仓。<span class="kv">业绩、解禁、新股、数据、调仓五重冲击叠加</span>。</td></tr>
+        <tr><th>交易映射</th><td>行业分化清晰：电子/有色（+94%）/非银增速亮眼，消费偏弱。选股从"讲故事"切"看现金流与扣非"——长鑫（经营现金流 1,312 亿）、六大行（净利增速超 4%）是正面样本。</td></tr>
+        <tr><th>风险边界</th><td>① 尾部爆雷（亏损/减值集中释放）；② 收益质量风险（一次性收益调节报表）；③ 航天智造 60 亿级解禁拖累小盘；④ 燧原/信诺维/百迈科合计募资约 94 亿集中抽血。</td></tr>
+      </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. 其他边际 ============ -->
+<section class="card">
+  <h2>八、其他值得注意的边际信息</h2>
+  <div class="body">
+    <table>
+      <thead><tr><th style="width:22%">事项</th><th>要点与含义</th></tr></thead>
+      <tbody>
+        <tr><td class="kv">阿里配售</td><td>七年来首次配售新股，<strong>800 亿港元</strong>获超额认购，全部投入 AI 建设（8/31 开盘阿里飘红，短期股权稀释但长线利好算力）</td></tr>
+        <tr><td class="kv">科创 50 样本调整</td><td>多只半导体芯片股被调入；粤芯半导体获 IPO 注册批文；国产 GPU 四小龙即将齐聚资本市场——国产替代供给端扩容</td></tr>
+        <tr><td class="kv">限售股个税</td><td>三部门：个人转让上市公司限售股所得适用 <strong>20%</strong> 税率——影响一级/定增退出成本与解禁定价</td></tr>
+        <tr><td class="kv">首批算力 ETF</td><td>创业板算力基础设施 ETF 获批；发改委"六张网"投资超 7 万亿、8000 亿政策性金融工具加快投放——算力基建长线资金入场</td></tr>
+        <tr><td class="kv">壁仞科技</td><td>H1 收入 12.36 亿（<span class="up">+1997.6%</span>）但仍亏 3.77 亿；国产 GPU 高增未盈利，估值需看 2027 放量</td></tr>
+        <tr><td class="kv">阳光电源</td><td>H1 净利同比 <span class="down">-32.01%</span>（拟 10 股派 6.4 元）；逆变器/储能出海竞争加剧，警惕新能源链分化</td></tr>
+        <tr><td class="kv">日本干预</td><td>7/30–8/26 斥资 15.4 万亿日元（约 964 亿美元）干预汇市创纪录仍失效，USD/JPY 跌破 160——套息逆转风险上升</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <strong>数据来源与免责声明</strong><br>
+  数据来源：国家统计局、中国人民银行、国家金融监督管理总局、证监会、华尔街见闻、财联社、陆家嘴财经早餐、中新经纬、证券时报、上海证券报、中国证券网、东方财富、每日经济新闻、央视新闻、路透、彭博、Trading Economics、CME FedWatch、公司公告与财报等公开信息交叉整理。<br>
+  数据口径：行情为 <strong>2026 年 8 月 28 日（周五）全球收盘</strong>；宏观与事件含 <strong>8 月 29–31 日隔夜/早盘增量</strong>（含 8/31 09:30 官方 PMI 与 09:27 开盘实况）。标注「待核实」的条目为单一来源或时点未完全确认。<br>
+  <strong>本报告仅为市场信息整理与逻辑推演，不构成任何投资建议。</strong>市场有风险，投资需谨慎。<br>
+  <span class="small">生成时间：2026-08-31 09:32（北京时间）｜ WorkBuddy 自动化任务 automation-1784107105482</span>
+</footer>
+
+</div>
+</body>
+</html>
