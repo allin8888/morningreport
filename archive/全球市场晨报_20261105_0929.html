@@ -37,6 +37,8 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:v
 
 
 
+
+
 <style>
 .mb-toc{position:fixed;top:12px;right:12px;max-width:240px;max-height:80vh;overflow:auto;
   background:var(--card,#fff);border:1px solid var(--line,#e5e7eb);border-radius:10px;padding:10px 12px;
@@ -51,19 +53,23 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:v
   background:var(--accent,#2563eb);color:#fff;border:none;cursor:pointer;font-size:12px;
   box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:9999}
 .mb-toc-toggle{top:12px;right:12px;bottom:auto;display:none;width:38px;height:38px;font-size:15px}
-.mb-spark{display:flex;flex-wrap:wrap;gap:2px 0;align-items:baseline;margin:0 0 14px;padding:8px 12px;
+.mb-spark{margin:0 0 14px;padding:10px 12px;
   background:var(--card,#161f2e);border:1px solid var(--line,#2a3850);border-radius:10px}
-.mb-spark h4{margin:0 10px 0 0;font-size:12px;font-weight:600;color:var(--sub,#9fb0c8)}
-.mb-spark-item{display:inline-flex;align-items:baseline;gap:4px;padding:0 12px}
-.mb-spark-item+.mb-spark-item{border-left:1px solid var(--line,#2a3850)}
+.mb-spark h4{margin:0 0 6px;font-size:12px;font-weight:600;color:var(--sub,#9fb0c8)}
+.mb-spark-row{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto}
+.mb-spark-item{display:flex;flex-direction:column;gap:2px;flex:1 1 0;min-width:0;padding:6px 9px;
+  background:var(--card2,#1c2738);border:1px solid var(--line,#2a3850);border-radius:8px}
 .mb-spark-name{font-size:11px;color:var(--sub,#9fb0c8);white-space:nowrap}
-.mb-spark-val{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--txt,#e8edf5);white-space:nowrap}
+.mb-spark-val{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--txt,#e8edf5);white-space:nowrap}
 .mb-spark-val.up{color:var(--up,#dc2626)}
 .mb-spark-val.down{color:var(--down,#16a34a)}
-.mb-spark-chg{font-size:11px;font-weight:600;margin-left:2px}
+.mb-spark-chg{font-size:11px;font-weight:600;margin-left:4px}
+.mb-spark-pct{font-size:10.5px;color:var(--sub,#9fb0c8)}
+.mb-spark-svg{display:block;margin-top:2px;width:100%;height:26px}
 @media(min-width:761px){.mb-spark{margin-right:264px}}
 @media(max-width:760px){
   .mb-spark{margin-right:0}
+  .mb-spark-item{flex:0 0 auto;min-width:108px}
   .mb-toc{transform:translateX(115%);transition:transform .18s ease;max-width:210px}
   .mb-toc.mb-toc-open{transform:none}
   .mb-toc-toggle{display:block}
@@ -73,8 +79,10 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:v
 <body>
 <nav class="mb-toc"><h4>目录</h4><ol><li><a href="#sec-1">三句速读</a></li><li><a href="#sec-2">一、美股（11/4 收盘 + 选举落地全景）</a></li><li><a href="#sec-3">二、港股（11/4 收盘 + 今日前瞻）</a></li><li><a href="#sec-4">三、A股（11/4 收盘 + 今日前瞻）</a></li><li><a href="#sec-5">四、政策动态（今晨 + 选举后海外）</a></li><li><a href="#sec-6">五、外围速览（11/4 收盘 + 今晨实时）</a></li><li><a href="#sec-7">六、今日交易主线</a></li><li><a href="#sec-8">七、今日关键日历</a></li><li><a href="#sec-9">八、待核实与口径说明</a></li></ol></nav>
 
+
 <div class="wrap">
-<section class="mb-spark"><h4>指标近况</h4><span class="mb-spark-item" title="恒生指数 23,919.50（较前日 +1.67%）｜近20日 P50"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val up">23,919.50<span class="mb-spark-chg">+1.67%</span></span></span><span class="mb-spark-item" title="上证指数 3,686.17（较前日 +2.16%）｜近20日 P45"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val up">3,686.17<span class="mb-spark-chg">+2.16%</span></span></span><span class="mb-spark-item" title="纳斯达克 25,736.51（较前日 +1.44%）｜近20日 P25"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val up">25,736.51<span class="mb-spark-chg">+1.44%</span></span></span><span class="mb-spark-item" title="布伦特原油 94.62（较前日 -8.67%）｜近20日 P0"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val down">94.62<span class="mb-spark-chg">-8.67%</span></span></span><span class="mb-spark-item" title="现货黄金 4,060.13（较前日 +3.38%）｜近20日 P55"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val up">4,060.13<span class="mb-spark-chg">+3.38%</span></span></span></section>
+<section class="mb-spark"><h4>指标近况</h4><div class="mb-spark-row"><span class="mb-spark-item" title="恒生指数 23,919.50（较前日 +1.67%）"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val up">23,919.50<span class="mb-spark-chg">+1.67%</span></span><span class="mb-spark-pct">近20日 P50</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,17.1 7.8,16.5 13.6,18.6 19.4,17.9 25.2,17.7 31.0,17.7 36.8,3.2 42.6,21.7 48.4,27.0 54.2,4.5 60.0,3.0 65.8,10.1 71.6,26.2 77.4,25.8 83.2,26.8 89.0,24.3 94.8,24.3 100.6,24.3 106.4,23.6 112.2,22.6 118.0,19.7"/></svg></span><span class="mb-spark-item" title="上证指数 3,686.17（较前日 +2.16%）"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val up">3,686.17<span class="mb-spark-chg">+2.16%</span></span><span class="mb-spark-pct">近20日 P45</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.4 7.8,3.0 13.6,14.1 19.4,13.1 25.2,13.1 31.0,13.1 36.8,10.8 42.6,13.4 48.4,20.0 54.2,16.1 60.0,16.1 65.8,15.3 71.6,21.1 77.4,17.2 83.2,20.8 89.0,27.0 94.8,27.0 100.6,27.0 106.4,22.4 112.2,25.9 118.0,16.6"/></svg></span><span class="mb-spark-item" title="纳斯达克 25,736.51（较前日 +1.44%）"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val up">25,736.51<span class="mb-spark-chg">+1.44%</span></span><span class="mb-spark-pct">近20日 P25</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 7.8,3.0 13.6,9.1 19.4,15.8 25.2,15.8 31.0,15.8 36.8,12.5 42.6,9.3 48.4,17.3 54.2,17.9 60.0,17.9 65.8,15.4 71.6,11.9 77.4,11.0 83.2,15.2 89.0,23.9 94.8,23.9 100.6,23.9 106.4,27.0 112.2,24.6 118.0,20.4"/></svg></span><span class="mb-spark-item" title="布伦特原油 94.62（较前日 -8.67%）"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val down">94.62<span class="mb-spark-chg">-8.67%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,14.5 8.4,15.5 14.9,15.2 21.3,11.3 27.8,11.3 34.2,11.1 40.7,14.2 47.1,12.2 53.6,7.7 60.0,4.0 66.4,4.0 72.9,4.9 79.3,6.9 85.8,5.4 92.2,5.9 98.7,3.0 105.1,16.4 111.6,17.6 118.0,27.0"/></svg></span><span class="mb-spark-item" title="现货黄金 4,060.13（较前日 +3.38%）"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val up">4,060.13<span class="mb-spark-chg">+3.38%</span></span><span class="mb-spark-pct">近20日 P55</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 7.8,3.9 13.6,3.3 19.4,3.6 25.2,3.6 31.0,3.4 36.8,5.5 42.6,5.9 48.4,14.9 54.2,17.3 60.0,17.3 65.8,15.6 71.6,12.0 77.4,11.4 83.2,15.2 89.0,27.0 94.8,27.0 100.6,27.0 106.4,21.2 112.2,22.9 118.0,12.0"/></svg></span></div></section>
+
 
 <header>
 <h1>全球市场晨报</h1>
@@ -226,6 +234,9 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:v
 <footer>数据与内容仅供研究参考，不构成投资建议 · 全球市场晨报 · 2026-11-05 09:29 生成</footer>
 </div>
 <!--mb-signals {"美股":{"direction":0,"active3":["大型科技软件与云（微软/亚马逊领涨的换仓主线）","可选消费与金融（分权制衡 + 风偏修复）","清洁能源（蓝色浪潮政策红利）"],"avoid2":["存储与半导体硬件（美光 -7%/SK海力士 -5% 情绪传染）","数据中心运营商与油气能源（Hut 8 -23%/能源板块 -4.77%）"]},"港股":{"direction":1,"active3":["黄金股（现货金重返 4000 上方）","医药/CRO（药明康德上调指引 + 估值低位资金再配置）","科网与光通信（中际旭创澄清砍单 + 恒科 +1.77% 动能）"],"avoid2":["油气能源链（布油单日 -8.7% 顺延利空）","高位追涨的情绪股（连阳后涨幅榜极端换手标的）"]},"A股":{"direction":1,"active3":["半导体设备/存储链（设备净利 +59.5% + SEMI 上修）","黄金股（现货金 +3.35% 重返 4000 + 央行 Q3 购金 +42%）","医药 CXO（药明上调 2026 指引 + 公募加仓）"],"avoid2":["油气/油运链（布油 -8.7% 直接利空）","连板情绪股与昨日涨停潮的极端换手标的（退潮回吐风险）"]}}-->
+
+
+
 
 
 
