@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 | 2026年8月5日 星期三</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --card-bg: #f7f8fa;
+  --text: #1a1a1a;
+  --text-secondary: #555;
+  --border: #e0e0e0;
+  --accent: #1a73e8;
+  --up: #d32f2f;
+  --down: #388e3c;
+  --highlight: #fff3e0;
+  --warn-bg: #fce4ec;
+  --table-header: #f0f2f5;
+  --code-bg: #f5f5f5;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; font-size: 14px; }
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+/* Header */
+.header { text-align: center; padding: 20px 0 12px; border-bottom: 3px solid var(--accent); margin-bottom: 16px; }
+.header h1 { font-size: 22px; font-weight: 700; color: var(--accent); letter-spacing: 1px; }
+.header .date { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
+/* Quick Read */
+.quick-read { background: var(--highlight); border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px; border-radius: 0 6px 6px 0; }
+.quick-read h2 { font-size: 15px; margin-bottom: 8px; color: #e65100; }
+.quick-read ul { list-style: none; }
+.quick-read li { padding: 3px 0; font-size: 13px; }
+.quick-read li::before { content: "▸ "; color: #ff9800; }
+/* Section */
+.section { margin-bottom: 18px; }
+.section h2 { font-size: 16px; font-weight: 700; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 10px; margin-bottom: 10px; }
+.section h3 { font-size: 14px; font-weight: 600; color: #333; margin: 10px 0 6px; padding-left: 10px; border-left: 2px solid var(--accent); }
+/* Table */
+.table-wrap { overflow-x: auto; margin-bottom: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; min-width: 500px; }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+th { background: var(--table-header); font-weight: 600; color: #333; position: sticky; top: 0; }
+tr:hover { background: var(--card-bg); }
+.up { color: var(--up); font-weight: 600; }
+.down { color: var(--down); font-weight: 600; }
+.neutral { color: #777; }
+.badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+.badge-up { background: #ffebee; color: var(--up); }
+.badge-down { background: #e8f5e9; color: var(--down); }
+/* Direction boxes */
+.directions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0; }
+.dir-box { padding: 10px; border-radius: 6px; font-size: 12.5px; }
+.dir-active { background: #e8f5e9; border: 1px solid #a5d6a7; }
+.dir-avoid { background: #ffebee; border: 1px solid #ef9a9a; }
+.dir-box h4 { font-size: 13px; margin-bottom: 5px; }
+.dir-active h4 { color: #2e7d32; }
+.dir-avoid h4 { color: #c62828; }
+.dir-box ul { list-style: none; padding-left: 0; }
+.dir-box li { padding: 2px 0; font-size: 12px; }
+.dir-box li::before { content: "• "; }
+.dir-active li::before { color: #4caf50; }
+.dir-avoid li::before { color: #ef5350; }
+/* Main theme */
+.themes { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+.theme-item { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed var(--border); }
+.theme-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.theme-title { font-weight: 700; font-size: 13px; color: var(--accent); margin-bottom: 3px; }
+.theme-detail { font-size: 12px; color: var(--text-secondary); line-height: 1.7; }
+.theme-detail strong { color: #333; }
+/* Calendar */
+.calendar-table th { background: #e3f2fd; }
+/* Footer */
+.footer { text-align: center; color: #999; font-size: 11px; padding: 16px 0; border-top: 1px solid var(--border); margin-top: 20px; }
+/* Responsive */
+@media (max-width: 760px) {
+  .container { padding: 10px; }
+  .directions { grid-template-columns: 1fr; }
+  .header h1 { font-size: 18px; }
+  th, td { padding: 5px 7px; font-size: 11.5px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+<h1>🌍 全球市场晨报</h1>
+<div class="date">2026年8月5日 · 星期三 · 盘前速读版（数据截至8月5日收盘）</div>
+</div>
+
+<!-- 三句速读 -->
+<div class="quick-read">
+<h2>📌 三句速读</h2>
+<ul>
+<li><strong>霍尔木兹缓和引爆"降通胀交易"：</strong>美伊就重开海峡接近达成60天临时协议，油价周二暴跌超6%（WTI 75.14、布伦特78.69），现货金站上4130美元，美联储9月加息概率从78%回落至约58%。</li>
+<li><strong>隔夜美股齐创新高：</strong>道指+1.71%、标普+1.79%、纳指+2.59%，费半+6.6%；Palantir业绩炸裂（+29.5%）、卡特彼勒+5.6%贡献道指约280点，AI软硬件共振。</li>
+<li><strong>A/H股放量反攻：</strong>A股成交2.66万亿（放量4460亿），科创50+4.78%、沪指+1.47%，半导体/存储/贵金属/智能驾驶全线爆发，银行油气回调；港股恒指+0.24%、恒科+0.97%，算力链与黄金股领涨。</li>
+</ul>
+</div>
+
+<!-- ======================== 全球宏观 & 风险事件 ======================== -->
+<div class="section">
+<h2>🌐 全球宏观 & 风险事件</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>主题</th><th>背景</th><th>重要性</th><th>潜在市场影响</th></tr></thead>
+<tbody>
+<tr><td>美伊霍尔木兹临时协议</td><td>美/伊/阿曼"接近达成"60天临时安排，分航道通航、30天内清雷、免收通行费；伊朗方面仍称谈判"积极进展"、尚未最终敲定</td><td class="up">极高</td><td>地缘风险溢价快速出清，油价崩跌缓和通胀与加息压力；但协议落地存不确定性，溢价随时回摆</td></tr>
+<tr><td>美联储政策路径</td><td>7/29连续第5次维持3.5%-3.75%不变；9月加息25bp概率由78%降至约58%（油价回落驱动）；下次议息9/16</td><td class="up">极高</td><td>降息/加息预期摆动主导成长股估值；本周ADP(今晚)、非农(周五)为关键锚</td></tr>
+<tr><td>美国导弹库存告急</td><td>伊战以来美消耗约80%萨德拦截弹、50%爱国者导弹，五角大楼称库存处"危险低位"</td><td class="neutral">中</td><td>制约美军进一步军事选项，支撑中东僵局延续、油价底部韧性</td></tr>
+<tr><td>美日联合干预日元</td><td>上周五罕见协调买入日元，美元/日元回落至157.69（此前触及155.20三月低位），日元三天累涨约5%</td><td class="neutral">中</td><td>美元走弱、套息交易平仓，利好新兴市场与大宗商品；空头回补仍存波动</td></tr>
+<tr><td>央行流动性投放</td><td>8/5开展5000亿3个月买断式逆回购，到期3000亿，净投放2000亿，连续两月净投放</td><td class="neutral">中</td><td>呵护银行体系流动性，支撑A股风险偏好与债市稳定</td></tr>
+<tr><td>中国7月大宗商品价格指数</td><td>7月指数128.6点，环比-1.3%、同比+15.5%；焦炭/氧化镨钕/瓦楞纸环比领涨</td><td class="neutral">中</td><td>输入性价格温和，PPI同比降幅或收窄；资源品板块获基本面支撑</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- ======================== 美股 ======================== -->
+<div class="section">
+<h2>🇺🇸 美股（8/4 隔夜收盘）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td>道琼斯</td><td>54,085.88</td><td class="up">+1.71%</td><td>创收盘新高（涨907点）</td></tr>
+<tr><td>标普500</td><td>7,736.52</td><td class="up">+1.79%</td><td>创收盘新高</td></tr>
+<tr><td>纳斯达克</td><td>26,584.99</td><td class="up">+2.59%</td><td>科技领涨</td></tr>
+<tr><td>费城半导体</td><td>—</td><td class="up">+6.6%</td><td>7月踩踏后强势修复</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>重要个股</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>公司</th><th>当日涨跌</th><th>要点</th></tr></thead>
+<tbody>
+<tr><td>Palantir (PLTR)</td><td class="up">+29.5%</td><td>Q2营收近翻倍、商业收入翻倍，AI主权需求爆发，上调全年指引</td></tr>
+<tr><td>卡特彼勒 (CAT)</td><td class="up">+5.6%</td><td>业绩超预期并上调全年营收指引，AI数据中心发电/设备需求，贡献道指约280点</td></tr>
+<tr><td>ARM</td><td class="up">+17%</td><td>半导体链普涨，费半+6.6%</td></tr>
+<tr><td>Marvell / Coherent</td><td class="up">+12.8% / +12%</td><td>AI网络与光通信共振</td></tr>
+<tr><td>美光 / SK海力士</td><td class="up">+7.6% / +8%</td><td>存储紧平衡延续；AMD盘后营收115.4亿(+50%)、EPS 1.66(+246%)</td></tr>
+<tr><td>SpaceX (SPCX)</td><td class="up">盘后-4%</td><td>上市后首份财报营收+92%，星链/现金流成焦点，盘后转跌</td></tr>
+<tr><td>中概金龙指数</td><td class="down">-0.35%</td><td>分化：金山云/阿里走强，新东方-4%、蔚来/B站-1%+</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>大宗商品 & 债券（8/4收盘）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>品种</th><th>价格</th><th>当日涨跌</th><th>驱动</th></tr></thead>
+<tbody>
+<tr><td>WTI 原油</td><td>$75.14/桶</td><td class="down">-6.15%</td><td>霍尔木兹缓和，三周新低</td></tr>
+<tr><td>布伦特原油</td><td>$78.69/桶</td><td class="down">-5.79%</td><td>同上；日内暗盘一度跌超8%</td></tr>
+<tr><td>现货黄金</td><td>$4,077→4,136</td><td class="up">+0.54%→盘中+1.9%</td><td>加息预期回落+避险，8/5盘中破4130创两周新高</td></tr>
+<tr><td>COMEX白银</td><td>$59.49/盎司</td><td class="up">+2.3%</td><td>贵金属普涨</td></tr>
+<tr><td>10年美债收益率</td><td>回落</td><td class="neutral">下行</td><td>油价跌→通胀预期降→加息押注降温</td></tr>
+<tr><td>美元指数</td><td>99.88</td><td class="neutral">微跌</td><td>干预后日元走强、美元承压</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>板块轮动</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>领涨</th><th>涨跌幅</th><th>领跌</th><th>涨跌幅</th></tr></thead>
+<tbody>
+<tr><td>科技</td><td class="up">+4.09%</td><td>公用事业</td><td class="down">-0.60%</td></tr>
+<tr><td>材料</td><td class="up">+1.99%</td><td>能源</td><td class="down">-0.49%</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="directions">
+<div class="dir-box dir-active">
+<h4>🟢 今天最可能活跃的3个方向</h4>
+<ul>
+<li><strong>半导体/AI硬件</strong>：费半+6.6%，ARM/Marvell/美光/AMD财报催化</li>
+<li><strong>AI软件/网络安全</strong>：Palantir +29.5% 引爆AI主权叙事</li>
+<li><strong>受益油价下跌的航空/消费</strong>：成本端改善、利率预期回落</li>
+</ul>
+</div>
+<div class="dir-box dir-avoid">
+<h4>🔴 今天最该回避的2个方向</h4>
+<ul>
+<li><strong>能源股</strong>：油价单日暴跌6%+，板块直接承压</li>
+<li><strong>长债敏感/高估值REITs</strong>：加息预期虽回落但仍处高位，波动放大</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ======================== 港股 ======================== -->
+<div class="section">
+<h2>🇭🇰 港股（8/5 收盘）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td>恒生指数</td><td>25,915.82</td><td class="up">+0.24%</td><td>高开高走</td></tr>
+<tr><td>恒生科技指数</td><td>4,933.07</td><td class="up">+0.97%</td><td>算力链带动</td></tr>
+<tr><td>国企指数</td><td>8,603.73</td><td class="up">+0.34%</td><td>温和企稳</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>板块 / 个股</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>类型</th><th>标的</th><th>涨跌</th><th>驱动</th></tr></thead>
+<tbody>
+<tr><td>算力/PCB</td><td>胜宏科技(02476)</td><td class="up">+16.18%</td><td>英伟达Spectrum-X CPO、博通Bailly CPO进入量产阶段</td></tr>
+<tr><td>算力/PCB</td><td>建滔积层板</td><td class="up">+10.28%</td><td>云巨头2026 Capex指引升至7200-7450亿美元</td></tr>
+<tr><td>黄金股</td><td>中国黄金国际</td><td class="up">+13.11%</td><td>金价破4100；达利欧建议配置5%-15%黄金</td></tr>
+<tr><td>黄金股</td><td>潼关/灵宝黄金</td><td class="up">+11.68% / +10.56%</td><td>避险+实际利率下行</td></tr>
+<tr><td>半导体</td><td>中芯国际/华虹</td><td class="up">+近4% / +2%+</td><td>获南向大幅加仓</td></tr>
+<tr><td>AI应用</td><td>MINIMAX / 智谱</td><td class="up">+8% / +6%</td><td>前期解禁踩踏后技术修复</td></tr>
+<tr><td>石油股</td><td>中国海洋石油</td><td class="down">回调</td><td>油价大跌+南向净卖出6.17亿</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>南向资金（8/5）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目</th><th>金额/方向</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>南向净买入</td><td class="down">净卖出13.98亿港元</td><td>大市成交2780亿，南向成交1267亿</td></tr>
+<tr><td>净买入居前</td><td class="up">中芯+11.52亿 / 华虹+9.90亿 / 建滔+8.81亿</td><td>硬科技+算力链获加仓</td></tr>
+<tr><td>净卖出居前</td><td class="down">盈富-20.31亿 / 腾讯-8.44亿 / 中海油-6.17亿</td><td>ETF与权重获利了结</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="directions">
+<div class="dir-box dir-active">
+<h4>🟢 今天最可能活跃的3个方向</h4>
+<ul>
+<li><strong>算力产业链/PCB/CPO</strong>：胜宏+16%、建滔+10%，量产催化</li>
+<li><strong>黄金股</strong>：中国黄金国际+13%，金价站上4100</li>
+<li><strong>半导体（中芯/华虹）</strong>：南向净买入居前，自主可控逻辑</li>
+</ul>
+</div>
+<div class="dir-box dir-avoid">
+<h4>🔴 今天最该回避的2个方向</h4>
+<ul>
+<li><strong>石油股</strong>：中海油遭净卖、油价崩跌趋势未止</li>
+<li><strong>部分光通信出海链</strong>：外部政策传闻扰动，波动放大</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ======================== A股 ======================== -->
+<div class="section">
+<h2>🇨🇳 A股（8/5 收盘）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td>上证指数</td><td>3,878.43</td><td class="up">+1.47%</td><td>逼近3900，低开高走</td></tr>
+<tr><td>深证成指</td><td>14,144.20</td><td class="up">+1.86%</td><td>—</td></tr>
+<tr><td>创业板指</td><td>3,535.14</td><td class="up">+1.32%</td><td>—</td></tr>
+<tr><td>科创50</td><td>1,693.67</td><td class="up">+4.78%</td><td>领涨，硬科技驱动</td></tr>
+<tr><td>北证50</td><td>—</td><td class="up">+2.37%</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>量能与资金</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>指标</th><th>数值</th><th>解读</th></tr></thead>
+<tbody>
+<tr><td>沪深成交额</td><td>2.66万亿元</td><td>较昨日放量4460亿，交投显著升温</td></tr>
+<tr><td>个股涨跌</td><td>3725涨 / 1621跌</td><td>104涨停、1跌停，普涨格局</td></tr>
+<tr><td>主力净流入</td><td class="up">超579亿元</td><td>机构转向大幅加仓</td></tr>
+<tr><td>7月新开户</td><td>约266万户</td><td>同比+35%，增量资金持续入场</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>板块 / 个股</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>方向</th><th>表现</th><th>驱动</th></tr></thead>
+<tbody>
+<tr><td>电子</td><td class="up">+5.66%（领涨）</td><td>半导体设备销售额2026年料达1659亿(+23.2%)创新高（SEMI）</td></tr>
+<tr><td>半导体/存储</td><td class="up">中巨芯20cm涨停、有研硅+17%、江化微涨停、金海通2连板</td><td>三大存储巨头2027产能基本售罄传闻，行业高景气确认</td></tr>
+<tr><td>贵金属/小金属</td><td class="up">四川黄金涨停、云南锗业/中钨高新/东方钽业涨停</td><td>金价破4100+资源品景气</td></tr>
+<tr><td>智能驾驶</td><td class="up">索菱/浙江世宝/兴民智通/山子高科涨停</td><td>题材轮动爆发</td></tr>
+<tr><td>AI应用</td><td class="up">新开普/博彦科技涨停，传智教育8连板翻倍</td><td>Palantir业绩催化+开源模型全球领先</td></tr>
+<tr><td>CPO（内部分化）</td><td class="up">中京电子/长飞光纤涨停</td><td>但中际旭创-7%跌破1000、新易盛-5%（FCC拟禁中国光模块传闻冲击）</td></tr>
+<tr><td>银行/油气</td><td class="down">中信/沪农银行-2%+、通源石油/中国海油下挫</td><td>防御板块回调、资金高低切换</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="directions">
+<div class="dir-box dir-active">
+<h4>🟢 今天最可能活跃的3个方向</h4>
+<ul>
+<li><strong>半导体/存储芯片</strong>：科创50+4.78%，景气+国产替代双驱动</li>
+<li><strong>贵金属/小金属</strong>：四川黄金涨停，金价破4100</li>
+<li><strong>智能驾驶/AI应用</strong>：浙江世宝、传智教育(8连板)人气标杆</li>
+</ul>
+</div>
+<div class="dir-box dir-avoid">
+<h4>🔴 今天最该回避的2个方向</h4>
+<ul>
+<li><strong>银行/油气等防御板块</strong>：高低切换下持续回调</li>
+<li><strong>光模块出海链</strong>：中际旭创-7%、新易盛-5%，FCC禁令传闻未消</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ======================== 重要指数速览 ======================== -->
+<div class="section">
+<h2>📊 重要指数速览</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>市场</th><th>指数</th><th>最新</th><th>涨跌幅</th></tr></thead>
+<tbody>
+<tr><td>美股</td><td>道琼斯</td><td>54,085.88</td><td class="up">+1.71%</td></tr>
+<tr><td>美股</td><td>标普500</td><td>7,736.52</td><td class="up">+1.79%</td></tr>
+<tr><td>美股</td><td>纳斯达克</td><td>26,584.99</td><td class="up">+2.59%</td></tr>
+<tr><td>欧洲</td><td>德国DAX</td><td>26,001.31</td><td class="up">+1.45%</td></tr>
+<tr><td>欧洲</td><td>法国CAC40</td><td>8,613.82</td><td class="up">+1.22%</td></tr>
+<tr><td>欧洲</td><td>英国FTSE100</td><td>10,857.70</td><td class="down">-0.10%</td></tr>
+<tr><td>港股</td><td>恒生指数</td><td>25,915.82</td><td class="up">+0.24%</td></tr>
+<tr><td>A股</td><td>上证指数</td><td>3,878.43</td><td class="up">+1.47%</td></tr>
+<tr><td>A股</td><td>科创50</td><td>1,693.67</td><td class="up">+4.78%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- ======================== 今日日历 ======================== -->
+<div class="section">
+<h2>📅 今日经济数据 / 财报 / 会议（8/5）</h2>
+<div class="table-wrap">
+<table class="calendar-table">
+<thead><tr><th>时间(北京)</th><th>事件</th><th>预期/前值</th><th>关注点</th></tr></thead>
+<tbody>
+<tr><td>16:00</td><td>欧元区7月服务业PMI终值</td><td>—</td><td>欧央行政策背景</td></tr>
+<tr><td>16:30</td><td>英国7月服务业PMI终值</td><td>—</td><td>英镑/英债</td></tr>
+<tr><td>20:15</td><td>美国7月ADP就业</td><td>预期+7.5万 / 前值+9.8万</td><td>"小非农"，定调非农与加息概率</td></tr>
+<tr><td>21:45</td><td>美国7月标普全球服务业PMI终值</td><td>—</td><td>经济韧性</td></tr>
+<tr><td>22:00</td><td>美国7月ISM非制造业PMI</td><td>预期54.5 / 前值54</td><td>薪资与价格分项影响9月路径</td></tr>
+<tr><td>22:30</td><td>美国EIA原油库存</td><td>前值-716.7万桶</td><td>油价与能源股</td></tr>
+<tr><td>盘后</td><td>美股财报：闪迪/西部数据/Circle/Applovin/迪士尼/优步/礼来</td><td>—</td><td>存储、AI广告、减肥药、消费</td></tr>
+<tr><td>盘后</td><td>港股财报：国泰航空/百济神州</td><td>—</td><td>航空复苏、创新药</td></tr>
+</tbody>
+</table>
+</div>
+<h3>本周后续焦点</h3>
+<div class="table-wrap">
+<table class="calendar-table">
+<thead><tr><th>日期</th><th>事件</th><th>预期/前值</th></tr></thead>
+<tbody>
+<tr><td>8/7（周五）</td><td>美国7月非农就业报告</td><td>新增预期+9.1万（前值+5.7万），失业率4.3%（前值4.2%）</td></tr>
+<tr><td>8/7（周五）</td><td>中国7月进出口、7月外汇储备</td><td>出口同比约+24.5%、进口约+27.7%；外储6月3.416万亿美元</td></tr>
+<tr><td>8/9-10（周日）</td><td>中国7月CPI/PPI</td><td>待核实具体时点</td></tr>
+<tr><td>8/12</td><td>美国7月CPI</td><td>6月CPI同比3.5%，关注关税传导</td></tr>
+<tr><td>9/16</td><td>美联储议息</td><td>当前3.5%-3.75%，连续5次不变</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- ======================== 今日交易主线 ======================== -->
+<div class="section">
+<h2>🎯 今日交易主线（5条）</h2>
+<div class="themes">
+<div class="theme-item">
+<div class="theme-title">① 霍尔木兹"缓和交易"：油价崩跌下的再定价</div>
+<div class="theme-detail">美伊接近达成60天临时通航协议，WTI/布伦特周二跌超6%。<strong>背景：</strong>此前油价因冲突升至80+，推高通胀与加息预期。<strong>影响：</strong>航空/化工/消费成本端改善、能源股承压；但协议未最终敲定，地缘溢价随时回摆，仓位不宜追单边。</div>
+</div>
+<div class="theme-item">
+<div class="theme-title">② AI硬件修复 + 内部分化</div>
+<div class="theme-detail">费半+6.6%、存储/CPO量产催化半导体集体反弹；但<strong>中际旭创/新易盛因FCC拟禁中国光模块传闻下挫</strong>。<strong>影响：</strong>国产替代逻辑强化（中芯/华虹/建滔获加仓），出海链短期受政策风险压制，板块内分化加剧。</div>
+</div>
+<div class="theme-item">
+<div class="theme-title">③ 黄金破4100 + 降息预期回落双驱动</div>
+<div class="theme-detail">现货金8/5盘中破4130创两周新高，达利欧建议配置5%-15%黄金。<strong>背景：</strong>油价跌→通胀预期降→9月加息概率由78%降至约58%，实际利率下行。<strong>影响：</strong>贵金属/小金属（四川黄金、云南锗业）配置价值延续。</div>
+</div>
+<div class="theme-item">
+<div class="theme-title">④ 非农周波动放大：今晚ADP、周五非农定锚</div>
+<div class="theme-detail">本周为超级数据+财报周，已公布标普500成分股85.2%盈利超预期（远超67.5%均值）。<strong>影响：</strong>就业数据强弱直接摆动9月加息概率，成长股与贵金属波动加大，事件前控制杠杆。</div>
+</div>
+<div class="theme-item">
+<div class="theme-title">⑤ A股风险偏好回升、高低切换</div>
+<div class="theme-detail">成交2.66万亿、主力净流入579亿、104涨停，资金由银行/油气防御板块撤出、涌入科技成长+资源。<strong>影响：</strong>科创50+4.78%领涨，"指数震荡、科技强者恒强"但连涨后警惕获利回吐；关注量能能否稳于2万亿以上。</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+全球市场晨报 · 2026年8月5日 · 数据来源：新华社、Xinhua、财联社、证券时报、东方财富、金十数据、CME FedWatch 等公开资讯<br>
+本报告基于公开实时信息整理，仅供盘前快速参考，不构成任何投资建议。市场有风险，投资需谨慎。
+</div>
+
+</div>
+</body>
+</html>

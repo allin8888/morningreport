@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="oACAxxS8EtTj2qyAPKucjr">
+<head data-page-node-id="hY0RKEdUJ6X5bBQ2k1WgfO">
+    <meta charset="UTF-8" data-page-node-id="qsE5kDY3VvVoFl5JsEAsB6">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="z82s4M0boPHK1KawWTpgmu">
+    <title>全球市场晨报 - 2026年9月8日 周二</title>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-muted: #999999;
+            --border-color: #e5e7eb;
+            --accent-red: #dc2626;
+            --accent-green: #16a34a;
+            --accent-blue: #2563eb;
+            --accent-orange: #ea580c;
+            --accent-yellow: #f59e0b;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+            padding: 32px 24px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        header .date {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        main {
+            padding: 24px;
+        }
+        
+        .section {
+            margin-bottom: 28px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .section-title::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: var(--accent-blue);
+            border-radius: 2px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        tr:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .up { color: var(--accent-red); }
+        .down { color: var(--accent-green); }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--accent-orange);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-box h3 {
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        
+        .highlight-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .highlight-box li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .highlight-box li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+        }
+        
+        .box-up {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 4px solid var(--accent-red);
+        }
+        
+        .box-down {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            border-left: 4px solid var(--accent-green);
+        }
+        
+        .box-blue {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid var(--accent-blue);
+        }
+        
+        .box-orange {
+            background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
+            border-left: 4px solid var(--accent-orange);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .badge-red { background: var(--accent-red); color: white; }
+        .badge-green { background: var(--accent-green); color: white; }
+        .badge-blue { background: var(--accent-blue); color: white; }
+        .badge-orange { background: var(--accent-orange); color: white; }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 16px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .card-title {
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        
+        .active-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .active-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+        }
+        
+        .active-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .active-list .tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+        
+        .tag-buy { background: #dcfce7; color: var(--accent-green); }
+        .tag-sell { background: #fee2e2; color: var(--accent-red); }
+        .tag-watch { background: #fef3c7; color: var(--accent-orange); }
+        
+        .three-line {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+        
+        .three-line p {
+            margin-bottom: 8px;
+            padding-left: 16px;
+            border-left: 3px solid var(--accent-blue);
+        }
+        
+        .disclaimer {
+            background: var(--bg-secondary);
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 32px;
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 22px;
+            }
+            
+            main {
+                padding: 16px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+            }
+        }
+    </style>
+</head>
+<body data-page-node-id="bawSgid7Dutuepc6WL0mXG">
+    <div class="container" data-page-node-id="9mrPA64v5kUoACX5KSYQHS">
+        <header data-page-node-id="XwuCJ5Glu5MPtg2YcYdpZM">
+            <h1 data-page-node-id="apgOmdtYQXuyDyCOrwWHhm">🌍 全球市场晨报</h1>
+            <div class="date" data-page-node-id="LRfnK5ZHRVNFT6buNIFz8J">2026年9月8日 星期二 | 盘前速读版</div>
+        </header>
+        
+        <main data-page-node-id="elPedHpXETIp2ul1y4xz5a">
+            <!-- 三句速读 -->
+            <div class="section" data-page-node-id="3aA0Dv0GErLgBXKqgCulda">
+                <div class="section-title" data-page-node-id="gqJFRmbAArS62aECLMxmjs">三句速读</div>
+                <div class="three-line" data-page-node-id="3eNTlq46E45CD2TIYtHkWu">
+                    <p data-page-node-id="Kxb4K9UcLIy99BfHt83joB"><strong data-page-node-id="vKe2JvT9uFEbXdJMAtpJHg">非农炸裂、加息预期重定价：</strong>美国8月非农增16.2万远超预期（5.6万），9月加息概率跃升至60%+，瑞银从"全年按兵不动"转向预计9月和12月各加息25bp。</p>
+                    <p data-page-node-id="Alo53pS3KHZt3LPX9at6G9"><strong data-page-node-id="1qwkrDwaB5jevN1XsOwPfj">美伊冲突升级、油价逼近100美元：</strong>霍尔木兹海峡日均通航仅10艘（5月来最低），沙特阿美设施再遭袭，布油报97.31美元，高盛预警若袭击持续或冲上120美元。</p>
+                    <p data-page-node-id="ASHfQcmCi8FWLHHS7rS1GS"><strong data-page-node-id="ywOIvky6Rs3KRo1BHJK1Cp">A股科技主线回归：</strong>光模块/CPO/PCB板块领涨，中际旭创涨超10%总市值重返万亿，创业板指涨3.41%，资金从红利方向切回算力硬件。</p>
+                </div>
+            </div>
+            
+            <!-- 今日关键日历 -->
+            <div class="section" data-page-node-id="ZFh9sYnnCUgkypcAbQ8xQk">
+                <div class="section-title" data-page-node-id="kK3BjsWKCNBFbKKsb5lbJc">📅 今日关键日历（9月8日 周二）</div>
+                <table data-page-node-id="1DzKlp3mWTC5HlTXSiEGnE">
+                    <thead data-page-node-id="RaG3SAQZt7txBFgNbBPZRD">
+                        <tr data-page-node-id="rkYkZaf2Fge7gxqKMPbCzo">
+                            <th data-page-node-id="PwzB6jGY4u7gyQTH2n0R4b">时间（北京时间）</th>
+                            <th data-page-node-id="KRG3TiKEGJdBykC7I8WZah">事件</th>
+                            <th data-page-node-id="tnNeTkFuSaHmQvGJ1UHFoy">重要性</th>
+                            <th data-page-node-id="IEEYmWbhbR2TpMJVFVJiz6">预期</th>
+                        </tr>
+                    </thead>
+                    <tbody data-page-node-id="gEwVyRh9Rj3YnuFkHkwGnX">
+                        <tr data-page-node-id="IIwH69TGM8jaiaScGdIWDl">
+                            <td data-page-node-id="DesoLPtlf2BPW4b90xEVih">08:30</td>
+                            <td data-page-node-id="koY5AmCbXCE6hInsc77YXN">中国8月货物贸易进出口数据</td>
+                            <td data-page-node-id="qQK6huRhRjRckbNtYG9AIK"><span class="badge badge-red" data-page-node-id="ygMRS43rYDC37lllXERLdt">高</span></td>
+                            <td data-page-node-id="NtCWkdnTLGaPTRp5BnFTTJ">—</td>
+                        </tr>
+                        <tr data-page-node-id="DI3WSRv5CKx7es7tMAtmJU">
+                            <td data-page-node-id="u3Uy3Nh3T0UOjM0QXj3RG1">18:00</td>
+                            <td data-page-node-id="1gOmpLzRT9gxwpU4oWTEDO">美国8月NFIB中小企业乐观指数</td>
+                            <td data-page-node-id="uGHV6upBLhF8bkVG2LYxbf"><span class="badge badge-orange" data-page-node-id="2Gj98ZjEet2HG1DiyNlsSR">中</span></td>
+                            <td data-page-node-id="X5wjfLXC4GBhco56aEVpJ7">99.3</td>
+                        </tr>
+                        <tr data-page-node-id="2yPqWy8RG4YhLRmQBzbTFi">
+                            <td data-page-node-id="0cwTn020ugznz7SO28Mlg8">20:30</td>
+                            <td data-page-node-id="cgm3FkFeeDmjYhVzPKkNpR">美国8月PPI（本周关键）</td>
+                            <td data-page-node-id="TpAP1HPvCcZkZpoosX4ooH"><span class="badge badge-red" data-page-node-id="AGyDn3cIeDVID1fkeH1FBM">高</span></td>
+                            <td data-page-node-id="WTOuWRbWrnmUseE7mNs8rV">月增0.4%/年增5.3%</td>
+                        </tr>
+                        <tr data-page-node-id="9kCBYnJ60sYSS1jCo94Jmj">
+                            <td data-page-node-id="iz46H2nGxpgRMXbFE6SoML">21:00</td>
+                            <td data-page-node-id="FFC0ca4U3D3FsJWCzVnMSn">日本7月GDP终值</td>
+                            <td data-page-node-id="s4Xw98JYpRt1EMgNYaMhFe"><span class="badge badge-orange" data-page-node-id="j6PAgX33FKDq7LG3Be3cDH">中</span></td>
+                            <td data-page-node-id="AbOsJtd7zXOv5Czigo6pir">季增0.4%</td>
+                        </tr>
+                        <tr data-page-node-id="SA9eLsmqCPnZEeV2fFw9X2">
+                            <td data-page-node-id="Tvu8yz0UvyBzmnopLYlgHp">周三 08:30</td>
+                            <td data-page-node-id="CuWAcFbmlmqmxeS4aipetM">美国8月CPI（本周定调9月加息）</td>
+                            <td data-page-node-id="RdO6WxkMmCbCuLDoqcjxrt"><span class="badge badge-red" data-page-node-id="3uqHrWPsErpQxbsnh7cWPc">高</span></td>
+                            <td data-page-node-id="ZOO1vAdvG9XdmnIhLlFByx">月增0.4%/年增3.4%</td>
+                        </tr>
+                        <tr data-page-node-id="lO9IPhXu68gxzbepn4y7h5">
+                            <td data-page-node-id="WXavCxHD3KY6XtmRdWXmei">周三 10:00 PT</td>
+                            <td data-page-node-id="7OesZKbglPGzx2tQBISKoI">苹果秋季发布会（iPhone 18系列）</td>
+                            <td data-page-node-id="beYeoDkl3vHayk8CqTTugk"><span class="badge badge-orange" data-page-node-id="cH6Qq1STjLSrxe6SA4p4Dr">中</span></td>
+                            <td data-page-node-id="qm0GwEOgQ4b1InFGNQYO0x">AI功能升级</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 美股 -->
+            <div class="section" data-page-node-id="4rweO8xuTa9RdGcwQrAGUF">
+                <div class="section-title" data-page-node-id="dzACKGGe36si3mBILH0UDy">🇺🇸 美股（上周五9月4日收盘）</div>
+                <div class="grid-3" data-page-node-id="JjYKGrKhh9UNse2mRNEAOz">
+                    <div class="card" data-page-node-id="GXryidVPaKVOTRQBGEFy9s">
+                        <div class="card-title" data-page-node-id="B71YeIpVvL677bOl9JaT2h">道琼斯工业指数</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="imcezIGmEyfk8agLByFpB4">53,414.25</div>
+                        <div class="down" data-page-node-id="M25aytB1GfJVcybiOB7sFs">-0.51%</div>
+                    </div>
+                    <div class="card" data-page-node-id="HaNRHiUXMJuoUwWO4Q5iTO">
+                        <div class="card-title" data-page-node-id="MlmQHnaN84SbhI5u7C0aoi">标普500指数</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="n0WD7Ek0cQXHgLSSAPDwjK">7,718.60</div>
+                        <div class="down" data-page-node-id="eZnTdbIvYzClXZj7AhCW1C">-0.38%</div>
+                    </div>
+                    <div class="card" data-page-node-id="7hC2WOF1d4lihbrFWH4kvb">
+                        <div class="card-title" data-page-node-id="oHjTjatiWPRWVME5QVPdAl">纳斯达克综合指数</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="zYRN61DMDgTGMERM00BMYM">26,506.99</div>
+                        <div class="down" data-page-node-id="h4ZyaoTIJZAAbp8A0CYonH">-0.29%</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top:16px" data-page-node-id="c3sjX0WBMCDDbmBgHfpwDq">
+                    <div class="card" style="margin-bottom:12px" data-page-node-id="Z8XAJlWktWJwtAtR5cZw0l">
+                        <div class="card-title" data-page-node-id="0GICGKibvHga5nuYmAqntA">活跃3方向</div>
+                        <ul class="active-list" data-page-node-id="IAS1laM621WY0OfB0Cn79v">
+                            <li data-page-node-id="YRfXLpkCAp24fh4ODn1bz7"><span class="tag tag-buy" data-page-node-id="Veu1Oy9lSYCgtgWXSvfCWy">买入</span>存储芯片：闪迪+11.9%、SK海力士+8%、美光+6%</li>
+                            <li data-page-node-id="yFsYhyEwXyB7fETD2Jgtcx"><span class="tag tag-buy" data-page-node-id="86ddmEQR0C3LCvRZF9Gc9j">买入</span>光通信：迈威尔+7%、Coherent+6%、康宁+5%</li>
+                            <li data-page-node-id="UkypNgdFvGhNz3GXiUt1nQ"><span class="tag tag-buy" data-page-node-id="oPDDzXGINUFyfCDjey2GsF">买入</span>加密货币概念：Coinbase+10%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom:12px" data-page-node-id="p5UYHkYcCr2ZhO61GiOHDR">
+                        <div class="card-title" data-page-node-id="iM3YaYX8hCC4Gw1sjpltwc">回避2方向</div>
+                        <ul class="active-list" data-page-node-id="YIE31EaUEIJuMF1MT39n7P">
+                            <li data-page-node-id="5W5DY1MwQh72WmMzESY7ym"><span class="tag tag-sell" data-page-node-id="6AXp6LDN0YeFCwJgAjWhDk">回避</span>传统燃油车：特斯拉Cybercab未达预期-5.92%</li>
+                            <li data-page-node-id="Dpoq8JiLZpDO62MO2r5Oeb"><span class="tag tag-sell" data-page-node-id="GK91JPBBnMCvcbytwaLBx9">回避</span>高估值成长股：微软-2.04%、苹果-2.51%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="highlight-box box-blue" style="margin-top:16px" data-page-node-id="FoHhdDdmUfTu1s1oJ9bQWj">
+                    <h3 data-page-node-id="e5HGzZW21pK9hA4i7X7EB9">💡 核心逻辑</h3>
+                    <ul data-page-node-id="gZt1Md8Z3C7yOF9Tmcx6D0">
+                        <li data-page-node-id="cghZvteTJl91b4zR3JF4u2"><strong data-page-node-id="3FZDSxEZ9OM6KvTLYDEx2v">非农爆表→加息预期重定价：</strong>8月非农增16.2万（预期5.6万），失业率4.1%不变，劳动力市场韧性消除降息理由，9月加息概率从50%跃升至60%+</li>
+                        <li data-page-node-id="39ummRLPiyG4jGYShDZgcN"><strong data-page-node-id="uOpinScmZsJnYkt4rwLrPj">AI芯片产业链分化：</strong>存储/光通信爆发 vs Token定价腰斩引发估值重建</li>
+                        <li data-page-node-id="iDQkWmfVjPnI2EinB8gGbX"><strong data-page-node-id="iJgZ2LAu7irp8W5zwsvqFP">本周焦点：PPI（周四）+CPI（周五）定调加息与否，VIX约15.3</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 港股 -->
+            <div class="section" data-page-node-id="n9g6QLURt7nOLt17TODsdJ">
+                <div class="section-title" data-page-node-id="hwAq6lIfkCwftZvMrubVrl">🇭🇰 港股（上周五9月4日收盘）</div>
+                <div class="grid-3" data-page-node-id="Ul2JH3hqCEmPcBqYGF1vXx">
+                    <div class="card" data-page-node-id="v6CYWUCbA2u94cBCTWA3RZ">
+                        <div class="card-title" data-page-node-id="nXLjUBa0bCGxkumkM29gBh">恒生指数</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="GIZLFEhPuzZOJvE6kivbHg">25,650.87</div>
+                        <div class="up" data-page-node-id="YUs0DJPkD29P8tGPgOUFfi">+1.74%</div>
+                    </div>
+                    <div class="card" data-page-node-id="IGD4lV8o0lGtFIXEEX9upd">
+                        <div class="card-title" data-page-node-id="uVxyO9qZ1rubgIDbRPUiNX">恒生科技指数</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="puA2Rxnyq8a85FkmJ5lmOM">4,569.80</div>
+                        <div class="up" data-page-node-id="GI1K2yWBGfZlQkAr9JNIGa">+2.27%</div>
+                    </div>
+                    <div class="card" data-page-node-id="QtPvS6CHJXB1tdJmkeWpIl">
+                        <div class="card-title" data-page-node-id="CfRfrRbEsXjaqkDOfQcq6Z">南向资金</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="T4wydDV3Q5XuPlnUwE5Qco">+34亿港元</div>
+                        <div style="color:var(--accent-green)" data-page-node-id="JcTMQPexxkES1VvDPndipp">连续三日流入</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top:16px" data-page-node-id="Fh0GgIndyCZPEESLIGzM77">
+                    <div class="card" style="margin-bottom:12px" data-page-node-id="8kNCyOoAt5iHlHwDqXQ5uk">
+                        <div class="card-title" data-page-node-id="KBUL2E0n1oUtWiUfNT2zl2">活跃3方向</div>
+                        <ul class="active-list" data-page-node-id="Db3pAYGc17sULBJDetm5uV">
+                            <li data-page-node-id="W0SANpfAaBJXlBbZkBq5mR"><span class="tag tag-buy" data-page-node-id="zi7vOZUgnwPXmOEgSSu7ef">买入</span>光模块/AI硬件：剑桥科技+24%、中际旭创+20%、群核科技+30%</li>
+                            <li data-page-node-id="MIKkluA413Bd8y0eBzK9pz"><span class="tag tag-buy" data-page-node-id="RGX1hIRRslFmLgBGsutOGC">买入</span>有色金属/资源：黄金股领涨</li>
+                            <li data-page-node-id="gMZzyXwqvPXhwtaFzD6UEU"><span class="tag tag-buy" data-page-node-id="0XlR1Mza0fdIZIqAzQVkSM">买入</span>生物科技：CXO板块反弹</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom:12px" data-page-node-id="Q2Y7THokPfE8x1n8mlFKrB">
+                        <div class="card-title" data-page-node-id="O7RKIfKubmltCcEeESj1Ak">回避2方向</div>
+                        <ul class="active-list" data-page-node-id="8YMA5AsNShcVRj4xVsURfC">
+                            <li data-page-node-id="z0r7dkFUbw7dazBLWlCw5y"><span class="tag tag-sell" data-page-node-id="dNxdfnJa8AN7NF1dOcC8le">回避</span>银行/地产：利好兑现后回落</li>
+                            <li data-page-node-id="PhLqWjFFuFona9nLRx2x4r"><span class="tag tag-sell" data-page-node-id="bnRbHQHIC26liKGGT2FlyJ">回避</span>半导体：存储芯片涨幅过大后回调</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="highlight-box box-blue" style="margin-top:16px" data-page-node-id="k1MQwKhLk1FOCExEZrQgJH">
+                    <h3 data-page-node-id="7eZHE2LusO97XmYSQyDuux">💡 核心逻辑</h3>
+                    <ul data-page-node-id="B9F7eAWAL5C7bauZwpOClB">
+                        <li data-page-node-id="VusAds1fB70MHLFG6zxKz9"><strong data-page-node-id="C6VUUSCUismUhDzjPJcVnN">恒指反弹1.74%放量反弹2768亿港元：</strong>AI硬件/存储概念领涨，南向资金持续流入</li>
+                        <li data-page-node-id="Jrt5jzLEJKyobssz5VNaYt"><strong data-page-node-id="SseVhiAV4srq3hjrMzAg3X">恒指季度检讨生效：</strong>潍柴动力、华虹宏力新纳入，预计带来超72亿美元被动资金流</li>
+                        <li data-page-node-id="BLnedG6RHeut6FpYuR6LuD"><strong data-page-node-id="tLpuCSb1zLQsCZUoNOm4jA">科技硬件板块获约8.7亿美元最大流入</strong>，互联网大金融走弱拖累指数</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- A股 -->
+            <div class="section" data-page-node-id="1ePtEZ6cpTJALgo4h3YKiI">
+                <div class="section-title" data-page-node-id="bOAAELIaAxnNCjzWpSFZvD">🇨🇳 A股（上周五9月4日收盘）</div>
+                <div class="grid-3" data-page-node-id="See1qQWMgOPKloUFt96AOT">
+                    <div class="card" data-page-node-id="aHAVi0BFObzKpOXLqpTuid">
+                        <div class="card-title" data-page-node-id="3kkr7AKFsoACeTkGHifBCC">上证指数</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="DNkZC0PfSBTNGGCMxkjeff">3,932.70</div>
+                        <div class="up" data-page-node-id="iLxztTEUdXZd9oGQcBcyey">+0.07%</div>
+                    </div>
+                    <div class="card" data-page-node-id="ERppkBkky4hBle3M8bDHkX">
+                        <div class="card-title" data-page-node-id="kTnxxZhOUYCXSvrGMesV2d">深证成指</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="cp1p0AdKCqKbvn6iTzncjH">13,774.91</div>
+                        <div class="up" data-page-node-id="tzVYXMwCvyLdZiSMVY8c68">+1.91%</div>
+                    </div>
+                    <div class="card" data-page-node-id="JJ6bfNhrjc9itjGJXjceU6">
+                        <div class="card-title" data-page-node-id="6AE32ra4inYUClSNpnUYLa">创业板指</div>
+                        <div style="font-size:24px;font-weight:700;" data-page-node-id="s3J7FLRAuARUbcURJiTCrB">3,398.68</div>
+                        <div class="up" data-page-node-id="qG8kZpkI4BhswpC1fri2OM">+3.41%</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top:16px" data-page-node-id="L8mFZeIsxspdLVbVF0tq7e">
+                    <div class="card" style="margin-bottom:12px" data-page-node-id="Z1nCQ1S2pMhYndwDDrtZT9">
+                        <div class="card-title" data-page-node-id="e5GAX9j9nljBydlNxFxZxC">活跃3方向</div>
+                        <ul class="active-list" data-page-node-id="f1WDs7uJEu21oTmzh4yGpu">
+                            <li data-page-node-id="wapP6AieaYQX1qP6Z8gmU5"><span class="tag tag-buy" data-page-node-id="QjzATQB1lCP1zMdN7FqT9e">买入</span>CPO/光模块：中际旭创+10%、剑桥科技涨停、20股涨停</li>
+                            <li data-page-node-id="6vMqyo7pntKo6tH2sfBotN"><span class="tag tag-buy" data-page-node-id="NJQQyIlhbjqDedWXt16gXu">买入</span>PCB/元件：深南电路、沪电股份、景旺电子涨停</li>
+                            <li data-page-node-id="IDQIAr45L1yApeAj946fWx"><span class="tag tag-buy" data-page-node-id="qP0cCOGrBvioTnpHeleeL2">买入</span>农业/种业：亚盛集团3连板、万向德农15天9板</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom:12px" data-page-node-id="JA6hTQ4nR6HmKiFXUROETY">
+                        <div class="card-title" data-page-node-id="Hsw4AXtGsJj5w2jLJgD0fS">回避2方向</div>
+                        <ul class="active-list" data-page-node-id="tTlhIBASeDZvxqQ0SWE4RN">
+                            <li data-page-node-id="6ZVZR5jLF29vHXUMkBBHyS"><span class="tag tag-sell" data-page-node-id="LPFEO2kcO7BKXJ2virKdW3">回避</span>贵金属：湖南白银、四川黄金大跌</li>
+                            <li data-page-node-id="b61p5rUetaOyXgsXMVSBiE"><span class="tag tag-sell" data-page-node-id="sz30wDZDGDD8AzbjVFAbm8">回避</span>煤炭/红利：涨势暂歇，资金流向科技</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="highlight-box box-blue" style="margin-top:16px" data-page-node-id="7o5u0URLi3wXNxzJi28Dsf">
+                    <h3 data-page-node-id="lbkUE928k08VZF9G3ydhtk">💡 核心逻辑</h3>
+                    <ul data-page-node-id="trlmBlV32JA06sla2dSHQi">
+                        <li data-page-node-id="mOSO52kd2LgP3NDnulWdOJ"><strong data-page-node-id="yCxJ66oBZcLX5poAudxmB4">成交额1.96万亿缩量846亿：</strong>主板指数震荡，创业板/科创强势，资金从红利切回科技硬件</li>
+                        <li data-page-node-id="2UcjfGEzIwiOdhWxU7sFVx"><strong data-page-node-id="Pu3P1MyZPzYw57toezsCnC">光模块启动信号：</strong>高盛上调出货预期+工信部"十五五"规划催化，中际旭创总市值重返万亿</li>
+                        <li data-page-node-id="2WPHA9EdVUpEEcQT4lgxwE"><strong data-page-node-id="bfeEyOLt8mDyYsQGgj1AHi">农业板块三重催化：</strong>全球食品价格创新高+种业安全入法+厄尔尼诺确认</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 商品与汇率 -->
+            <div class="section" data-page-node-id="b7F1TzhhqdkzdkhPd9M2a6">
+                <div class="section-title" data-page-node-id="yQcSfTwHJPSFFEZdefUD9F">📊 商品与汇率</div>
+                <table data-page-node-id="dIOrZqkbOV6nHfBpNfJEDK">
+                    <thead data-page-node-id="wIr02U6aVEt05kwYbaAs23">
+                        <tr data-page-node-id="VHxkK35AFHEWmtnUFC1uZl">
+                            <th data-page-node-id="3vAiRlQ4Yupy08yikNktGS">品种</th>
+                            <th data-page-node-id="ASFnflEDgcCkA2PwAG6XHB">价格</th>
+                            <th data-page-node-id="7IzYoxBKUY4xykX3BN4hVg">涨跌幅</th>
+                            <th data-page-node-id="x9xJylxwoThhLYLciCqmn4">备注</th>
+                        </tr>
+                    </thead>
+                    <tbody data-page-node-id="LIF8oWwj83r9JP5v0KaI2z">
+                        <tr data-page-node-id="G89ttelkQRNQ31GKdci6po">
+                            <td data-page-node-id="DmsXeEa0CG2LCf9KBpAiSG">布伦特原油</td>
+                            <td data-page-node-id="sOGEKvA5CEEQCmERmuKaNn">97.31美元/桶</td>
+                            <td class="up" data-page-node-id="8CZP2y9HEDDSuEu1FeFbMM">+1.37%</td>
+                            <td data-page-node-id="78cq0pGSCDZZ6oZW9OHg3C">六周新高，距百美元一步之遥</td>
+                        </tr>
+                        <tr data-page-node-id="44FdfRWFEEwnfjfCNRaGLd">
+                            <td data-page-node-id="WXarxejEMAYb5b1SgXWyjE">WTI原油</td>
+                            <td data-page-node-id="rYHTqvDEpBdgryWVmIIAnl">90.76美元/桶</td>
+                            <td class="up" data-page-node-id="BHQFfBiPshrhUbzq0cHXXX">+1.62%</td>
+                            <td data-page-node-id="wyxzHTdCwUKE7eyj44BxYt">—</td>
+                        </tr>
+                        <tr data-page-node-id="YmdyMZRCJpt48FIcHQ5fcz">
+                            <td data-page-node-id="ZaAcjX7L3Rud1pDsg2tV1X">现货黄金</td>
+                            <td data-page-node-id="CQSktSlzZ60eExAHjC22wG">4,406美元/盎司</td>
+                            <td class="down" data-page-node-id="lDg7koKaFSLaJFp3HuEaRw">-0.54%</td>
+                            <td data-page-node-id="B6FJKsAcc5H4TGOlVJxrwe">非农压制，4400关口多空拉锯</td>
+                        </tr>
+                        <tr data-page-node-id="PXs4Vg3kEZgcknK9YDodSQ">
+                            <td data-page-node-id="mKuqkEKzcia4Su57b5o0IQ">COMEX黄金期货</td>
+                            <td data-page-node-id="MMjrpeLnoIIFEewAvlGv1d">4,452美元/盎司</td>
+                            <td class="down" data-page-node-id="kG1YETULl5JZah99aY87gV">-0.55%</td>
+                            <td data-page-node-id="Y1obAoMPGoVBgP2avabGTP">劳动节休市提前收盘</td>
+                        </tr>
+                        <tr data-page-node-id="NXV3co4GABCtAhESjNNiBm">
+                            <td data-page-node-id="1SoJet4K49Hf3DdeCdo6o3">美元指数</td>
+                            <td data-page-node-id="sb0JemyzZw8ctm0b7e2iyr">98.91</td>
+                            <td class="down" data-page-node-id="CnqSNhL98N50gGLUO40CJO">-0.26%</td>
+                            <td data-page-node-id="pRSYgChs6ahUDEgo4nv7HO">失守99关口，日元走强</td>
+                        </tr>
+                        <tr data-page-node-id="mhG7bWE6NhKeINJlmroR3B">
+                            <td data-page-node-id="ZYMXqrlTB037DJcTgqFcrB">美元/日元</td>
+                            <td data-page-node-id="Qu7j320UxzsAnHeOVnCgCJ">154.35</td>
+                            <td class="down" data-page-node-id="HsRsahbTsXgFhwG0FA2Bre">-1.21%</td>
+                            <td data-page-node-id="bUoU0O0UW88lhxhmbYLota">创2月23日以来最低</td>
+                        </tr>
+                        <tr data-page-node-id="6fiIAYwl0u4m2io2YvvHbF">
+                            <td data-page-node-id="3c8p0xVTBuMeU3E0IRIyv2">离岸人民币</td>
+                            <td data-page-node-id="0X2YKfoeY96EiKBOLGQc5s">6.7106</td>
+                            <td class="up" data-page-node-id="ShVML6IIr2hCvxrINdWHq8">+0.003%</td>
+                            <td data-page-node-id="X2KVUGVFaj5v2xWKGo4WnG">—</td>
+                        </tr>
+                        <tr data-page-node-id="lJdQhutS2NaFT32SqiJsAZ">
+                            <td data-page-node-id="tZUmdpwnKSw0rIE8fOhmLG">LME铜</td>
+                            <td data-page-node-id="OnF6om9s8wjJOsH8jHSpGp">14,533美元/吨</td>
+                            <td class="up" data-page-node-id="GHmf7Vk0odkiQKroWlIocw">历史新高</td>
+                            <td data-page-node-id="sl7NMPdiKcpJbF81wNMaA9">关税预期+供应紧张</td>
+                        </tr>
+                        <tr data-page-node-id="w0ynVO3S0O9aw2OZjYsEGR">
+                            <td data-page-node-id="ZJMdTUd0L1WftqCdS55jkj">10Y美债收益率</td>
+                            <td data-page-node-id="Z9cFXtIaClmnBm8m017lQv">4.79%</td>
+                            <td class="down" data-page-node-id="cBKDBdqOFXxcp6HPgEVjLm">-0.6bp</td>
+                            <td data-page-node-id="PBs680wnDFnLhACH9alYjL">劳动节休市</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 今日交易主线 -->
+            <div class="section" data-page-node-id="uwzSohYFdnI7ocNKFGl2GE">
+                <div class="section-title" data-page-node-id="dyGHY2oeKElM2RADvDbLi8">🎯 今日交易主线（5条）</div>
+                <table data-page-node-id="zwJxSSa6fM9pARFsMdwTuJ">
+                    <thead data-page-node-id="zMnKQ5kao8jKzZGimeecSG">
+                        <tr data-page-node-id="R64BrClkCcQE6MAXORDs4v">
+                            <th style="width:40px" data-page-node-id="TbCgMGffTAjF5q4nzwJ81W">序号</th>
+                            <th data-page-node-id="Gbma6YcsaGCtcYProccGkk">主线</th>
+                            <th data-page-node-id="iljlmlBlIreRB2rMzDAHSU">核心逻辑</th>
+                            <th data-page-node-id="sZvGPl0gjzE48EX7DUx86i">风险边界</th>
+                        </tr>
+                    </thead>
+                    <tbody data-page-node-id="A4NoHZsgrRdBlywYU5rzF7">
+                        <tr data-page-node-id="dtLBTREvMFImK8ss8ziXZB">
+                            <td data-page-node-id="Hj2V6UAoP6S9TbFChHOFIF">1</td>
+                            <td data-page-node-id="lreaYPDqpT5S2FZ5UdvWQh"><span class="badge badge-red" data-page-node-id="s7CLLRo5CH48sVo3kgIYhU">核心</span>美联储加息预期升温</td>
+                            <td data-page-node-id="CYa5gMhGeo7QNlFThzdfxJ">非农爆表→9月加息概率60%+，瑞银/花旗同步转鹰，本周PPI/CPI定调</td>
+                            <td data-page-node-id="bpaznCF3jtA2jNg0YqYzRz">若通胀偏冷，加息预期逆转，风险资产反弹</td>
+                        </tr>
+                        <tr data-page-node-id="rH145YFEhmLMChCb8ocyVb">
+                            <td data-page-node-id="5lbGB2gpgzQ4DcY5jXf31E">2</td>
+                            <td data-page-node-id="Lvv9HRfK9uq9TfiVcDQxM3"><span class="badge badge-red" data-page-node-id="MMXmno5eoVoAEgguI8sw8T">核心</span>美伊冲突推升油价至97美元</td>
+                            <td data-page-node-id="w3Qjy6oJQSipqwhVDI50I6">霍尔木兹日均通航仅10艘（5月来最低），沙特阿美设施再遭袭，高盛预警120美元情景</td>
+                            <td data-page-node-id="L20UmhNOVvriiaFeVi3iUO">若阿联酋替代出口路线突破或外交突破，油价回落至90-95美元</td>
+                        </tr>
+                        <tr data-page-node-id="vgbZACIvI73qsgiodCkIKI">
+                            <td data-page-node-id="Dz1eSwey0CwWtxN9kovSmF">3</td>
+                            <td data-page-node-id="1vxAM7whGjiaZvMUxXkuug"><span class="badge badge-blue" data-page-node-id="5p0gk6x8fRpuGX0za2H0F2">主线</span>光模块/AI硬件启动主升</td>
+                            <td data-page-node-id="8bSlQyY2oAaRS75IGFt9x9">高盛上调出货预期+工信部"十五五"规划催化，中际旭创重返万亿市值</td>
+                            <td data-page-node-id="xuZQ7V9YRWmsF96KqsIKS3">调整时间够但需观察放量持续性，警惕高位分歧</td>
+                        </tr>
+                        <tr data-page-node-id="jfycO2j3Lm5dCbQQylgj1N">
+                            <td data-page-node-id="OkNmg3qid8ZfMVEFULIVOG">4</td>
+                            <td data-page-node-id="HFWtJGFqtjh9Bz69w1wBtS"><span class="badge badge-orange" data-page-node-id="Hm7xEBlHN7jPugEFMD0SMe">关注</span>黄金4400关口多空博弈</td>
+                            <td data-page-node-id="pGi9Q0G8aINTJYoLrMXMGf">非农压制vs央行22连增持+地缘避险，4400是多空分水岭</td>
+                            <td data-page-node-id="P109OwECgjxuvIjGmlDJEx">若CPI超预期，金价回踩4320；若降温，重回4500</td>
+                        </tr>
+                        <tr data-page-node-id="LJ9rA7eD8fGidCj2foNUxI">
+                            <td data-page-node-id="tlxzovHNGMzf9x2zgIcABI">5</td>
+                            <td data-page-node-id="G3D0Fv2njvJ0PhgOsrrYPF"><span class="badge badge-blue" data-page-node-id="IncQ0BhXkRWRFCanj64FQI">主线</span>人民币汇率稳中有升</td>
+                            <td data-page-node-id="6KnbDjFMW3HgB5pnX3C9S0">在岸6.71附近，中间价6.7795，外储3.44万亿美元支撑</td>
+                            <td data-page-node-id="tJbpWnMFx8qQ2JhDDKUwrR">美元指数若因加息预期反弹，人民币承压</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 政策动态 -->
+            <div class="section" data-page-node-id="4AaRT9P1IfnD6szQkFE8Df">
+                <div class="section-title" data-page-node-id="aCz4xX6HNWXw2iNQSr50B5">📋 政策动态</div>
+                <div class="grid-2" data-page-node-id="MEjNZgemenAtNAmVccYbC3">
+                    <div class="card" data-page-node-id="KTZ2SxexvNReVccfyWvk1H">
+                        <div class="card-title" data-page-node-id="siTlnCsUXBO5aLtEuwLq77">国内政策</div>
+                        <ul class="active-list" data-page-node-id="vwfxygmROjIykBBC0a5y8H">
+                            <li data-page-node-id="MuA9SeVFEDhQ2hYk09F30O"><strong data-page-node-id="qEqSrJb1GDmAnD0A8sUS09">工信部"十五五"规划：</strong>明确2030年智能算力规模达每秒9800 EFLOPS，部署400G+高速传输技术</li>
+                            <li data-page-node-id="hxZli8t6D4AYbSodG02E4j"><strong data-page-node-id="SPmLtFEnSA3u6I1JHHtZmQ">中金公司吸收合并获批：</strong>东兴证券、信达证券9月15日起停牌</li>
+                            <li data-page-node-id="CG5Ly72QVarmQ0Zwj8sW0I"><strong data-page-node-id="iaaeNUC6qEWNDiZkRDiQoc">最高法AI裁判规则：</strong>首部涉人工智能司法裁判规则文件公布</li>
+                            <li data-page-node-id="0DgSIrzj7QRlteR5wZRLZk"><strong data-page-node-id="psdQPa8jBoR4CBBRhtvIbL">六部门乡村振兴投入机制：</strong>财政优先保障+金融重点倾斜</li>
+                        </ul>
+                    </div>
+                    <div class="card" data-page-node-id="EEq5fB0UP7m6DQGARKmMxx">
+                        <div class="card-title" data-page-node-id="L4XYUmRHNqQSbgOmnOtFs1">国际政策</div>
+                        <ul class="active-list" data-page-node-id="8vUtzaLWBG47RWIIJlqsHy">
+                            <li data-page-node-id="hjkXwzRhlv4kcXwhGVDXHD"><strong data-page-node-id="kaM1s0SI3Vep5LAviTZ5S8">加拿大反制关税：</strong>9月8日起对200亿美元美国商品加征15%-50%关税</li>
+                            <li data-page-node-id="6Rapw5E8luAXVDBj4dKCLH"><strong data-page-node-id="jTk00VnXwxRsMLeW2i5TlS">德国极右翼崛起：</strong>选择党成萨安州第一大党，二战以来首次执掌州级政权</li>
+                            <li data-page-node-id="UIggLTGHiC6PkdPuowiATI"><strong data-page-node-id="TlQiHgqeDhOIzoAEVmOYsv">日本央行决议：</strong>利率维持0.5%不变，日元走强</li>
+                            <li data-page-node-id="CnCS1lTcw632VPoQKtmGdN"><strong data-page-node-id="oVqHj1CFu0l1UyB3qQ1Nvl">中美AI对话：</strong>外交部称双方保持沟通，预计9月中旬举行</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 外围市场 -->
+            <div class="section" data-page-node-id="TAuEJKrcIJ4170NpQHCUmb">
+                <div class="section-title" data-page-node-id="0Tpl9fjnzWFpRjvx5EeQbT">🌐 外围市场（周一9月7日收盘）</div>
+                <table data-page-node-id="Y5Ri3CCAvctNF24fSzEfYY">
+                    <thead data-page-node-id="AMkYcX4tMYH1cFI2mjGOqD">
+                        <tr data-page-node-id="5Z6BfX1lUdT7PJJVMA0Zf3">
+                            <th data-page-node-id="dCU78deGuh0Oz7IIACQlY3">市场</th>
+                            <th data-page-node-id="c5WGqUexw7fIe6A2AARhU9">指数</th>
+                            <th data-page-node-id="8iCNUpLzbpvE9xaLTcrZNF">收盘点位</th>
+                            <th data-page-node-id="MB64Q88wAU2bIJzU1LjCQt">涨跌幅</th>
+                        </tr>
+                    </thead>
+                    <tbody data-page-node-id="zgSuZCobPhtz7H1rGEUn44">
+                        <tr data-page-node-id="7IZFHEdDGBcRT5wG0kHqO8">
+                            <td data-page-node-id="NCtGslHkH7oZ9ekpUZkWRu">欧洲</td>
+                            <td data-page-node-id="gASmekq4qoEzzpvLAoWsel">德国DAX30</td>
+                            <td data-page-node-id="8U3ijE8vxU67jAfxXS9YCm">26,006.53</td>
+                            <td class="down" data-page-node-id="mITB7p4PDVKM1MfZmypmSE">-0.15%</td>
+                        </tr>
+                        <tr data-page-node-id="PqR8D8SSCkFMUozJ43ujNU">
+                            <td data-page-node-id="WK1RRkFjn6bJghGF7sCuF4">欧洲</td>
+                            <td data-page-node-id="AmXgTn1RPT2UO0pHFOVz1B">法国CAC40</td>
+                            <td data-page-node-id="zI0ML9YJwXe9bAKtTh9BOY">8,306.15</td>
+                            <td class="up" data-page-node-id="gJC1uifoEuaz5bp6b0nVDn">+0.33%</td>
+                        </tr>
+                        <tr data-page-node-id="gSqppwNvlx9CFnNUgMIA9t">
+                            <td data-page-node-id="sKXxEnOCmPhtIUcqZCUm6L">欧洲</td>
+                            <td data-page-node-id="MoSbf0OPAHnsCHiB8lZzrF">英国富时100</td>
+                            <td data-page-node-id="jHybmlQfNvamulCCYvcUKp">10,822.13</td>
+                            <td class="down" data-page-node-id="9lRKXWCrQ1U91riAEz5K0d">-0.08%</td>
+                        </tr>
+                        <tr data-page-node-id="WLWabwE4fIqeSyBPdsQSYz">
+                            <td data-page-node-id="0NzTMWFgihQ2Q04AjJ54zE">亚太</td>
+                            <td data-page-node-id="BaQ4dGfCmeIqlF0sTLL1VC">日经225</td>
+                            <td data-page-node-id="Mxajz6oYY2GqkPblCJgFfq">66,399.84</td>
+                            <td class="up" data-page-node-id="k9z6H3HflymBZY9gJwGLaF">+2.12%</td>
+                        </tr>
+                        <tr data-page-node-id="mk5nq6nHzFPsDE7hfUEz51">
+                            <td data-page-node-id="e08ZSEZzbCXoVmaLEwFkO2">亚太</td>
+                            <td data-page-node-id="QFkEP6SE1EPe4dqh5lkTYL">韩国KOSPI</td>
+                            <td data-page-node-id="atguW3oc0lAcuSBZCZT6rK">6,995.39</td>
+                            <td class="up" data-page-node-id="a18vvf4GX1TlzTFgWcTKQW">+4.61%</td>
+                        </tr>
+                        <tr data-page-node-id="bfEaXUvAgGFfVXOOxUd6a8">
+                            <td data-page-node-id="DxvROetH5EhFlpyTGFF06V">亚太</td>
+                            <td data-page-node-id="4dMyrmk8aPGpgI3NtxIOs0">印度SENSEX30</td>
+                            <td data-page-node-id="rh924bYYMIUxUyrsqtxw1k">76,132.81</td>
+                            <td class="down" data-page-node-id="OlImHvs0lolQ1v8QI7qUPy">-0.50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 风险提示 -->
+            <div class="section" data-page-node-id="PHoqSEKOTxlgW0FlzXWCJh">
+                <div class="section-title" data-page-node-id="8e7BgI5IMNSajAEIChdDRR">⚠️ 风险提示</div>
+                <div class="highlight-box box-orange" data-page-node-id="pb6D386JIeOXQmcQermaWV">
+                    <ul data-page-node-id="lTu5j9aumuMBYLZRwBUmGu">
+                        <li data-page-node-id="od5rTr221jQhqtZiIdDZzg">本周三美国PPI、周五CPI将直接决定美联储9月加息走向，数据落地前市场波动加剧</li>
+                        <li data-page-node-id="4RJebIMiVUyAHI5H6yuIdp">霍尔木兹海峡通航量骤降，若冲突升级至更多能源设施，油价或突破100美元</li>
+                        <li data-page-node-id="n3AcJlTrZE6DBHKsspMswb">黄金4400关口多空博弈激烈，非农压制vs央行增持形成矛盾格局</li>
+                        <li data-page-node-id="z4p8WHtc07cSmckABm6PSv">A股成交缩量至1.96万亿，科技主线持续性需观察放量情况</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <div class="disclaimer" data-page-node-id="sdNJRWAK9pCjWmO3rXArPq">
+            <p data-page-node-id="fbfm6wlgI8bHC9Oy7NAikQ">合规声明：本报告仅供参考，不构成投资建议。数据来源：WebSearch实时检索，多源交叉验证。无法确认的实时数据已标「待核实」，禁止编造。</p>
+            <p data-page-node-id="TjB8nyXeifs8dp6onjGE4a">生成时间：2026年9月8日 11:33 | 归档路径：O:/quark/automation/全球市场晨报/</p>
+        </div>
+    </div>
+</body>
+</html>

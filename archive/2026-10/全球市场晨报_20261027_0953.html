@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球市场晨报 - 2026年10月27日 · 周二</title>
+    <style>
+        :root {
+            --bg-color: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: #16213e;
+            --border-color: #0f3460;
+            --red-color: #e94560;
+            --green-color: #2ecc71;
+            --accent-color: #e94560;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid var(--accent-color);
+            margin-bottom: 30px;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; color: var(--accent-color); }
+        h2 { font-size: 1.5em; margin: 30px 0 15px; color: var(--text-color); border-left: 4px solid var(--accent-color); padding-left: 15px; }
+        h3 { font-size: 1.2em; margin: 20px 0 10px; color: var(--text-color); }
+        .date {
+            font-size: 1.1em;
+            color: #8899a6;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: var(--card-bg);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover { background-color: rgba(233, 69, 96, 0.1); }
+        .up { color: var(--red-color); font-weight: bold; }
+        .down { color: var(--green-color); font-weight: bold; }
+        .section-box {
+            background-color: var(--card-bg);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 3px solid var(--accent-color);
+        }
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        .signal-box {
+            background-color: rgba(233, 69, 96, 0.1);
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 3px;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            h1 { font-size: 1.8em; }
+            table { font-size: 0.9em; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+
+<style>
+.mb-toc{position:fixed;top:12px;right:12px;max-width:240px;max-height:80vh;overflow:auto;
+  background:var(--card,#fff);border:1px solid var(--line,#e5e7eb);border-radius:10px;padding:10px 12px;
+  font:12px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:9999;color:var(--txt,#1f2937)}
+.mb-toc h4{margin:0 0 6px;font-size:12px;color:var(--sub,#6b7280)}
+.mb-toc ol{margin:0;padding-left:18px}
+.mb-toc a{color:var(--accent,#2563eb);text-decoration:none}
+.mb-toc a:hover{text-decoration:underline}
+.mb-toc a.active{font-weight:700;text-decoration:underline}
+.mb-top{position:fixed;bottom:16px;right:16px;width:42px;height:42px;border-radius:50%;
+  background:var(--accent,#2563eb);color:#fff;border:none;cursor:pointer;font-size:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:9999}
+.mb-toc-toggle{top:12px;right:12px;bottom:auto;display:none;width:38px;height:38px;font-size:15px}
+.mb-spark{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:0 0 14px;padding:10px 12px;
+  background:var(--card,#161f2e);border:1px solid var(--line,#2a3850);border-radius:10px}
+.mb-spark h4{width:100%;margin:0 0 2px;font-size:12px;font-weight:600;color:var(--sub,#9fb0c8)}
+.mb-spark-item{display:flex;flex-direction:column;gap:2px;min-width:108px;padding:6px 9px;
+  background:var(--card2,#1c2738);border:1px solid var(--line,#2a3850);border-radius:8px}
+.mb-spark-name{font-size:11px;color:var(--sub,#9fb0c8)}
+.mb-spark-val{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--txt,#e8edf5)}
+.mb-spark-val.up{color:var(--up,#dc2626)}
+.mb-spark-val.down{color:var(--down,#16a34a)}
+.mb-spark-chg{font-size:11px;font-weight:600;margin-left:4px}
+.mb-spark-pct{font-size:10.5px;color:var(--sub,#9fb0c8)}
+.mb-spark-svg{display:block;margin-top:2px}
+@media(min-width:761px){.mb-spark{margin-right:264px}}
+@media(max-width:760px){
+  .mb-spark{margin-right:0}
+  .mb-toc{transform:translateX(115%);transition:transform .18s ease;max-width:210px}
+  .mb-toc.mb-toc-open{transform:none}
+  .mb-toc-toggle{display:block}
+}
+</style>
+</head>
+<body>
+<section class="mb-spark"><h4>指标近况</h4><span class="mb-spark-item" title="恒生指数 25,207.00（较前日 -3.67%）"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val down">25,207.00<span class="mb-spark-chg">-3.67%</span></span><span class="mb-spark-pct">近20日 P72.7</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,17.1 12.5,16.5 23.1,18.6 33.6,17.9 44.2,17.7 54.7,17.7 65.3,3.2 75.8,21.7 86.4,27.0 96.9,4.5 107.5,3.0 118.0,10.1"/></svg></span><span class="mb-spark-item" title="上证指数 3,697.52（较前日 +0.19%）"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val up">3,697.52<span class="mb-spark-chg">+0.19%</span></span><span class="mb-spark-pct">近20日 P27.3</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.6 12.5,3.0 23.1,18.7 33.6,17.2 44.2,17.2 54.7,17.2 65.3,14.0 75.8,17.8 86.4,27.0 96.9,21.5 107.5,21.5 118.0,20.4"/></svg></span><span class="mb-spark-item" title="纳斯达克 26,169.38（较前日 +0.82%）"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val up">26,169.38<span class="mb-spark-chg">+0.82%</span></span><span class="mb-spark-pct">近20日 P54.5</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 12.5,3.0 23.1,12.9 33.6,23.6 44.2,23.6 54.7,23.6 65.3,18.3 75.8,13.1 86.4,26.0 96.9,27.0 107.5,27.0 118.0,23.0"/></svg></span><span class="mb-spark-item" title="布伦特原油 115.81（较前日 -0.78%）"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val down">115.81<span class="mb-spark-chg">-0.78%</span></span><span class="mb-spark-pct">近20日 P81.8</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,24.9 12.5,27.0 23.1,26.5 33.6,18.3 44.2,18.3 54.7,17.8 65.3,24.3 75.8,20.2 86.4,10.7 96.9,3.0 107.5,3.0 118.0,5.0"/></svg></span><span class="mb-spark-item" title="现货黄金 4,016.76（较前日 +0.54%）"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val up">4,016.76<span class="mb-spark-chg">+0.54%</span></span><span class="mb-spark-pct">近20日 P18.2</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 12.5,4.6 23.1,3.5 33.6,4.0 44.2,4.0 54.7,3.7 65.3,7.1 75.8,7.9 86.4,22.9 96.9,27.0 107.5,27.0 118.0,24.1"/></svg></span></section>
+<nav class="mb-toc"><h4>目录</h4><ol><li><a href="#sec-1">三句速读</a></li><li><a href="#sec-2">一、全球宏观与风险事件</a></li><li><a href="#sec-3">二、美股市场</a></li><li><a href="#sec-4">三、港股市场</a></li><li><a href="#sec-5">四、A股市场</a></li><li><a href="#sec-6">五、商品与汇率</a></li><li><a href="#sec-7">六、今日交易主线(5条)</a></li><li><a href="#sec-8">七、本周展望</a></li><li><a href="#sec-9">八、数据摘要</a></li></ol></nav>
+    <div class="container">
+        <header>
+            <h1>全球市场晨报</h1>
+            <p class="date">2026年10月27日 · 周二</p>
+        </header>
+
+        <div class="section-box">
+            <h2 id="sec-1">三句速读</h2>
+            <p>隔夜美股AI交易回暖,费城半导体指数涨2.8%,纳指涨0.82%。港股恒指收涨0.51%,石油煤炭占优。A股缩量分化,红利资产护盘,科技硬件承压。美联储进入超级央行周,AnthropicAI公司正式提交IPO申请,或为AI基础设施支出提供新增支撑信号。</p>
+        </div>
+
+        <h2 id="sec-2">一、全球宏观与风险事件</h2>
+        <div class="section-box">
+            <ul>
+                <li><strong>超级央行周启动</strong>:北京时间10月29日凌晨美联储公布10月议息决议,芝商所FedWatch显示10月维持利率不变概率约92.8%,12月加息概率上升至74.8%。市场焦点转向政策声明对12月路径的暗示。</li>
+                <li><strong>Anthropic重大突破</strong>:美国前沿AI大模型公司Anthropic于10月26日正式提交纳斯达克IPO申请,股票代码"ANT"。招股书显示,上半年营收同比暴增1304%至162.9亿美元,但净亏损仍高达807亿美元,预计未来数年需再投入7500亿美元购买算力。市场预计其有望冲击史上最大IPO筹资纪录。</li>
+                <li><strong>中东局势阶段性缓和</strong>:卡塔尔等国高层官员赴伊朗磋商,推动地缘溢价释放。美联储官员表示美军可在特朗普下令后96小时内对伊朗发动打击,但当前局势较5月有缓和迹象。国际油价自五个月高点回落,WTI原油报101.76美元/桶(-1.46%),布油115.81美元/桶(-0.78%)。</li>
+                <li><strong>中国政策创新</strong>:央行10月26日宣布设立"债市非银大额赎回互换便利"(BNSF),用于在资管机构面临群体性流动性风险时提供流动性支持,防范债市系统性压力。同日开展7000亿元1年期MLF操作(本月到期9000亿元,缩量续作2000亿元),并开展3980亿元隔夜逆回购与560亿元7天期逆回购。</li>
+            </ul>
+        </div>
+
+        <h2 id="sec-3">二、美股市场</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>指数</th>
+                    <th>收盘点位</th>
+                    <th>涨跌幅</th>
+                    <th>关键变化</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>道琼斯指数</td>
+                    <td>52,361.58</td>
+                    <td class="up">+0.28%</td>
+                    <td>早盘低开后回升,收盘报52,361.58点,涨幅0.28%</td>
+                </tr>
+                <tr>
+                    <td>标普500指数</td>
+                    <td>7,676.77</td>
+                    <td class="up">+0.70%</td>
+                    <td>11大板块中7涨4跌,科技板块涨幅居首(+1.50%)</td>
+                </tr>
+                <tr>
+                    <td>纳斯达克指数</td>
+                    <td>26,169.38</td>
+                    <td class="up">+0.82%</td>
+                    <td>连续两周下跌后反弹,受益于AnthropicIPO提振</td>
+                </tr>
+                <tr>
+                    <td>费城半导体指数</td>
+                    <td>2,182.36</td>
+                    <td class="up">+2.82%</td>
+                    <td>单日涨幅创9月以来最大,存储芯片、光通信板块领涨</td>
+                </tr>
+                <tr>
+                    <td>科技七巨头</td>
+                    <td>-</td>
+                    <td><span class="up">涨跌互现</span></td>
+                    <td>英伟达+2.39%、特斯拉+5.21%、微软+1.54%、谷歌-1.06%、苹果-1.10%、Meta-1.88%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 15px;"><strong>活跃3方向:</strong>存储芯片(SK海力士+4.09%/美光+2.98%/西部数据+3.63%)、光通信(Lumentum+8%/Coherent+5%)、AI算力基础设施(AnthropicIPO信号强化)</p>
+        <p class="down"><strong>回避2方向:</strong>前期涨幅过大的高位科技成长板块(需警惕获利了结压力)、高估值消费电子(苹果/谷歌承压)</p>
+
+        <h2 id="sec-4">三、港股市场</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>指数</th>
+                    <th>收盘点位</th>
+                    <th>涨跌幅</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>恒生指数</td>
+                    <td>25,207.00</td>
+                    <td class="up">+0.51%</td>
+                </tr>
+                <tr>
+                    <td>恒生科技指数</td>
+                    <td>3,857.53</td>
+                    <td class="down">-0.36%</td>
+                </tr>
+                <tr>
+                    <td>国企指数</td>
+                    <td>7,802.09</td>
+                    <td class="up">+0.59%</td>
+                </tr>
+                <tr>
+                    <td>恒指大市成交额</td>
+                    <td>2105亿元</td>
+                    <td class="down">-12%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 15px;"><strong>活跃3方向:</strong>石油股(中海油+2.15%)、煤炭股(中国神华+1.8%)、内房股(碧桂园+2.1%)、内银股(邮储+4%)</p>
+        <p class="down"><strong>回避2方向:</strong>光通信/半导体硬件(PCB/光模块承压)、前期涨幅居中的互联网平台(美团+4.0%/阿里巴巴+1.5%)</p>
+
+        <h2 id="sec-5">四、A股市场</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>指数</th>
+                    <th>收盘点位</th>
+                    <th>涨跌幅</th>
+                    <th>成交量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>上证指数</td>
+                    <td>3,697.52</td>
+                    <td class="up">+0.19%</td>
+                    <td>1.62万亿(缩量-3475亿)</td>
+                </tr>
+                <tr>
+                    <td>深证成指</td>
+                    <td>11,534.38</td>
+                    <td class="down">-1.19%</td>
+                    <td>缩量-3497亿</td>
+                </tr>
+                <tr>
+                    <td>创业板指数</td>
+                    <td>2,638.23</td>
+                    <td class="down">-1.71%</td>
+                    <td>科创50-2.03%,科创综指-2.23%</td>
+                </tr>
+                <tr>
+                    <td>沪深300指数</td>
+                    <td>4,103.54</td>
+                    <td class="down">-0.04%</td>
+                    <td>缩量-3497亿</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 15px;"><strong>板块表现:</strong>跌多涨少,石油石化(+2.41%,中国石油+4.94%创18年新高)、银行(+1.76%)、交通运输(+1.68%)领涨;电子(-3.79%)、通信(-2.95%)、有色金属(-2.79%)领跌</p>
+        <p style="margin-top: 15px;"><strong>三句速读:</strong>沪指在银行、白酒、石油石化等红利资产支撑下微涨0.19%,科技成长板块则继续调整,半导体、PCB、存储芯片等AI硬件板块跌幅居前。沪深两市成交16088亿元,缩量3475亿元,资金从高位科技赛道向高股息防御板块集中。</p>
+        <p><strong>活跃3方向:</strong>高股息防御板块(银行/石油石化/交运)、人形机器人/物理AI应用(宇树科技+7.69%近7日反弹70%)、优质白酒/医药生物(贵州茅台+1.12%/五粮液/泸州老窖)</p>
+        <p class="down"><strong>回避2方向:</strong>AI上游硬件(半导体设备/CPO光模块/存储芯片)、前期涨幅过大的中小盘题材股(科技成长板块)</p>
+
+        <h2 id="sec-6">五、商品与汇率</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>品种</th>
+                    <th>收盘价</th>
+                    <th>涨跌幅</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WTI原油</td>
+                    <td>101.76美元/桶</td>
+                    <td class="down">-1.46%</td>
+                </tr>
+                <tr>
+                    <td>布伦特原油</td>
+                    <td>115.81美元/桶</td>
+                    <td class="down">-0.78%</td>
+                </tr>
+                <tr>
+                    <td>现货黄金</td>
+                    <td>4016.76美元/盎司</td>
+                    <td class="up">+0.47%</td>
+                </tr>
+                <tr>
+                    <td>COMEX黄金期货</td>
+                    <td>4031.00美元/盎司</td>
+                    <td class="up">+0.58%</td>
+                </tr>
+                <tr>
+                    <td>美元指数</td>
+                    <td>102.01</td>
+                    <td class="up">+0.17%</td>
+                </tr>
+                <tr>
+                    <td>10Y美债收益率</td>
+                    <td>4.9946%</td>
+                    <td <-0.025%>≈0%</td>
+                    <td>连续三周下行,但始终未能收复5%关口</td>
+                </tr>
+                <tr>
+                    <td>人民币(在岸)</td>
+                    <td>6.6681</td>
+                    <td>+30基点</td>
+                    <td>较前一交易日升值,续创2022年6月以来新高</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 15px;"><strong>活跃3方向:</strong>黄金避险(地缘缓和+空头回补)、原油/燃油(已从高点回落,短期看震荡)、沪铜(矿端扰动+检修高峰支撑)</p>
+        <p class="down"><strong>回避2方向:</strong>高估值贵金属(周线仍处弱势)、前期涨幅过大的工业金属/能源建材</p>
+
+        <h2 id="sec-7">六、今日交易主线(5条)</h2>
+        <div class="section-box">
+            <ol>
+                <li><strong>AI交易情绪修复,AnthropicIPO点燃市场信心</strong> – Anthropic提交IPO申请重新点燃市场对AI基础设施支出的能见度,费城半导体指数大涨2.8%,存储与光通信板块领涨。市场担忧短期消退,但需关注后续AI巨头财报对资本开支可行性的验证。</li>
+                <li><strong>超级央行周定调12月加息路径</strong> – 美联储10月议息会议大概率维持利率不变(概率92.8%),但市场真正交易对象是12月路径指引。芝商所FedWatch显示12月加息概率升至74.8%,强鹰派表述可能引发全球股债汇市场波动。</li>
+                <li><strong>中国政策持续发力,红利资产托底市场</strong> – 央行设立债市BNSF工具维护市场稳定,叠加10月ETF净流入超2800亿元、上市公司回购超170亿元、重要股东增持65亿元,市场下方支撑明显。但量能不足、成长板块高估值仍待消化。</li>
+                <li><strong>地缘风险阶段性缓和,油价回落</strong> – 沙特/土耳其/巴基斯坦高官赴伊朗磋商,霍尔木兹海峡谈判推进,油价从五个月高位回落。但该地区复杂性高,市场需等待中美达成"7日方案"后观望实际执行情况。</li>
+                <li><strong>A股继续震荡筑底,结构分化</strong> – 沪指在银行、白酒、石油石化等红利资产支撑下微涨,双创指数大幅走弱,量能持续萎缩。资金持续从科技成长切向高股息板块,市场情绪仍偏谨慎,但估值性价比已显现。</li>
+            </ol>
+        </div>
+
+        <h2 id="sec-8">七、本周展望</h2>
+        <div class="section-box">
+            <ul>
+                <li><strong>沙特利率决议(周四):</strong>美联储10月FOMC会议于10月27-28日举办,决议北京时间10月29日凌晨公布。市场分歧集中在12月加息信号,强鹰派表述可能引发全球资产波动。</li>
+                <li><strong>AnthropicIPO临近:</strong>计划11月16日当周上市,若定价超出预期可能强化AI叙事,对纳斯达克与港股科技板块形成情绪提振。</li>
+                <li><strong>A股三季报密集披露:</strong>险资持仓持续曝光(新进宁德时代等27股),超额收益已显现,但需警惕盈利不及预期的个股。</li>
+                <li><strong>中东局势反复:</strong>霍尔木兹海峡管理方案若有进展,油价地缘溢价可能快速释放;若谈判破裂,风险溢价或将再次上升。</li>
+            </ul>
+        </div>
+
+        <h2 id="sec-9">八、数据摘要</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>指标</th>
+                    <th>数值</th>
+                    <th>变化</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20年来10Y美债收益率</td>
+                    <td>4.99%附近</td>
+                    <td>持平,连降三周</td>
+                </tr>
+                <tr>
+                    <td>美元指数</td>
+                    <td>102.01</td>
+                    <td>+0.17%</td>
+                </tr>
+                <tr>
+                    <td>在岸人民币</td>
+                    <td>6.6681</td>
+                    <td>+30基点</td>
+                </tr>
+                <tr>
+                    <td>A股成交额</td>
+                    <td>1.62万亿</td>
+                    <td class="down">-3477亿</td>
+                </tr>
+                <tr>
+                    <td>港股恒指成交额</td>
+                    <td>2105亿港元</td>
+                    <td class="down">-12%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 信号下沉 -->
+        <div class="signal-box">
+            <p style="font-size: 0.9em; color: #aaa;">
+                <!--mb-signals {"美股":{"direction":1,"active3":["存储芯片","光通信","AI算力基础设施"],"avoid2":["前期过热科技成长","高估值消费电子"]},"港股":{"direction":0,"active3":["石油股","煤炭股","内房股"],"avoid2":["光通信/半导体硬件","中型互联网"]},"A股":{"direction":1,"active3":["高股息板块","人形机器人/物理AI","优质白酒/医药生物"],"avoid2":["AI上游硬件","前期过热中小盘"]}}-->
+            </p>
+        </div>
+    </div>
+<button class="mb-top" onclick="window.scrollTo(0,0)" title="回到顶部">↑顶</button>
+<button class="mb-top mb-toc-toggle" onclick="var n=document.querySelector('.mb-toc');if(n)n.classList.toggle('mb-toc-open')" title="目录">☰</button>
+<!--mb-spy--><script>
+(function(){try{
+var links=document.querySelectorAll('.mb-toc a');var map={};
+links.forEach(function(a){var id=a.getAttribute('href');if(id&&id.charAt(0)==='#'){map[id.slice(1)]=a;}});
+function spy(){var cur=null;var y=(window.scrollY||0)+120;
+Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=y){cur=id;}});
+links.forEach(function(a){a.classList.remove('active');});
+if(cur&&map[cur]){map[cur].classList.add('active');}}
+window.addEventListener('scroll',spy,{passive:true});window.addEventListener('resize',spy,{passive:true});spy();
+}catch(e){}})();
+</script>
+</body>
+</html>

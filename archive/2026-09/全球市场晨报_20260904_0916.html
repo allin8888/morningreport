@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 · 2026年09月04日 星期五</title>
+<style>
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --border: #e2e5ea;
+  --text: #1a1d23;
+  --muted: #6b7280;
+  --red: #d32f2f;
+  --green: #2e7d32;
+  --accent: #1976d2;
+  --accent2: #f57c00;
+  --gold: #b8860b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; font-size: 14px; }
+.container { max-width: 780px; margin: 0 auto; padding: 16px; }
+.header { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%); color: #fff; padding: 20px 24px; border-radius: 12px; margin-bottom: 16px; }
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.header .subtitle { font-size: 13px; opacity: 0.85; }
+.header .date { font-size: 15px; font-weight: 600; margin-top: 6px; }
+.section { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+.section-title { font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); display: flex; align-items: center; gap: 6px; }
+.three-lines { background: linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%); border: 1px solid #ffe082; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }
+.three-lines .tag { font-size: 11px; font-weight: 700; color: var(--gold); background: #fff; border: 1px solid #ffe082; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+.three-lines ul { list-style: none; }
+.three-lines li { padding: 4px 0; font-size: 13.5px; line-height: 1.5; }
+.three-lines li::before { content: "▸"; color: var(--gold); margin-right: 6px; font-weight: 700; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #f0f4f8; color: var(--text); font-weight: 600; padding: 8px 10px; text-align: left; border-bottom: 2px solid var(--border); white-space: nowrap; }
+td { padding: 7px 10px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+.up { color: var(--red); font-weight: 600; }
+.down { color: var(--green); font-weight: 600; }
+.neutral { color: var(--muted); }
+.highlight-cell { background: #fffde7; }
+.alert-row { background: #fff3e0; }
+.alert-row td { border-bottom: 1px solid #ffe0b2; }
+.dir-section { margin-top: 8px; }
+.dir-title { font-size: 12px; font-weight: 700; margin: 8px 0 4px; padding: 3px 8px; border-radius: 4px; display: inline-block; }
+.dir-active { background: #e8f5e9; color: var(--green); }
+.dir-avoid { background: #ffebee; color: var(--red); }
+.dir-list { font-size: 12.5px; color: var(--text); line-height: 1.7; padding-left: 16px; margin-bottom: 6px; }
+.dir-list strong { font-weight: 600; }
+.themes-grid { display: grid; gap: 8px; }
+.theme-card { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.theme-card .num { font-size: 11px; font-weight: 700; color: var(--accent); background: #e3f2fd; padding: 1px 6px; border-radius: 3px; display: inline-block; margin-bottom: 4px; }
+.theme-card .title { font-size: 13.5px; font-weight: 700; margin-bottom: 4px; }
+.theme-card .body { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+.theme-card .body strong { color: var(--text); }
+.calendar-item { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid #f5f5f5; font-size: 13px; }
+.calendar-item:last-child { border-bottom: none; }
+.cal-time { font-weight: 700; color: var(--accent); white-space: nowrap; min-width: 52px; }
+.cal-label { flex: 1; }
+.cal-tag { font-size: 11px; padding: 1px 6px; border-radius: 3px; font-weight: 600; white-space: nowrap; }
+.tag-high { background: #ffebee; color: var(--red); }
+.tag-mid { background: #fff3e0; color: var(--accent2); }
+.tag-low { background: #e8f5e9; color: var(--green); }
+.footer { text-align: center; font-size: 11px; color: var(--muted); padding: 12px; line-height: 1.8; }
+@media (max-width: 760px) {
+  .container { padding: 10px; }
+  .header { padding: 14px 16px; }
+  .header h1 { font-size: 18px; }
+  table { font-size: 12px; }
+  th, td { padding: 6px 8px; }
+  .three-lines li { font-size: 12.5px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <h1>📊 全球市场晨报</h1>
+  <div class="date">2026年09月04日 星期五</div>
+  <div class="subtitle">盘前速读 · 聚焦美股/港股/A股隔夜动态与今日主线</div>
+</div>
+
+<!-- 三句速读 -->
+<div class="three-lines">
+  <span class="tag">🔑 三句速读</span>
+  <ul>
+    <li><strong>沃勒鸽派突袭</strong>：美联储理事沃勒表态"若通胀降温支持9月维持利率不变"，市场9月加息概率从63%骤降至约50%，美元指数跌破99关口创5个月新低，美债收益率全线回落。</li>
+    <li><strong>美股两连阳</strong>：道指+1.18%报53686点、纳指+1.40%报26584点、标普+1.06%报7748点，科技七巨头全线飘红；英伟达官宣129亿美元收购Hugging Face，OpenAI发布GPT-6 Astra宣告"AGI时代"；特斯拉+5.4%、Snowflake+16.5%领涨。</li>
+    <li><strong>今日关键事件</strong>：北京时间20:30美国8月非农数据（预期+5.8万，7月-2.3万）为9月FOMC前最后一份官方就业报告；A股延续缩量震荡格局（成交1.76万亿），沪指的3920-3980箱体待方向选择。</li>
+  </ul>
+</div>
+
+<!-- 美股 -->
+<div class="section">
+  <div class="section-title">🇺🇸 美股 · 9月3日收盘</div>
+  <table>
+    <thead>
+      <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>道琼斯工业指数</td><td>53,686.11</td><td class="up">+1.18%</td><td>两连阳，日内升超600点</td></tr>
+      <tr><td>标普500指数</td><td>7,747.71</td><td class="up">+1.06%</td><td>8月4日以来最大单日涨幅</td></tr>
+      <tr><td>纳斯达克综合指数</td><td>26,584.06</td><td class="up">+1.40%</td><td>科技七巨头全线领涨</td></tr>
+      <tr><td>费城半导体指数</td><td>—</td><td class="up">+0.11%</td><td>个股分化，ARM/Intel涨</td></tr>
+      <tr><td>万得科技七巨头指数</td><td>—</td><td class="up">+2.00%</td><td>整体强势</td></tr>
+    </tbody>
+  </table>
+  <div class="dir-section">
+    <div class="dir-title dir-active">✅ 今天最可能活跃的3个方向</div>
+    <div class="dir-list">
+      <strong>① AI算力/软件：</strong>英伟达收购Hugging Face催化，开放平台逻辑强化；Snowflake季报超预期，AI数据云逻辑重估。<br>
+      <strong>② 清洁能源/电动车：</strong>特斯拉Cybercab或于奥斯汀正式发布，大摩看好Robotaxi车队扩张为最大看点。<br>
+      <strong>③ 加密货币概念股：</strong>美元走弱+加息预期降温，比特币突破81400美元创5月新高；Coinbase+10%、Circle+16%。
+    </div>
+    <div class="dir-title dir-avoid">⚠️ 今天最该回避的2个方向</div>
+    <div class="dir-list">
+      <strong>① 存储板块：</strong>美光/闪迪微涨不超1%，SK海力士-0.8%、希捷-1.2%、西部数据-1.6%，合约价上行但股价承压。<br>
+      <strong>② 博通/部分AI硬件：</strong>博通Q4指引不及预期收跌2.7%，市场对AI业绩兑现要求提升，高估值硬件面临回调压力。
+    </div>
+  </div>
+</div>
+
+<!-- 港股 -->
+<div class="section">
+  <div class="section-title">🇭🇰 港股 · 9月3日收盘</div>
+  <table>
+    <thead>
+      <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>恒生指数</td><td>25,213.31</td><td class="down">-0.39%</td><td>高开低走，银行/煤炭走弱</td></tr>
+      <tr><td>恒生科技指数</td><td>4,468.48</td><td class="down">-1.08%</td><td>权重科网股普跌</td></tr>
+      <tr><td>国企指数</td><td>8,385.24</td><td class="down">-0.77%</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12px;color:var(--muted);margin-top:6px;">南向资金净买入近34亿港元；生物科技+14%领涨（和黄医药），中资航运/地产/有色金属走强，希音上市第三日再跌近9%。</p>
+  <div class="dir-section">
+    <div class="dir-title dir-active">✅ 今天最可能活跃的3个方向</div>
+    <div class="dir-list">
+      <strong>① 生物医药/CXO：</strong>隔夜美股生物医药反弹，9月5日国家医保谈判启动，创新药/CRO有事件催化。<br>
+      <strong>② 有色金属/资源股：</strong>美元走弱+金价上行，黄金矿业股全球走强（金田+7%），有色板块资金流入明显。<br>
+      <strong>③ 人形机器人产业链：</strong>Defiance ETFs推出首只中国人形机器人ETF（绿的谐波/汇川技术/三花智控等十大成分），深圳出台机器人产业扶持政策催化。
+    </div>
+    <div class="dir-title dir-avoid">⚠️ 今天最该回避的2个方向</div>
+    <div class="dir-list">
+      <strong>① 银行/内银：</strong>港股银行板块昨日走弱，A股国有六大行早盘冲高后集体收跌，息差收窄逻辑持续压制。<br>
+      <strong>② 科网权重股（腾讯/阿里/小米）：</strong>港股科技权重昨日普跌，南向资金虽净买入但短期缺乏向上动能，观望为主。
+    </div>
+  </div>
+</div>
+
+<!-- A股 -->
+<div class="section">
+  <div class="section-title">🇨🇳 A股 · 9月3日收盘</div>
+  <table>
+    <thead>
+      <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>上证指数</td><td>3,942.09</td><td class="up">+0.02%</td><td>缩量震荡，箱体运行</td></tr>
+      <tr><td>深证成指</td><td>13,625.12</td><td class="up">+0.10%</td><td>—</td></tr>
+      <tr><td>创业板指</td><td>3,312.54</td><td class="up">+0.01%</td><td>—</td></tr>
+      <tr><td>科创50</td><td>—</td><td class="down">盘中跌超1%</td><td>科技成长股承压</td></tr>
+      <tr style="background:#fafafa"><td colspan="2"><strong>两市成交额</strong></td><td class="down">1.76万亿</td><td>缩量323亿，连续两日低于2万亿</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12px;color:var(--muted);margin-top:6px;">全市场1846家上涨/3570家下跌，赚钱效应偏弱。保险/贵金属/航运港口/电机涨幅居前，农产品加工/教育/塑料制品/农化制品领跌。</p>
+  <div class="dir-section">
+    <div class="dir-title dir-active">✅ 今天最可能活跃的3个方向</div>
+    <div class="dir-list">
+      <strong>① AI算力硬件（液冷/服务器）：</strong>英伟达收购Hugging Face催化海外AI情绪，板块连续回调后存在超跌修复机会，优先看国产替代逻辑硬件端。<br>
+      <strong>② 有色贵金属：</strong>美元走弱+金价站4500美元，叠加资金避险配置，有色/贵金属具备估值修复逻辑，适合底仓配置。<br>
+      <strong>③ 创新药/CRO：</strong>9月5日国家医保谈判正式开启，事件催化来临，关注降价预期可控、业绩兑现标的。
+    </div>
+    <div class="dir-title dir-avoid">⚠️ 今天最该回避的2个方向</div>
+    <div class="dir-list">
+      <strong>① 小微盘/高位题材股：</strong>上证WIND微盘股指数周四跌1.84%，增量资金匮乏，高波动标的继续承压，注意大额解禁标的抛压。<br>
+      <strong>② 银行/低波红利：</strong>银行股早盘批量创新高后大幅回调，国有六大行集体收跌，短期超买+缺乏上攻动能，警惕冲高回落风险。
+    </div>
+  </div>
+</div>
+
+<!-- 商品与汇率 -->
+<div class="section">
+  <div class="section-title">💱 大宗商品 &amp; 汇率</div>
+  <table>
+    <thead>
+      <tr><th>品种</th><th>价格</th><th>涨跌</th><th>背景</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>WTI原油</td><td>91.67 美元/桶</td><td class="up">+0.73%</td><td>美伊冲突持续，霍尔木兹海峡航运受限，本周累涨近9%</td></tr>
+      <tr><td>布伦特原油</td><td>95.92 美元/桶</td><td class="up">+0.30%</td><td>涨势暂歇，花旗维持Q4预测70美元/桶</td></tr>
+      <tr><td>现货黄金</td><td>4,473 美元/盎司</td><td class="up">+1.94%</td><td>沃勒鸽派+美元走弱，盘中站上4500美元</td></tr>
+      <tr><td>COMEX黄金期货</td><td>4,520 美元/盎司</td><td class="up">+2.39%</td><td>高盛预计年底金价将达4900美元</td></tr>
+      <tr><td>美元指数</td><td>98.95</td><td class="down">-0.58%</td><td>5个月新低，沃勒鸽派+日元飙升双重压制</td></tr>
+      <tr><td>美元/日元</td><td>155.76</td><td class="down">-1.83%</td><td>日本央行9月加息预期升温，日债10Y突破3%创30年新高</td></tr>
+      <tr><td>10Y美债收益率</td><td>4.761%</td><td class="down">-3.4bp</td><td>短端领跌，曲线牛陡</td></tr>
+      <tr><td>2Y美债收益率</td><td>4.336%</td><td class="down">-3.1bp</td><td>加息预期骤降，2Y一度跌至4.30%</td></tr>
+      <tr><td>离岸人民币</td><td>6.7178</td><td class="up">+38bp</td><td>创三年半新高，中间价调升22bp至6.7807</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12px;color:var(--muted);margin-top:6px;">⚠️ 欧洲天然气升破70欧元/MWh创3月新高，欧盟储气率65%低于五年均值82%，冬季供应风险犹存。比特币突破81,400美元创5月新高，加密货币概念股（Coinbase+10%、Strategy+17%）领涨美股。</p>
+</div>
+
+<!-- 今日关键日历 -->
+<div class="section">
+  <div class="section-title">📅 今日关键日历（9月4日）</div>
+  <div class="calendar-item">
+    <span class="cal-time">20:30</span>
+    <span class="cal-label"><strong>美国8月非农就业人数</strong>（预期+5.8万，前值-2.3万）</span>
+    <span class="cal-tag tag-high">★★★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">20:30</span>
+    <span class="cal-label">美国8月失业率（预期4.1%）、平均时薪（预期+0.3%月率）</span>
+    <span class="cal-tag tag-high">★★★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">20:30</span>
+    <span class="cal-label">加拿大8月就业人数变动</span>
+    <span class="cal-tag tag-mid">★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">22:00</span>
+    <span class="cal-label">美国8月ISM非制造业PMI（预期54.2，前值54.1）</span>
+    <span class="cal-tag tag-high">★★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">22:00</span>
+    <span class="cal-label">美国8月全球供应链压力指数</span>
+    <span class="cal-tag tag-mid">★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">09:05</span>
+    <span class="cal-label"><strong>国家医保谈判</strong>正式启动（创新药/CRO事件催化）</span>
+    <span class="cal-tag tag-high">★★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">全天</span>
+    <span class="cal-label">富时A50指数调整9月18日生效，纳入半导体科技龙头</span>
+    <span class="cal-tag tag-mid">★★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">全天</span>
+    <span class="cal-label">第32届APEC中小企业部长会议在广州开幕</span>
+    <span class="cal-tag tag-low">★★</span>
+  </div>
+  <div class="calendar-item">
+    <span class="cal-time">全天</span>
+    <span class="cal-label">小米首次参展德国柏林国际消费电子展，小米18 Fold发布</span>
+    <span class="cal-tag tag-low">★★</span>
+  </div>
+</div>
+
+<!-- 今日交易主线 -->
+<div class="section">
+  <div class="section-title">🎯 今日交易主线（5条）</div>
+  <div class="themes-grid">
+    <div class="theme-card">
+      <span class="num">主线一</span>
+      <div class="title">美联储9月加息预期骤降，全球风险资产重定价</div>
+      <div class="body"><strong>背景：</strong>沃勒周四表态"若通胀数据延续改善将支持维持利率不变"，CME 9月加息概率从63%骤降至约50%，美元指数跌破99创5个月新低。<br><strong>重要性：</strong>非农+CPI将在下周密集发布，成为9月FOMC前最后两次关键数据窗口，决定年内最后一次议息会议走向。<br><strong>潜在影响：</strong>黄金、比特币、成长股受益；若今晚非农低于预期（&lt;3.5万），则进一步打开降息预期空间；反之若&gt;9.5万，加息押注将再度升温。市场隐含SPX波动约±1.1%。</div>
+    </div>
+    <div class="theme-card">
+      <span class="num">主线二</span>
+      <div class="title">AI产业双重大事件：英伟达收购Hugging Face + OpenAI发布GPT-6 Astra</div>
+      <div class="body"><strong>背景：</strong>英伟达以129.3亿美元官宣收购Hugging Face（史上最大AI收购之一），黄仁勋承诺维持平台开放性；OpenAI同日发布GPT-6 Astra，总裁Brockman称"可能已接近AGI"，API定价为GPT-5.6的2.5倍（输入$10/M、输出$50/M）。<br><strong>重要性：</strong>算力（英伟达）+开源生态（Hugging Face）+最先进模型（Astra）三大环节同向整合/升级，AI产业资本开支持续超预期。<br><strong>潜在影响：</strong>全球AI算力硬件、云基础设施、模型应用层获资金关注；A股液冷服务器/国产GPU（燧原科技等）有补涨逻辑；短期警惕AI软件股估值过高后的获利了结。</div>
+    </div>
+    <div class="theme-card">
+      <span class="num">主线三</span>
+      <div class="title">美伊冲突持续升级，油价维持高位震荡但涨势暂歇</div>
+      <div class="body"><strong>背景：</strong>美军对伊朗南部发动空袭，伊朗以导弹无人机报复科威特/阿联酋美军基地；霍尔木兹海峡航运流量仅为战前50%（每日约500万桶 vs 战前1000万桶），沙特8月出口骤降至九年最低（约300万桶/日）。<br><strong>重要性：</strong>全球1/5石油经霍尔木兹运输，任何封锁升级都会直接冲击供应；柴油零售均价5.78美元/加仑逼近2022年6月峰值，欧洲天然气升破70欧元创新高。<br><strong>潜在影响：</strong>能源股短期有支撑，但花旗维持Q4布油70美元预测（假设海峡重开），追高风险大；军工/航运/资源类防御配置价值提升。</div>
+    </div>
+    <div class="theme-card">
+      <span class="num">主线四</span>
+      <div class="title">日元套利交易逆转风险升温，全球债市面临重估</div>
+      <div class="body"><strong>背景：</strong>日债10年期收益率本周突破3%创1996年以来新高，日本央行9月加息25bp概率已完全定价；美元指数跌破99，日元兑美元两日累计涨近3%为2024年8月以来最大两日涨幅。<br><strong>重要性：</strong>日元套利交易（Carry Trade）是全球金融市场最重要的杠杆结构之一，日债收益率上行直接抬升融资成本，可能引发全球风险资产去杠杆连锁反应。<br><strong>潜在影响：</strong>短期JPY强势压制大宗商品（铜等），新兴市场货币承压；若跌破155关口触发日央行干预，日元可能加速升值，关注相关外汇波动。</div>
+    </div>
+    <div class="theme-card">
+      <span class="num">主线五</span>
+      <div class="title">A股缩量震荡待方向，医保谈判催化创新药/CXO板块</div>
+      <div class="body"><strong>背景：</strong>沪指连续两日在3920-3980箱体窄幅震荡，成交额1.76万亿持续缩量，北向资金连续流出；但8月中国服务业PMI回升至51.4（连续44个月扩张），综合PMI升至52.1，内需韧性仍在。<br><strong>重要性：</strong>今晚非农数据将影响外围情绪，A股明日（9月5日）医保谈判启动在即，创新药/CRO板块有事件驱动机会；富时A50调整纳入半导体龙头带来被动资金预期。<br><strong>潜在影响：</strong>若今晚非农疲软，A股明日高开修复概率大；关注液冷服务器/国产GPU（燧原科技）、有色金属/贵金属（避险+美元走弱）、创新药/CXO（医保催化）三大方向低吸机会，规避高位题材和小微盘股。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 政策动态 -->
+<div class="section">
+  <div class="section-title">📜 政策动态</div>
+  <table>
+    <thead>
+      <tr><th>政策/事件</th><th>要点</th><th>影响</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>新型政策性金融工具开始投放</td><td>国开行9月2日首批投放4.6亿，全年规模8000亿，预计撬动8-11万亿总投资</td><td>民间投资/基建方向中长期利好</td></tr>
+      <tr><td>工信部等十部门：促进中小企业"十五五"规划</td><td>设立国家中小企业发展基金二期，投早投小投硬科技；布局量子科技/脑机接口/具身智能</td><td>中小企业/硬科技方向政策支撑</td></tr>
+      <tr><td>深圳出台机器人产业方案</td><td>打造全球智能机器人产业高地</td><td>人形机器人/伺服电机/减速器产业链催化</td></tr>
+      <tr><td>商务部回应法国"反超快时尚"</td><td>如法方一意孤行，中方将采取必要措施维护权益</td><td>中欧贸易关系短期不确定性</td></tr>
+      <tr><td>香港证监会加强私募产品监管</td><td>基金管理人须把话说明白、把风险讲透，投资比例过半按"复杂产品"严管</td><td>保护散户，影响私募基金募集节奏</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 外围速览 -->
+<div class="section">
+  <div class="section-title">🌍 外围市场速览</div>
+  <table>
+    <thead>
+      <tr><th>市场</th><th>指数</th><th>收盘</th><th>涨跌</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>欧洲</td><td>德国DAX</td><td>26,003.32</td><td class="up">+0.63%</td></tr>
+      <tr><td>欧洲</td><td>英国富时100</td><td>10,831.52</td><td class="up">+0.70%</td></tr>
+      <tr><td>欧洲</td><td>法国CAC40</td><td>8,286.40</td><td class="up">+0.07%</td></tr>
+      <tr><td>亚太</td><td>日经225</td><td>64,214.48</td><td class="down">-0.17%</td></tr>
+      <tr><td>亚太</td><td>韩国KOSPI</td><td>6,579.48</td><td class="up">+0.26%</td></tr>
+      <tr><td>中概股</td><td>纳斯达克金龙指数</td><td>—</td><td class="down">-0.81%</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12px;color:var(--muted);margin-top:6px;">欧股全线上涨（德国四大机构上调2026年GDP增长预期提振信心）；日韩窄幅波动；金龙指数跌0.81%（携程-5%、BOSS直聘-2%领跌）。</p>
+</div>
+
+<!-- 免责声明 -->
+<div class="footer">
+  <p>⚠️ 本报告仅供参考，不构成任何投资建议。市场有风险，投资需谨慎。</p>
+  <p>数据来源：华尔街见闻、每日经济新闻、新浪财经、东方财富、汇通网、CNFin、Westpac等公开渠道，截至2026-09-04盘前。</p>
+  <p>© 全球市场晨报 · 2026年09月04日</p>
+</div>
+
+</div>
+</body>
+</html>
