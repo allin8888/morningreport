@@ -3,128 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全球市场晨报 · 归档</title>
+<title>全球市场晨报 · 2026年11月10日 周二</title>
 <style>
-:root{--up:#d0342c;--down:#0a7d43;--ink:#1f2430;--muted:#6b7280;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb}
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
-.wrap{max-width:860px;margin:0 auto;padding:28px 16px 56px}
-header{margin-bottom:20px}
-header h1{font-size:26px;margin:0 0 6px}
-header .sub{color:var(--muted);font-size:14px;margin:0}
-.latest{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--up);border-radius:10px;padding:16px 18px;margin:18px 0 26px}
-.latest .tag{display:inline-block;font-size:12px;color:#fff;background:var(--up);border-radius:4px;padding:1px 8px;margin-right:8px;vertical-align:2px}
-.latest a{color:var(--ink);font-weight:600;text-decoration:none;font-size:17px}
-.latest a:hover{color:var(--up)}
-.latest .meta{color:var(--muted);font-size:13px;margin-top:4px}
-ul.list{list-style:none;margin:0;padding:0}
-ul.list li{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-bottom:8px}
-ul.list li:hover{border-color:var(--up)}
-.date{flex:0 0 128px;font-variant-numeric:tabular-nums;font-size:14px;color:var(--muted)}
-.rd{flex:1;color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.rd:hover{color:var(--up)}
-.md{flex:0 0 auto;color:var(--muted);text-decoration:none;font-size:13px;border:1px solid var(--line);border-radius:4px;padding:1px 7px}
-.md:hover{color:var(--up);border-color:var(--up)}
-footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
-@media (max-width:560px){.date{flex-basis:104px;font-size:13px}.rd{font-size:14px}}
+:root{--up:#c0392b;--down:#1e8e3e;--ink:#1f2329;--muted:#8a919f;--line:#e5e6eb;--bg:#f7f8fa;--card:#ffffff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:15px}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 40px}
+h1{font-size:26px;margin:8px 0 6px}
+.meta{color:var(--muted);font-size:13px;margin-bottom:4px}
+.meta b{color:var(--ink)}
+.badge{display:inline-block;background:#8a919f;color:#fff;font-size:12px;padding:2px 10px;border-radius:3px;margin-right:8px;vertical-align:middle}
+.rule{height:3px;background:#c0392b;margin:14px 0 22px;border-radius:2px}
+h2{font-size:19px;margin:30px 0 12px;padding-left:10px;border-left:4px solid #c0392b}
+h3{font-size:16px;margin:18px 0 8px}
+p{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#f2f3f5;font-weight:600;white-space:nowrap}
+td.num{white-space:nowrap}
+.up{color:var(--up);font-weight:600}
+.down{color:var(--down);font-weight:600}
+ul{margin:8px 0 8px 22px}
+li{margin:6px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:12px 0}
+.lead{border-left:4px solid #c0392b;background:var(--card);padding:14px 16px;margin:12px 0}
+.lead p{margin:10px 0}
+.tag{font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px;align-items:center}
+.chips .lbl{font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap}
+.chip{display:inline-block;font-size:13px;padding:3px 10px;border-radius:12px;border:1px solid}
+.chip.hot{color:#c0392b;border-color:#e6b0aa;background:#fdf3f2}
+.chip.cold{color:#1e8e3e;border-color:#b7dfc3;background:#f0f9f2}
+.note{color:var(--muted);font-size:12.5px}
+.muted{color:var(--muted)}
+@media(max-width:600px){body{font-size:14px}h1{font-size:22px}th,td{padding:6px 7px;font-size:13px}}
+</style>
+
+<style>
+.mb-toc{position:fixed;top:12px;right:12px;max-width:240px;max-height:80vh;overflow:auto;
+  background:var(--card,#fff);border:1px solid var(--line,#e5e7eb);border-radius:10px;padding:10px 12px;
+  font:12px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:9999;color:var(--txt,#1f2937)}
+.mb-toc h4{margin:0 0 6px;font-size:12px;color:var(--sub,#6b7280)}
+.mb-toc ol{margin:0;padding-left:18px}
+.mb-toc a{color:var(--accent,#2563eb);text-decoration:none}
+.mb-toc a:hover{text-decoration:underline}
+.mb-toc a.active{font-weight:700;text-decoration:underline}
+.mb-top{position:fixed;bottom:16px;right:16px;width:42px;height:42px;border-radius:50%;
+  background:var(--accent,#2563eb);color:#fff;border:none;cursor:pointer;font-size:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:9999}
+.mb-toc-toggle{top:12px;right:12px;bottom:auto;display:none;width:38px;height:38px;font-size:15px}
+.mb-spark{margin:0 0 14px;padding:10px 12px;
+  background:var(--card,#161f2e);border:1px solid var(--line,#2a3850);border-radius:10px}
+.mb-spark h4{margin:0 0 6px;font-size:12px;font-weight:600;color:var(--sub,#9fb0c8)}
+.mb-spark-row{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto}
+.mb-spark-item{display:flex;flex-direction:column;gap:2px;flex:1 1 0;min-width:0;padding:6px 9px;
+  background:var(--card2,#1c2738);border:1px solid var(--line,#2a3850);border-radius:8px}
+.mb-spark-name{font-size:11px;color:var(--sub,#9fb0c8);white-space:nowrap}
+.mb-spark-val{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--txt,#e8edf5);white-space:nowrap}
+.mb-spark-val.up{color:var(--up,#dc2626)}
+.mb-spark-val.down{color:var(--down,#16a34a)}
+.mb-spark-chg{font-size:11px;font-weight:600;margin-left:4px}
+.mb-spark-pct{font-size:10.5px;color:var(--sub,#9fb0c8)}
+.mb-spark-svg{display:block;margin-top:2px;width:100%;height:26px}
+@media(max-width:760px){
+  .mb-spark-item{flex:0 0 auto;min-width:108px}
+  .mb-toc{transform:translateX(115%);transition:transform .18s ease;max-width:210px}
+  .mb-toc.mb-toc-open{transform:none}
+  .mb-toc-toggle{display:block}
+}
 </style>
 </head>
 <body>
+<nav class="mb-toc"><h4>目录</h4><ol><li><a href="#sec-1">三句速读</a></li><li><a href="#sec-2">一、美股（11/9 收盘 + AI/芯片全景 + 今晨期货）</a></li><li><a href="#sec-3">二、港股（11/9 收盘 + 今日前瞻）</a></li><li><a href="#sec-4">三、A股（11/9 收盘 + CPI/PPI 落地 + 今日前瞻）</a></li><li><a href="#sec-5">四、政策动态（关税续期 + 央行流动性 + 地缘）</a></li><li><a href="#sec-6">五、外围速览（11/9 收盘）</a></li><li><a href="#sec-7">六、今日交易主线</a></li><li><a href="#sec-8">七、今日关键日历</a></li><li><a href="#sec-9">八、待核实与口径说明</a></li></ol></nav>
 <div class="wrap">
-<header>
+<section class="mb-spark"><h4>指标近况</h4><div class="mb-spark-row"><span class="mb-spark-item" title="恒生指数 24,448.95（较前日 -0.13%）"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val down">24,448.95<span class="mb-spark-chg">-0.13%</span></span><span class="mb-spark-pct">近20日 P60</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,17.7 7.8,3.2 13.6,21.7 19.4,27.0 25.2,4.5 31.0,3.0 36.8,10.1 42.6,26.2 48.4,25.8 54.2,26.8 60.0,24.3 65.8,24.3 71.6,24.3 77.4,23.6 83.2,22.6 89.0,19.7 94.8,13.2 100.6,15.5 106.4,15.5 112.2,15.5 118.0,15.8"/></svg></span><span class="mb-spark-item" title="上证指数 3,660.79（较前日 +0.32%）"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val up">3,660.79<span class="mb-spark-chg">+0.32%</span></span><span class="mb-spark-pct">近20日 P55</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,6.4 7.8,3.0 13.6,6.9 19.4,16.6 25.2,10.9 31.0,10.9 36.8,9.7 42.6,18.3 48.4,12.5 54.2,17.8 60.0,27.0 65.8,27.0 71.6,27.0 77.4,20.1 83.2,25.4 89.0,11.7 94.8,11.0 100.6,18.2 106.4,18.2 112.2,18.2 118.0,16.1"/></svg></span><span class="mb-spark-item" title="纳斯达克 25,253.14（较前日 +2.74%）"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val up">25,253.14<span class="mb-spark-chg">+2.74%</span></span><span class="mb-spark-pct">近20日 P25</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,8.7 7.8,5.8 13.6,3.0 19.4,10.0 25.2,10.5 31.0,10.5 36.8,8.4 42.6,5.3 48.4,4.5 54.2,8.2 60.0,15.7 65.8,15.7 71.6,15.7 77.4,18.5 83.2,16.4 89.0,12.7 94.8,27.0 100.6,24.3 106.4,24.3 112.2,24.3 118.0,17.6"/></svg></span><span class="mb-spark-item" title="布伦特原油 92.57（较前日 -5.85%）"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val down">92.57<span class="mb-spark-chg">-5.85%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,10.4 8.4,13.3 14.9,11.5 21.3,7.3 27.8,3.9 34.2,3.9 40.7,4.8 47.1,6.6 53.6,5.2 60.0,5.6 66.4,3.0 72.9,15.3 79.3,16.4 85.8,25.0 92.2,21.5 98.7,21.5 105.1,21.5 111.6,21.5 118.0,27.0"/></svg></span><span class="mb-spark-item" title="现货黄金 4,136.20（较前日 +1.87%）"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val up">4,136.20<span class="mb-spark-chg">+1.87%</span></span><span class="mb-spark-pct">近20日 P87.5</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 9.2,5.1 16.5,5.5 23.8,14.7 31.0,17.2 38.2,17.2 45.5,15.4 52.8,11.8 60.0,11.2 67.2,15.0 74.5,27.0 81.8,27.0 89.0,27.0 96.2,21.1 103.5,22.8 110.8,11.8 118.0,5.4"/></svg></span></div></section>
+<p class="meta"><b>2026年11月10日 · 周二</b> ｜ 盘前速览 ｜ 数据口径：周一（11/9）全球收盘 + 今晨（07:04）期货快讯 + 今晨公布中国 10 月通胀数据；今晚 21:30 美国 10 月 CPI ｜ 仅供参考，不构成投资建议</p>
 <h1>全球市场晨报</h1>
-<p class="sub">每日盘前全球市场速览：美股 · 港股 · A股 · 大宗商品 · 政策日历，共 83 期</p>
-</header>
-<div class="latest">
-<span class="tag">最新一期</span><a href="archive/全球市场晨报_20261110_0841.html">2026-11-10 周二 晨报</a>
-<div class="meta">网页版与 Markdown 双格式，历史各期见下方列表</div>
+<div class="rule"></div>
+
+<h2 id="sec-1">三句速读</h2>
+<div class="lead">
+<p><span class="tag">① 隔夜美股全线大涨、但龙头分化：</span>标普 <span class="up">+2.35%</span> 报 7,549.94（七个月最大日涨）、纳指 <span class="up">+2.74%</span> 报 25,253.14、道指 <span class="up">+2.15%</span> 报 52,389.75；费半两日累涨 11%（AMD +10%、Coherent +18%），但<b>英伟达逆市 -4.22% 创近七个月新低</b>——董事会启动独立调查 + 众院三委员会传唤，「关键人物风险」成 AI 链最大变量。今晨美股期货小幅走高（纳指期货 +0.12%，财联社 07:04 快讯口径）。</p>
+<p><span class="tag">② 今日 13:01 中美关税「再续期」+ 国内通胀剪刀差：</span>继续暂停 24% 对美加征关税 2 个月（保留 10%），同步暂停部分反制措施与对美船舶特别港务费（双源，特朗普访华前夕语境）；最新公布的 10 月数据：<b>CPI +0.7% 低于预期、PPI +5.7% 大超预期</b>创 2022 年 6 月以来最高——煤炭/油气通胀交易 vs 下游利润挤压的结构分化。恒指周一收 24,448.95（-0.13%）暂守缺口下方，<b>夜期回升至约 24,506</b>（每经口径）。</p>
+<p><span class="tag">③ 今晚 21:30 美国 10 月 CPI = 12 月加息定价最后拼图：</span>9 月整体 3.7%/核心 2.6%，非农超预期后 12 月加息定价接近八成（LSEG）；昨夜美股抢跑大涨 vs 今晨期货仅 +0.12%——兑现风险显著。油价周一 <span class="down">-5.85%</span>（布油 92.57，盘中一度 -8%）：美伊核谈据称就铀浓缩达成一致（3.67% 上限）+ 伊朗宣布结束「非战非和」；俄美乌今日起阿布扎比工作层级会谈。</p>
 </div>
-<ul class="list">
-<li><span class="date">2026-11-10 周二</span><a class="rd" href="archive/全球市场晨报_20261110_0841.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-09 周一</span><a class="rd" href="archive/全球市场晨报_20261109_0946.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-08 周日</span><a class="rd" href="archive/全球市场晨报_20261108_0932.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-07 周六</span><a class="rd" href="archive/全球市场晨报_20261107_0915.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-06 周五</span><a class="rd" href="archive/全球市场晨报_20261106_0836.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-05 周四</span><a class="rd" href="archive/全球市场晨报_20261105_0929.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-04 周三</span><a class="rd" href="archive/全球市场晨报_20261104_0905.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-03 周二</span><a class="rd" href="archive/全球市场晨报_20261103_0855.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-02 周一</span><a class="rd" href="archive/全球市场晨报_20261102_0944.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-11-01 周日</span><a class="rd" href="archive/全球市场晨报_20261101_1548.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-31 周六</span><a class="rd" href="archive/全球市场晨报_20261031_1003.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-30 周五</span><a class="rd" href="archive/全球市场晨报_20261030_0855.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-29 周四</span><a class="rd" href="archive/全球市场晨报_20261029_0910.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-28 周三</span><a class="rd" href="archive/全球市场晨报_20261028_0923.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-27 周二</span><a class="rd" href="archive/全球市场晨报_20261027_0953.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-26 周一</span><a class="rd" href="archive/全球市场晨报_20261026_0919.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-24 周六</span><a class="rd" href="archive/全球市场晨报_20261024_0932.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-23 周五</span><a class="rd" href="archive/全球市场晨报_20261023_0933.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-22 周四</span><a class="rd" href="archive/全球市场晨报_20261022_0922.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-21 周三</span><a class="rd" href="archive/全球市场晨报_20261021_0925.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-20 周二</span><a class="rd" href="archive/全球市场晨报_20261020_0918.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-19 周一</span><a class="rd" href="archive/全球市场晨报_20261019_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-17 周六</span><a class="rd" href="archive/全球市场晨报_20261017_0950.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-16 周五</span><a class="rd" href="archive/全球市场晨报_20261016_0918.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-15 周四</span><a class="rd" href="archive/全球市场晨报_20261015_0926.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-14 周三</span><a class="rd" href="archive/全球市场晨报_20261014_1017.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-13 周二</span><a class="rd" href="archive/全球市场晨报_20261013_1030.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-12 周一</span><a class="rd" href="archive/全球市场晨报_20261012_0919.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-09 周五</span><a class="rd" href="archive/全球市场晨报_20261009_1000.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-08 周四</span><a class="rd" href="archive/全球市场晨报_20261008_1003.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-06 周二</span><a class="rd" href="archive/全球市场晨报_20261006_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-05 周一</span><a class="rd" href="archive/全球市场晨报_20261005_1018.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-03 周六</span><a class="rd" href="archive/全球市场晨报_20261003_2116.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-02 周五</span><a class="rd" href="archive/全球市场晨报_20261002_0923.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-10-01 周四</span><a class="rd" href="archive/全球市场晨报_20261001_1104.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-30 周三</span><a class="rd" href="archive/全球市场晨报_20260930_0942.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-29 周二</span><a class="rd" href="archive/全球市场晨报_20260929_0944.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-28 周一</span><a class="rd" href="archive/全球市场晨报_20260928_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-27 周日</span><a class="rd" href="archive/全球市场晨报_20260927_2302.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-24 周四</span><a class="rd" href="archive/全球市场晨报_20260924_1004.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-23 周三</span><a class="rd" href="archive/全球市场晨报_20260923_0957.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-22 周二</span><a class="rd" href="archive/全球市场晨报_20260922_0920.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-21 周一</span><a class="rd" href="archive/全球市场晨报_20260921_0921.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-19 周六</span><a class="rd" href="archive/全球市场晨报_20260919_1139.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-17 周四</span><a class="rd" href="archive/全球市场晨报_20260917_0919.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-16 周三</span><a class="rd" href="archive/全球市场晨报_20260916_0925.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-15 周二</span><a class="rd" href="archive/全球市场晨报_20260915_0917.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-14 周一</span><a class="rd" href="archive/全球市场晨报_20260914_0920.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-12 周六</span><a class="rd" href="archive/全球市场晨报_20260912_1731.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-11 周五</span><a class="rd" href="archive/全球市场晨报_20260911_0935.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-10 周四</span><a class="rd" href="archive/全球市场晨报_20260910_0943.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-09 周三</span><a class="rd" href="archive/全球市场晨报_20260909_0923.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-08 周二</span><a class="rd" href="archive/全球市场晨报_20260908_1133.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-07 周一</span><a class="rd" href="archive/全球市场晨报_20260907_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-05 周六</span><a class="rd" href="archive/全球市场晨报_20260905_0921.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-04 周五</span><a class="rd" href="archive/全球市场晨报_20260904_0916.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-03 周四</span><a class="rd" href="archive/全球市场晨报_20260903_0928.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-09-02 周三</span><a class="rd" href="archive/全球市场晨报_20260902_0934.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-31 周一</span><a class="rd" href="archive/全球市场晨报_20260831_0932.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-29 周六</span><a class="rd" href="archive/全球市场晨报_20260829_2055.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-28 周五</span><a class="rd" href="archive/全球市场晨报_20260828_0931.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-27 周四</span><a class="rd" href="archive/全球市场晨报_20260827_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-26 周三</span><a class="rd" href="archive/全球市场晨报_20260826_0959.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-25 周二</span><a class="rd" href="archive/全球市场晨报_20260825_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-22 周六</span><a class="rd" href="archive/全球市场晨报_20260822_1115.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-21 周五</span><a class="rd" href="archive/全球市场晨报_20260821_0942.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-20 周四</span><a class="rd" href="archive/全球市场晨报_20260820_0924.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-18 周二</span><a class="rd" href="archive/全球市场晨报_20260818_0906.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-17 周一</span><a class="rd" href="archive/全球市场晨报_20260817_0907.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-15 周六</span><a class="rd" href="archive/全球市场晨报_20260815.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-14 周五</span><a class="rd" href="archive/全球市场晨报_20260814.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
-<li><span class="date">2026-08-13 周四</span><a class="rd" href="archive/全球市场晨报_2026-08-13.html">阅读报告</a></li>
-<li><span class="date">2026-08-12 周三</span><a class="rd" href="archive/全球市场晨报_2026-08-12.html">阅读报告</a></li>
-<li><span class="date">2026-08-11 周二</span><a class="rd" href="archive/全球市场晨报_2026-08-11.html">阅读报告</a></li>
-<li><span class="date">2026-08-10 周一</span><a class="rd" href="archive/全球市场晨报_2026-08-10.html">阅读报告</a></li>
-<li><span class="date">2026-08-08 周六</span><a class="rd" href="archive/全球市场晨报_2026-08-08.html">阅读报告</a></li>
-<li><span class="date">2026-08-07 周五</span><a class="rd" href="archive/全球市场晨报_2026-08-07.html">阅读报告</a></li>
-<li><span class="date">2026-08-06 周四</span><a class="rd" href="archive/全球市场晨报_2026-08-06.html">阅读报告</a></li>
-<li><span class="date">2026-08-05 周三</span><a class="rd" href="archive/全球市场晨报_2026-08-05.html">阅读报告</a></li>
-<li><span class="date">2026-07-20 周一</span><a class="rd" href="archive/全球市场晨报_2026-07-20.html">阅读报告</a></li>
-<li><span class="date">2026-07-18 周六</span><a class="rd" href="archive/全球市场晨报_2026-07-18.html">阅读报告</a></li>
-<li><span class="date">2026-07-17 周五</span><a class="rd" href="archive/全球市场晨报_2026-07-17.html">阅读报告</a></li>
-<li><span class="date">2026-07-16 周四</span><a class="rd" href="archive/全球市场晨报_2026-07-16.html">阅读报告</a><a class="md" href="archive/全球市场晨报_20261110_0841.md">MD</a></li>
+
+<h2 id="sec-2">一、美股（11/9 收盘 + AI/芯片全景 + 今晨期货）</h2>
+<table>
+<tr><th>指数</th><th>收盘（11/9）</th><th>涨跌幅</th><th>备注</th></tr>
+<tr><td>道琼斯</td><td class="num">52,389.75</td><td class="num up">+2.15%</td><td>周一低开高走</td></tr>
+<tr><td>标普500</td><td class="num">7,549.94</td><td class="num up">+2.35%</td><td>七个月最大日涨</td></tr>
+<tr><td>纳斯达克</td><td class="num">25,253.14</td><td class="num up">+2.74%</td><td>高盛：纳指100连跌四周、测试 26,630 趋势线</td></tr>
+<tr><td>费城半导体</td><td class="num">+6.85%</td><td class="num up">两日累涨11%</td><td>美银：SOX 自 6 月高点 -38%、远期 PE 13.7 倍，「投降式抛售」或在 2027Q1 结束</td></tr>
+</table>
+<ul>
+<li><b>芯片股两日修复行情：</b>AMD +10%、应用材料 +11%、拉姆研究 +10%、博通 +8%、英特尔 +5%、Coherent +18%、Lumentum +10%、希捷/西数 +9%——AI 硬件「投降式抛售」后的超跌反弹，资金从单龙头外溢。</li>
+<li><b>英伟达治理危机（最大变量）：</b>收跌 4.22% 至 178.67 美元（近七个月收盘新低）——董事会启动独立调查（FM-Radio，单源待核实）；众院外交/美中竞争/情报三委员会主席 11/5 联名传唤黄仁勋就个人绯闻作情况说明（本周内）；耶鲁教授给「五五开」留任概率；黄持股 8.71 亿股中约 8.01 亿股为夫妻共同持有（约 1,495 亿美元）。<b>AI 龙头信仰动摇 = 费半两日 +11% 的另一面。</b></li>
+<li><b>七巨头分化：</b>特斯拉 +5.48%、Meta +5.16%、亚马逊 +3.02%、微软 +2.83%、苹果 +2.44%、谷歌 +0.79%（谷歌隔夜发布 TPU 8tx/8i Max）。金龙中国指数 <span class="down">-1.3%</span>（爱奇艺 -5%、阿里 -3%、京东 -2%）——中概与美股大涨背离，等待今日关税续期落地修复。</li>
+<li><b>Anthropic IPO 今日路演：</b>估值讨论降至 1.2–1.3 万亿美元（早前约 2 万亿，有人考虑 1.1 万亿）；若顺利 11/16 当周挂牌纳斯达克；同步发布 Fable 5.2/Mythos 5.2（输出提速最高 30%、API 降价 20%）。</li>
+<li><b>今晨期货（快讯口径）：</b>财联社 07:04——美股股指期货小幅走高，纳指期货 +0.12%。CPI 前夜抢跑后的犹豫，待今晚 21:30 数据定价。</li>
 </ul>
-<footer>数据与内容仅供研究参考，不构成投资建议 · 页面自动生成于 2026-11-10</footer>
+<div class="card"><b>今日最可能活跃的 3 个方向 / 最该回避的 2 个方向</b>
+<div class="chips"><span class="lbl">活跃3</span><span class="chip hot">超跌半导体与存储（费半两日+11%、AMD/拉姆研究修复动能）</span><span class="chip hot">光通信/AI硬件动量（Coherent+18%、Lumentum+10%延续）</span><span class="chip hot">Anthropic IPO链（今日路演启动，AI估值定价锚）</span></div>
+<div class="chips"><span class="lbl">回避2</span><span class="chip cold">英伟达链（董事会独立调查+三委员会传唤+关键人物风险）</span><span class="chip cold">CPI敏感高估值成长（今晚21:30数据兑现风险）</span></div>
 </div>
+
+<h2 id="sec-3">二、港股（11/9 收盘 + 今日前瞻）</h2>
+<table>
+<tr><th>指数</th><th>收盘（11/9）</th><th>涨跌幅</th><th>备注</th></tr>
+<tr><td>恒生指数</td><td class="num">24,448.95</td><td class="num down">-0.13%</td><td>低开午后企稳；夜期回升至约 24,506（每经口径）</td></tr>
+<tr><td>恒生科技</td><td class="num">4,040.73</td><td class="num down">-0.92%</td><td>与金龙中国 ADR -1.3% 同向弱势</td></tr>
+<tr><td>国企指数</td><td class="num">8,260.15</td><td class="num down">-0.17%</td><td>主板成交 1,737.07 亿港元</td></tr>
+</table>
+<ul>
+<li><b>周一盘面：</b>早盘受美股科技拖累低开，午后银行与本地股支撑企稳——中国银行 +2.12%、建设银行 +0.57%、腾讯 -0.33%、港交所 -0.31%（东方财经网口径）。24,500 缺口白天未收复，但夜期回升至缺口上方，今日开盘定价关键。</li>
+<li><b>今日三大支撑：</b>①关税续期 13:01 生效（风险偏好直接修复）②中概 ADR 背离后的补涨诉求 ③银行/高股息持续护盘。外汇存款准备金率 11/15 起 4%→6%（央行对人民币升值节奏管理，离岸已至 6.6694）——金融条件边际收紧对港股流动性影响待观察。</li>
+<li><b>风险点：</b>今晚美国 CPI 若超预期，全球风偏回落将打断修复节奏；恒科 -0.92% 弱势未解。</li>
+</ul>
+<div class="card"><b>今日最可能活跃的 3 个方向 / 最该回避的 2 个方向</b>
+<div class="chips"><span class="lbl">活跃3</span><span class="chip hot">中资银行/高股息（护盘+关税暂停+风偏修复）</span><span class="chip hot">黄金股（现货金+1.61%双源+央行连续24个月购金）</span><span class="chip hot">半导体反弹链（费半两日+11%映射）</span></div>
+<div class="chips"><span class="lbl">回避2</span><span class="chip cold">光伏产业链（A股高开低走领跌映射）</span><span class="chip cold">高Beta科网（恒科-0.92%+金龙ADR-1.3%背离）</span></div>
+</div>
+
+<h2 id="sec-4">三、A股（11/9 收盘 + CPI/PPI 落地 + 今日前瞻）</h2>
+<table>
+<tr><th>指数</th><th>收盘（11/9）</th><th>涨跌幅</th><th>备注</th></tr>
+<tr><td>上证指数</td><td class="num">3,660.79</td><td class="num up">+0.32%</td><td>银行护盘、缩量结构市</td></tr>
+<tr><td>深证成指</td><td class="num">11,145.49</td><td class="num down">-0.27%</td><td>盘中一度涨超1%冲高回落</td></tr>
+<tr><td>创业板指</td><td class="num">2,458.56</td><td class="num down">-0.27%</td><td>光伏高开低走拖累</td></tr>
+</table>
+<ul>
+<li><b>周一盘面：</b>成交 1.48 万亿缩量约 1,750 亿、超 3,100 只下跌——指数涨个股弱的典型结构市；北证50 +0.82%、科创50 +0.30%。领涨：煤炭（郑州煤电/安泰集团涨停）、PCB（超声电子/奥士康涨停）、机器人、算力芯片（燧原 +17%、寒武纪/沐曦 +5%）、<b>6G/卫星导航（六张网方向）</b>、燃气、冰雪经济；领跌：光伏（阳光电源/隆基高开低走）、能源金属（锂矿）、游戏、保险、汽车整车。</li>
+<li><b>通胀剪刀差落地（今晨公布）：</b>10 月 CPI +0.7%（低于中金预期 0.9%，核心平稳）；<b>PPI +5.7% 大超预期（中金预期 5.3%），创 2022 年 6 月以来最高</b>——煤炭开采 +36.6%、油气开采 +35.0%、石油煤炭加工 +29.9%、化工 +16.4%，9 个行业拉动约 6.14 个百分点。上中游涨价链（煤炭/油气/化工）延续通胀交易，下游利润挤压逻辑强化。</li>
+<li><b>资金面（罕见强信号）：</b>股票型 ETF 连续 25 个交易日净流入、累计超 6,200 亿元创纪录，上周单周净流入 1,947.69 亿——「稳市机制 + 被动资金」托底与个股赚钱效应弱并存。</li>
+<li><b>今日前瞻：</b>关税续期 13:01 生效 + PPI 通胀交易双催化 vs 缩量结构市惯性——观察沪指 3,650–3,660 平台与成交能否重回 1.6 万亿；今日进出口数据（华创预期出口 +29%）与台积电 10 月销售额是盘后增量。</li>
+</ul>
+<div class="card"><b>今日最可能活跃的 3 个方向 / 最该回避的 2 个方向</b>
+<div class="chips"><span class="lbl">活跃3</span><span class="chip hot">煤炭/油气通胀链（PPI+5.7%大超预期、煤炭开采+36.6%）</span><span class="chip hot">6G/卫星·六张网（周一6G领涨延续+国常会/发改委催化）</span><span class="chip hot">黄金股（现货金+1.61%双源+央行购金24个月）</span></div>
+<div class="chips"><span class="lbl">回避2</span><span class="chip cold">光伏设备（高开低走+领跌+涨停潮兑现）</span><span class="chip cold">锂矿/能源金属（周一领跌板块惯性）</span></div>
+</div>
+
+<h2 id="sec-5">四、政策动态（关税续期 + 央行流动性 + 地缘）</h2>
+<ul>
+<li><b>中美关税「再续期」（双源✓，今日头条）：</b>自 11/10 13:01 起，继续暂停 24% 对美加征关税 2 个月、保留 10%（国务院关税税则委员会公告口径）；商务部同步暂停相关反制措施 2 个月（含 2025 年第 21 号公告、〔2025〕7 号清单、韩华海洋 5 家子公司反制）；交通部暂停对美船舶特别港务费至 2027/1/10——<b>特朗普访华前夕语境下的关税缓和落地</b>（WSJ 中文网标题印证），人民币资产风险偏好的最大制度性增量。</li>
+<li><b>央行外汇存准率上调（11/15 生效）：</b>由 4% 上调至 6%——离岸人民币升至 6.6694 后的升值节奏管理工具，回收美元流动性、平滑汇率波动；对港股流动性影响偏中性偏负，关注后续中间价信号。</li>
+<li><b>伊朗地缘实质性降温：</b>美伊核谈判据称就铀浓缩达成一致（美方同意伊朗丰度上限 3.67%）（FM-Radio 转述，单源待核实）；伊朗最高领袖已下令结束「非战非和」状态、总统佩泽希齐扬称愿谈判但不屈服（每经）；特朗普称不会升级战事。油价 -5.85% 是该叙事的直接定价。</li>
+<li><b>俄美乌阿布扎比会谈（今日-明日）：</b>11/10–11 工作层级谈判（多源确认）；库什纳公布五大目标（永久安全磋商/危机沟通/军事透明/对等降险/欧洲安全框架）。G7 外长会议 11/9–10 巴黎（AI 与中东议题）。</li>
+<li><b>黄仁勋听证会（本周）：</b>众院外交、美中战略竞争、情报三委员会主席 11/5 联名致函传唤，就个人绯闻传闻作情况说明——与董事会独立调查叠加，构成英伟达治理风险的完整事件链。</li>
+</ul>
+
+<h2 id="sec-6">五、外围速览（11/9 收盘）</h2>
+<table>
+<tr><th>资产</th><th>收盘（11/9）</th><th>涨跌</th><th>备注</th></tr>
+<tr><td>布伦特1月</td><td class="num">92.57</td><td class="num down">-5.85%</td><td>盘中一度跌近 8%；伊朗核谈达成一致叙事定价</td></tr>
+<tr><td>WTI 12月</td><td class="num">86.85</td><td class="num down">-4.38%</td><td>同上口径联动</td></tr>
+<tr><td>现货黄金</td><td class="num">4,136.20</td><td class="num up">+1.61%</td><td>避险+央行购金双驱动；COMEX 期金 4,149.50（+1.83%，每经，合约口径）</td></tr>
+<tr><td>现货白银</td><td class="num">53.40</td><td class="num up">+2.88%</td><td>贵金属集体走强</td></tr>
+<tr><td>美债10Y</td><td class="num">4.8738%</td><td class="num up">+1.65bp</td><td>2年期 4.5594%（+4.79bp，两连升）</td></tr>
+<tr><td>美元指数</td><td class="num">101.642</td><td class="num down">-0.61%</td><td>跌落一周高位（每经快照口径）</td></tr>
+<tr><td>离岸人民币</td><td class="num">6.6694</td><td class="num up">+36点</td><td>在岸 6.6724（+39点）</td></tr>
+<tr><td>比特币</td><td class="num">74,000下方</td><td class="num down">破位</td><td>盘中跌破 7.4 万美元，创逾两个月新低</td></tr>
+<tr><td>欧洲STOXX600</td><td class="num">656.52</td><td class="num up">+1.26%</td><td>DAX +1.73% 报 26,267.19</td></tr>
+</table>
+<p class="note">外围主线：油 -5.85%（地缘溢价坍塌）与金 +1.61%（避险+官方购金）罕见同日背离——「战争风险退潮、通胀与央行需求接棒」的资产轮动逻辑清晰；2 年期美债两连升说明加息定价仍在强化，今晚 CPI 是裁决点。</p>
+
+<h2 id="sec-7">六、今日交易主线</h2>
+<ul>
+<li><b>① 关税续期落地（13:01 生效）：</b>24% 暂停再延 2 个月 + 反制暂停 + 港务费暂停——出口链、航运港口、中概/港股风偏直接受益；警惕「利好兑现」回吐（金龙 ADR 昨夜 -1.3% 或为落地前抢跑，今日看修复成色）。</li>
+<li><b>② 中国通胀剪刀差交易：</b>PPI +5.7%（煤炭 +36.6%/油气 +35%）vs CPI +0.7%——上中游涨价链（煤炭/油气/化工）与下游利润挤压并存；周一煤炭涨停潮是预演，今日看持续性（注意油价 -5.85% 与油气股的背离：煤炭逻辑独立于油价）。</li>
+<li><b>③ 今晚 21:30 美国 10 月 CPI：</b>9 月整体 3.7%/核心 2.6%，ING 预期核心环比 +0.3%（单源）；加息定价近八成下，超预期=彻底封顶、低于预期=定价松动——今夜美股与明早亚太的方向裁决点。昨夜 +2.35% 抢跑 vs 今晨期货 +0.12%，仓位宜留缓冲。</li>
+<li><b>④ 英伟达治理危机 vs 费半两日 +11%：</b>独立调查 + 听证会 + 「关键人物风险」——AI 单龙头信仰动摇与全链条超跌修复并存，资金外溢方向（AMD/博通/应用材料/光通信）优于抱团龙头本身。</li>
+<li><b>⑤ 油价 -5.85% 后的再定价：</b>伊朗「铀浓缩一致 + 结束非战非和」若被后续谈判细节反复修正，油价低位反弹风险存在；成本端利好航空/航运/化工下游，油气上游承压——但 A 股煤炭通胀交易独立于油价走势。</li>
+</ul>
+
+<h2 id="sec-8">七、今日关键日历</h2>
+<table>
+<tr><th>时间</th><th>事件</th><th>关注点</th></tr>
+<tr><td>已公布</td><td>中国 10 月 CPI +0.7% / PPI +5.7%</td><td>PPI 创 2022 年 6 月来最高，通胀交易主线</td></tr>
+<tr><td>今日白天</td><td>中国 10 月进出口数据；台积电 10 月销售额</td><td>华创预期出口 +29%、进口 +31%</td></tr>
+<tr><td>13:01</td><td>中美关税暂停续期生效（保留 10%）</td><td>利好兑现成色观察</td></tr>
+<tr><td>今日-明日</td><td>俄美乌阿布扎比工作层级会谈；G7 外长巴黎</td><td>地缘降温叙事验证</td></tr>
+<tr><td>21:00</td><td>应用材料财报</td><td>半导体设备景气度验证（费半两日+11%后）</td></tr>
+<tr><td>21:30</td><td><b>美国 10 月 CPI</b></td><td>12 月加息定价最后拼图（近八成定价）</td></tr>
+<tr><td>22:30</td><td>美股开盘</td><td>CPI 前抢跑 +2.35% 后的兑现风险</td></tr>
+<tr><td>11/12 周四</td><td>超聚变 IPO 上会；百度世界大会；鸿海法说会</td><td>A 股算力链情绪节点</td></tr>
+<tr><td>11/15 周日</td><td>外汇存款准备金率 4%→6% 生效</td><td>人民币升值节奏管理</td></tr>
+<tr><td>11/17-18</td><td>APEC 领导人会议（深圳）；11/17 英伟达财报</td><td>下周最大宏观与个股事件</td></tr>
+</table>
+
+<h2 id="sec-9">八、待核实与口径说明</h2>
+<ul>
+<li><b>美股点位口径：</b>道指 52,389.75 / 标普 7,549.94 / 纳指 25,253.14 出自华尔街见闻 FM-Radio（11/10），涨跌幅与财联社（凤凰转载）、每经早参双源一致，且与上周五收盘算术互洽（纳指 24,579.42 × 1.0274 ≈ 25,252.7 ✓）——点位本身以 FM-Radio 为准，开盘后待行情复核。</li>
+<li><b>布油收盘价差异：</b>FM-Radio 结算口径 92.57（-5.85%）vs 每经凌晨 5 点快照 92.03——差异为快照时间不同，本报告采用结算口径；「盘中一度跌近 8%」两源一致。</li>
+<li><b>黄金双源确认：</b>现货金 4,136.20（+1.61%，FM-Radio）与「现货金盘中破 4,136、涨逾 1.58%」（信报口径）两源一致——<b>黄金自本期起恢复计入指标库</b>（此前连续 4 期单源剔除）；COMEX 期金 4,149.50（+1.83%）为每经单源（合约换月口径差异），仅供参考。</li>
+<li><b>美国 10 月 CPI 共识预期值：</b>未获双源，仅 ING「核心环比 +0.3%」单源；9 月实际值整体 3.7%/核心 2.6%（FM-Radio）——今晚 21:30 公布后回填。</li>
+<li><b>中美关税续期：</b>每经早参 + 证券之星（11/9）双源一致（13:01 生效、保留 10%、暂停反制 2 个月、港务费至 2027/1/10）；「特朗普访华前夕」为 WSJ 中文网标题语境。官方公告原文细节以国务院关税税则委员会发布为准。</li>
+<li><b>单源消息：</b>英伟达董事会独立调查（FM-Radio）、美伊铀浓缩 3.67% 一致（FM-Radio「据称」）、恒指夜期 24,506（每经快照）、纳指期货今晨 +0.12%（财联社 07:04 快讯）、外汇存准率 4%→6%（见闻/SMM 转引）——均待官方或第二来源确认。</li>
+<li><b>水位区间校验：</b>恒指 24,448.95（22800–26800 ✓）、上证 3,660.79（3560–4280 ✓）、纳指 25,253.14（24100–28100 ✓）、布油 92.57（80–120 ✓）、现货金 4,136.20（3900–4300 ✓）——全部在区间内，无水位迁移标注。</li>
+</ul>
+
+<p class="note" style="margin-top:26px;border-top:1px solid var(--line);padding-top:12px">合规声明：本报告仅供参考，不构成投资建议。数据来源：华尔街见闻FM-Radio（11/9、11/10）、财联社、每日经济新闻早参、证券之星、东方财经网、信报、SMM转引见闻周历等（2026-11-09/10），关键数据以双源一致为准，单源已标注。</p>
+</div>
+<!--mb-signals {"美股":{"direction":0,"active3":["超跌半导体与存储（费半两日+11%、AMD/拉姆研究修复动能）","光通信/AI硬件动量（Coherent+18%、Lumentum+10%延续）","Anthropic IPO链（今日路演启动，AI估值定价锚）"],"avoid2":["英伟达链（董事会独立调查+三委员会传唤+关键人物风险）","CPI敏感高估值成长（今晚21:30数据兑现风险）"]},"港股":{"direction":1,"active3":["中资银行/高股息（护盘+关税暂停+风偏修复）","黄金股（现货金+1.61%双源+央行连续24个月购金）","半导体反弹链（费半两日+11%映射）"],"avoid2":["光伏产业链（A股高开低走领跌映射）","高Beta科网（恒科-0.92%+金龙ADR-1.3%背离）"]},"A股":{"direction":1,"active3":["煤炭/油气通胀链（PPI+5.7%大超预期、煤炭开采+36.6%）","6G/卫星·六张网（周一6G领涨延续+国常会/发改委催化）","黄金股（现货金+1.61%双源+央行购金24个月）"],"avoid2":["光伏设备（高开低走+领跌+涨停潮兑现）","锂矿/能源金属（周一领跌板块惯性）"]}}-->
+<button class="mb-top" onclick="window.scrollTo(0,0)" title="回到顶部">↑顶</button>
+<button class="mb-top mb-toc-toggle" onclick="var n=document.querySelector('.mb-toc');if(n)n.classList.toggle('mb-toc-open')" title="目录">☰</button>
+<!--mb-spy--><script>
+(function(){try{
+var links=document.querySelectorAll('.mb-toc a');var map={};
+links.forEach(function(a){var id=a.getAttribute('href');if(id&&id.charAt(0)==='#'){map[id.slice(1)]=a;}});
+function spy(){var cur=null;var y=(window.scrollY||0)+120;
+Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=y){cur=id;}});
+links.forEach(function(a){a.classList.remove('active');});
+if(cur&&map[cur]){map[cur].classList.add('active');}}
+window.addEventListener('scroll',spy,{passive:true});window.addEventListener('resize',spy,{passive:true});spy();
+}catch(e){}})();
+</script>
 </body>
 </html>
