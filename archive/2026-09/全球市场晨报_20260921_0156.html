@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 · 2026年09月21日 Monday</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --red: #f85149;
+    --yellow: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .header .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .section h2 {
+    font-size: 16px;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section h2::before {
+    content: "▸";
+    color: var(--accent);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  tr:last-child td { border-bottom: none; }
+  .up { color: var(--green); }
+  .down { color: var(--red); }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    background: var(--border);
+    color: var(--muted);
+  }
+  .tag-hot { background: rgba(248,81,73,0.2); color: var(--red); }
+  .tag-warm { background: rgba(210,153,34,0.2); color: var(--yellow); }
+  .tag-cool { background: rgba(63,185,80,0.2); color: var(--green); }
+  .event {
+    padding: 12px;
+    border-left: 3px solid var(--accent);
+    background: rgba(88,166,255,0.05);
+    margin-bottom: 8px;
+    border-radius: 0 4px 4px 0;
+  }
+  .event:last-child { margin-bottom: 0; }
+  .event-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .event-meta {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .event-body {
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 6px;
+  }
+  .highlight {
+    background: rgba(210,153,34,0.1);
+    border: 1px solid rgba(210,153,34,0.3);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  .highlight-title {
+    color: var(--yellow);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 600px) {
+    .two-col { grid-template-columns: 1fr; }
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🌅 全球市场晨报</h1>
+  <div class="meta">2026年09月21日 · 星期一 · Monday</div>
+</div>
+
+<div class="section">
+  <h2>隔夜外盘（9/18 周五收盘）</h2>
+  <table>
+    <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>备注</th></tr>
+    <tr>
+      <td>道琼斯</td>
+      <td>51,683</td>
+      <td class="down">-0.18%</td>
+      <td><span class="tag">美联储加息后首震</span></td>
+    </tr>
+    <tr>
+      <td>纳斯达克</td>
+      <td>26,523</td>
+      <td class="up">+0.39%</td>
+      <td><span class="tag tag-cool">科技抗跌</span></td>
+    </tr>
+    <tr>
+      <td>标普500</td>
+      <td>7,650</td>
+      <td class="up">+0.17%</td>
+      <td><span class="tag">10Y收益率19年高位</span></td>
+    </tr>
+    <tr>
+      <td>费城半导体</td>
+      <td colspan="2" class="up">逆势走强 · 英伟达 +1.34%</td>
+      <td><span class="tag tag-warm">AI资本开支延续</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>亚太早盘（9/21 09:50 BJT）</h2>
+  <div class="two-col">
+    <div>
+      <h3 style="font-size:14px;color:var(--muted);margin-bottom:8px;">🇭🇰 港股</h3>
+      <table>
+        <tr><th>指数/股票</th><th>现价</th><th>涨跌</th></tr>
+        <tr><td>恒生指数</td><td>24,840</td><td class="up">+0.36%</td></tr>
+        <tr><td>恒生科技</td><td>4,431</td><td class="up">+0.58%</td></tr>
+        <tr><td>腾讯控股</td><td>426.00</td><td class="up">+1.67%</td></tr>
+        <tr><td>阿里巴巴</td><td>112.20</td><td class="up">+2.65%</td></tr>
+        <tr><td>小米集团</td><td>26.78</td><td class="up">+1.44%</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3 style="font-size:14px;color:var(--muted);margin-bottom:8px;">🇨🇳 A股</h3>
+      <table>
+        <tr><th>指数</th><th>现价</th><th>涨跌</th></tr>
+        <tr><td>上证指数</td><td>3,932</td><td class="up">+0.51%</td></tr>
+        <tr><td>深证成指</td><td>13,756</td><td class="up">+0.84%</td></tr>
+        <tr><td>创业板指</td><td>3,419</td><td class="up">+1.38%</td></tr>
+        <tr><td>贵州茅台</td><td>1256.28</td><td class="down">-0.07%</td></tr>
+        <tr><td>宁德时代</td><td>299.50</td><td class="down">-0.81%</td></tr>
+      </table>
+    </div>
+  </div>
+  <div style="margin-top:12px;padding:10px;background:rgba(63,185,80,0.1);border-radius:6px;font-size:13px;">
+    <strong style="color:var(--green)">🇯🇵 日经225</strong>：9/18收盘 <strong>65,019</strong>（BOJ加息25bp至1.25%后首交易日，东京电子 +4.2%领涨半导体）
+  </div>
+</div>
+
+<div class="section">
+  <h2>债券与商品</h2>
+  <table>
+    <tr><th>品种</th><th>收盘价</th><th>涨跌</th><th>信号</th></tr>
+    <tr>
+      <td>美债TLT(20Y+)</td>
+      <td>81.25</td>
+      <td class="down">-0.65%</td>
+      <td><span class="tag tag-hot">10Y收益率19年高位</span></td>
+    </tr>
+    <tr>
+      <td>美债IEF(7-10Y)</td>
+      <td>90.80</td>
+      <td class="down">-0.49%</td>
+      <td><span class="tag">加息预期升温</span></td>
+    </tr>
+    <tr>
+      <td>黄金(XAU/USD)</td>
+      <td>约 $4,416</td>
+      <td class="down">-0.19%</td>
+      <td><span class="tag tag-warm">中东避险支撑</span></td>
+    </tr>
+    <tr>
+      <td>原油(Brent)</td>
+      <td>约 $97.2</td>
+      <td class="down">-2.10%</td>
+      <td><span class="tag tag-hot">沙特供油中断后反弹</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>宏观大事与政策</h2>
+  
+  <div class="highlight">
+    <div class="highlight-title">⚡ 美联储鹰派点阵图：2026年或再加息25bp</div>
+    <div style="font-size:13px;color:var(--muted)">
+      9月FOMC会议已结束，点阵图显示16位官员预期年内还有1次加息，中位数利率维持在4.1%至2027年底。
+      BofA警告若加息超预期可能触发额外2次加息。Goldman Sachs也预计10月可能再次加息25bp。
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">🇺🇸🇨🇳 中美高层会谈 + 特朗普-习近平峰会前夕</div>
+    <div class="event-meta">9/20 纽约 | 贝森特与何立峰会谈 | 9/24 特朗普-习近平峰会</div>
+    <div class="event-body">
+      中美经贸会谈今日在纽约启动，焦点为关税、稀土出口管制及伊朗问题。
+      特朗普-习习峰会定于9月24日，市场预期偏谨慎——稀土与电动车关税是核心分歧点。
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">🇯🇵 日本央行加息25bp至1.25%</div>
+    <div class="event-meta">9/18 生效 | 继7月加息后的连续动作</div>
+    <div class="event-body">
+      日经225收65,018.95，东京电子(+4.2%)领涨半导体板块。
+      BOJ紧缩路径明确，日元走强压力持续关注。
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">🇨🇳 中国8月PMI：制造业49.8，科技 sector 超预期</div>
+    <div class="event-meta">9/1 发布 | 荣枯线下方但结构分化</div>
+    <div class="event-body">
+      官方制造业PMI 49.8（预期50.0），出口新订单六个月最大增幅。
+      AI硬件子指数逆势走强，科技制造与传统消费分化显著。
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">🌍 中东局势：胡塞武装袭击利雅得机场</div>
+    <div class="event-meta">9/20 | 原油供应风险升温</div>
+    <div class="event-body">
+      布伦特原油一度突破$105后回落至~$97。
+      沙特供油中断影响消退但地缘风险仍在，能源板块短期波动加大。
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>今日交易主线</h2>
+  
+  <div class="event">
+    <div class="event-title">① 半导体/AI硬件：结构性行情延续</div>
+    <div class="event-body">
+      费城半导体逆势走强，英伟达+1.34%，Lam Research上调2026年晶圆设备 outlook。
+      BofA预测全球芯片市场2030年翻倍。A股半导体、CPO、存储板块今日重点关注。
+      <span class="tag tag-warm">风险：估值已高，美联储鹰派或压制风险偏好</span>
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">② 中美关系：9/24峰会前博弈加剧</div>
+    <div class="event-body">
+      今日贝森特-何立峰会谈是9/24峰会的关键前哨。
+      稀土出口管制、电动车关税、AI芯片限制是三大核心议题。
+      A股稀土、新能源汽车板块或受消息面驱动。
+      <span class="tag tag-hot">波动加大，注意仓位控制</span>
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">③ 港股科技：估值修复 vs 宏观压力</div>
+    <div class="event-body">
+      恒生科技今日+0.58%，阿里+2.65%、腾讯+1.67%领涨。
+      港股AI大模型公司（智谱/MiniMax）流动性危机仍存，回避纯AI概念股。
+      关注互联网平台基本面改善逻辑。
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">④ 原油与能源：地缘溢价消化中</div>
+    <div class="event-body">
+      布伦特回落至~$97，但中东风险未消。
+      能源股短期有修复需求，但OPEC+增产预期压制涨幅。
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>今日关注事件</h2>
+  <table>
+    <tr><th>时间(BJT)</th><th>事件</th><th>影响</th></tr>
+    <tr>
+      <td>09:30</td>
+      <td>中国8月官方制造业PMI（预期49.5）</td>
+      <td><span class="tag tag-hot">关键数据</span></td>
+    </tr>
+    <tr>
+      <td>15:00</td>
+      <td>美国初请失业金人数</td>
+      <td><span class="tag">常规</span></td>
+    </tr>
+    <tr>
+      <td>21:30</td>
+      <td>美国9月谘商会领先指标</td>
+      <td><span class="tag">关注</span></td>
+    </tr>
+    <tr>
+      <td>22:00</td>
+      <td>美国8月成屋销售</td>
+      <td><span class="tag">房地产</span></td>
+    </tr>
+    <tr>
+      <td>盘中</td>
+      <td>中美经贸会谈（纽约）</td>
+      <td><span class="tag tag-hot">重大</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>板块前瞻</h2>
+  <div class="two-col">
+    <div>
+      <h3 style="font-size:13px;color:var(--green);margin-bottom:8px;">🟢 今日有望活跃</h3>
+      <ul style="font-size:13px;padding-left:16px;color:var(--text);">
+        <li>半导体/芯片设备（AI资本开支周期）</li>
+        <li>CPO/光模块（算力基建）</li>
+        <li>稀土（政策博弈预期）</li>
+        <li>新能源（政策扶持+估值低位）</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="font-size:13px;color:var(--red);margin-bottom:8px;">🔴 今日需回避</h3>
+      <ul style="font-size:13px;padding-left:16px;color:var(--text);">
+        <li>纯AI大模型概念股（流动性危机）</li>
+        <li>高估值AI应用层（获利回吐）</li>
+        <li>消费/农业（PMI疲软压制）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  数据截至：2026-09-21 09:50 BJT | 来源：腾讯行情API、新浪财经快讯、DDGS搜索<br>
+  本报告仅供参考，不构成投资建议。
+</div>
+
+</body>
+</html>

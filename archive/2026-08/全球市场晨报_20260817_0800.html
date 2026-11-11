@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 | 2026年8月17日 周一</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #1a1a2e; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 28px 32px; border-radius: 16px 16px 0 0; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 13px; opacity: 0.75; }
+  .card { background: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card-title { font-size: 14px; font-weight: 700; color: #0f3460; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .card-title::before { content: ''; width: 4px; height: 16px; background: #0f3460; border-radius: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f8f9fc; color: #555; font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 2px solid #e8ecf0; }
+  td { padding: 8px 10px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  .up { color: #e74c3c; font-weight: 600; }
+  .down { color: #27ae60; font-weight: 600; }
+  .neutral { color: #888; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .tag-red { background: #ffeaea; color: #c0392b; }
+  .tag-green { background: #eafff0; color: #1a7a3a; }
+  .tag-blue { background: #eaf0ff; color: #2563eb; }
+  .tag-orange { background: #fff3e0; color: #e65100; }
+  .tag-purple { background: #f3e5f5; color: #7b1fa2; }
+  .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 8px; font-weight: 600; }
+  .highlight-box { background: linear-gradient(135deg, #fef9e7 0%, #fdf2e9 100%); border: 1px solid #f5d89a; border-radius: 10px; padding: 14px 18px; margin-bottom: 14px; }
+  .highlight-box h3 { font-size: 13px; color: #b7791f; margin-bottom: 8px; }
+  .highlight-box ul { list-style: none; padding: 0; }
+  .highlight-box li { font-size: 13px; padding: 3px 0; padding-left: 16px; position: relative; }
+  .highlight-box li::before { content: '•'; color: #b7791f; font-weight: bold; position: absolute; left: 0; }
+  .direction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .direction-box { border-radius: 10px; padding: 14px; }
+  .direction-box.active { background: #fff5f5; border: 1px solid #fecaca; }
+  .direction-box.avoid { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .direction-box h4 { font-size: 12px; margin-bottom: 8px; }
+  .direction-box.active h4 { color: #dc2626; }
+  .direction-box.avoid h4 { color: #16a34a; }
+  .direction-box ul { list-style: none; padding: 0; font-size: 12px; }
+  .direction-box li { padding: 2px 0; padding-left: 12px; position: relative; }
+  .direction-box.active li::before { content: '↑'; position: absolute; left: 0; color: #dc2626; }
+  .direction-box.avoid li::before { content: '↓'; position: absolute; left: 0; color: #16a34a; }
+  .timeline { padding: 0; list-style: none; }
+  .timeline li { padding: 8px 0 8px 20px; position: relative; border-bottom: 1px solid #f0f2f5; font-size: 13px; }
+  .timeline li:last-child { border-bottom: none; }
+  .timeline li::before { content: ''; position: absolute; left: 0; top: 14px; width: 8px; height: 8px; background: #0f3460; border-radius: 50%; }
+  .timeline .time { color: #0f3460; font-weight: 600; font-size: 12px; }
+  .footer { text-align: center; padding: 16px; font-size: 11px; color: #aaa; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) {
+    .two-col, .direction-grid { grid-template-columns: 1fr; }
+    .container { padding: 12px; }
+    .header { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>🌅 全球市场晨报</h1>
+    <div class="date">2026年8月17日 星期一 · 第34周</div>
+  </div>
+
+  <!-- 隔夜外盘 -->
+  <div class="card">
+    <div class="card-title">隔夜外盘</div>
+    <table>
+      <thead>
+        <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>涨跌%</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>道琼斯</td><td>53,732.41</td><td class="down">-107.57</td><td class="down">-0.20%</td></tr>
+        <tr><td>纳斯达克</td><td>26,729.16</td><td class="down">-73.86</td><td class="down">-0.28%</td></tr>
+        <tr><td>标普500</td><td>7,785.76</td><td class="down">-13.23</td><td class="down">-0.17%</td></tr>
+        <tr style="background:#f8f9fc"><td colspan="4" style="font-size:12px;color:#888;">标普500上周四创历史新高7,798.99后小幅回撤；纳指三连阳后止步；道指周线连跌两周</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">欧洲（8/15收盘）</div>
+      <table>
+        <thead><tr><th>指数</th><th>收盘</th><th>涨跌</th></tr></thead>
+        <tbody>
+          <tr><td>德国DAX30</td><td>26,440.31</td><td class="up">+0.53%</td></tr>
+          <tr><td>英国富时100</td><td>10,750.11</td><td class="down">-0.21%</td></tr>
+          <tr><td>法国CAC40</td><td>8,636.80</td><td class="down">-0.16%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">亚太（8/14收盘）</div>
+      <table>
+        <thead><tr><th>指数</th><th>收盘</th><th>涨跌</th></tr></thead>
+        <tbody>
+          <tr><td>日经225</td><td>68,713.80</td><td class="up">+0.59%</td></tr>
+          <tr><td>恒生指数</td><td>25,116.85</td><td class="down">-1.10%</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:10px;font-size:11px;color:#888;">
+        日经本周累涨4.74%，科技股领涨（索尼+5.73%）<br>
+        恒生科技指数酝酿扩容至50只成分股
+      </div>
+    </div>
+  </div>
+
+  <!-- A股昨日 -->
+  <div class="card">
+    <div class="card-title">A股昨日（8/13收盘）</div>
+    <table>
+      <thead>
+        <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>成交额</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>上证指数</td><td>3,926.96</td><td class="down">-0.50%</td><td rowspan="5" style="text-align:center;vertical-align:middle;font-size:12px;color:#888;">两市合计<br>2.55万亿<br>↑放量3985亿</td></tr>
+        <tr><td>深证成指</td><td>14,289.44</td><td class="down">-0.87%</td></tr>
+        <tr><td>创业板指</td><td>3,586.04</td><td class="down">-0.45%</td></tr>
+        <tr><td>科创50</td><td>1,717.75</td><td class="down">-1.11%</td></tr>
+        <tr><td>北证50</td><td>1,097.80</td><td class="down">-1.62%</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:12px;">
+      <div>
+        <span class="tag tag-green">领涨</span>
+        <div style="margin-top:6px;color:#555;">
+          创新药/CRO/生物制品逆势主线<br>
+          算力租赁、超节点延续强势<br>
+          电力公用午后脉冲拉升
+        </div>
+      </div>
+      <div>
+        <span class="tag tag-red">领跌</span>
+        <div style="margin-top:6px;color:#555;">
+          贵金属/有色小金属全线重挫<br>
+          光伏设备、玻璃玻纤集体回调<br>
+          地产链、教育情绪走弱
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:12px;color:#888;">涨跌家数：上涨1143家 / 下跌4317家 | 北向资金净卖出32.61亿元</div>
+  </div>
+
+  <!-- 今日宏观日程 -->
+  <div class="card">
+    <div class="card-title">📅 今日宏观日程（8/17）</div>
+    <ul class="timeline">
+      <li><span class="time">下午 15:00</span> — <strong>中国7月经济数据</strong>：工业增加值、社零、固投、房地产投资及70城房价，检验经济成色</li>
+      <li><span class="time">全天</span> — <strong>美伊谅解备忘录到期</strong>：目前几乎未达成最终协议迹象，伊朗称此为外交"胜利"</li>
+      <li><span class="time">全天</span> — <strong>欧盟公布欧元区6月贸易帐</strong>：评估地缘震荡下欧洲能源进出口韧性</li>
+      <li><span class="time">全天</span> — <strong>央行连续三日逆回购</strong>：8/17-19每日不超过6000亿元</li>
+      <li><span class="time">今日</span> — <strong>钶锐锶科创板IPO上会</strong>：上交所上市审核委员会审议</li>
+    </ul>
+  </div>
+
+  <!-- 本周焦点 -->
+  <div class="highlight-box">
+    <h3>⚡ 本周超级事件日历</h3>
+    <ul>
+      <li><strong>周三 8/19</strong> — 美联储公布7月FOMC会议纪要（7月会议三票反对维持利率，分歧为2016年来最大）</li>
+      <li><strong>周四 8/20</strong> — 杰克逊霍尔全球央行年会启幕，鲍威尔等央行行长讲话</li>
+      <li><strong>周三-周五</strong> — 财报超级周：阿里、小米、快手、百度、平安、中际旭创、紫金矿业、兆易创新、恒瑞医药等集中发榜</li>
+      <li><strong>周二 8/18</strong> — Reddit纳入标普500指数；沃尔玛、家得宝美股财报</li>
+      <li><strong>周二 8/18</strong> — "年内最贵新股"频准激光登陆科创板</li>
+      <li><strong>周五 8/21</strong> — 日本7月全国CPI；主要经济体8月PMI初值</li>
+      <li><strong>首尔AI峰会 8/19-21</strong> — 谷歌DeepMind、微软、英伟达等科技领袖出席</li>
+    </ul>
+  </div>
+
+  <!-- 交易主线 -->
+  <div class="card">
+    <div class="card-title">🎯 今日交易主线</div>
+    <table>
+      <thead>
+        <tr><th style="width:36px">#</th><th>主线</th><th>逻辑</th><th>关注方向</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag tag-blue">1</span></td>
+          <td><strong>中国7月经济数据验证</strong></td>
+          <td>工业增加值+社零+固投+地产同期出炉，是下半年政策基调的关键观测窗口</td>
+          <td>若数据超预期→周期/消费；不及预期→防御/红利</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-orange">2</span></td>
+          <td><strong>财报季业绩兑现</strong></td>
+          <td>阿里、小米、平安、中际旭创等权重中报当日发布，AI算力链与创新药两条主线集中检验</td>
+          <td>存储/AI光模块/创新药/半导体设备</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-purple">3</span></td>
+          <td><strong>美联储纪要鹰鸽博弈</strong></td>
+          <td>7月会议3票反对维持利率为2016年来最大分歧，纪要细节将直接重定价美元与全球资产</td>
+          <td>美元/美债收益率/黄金/新兴市场货币</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-green">4</span></td>
+          <td><strong>存储/AI硬件景气延续</strong></td>
+          <td>闪迪一周涨超35%，NBM协议覆盖FY27比特出货量50%；A股侧兆易创新、天孚通信中报待揭</td>
+          <td>存储芯片/先进封装/HBF高带宽闪存</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-red">5</span></td>
+          <td><strong>美伊地缘+霍尔木兹风险</strong></td>
+          <td>谅解备忘录今日到期，美国放言"前所未见"措施，协议落实存疑，油价与黄金短期承压</td>
+          <td>能源/黄金/航运（波动加大）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 各市场方向 -->
+  <div class="card">
+    <div class="card-title">📊 市场方向判断</div>
+    <div class="direction-grid">
+      <div class="direction-box active">
+        <h4>🇺🇸 美股 — 今日最可能活跃的3个方向</h4>
+        <ul>
+          <li>存储芯片（闪迪带动板块情绪，美光/西部数据联动）</li>
+          <li>AI应用/软件（Cursor被SpaceX收购、Gemini 3.7 Flash发布）</li>
+          <li>无人机概念（特朗普加征关税催化，Unusual Machines上周+24%）</li>
+        </ul>
+      </div>
+      <div class="direction-box avoid">
+        <h4>🇺🇸 美股 — 今日最该回避的2个方向</h4>
+        <ul>
+          <li>半导体设备（应用材料上周五-5%，行业资本开支放缓信号）</li>
+          <li>大型科技权重（博通-5.93%后延续调整，亚马逊/Meta偏弱）</li>
+        </ul>
+      </div>
+      <div class="direction-box active">
+        <h4>🇭🇰 港股 — 今日最可能活跃的3个方向</h4>
+        <ul>
+          <li>互联网科技（阿里/小米财报在即，恒生科技指数扩容预期）</li>
+          <li>半导体/存储（中芯国际、SK海力士联动）</li>
+          <li>新能源链（政策持续支持，磷酸锰铁锂等新方向）</li>
+        </ul>
+      </div>
+      <div class="direction-box avoid">
+        <h4>🇭🇰 港股 — 今日最该回避的2个方向</h4>
+        <ul>
+          <li>地产链（大陆地产数据疲软拖累，恒指地产业权重承压）</li>
+          <li>高Beta题材股（宏观不确定性下避险情绪升温）</li>
+        </ul>
+      </div>
+      <div class="direction-box active">
+        <h4>🇨🇳 A股 — 今日最可能活跃的3个方向</h4>
+        <ul>
+          <li>创新药/CRO（上周逆势主线，恒瑞医药/药明康德中报催化）</li>
+          <li>AI算力链（存储+光模块双轮驱动，兆易创新/天孚通信数据验证）</li>
+          <li>电力/绿电（政策催化+夏季用电高峰，部分标的午后脉冲）</li>
+        </ul>
+      </div>
+      <div class="direction-box avoid">
+        <h4>🇨🇳 A股 — 今日最该回避的2个方向</h4>
+        <ul>
+          <li>贵金属/有色金属（上周黄金大跌，避险逻辑短期弱化）</li>
+          <li>光伏/玻璃玻纤（产能过剩压力持续，中国巨石等权重下挫）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 风险提示 -->
+  <div class="card" style="background:#fefce8;border:1px solid #fde047;">
+    <div class="card-title" style="color:#a16207;">⚠️ 风险提示</div>
+    <ul style="font-size:13px;padding-left:20px;color:#713f12;">
+      <li style="padding:3px 0;">美伊谅解备忘录今日到期，霍尔木兹海峡通行方案存不确定性，关注油价与黄金异动</li>
+      <li style="padding:3px 0;">美联储7月纪要周三公布，内部3票反对加息分歧为2016年来最大，美元/美债或将剧烈波动</li>
+      <li style="padding:3px 0;">日本央行暗示9月或加息，日元汇率波动风险需警惕（USD/JPY逼近160关口）</li>
+      <li style="padding:3px 0;">本周A股财报密集披露，关注业绩低于预期的个股风险</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    数据来源：新浪财经、证券时报、TradingKey、Investing.com、财联社等（截至2026-08-17 08:00 UTC+8）<br>
+    本报告仅供参考，不构成投资建议。市场有风险，投资需谨慎。
+  </div>
+
+</div>
+</body>
+</html>

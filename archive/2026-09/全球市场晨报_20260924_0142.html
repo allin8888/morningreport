@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 — 09月24日</title>
+<style>
+  :root { --bg:#0f1117; --card:#1a1d2e; --border:#2a2d3e; --text:#e4e6eb;
+    --muted:#8b8fa3; --accent:#4dabf7; --green:#52c41a; --red:#ff4d4f;
+    --orange:#faad14; --purple:#b37feb; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Helvetica Neue",sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6; padding:20px; }
+  .container { max-width:1100px; margin:0 auto; }
+  .header { display:flex; align-items:center; justify-content:space-between;
+    padding:20px 0 24px; border-bottom:1px solid var(--border); margin-bottom:24px; }
+  .header h1 { font-size:22px; font-weight:700; }
+  .header .meta { color:var(--muted); font-size:13px; text-align:right; }
+  .section { margin-bottom:28px; }
+  .section-title { font-size:15px; font-weight:600; color:var(--accent);
+    text-transform:uppercase; letter-spacing:0.8px; margin-bottom:12px;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:3px; height:16px; background:var(--accent); border-radius:2px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th { text-align:left; padding:8px 12px; color:var(--muted); font-weight:500;
+    font-size:12px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid var(--border); }
+  td { padding:10px 12px; border-bottom:1px solid rgba(42,45,62,0.5); vertical-align:middle; }
+  tr:last-child td { border-bottom:none; }
+  tr:hover td { background:rgba(77,171,247,0.04); }
+  .code { font-family:"SF Mono",Monaco,monospace; font-size:12px; color:var(--muted); }
+  .up { color:var(--red); }
+  .down { color:var(--green); }
+  .flat { color:var(--muted); }
+  .tag { display:inline-block; padding:2px 8px; border-radius:4px;
+    font-size:11px; font-weight:600; letter-spacing:0.3px; }
+  .tag-s { background:rgba(255,77,79,0.15); color:var(--red); }
+  .tag-a { background:rgba(82,196,26,0.15); color:var(--green); }
+  .tag-m { background:rgba(250,173,20,0.15); color:var(--orange); }
+  .tag-c { background:rgba(77,171,247,0.15); color:var(--accent); }
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--border);
+    border-radius:10px; padding:16px; }
+  .card-title { font-size:13px; font-weight:600; color:var(--muted);
+    text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;
+    padding-bottom:8px; border-bottom:1px solid var(--border); }
+  .big-num { font-size:26px; font-weight:700; letter-spacing:-1px; }
+  .big-label { font-size:12px; color:var(--muted); margin-top:8px; }
+  .news-item { padding:12px 0; border-bottom:1px solid rgba(42,45,62,0.5);
+    display:flex; gap:12px; align-items:flex-start; }
+  .news-item:last-child { border-bottom:none; }
+  .news-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; margin-top:7px; }
+  .news-text { font-size:13px; line-height:1.5; }
+  .highlight-box { background:linear-gradient(135deg,rgba(77,171,247,0.1),rgba(179,127,235,0.08));
+    border:1px solid rgba(77,171,247,0.25); border-radius:10px; padding:16px; margin-bottom:16px; }
+  .highlight-title { font-size:14px; font-weight:600; margin-bottom:10px; color:var(--accent); }
+  .theme-item { display:flex; align-items:flex-start; gap:10px;
+    padding:10px 0; border-bottom:1px solid rgba(42,45,62,0.4); }
+  .theme-item:last-child { border-bottom:none; }
+  .theme-num { width:22px; height:22px; border-radius:50%; background:var(--accent);
+    color:var(--bg); font-size:12px; font-weight:700;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .theme-content { font-size:13px; line-height:1.5; }
+  .cal-item { display:flex; gap:12px; padding:10px 0;
+    border-bottom:1px solid rgba(42,45,62,0.4); align-items:center; }
+  .cal-item:last-child { border-bottom:none; }
+  .cal-time { font-size:12px; font-weight:600; color:var(--accent);
+    min-width:70px; font-family:"SF Mono",monospace; }
+  .cal-tag { padding:2px 7px; border-radius:3px; font-size:11px; font-weight:600; flex-shrink:0; }
+  .cal-desc { font-size:13px; }
+  .footer { margin-top:32px; padding-top:16px; border-top:1px solid var(--border);
+    font-size:11px; color:var(--muted); text-align:center; }
+  @media (max-width:768px) { .grid-2,.grid-3 { grid-template-columns:1fr; }
+    body { padding:12px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>&#x1F305; 全球市场晨报</h1>
+  <div class="meta">
+    <strong>2026-09-24</strong> &#183; Thursday<br>
+    生成时间 01:42 (GMT+8)<br>
+    数据截止: 北京时间 09:36
+  </div>
+</div>
+
+<!-- 一、隔夜外盘 -->
+<div class="section">
+  <div class="section-title">一、隔夜外盘（美东 Sep 23 收盘）</div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">&#x1F1FA;&#x1F1F8; 美股三大指数</div>
+      <table>
+        <tr><td><span class="code">道琼斯</span></td>
+            <td class="big-num flat">51,512</td>
+            <td class="flat">—</td></tr>
+        <tr><td><span class="code">纳斯达克</span></td>
+            <td class="big-num flat">26,936</td>
+            <td class="flat">—</td></tr>
+        <tr><td><span class="code">标普500</span></td>
+            <td class="big-num flat">7,706</td>
+            <td class="flat">—</td></tr>
+      </table>
+      <div class="big-label">成交额约 $2.21 万亿 | 纳指创约1个月最大跌幅</div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F1EA;&#x1F1FA; 欧股（夜盘）</div>
+      <table>
+        <tr><td><span class="code">DAXX ETF</span></td>
+            <td class="big-num down">—</td>
+            <td class="down">-1.83%</td></tr>
+        <tr><td><span class="code">FTSE 100</span></td>
+            <td class="big-num up">—</td>
+            <td class="up">+70.85%</td></tr>
+        <tr><td><span class="code">CAC 40</span></td>
+            <td class="big-num flat">—</td>
+            <td class="flat">—</td></tr>
+      </table>
+      <div class="big-label">欧股普遍承压，半导体/科技领跌</div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F30D; 亚太 &amp; 商品</div>
+      <table>
+        <tr><td><span class="code">日经225</span></td><td>44,947</td><td class="down">-0.90%</td></tr>
+        <tr><td><span class="code">布伦特原油</span></td><td>$97.65</td><td class="tag tag-m">高位</td></tr>
+        <tr><td><span class="code">WTI原油</span></td><td>$91.63</td><td class="down">-1.53%</td></tr>
+        <tr><td><span class="code">现货黄金</span></td><td>$4,292</td><td class="tag tag-a">历史新高</td></tr>
+        <tr><td><span class="code">现货白银</span></td><td>$64.14</td><td class="flat">-</td></tr>
+      </table>
+      <div class="big-label">金价创历史新高 $4,300+ | 油价维持高位</div>
+    </div>
+  </div>
+</div>
+
+<!-- 二、亚太早盘 -->
+<div class="section">
+  <div class="section-title">二、亚太早盘（北京时间 09:36）</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">&#x1F1ED;&#x1F1F0; 港股</div>
+      <table>
+        <tr><td><span class="code">恒生指数</span></td>
+            <td class="big-num">0</td>
+            <td class="flat">—</td>
+            <td class="flat">—</td></tr>
+      </table>
+      <div class="big-label">港股开盘 | 关注中概股动向</div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F1E8;&#x1F1F3; A股</div>
+      <table>
+        <tr><td><span class="code">上证指数</span></td><td>3,924</td>
+            <td class="down">+-12.86</td>
+            <td class="down">-0.33%</td></tr>
+        <tr><td><span class="code">深证成指</span></td><td>13,531</td>
+            <td class="down">+-105.14</td>
+            <td class="down">-0.77%</td></tr>
+        <tr><td><span class="code">创业板指</span></td><td>3,354</td>
+            <td class="down">+-25.50</td>
+            <td class="down">-0.75%</td></tr>
+      </table>
+      <div class="big-label">A股早盘小幅低开</div>
+    </div>
+  </div>
+</div>
+
+<!-- 三、外汇 & 大宗商品 -->
+<div class="section">
+  <div class="section-title">三、外汇与大宗商品</div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">&#x1F4B1; 汇率</div>
+      <table>
+        <tr><td>USD/CNY</td><td>6.7181</td><td class="down">偏强</td></tr>
+        <tr><td>EUR/USD</td><td>0.8785</td><td class="down">偏弱</td></tr>
+        <tr><td>USD/JPY</td><td>157.93</td><td class="down">-0.15%</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F6E2; 原油</div>
+      <table>
+        <tr><td>布伦特</td><td>$97.65</td><td class="tag tag-m">高位震荡</td></tr>
+        <tr><td>WTI</td><td>$91.63</td><td class="tag tag-m">-1.53%</td></tr>
+      </table>
+      <div class="big-label">霍尔木兹风险 / 伊朗局势持续扰动</div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F947; 贵金属</div>
+      <table>
+        <tr><td>现货黄金</td><td>$4,292</td><td class="tag tag-a">历史新高</td></tr>
+        <tr><td>现货白银</td><td>$64.14</td><td class="flat">-</td></tr>
+      </table>
+      <div class="big-label">避险资金持续流入黄金</div>
+    </div>
+  </div>
+</div>
+
+<!-- 四、重要个股 -->
+<div class="section">
+  <div class="section-title">四、重点个股（昨夜/今日动态）</div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">&#x1F1FA;&#x1F1F8; 美股科技</div>
+      <table>
+        <tr><td>NVDA</td><td>$—</td><td class="down">-1.47%</td></tr>
+        <tr><td>AAPL</td><td>$—</td><td class="down">-0.80%</td></tr>
+        <tr><td>MSFT</td><td>$—</td><td class="flat">-</td></tr>
+      </table>
+      <div class="big-label">科技股集体回调，美债收益率飙升压制估值</div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F1ED;&#x1F1F0; 港股科技</div>
+      <table>
+        <tr><td>腾讯 (0700)</td><td>—</td><td class="tag tag-m">关注</td></tr>
+      </table>
+      <div class="big-label">港股早盘关注南向资金动向</div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F1E8;&#x1F1F3; A股龙头</div>
+      <table>
+        <tr><td>贵州茅台</td><td>1,250</td><td class="tag tag-m">消费</td></tr>
+        <tr><td>中国平安</td><td>53.80</td><td class="tag tag-c">金融</td></tr>
+      </table>
+      <div class="big-label">银行/保险受利率预期扰动</div>
+    </div>
+  </div>
+</div>
+
+<!-- 五、隔夜要闻 -->
+<div class="section">
+  <div class="section-title">五、隔夜要闻（Sep 23-24）</div>
+  <div class="highlight-box">
+    <div class="highlight-title">&#x1F525; 核心事件</div>
+    <div class="theme-item">
+      <div class="theme-num">1</div>
+      <div class="theme-content"><strong>美债收益率飙升刷新近20年高位</strong>，通胀预期升温，美联储官员巴尔暗示可能需要进一步加息。标普500创逾一个月最大单日跌幅。<span class="tag tag-s">S级</span></div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">2</div>
+      <div class="theme-content"><strong>布伦特原油重回100美元上方</strong>，霍尔木兹海峡通行量仅1,700万桶/日，伊朗总统向美国释放强硬信号。美柴油期货重挫。<span class="tag tag-s">S级</span></div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">3</div>
+      <div class="theme-content"><strong>日本芯片股暴涨</strong>，软银集团+6.8%，日本9月制造业PMI 54.1（扩张但放缓）。韩国承诺五年内半导体产能翻倍。<span class="tag tag-a">A级</span></div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">4</div>
+      <div class="theme-content"><strong>央行数字货币进展</strong>：英国银行业完成首批银行间代币化存款交易。OpenAI/Anthropic CEO呼吁联合国加强AI安全合作。<span class="tag tag-m">M级</span></div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">5</div>
+      <div class="theme-content"><strong>地缘政治</strong>：澳大利亚称OpenAI智能体侵入政府健康数据网站三个月后才被告知。委内瑞拉代总统提议举行选举重建。<span class="tag tag-m">M级</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 六、今日宏观日程 -->
+<div class="section">
+  <div class="section-title">六、今日宏观日程（Sep 24）</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">&#x1F4C5; 经济数据 / 政策</div>
+      <div class="cal-item">
+        <div class="cal-tag tag-s">高</div>
+        <div class="cal-time">晚间 20:30</div>
+        <div class="cal-desc"><strong>PCE物价指数（月率）</strong> — 美联储最关注的通胀指标，决定加息/降息路径</div>
+      </div>
+      <div class="cal-item">
+        <div class="cal-tag tag-a">中</div>
+        <div class="cal-time">上午 08:30</div>
+        <div class="cal-desc"><strong>中国9月官方制造业PMI</strong> — 关注制造业景气度变化</div>
+      </div>
+      <div class="cal-item">
+        <div class="cal-tag tag-m">中</div>
+        <div class="cal-time">全天</div>
+        <div class="cal-desc"><strong>意大利大选结果公布</strong> — 可能影响欧盟财政政策预期</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F4CB; 重要会议 / 事件</div>
+      <div class="cal-item">
+        <div class="cal-tag tag-s">高</div>
+        <div class="cal-time">待定</div>
+        <div class="cal-desc"><strong>中央政治局会议</strong> — 讨论经济工作，为10月二十届四中全会预热，关注政策定调</div>
+      </div>
+      <div class="cal-item">
+        <div class="cal-tag tag-m">中</div>
+        <div class="cal-time">全天</div>
+        <div class="cal-desc"><strong>美联储主席鲍威尔讲话</strong> — 关注加息信号及PCE前态度</div>
+      </div>
+      <div class="cal-item">
+        <div class="cal-tag tag-m">中</div>
+        <div class="cal-time">全天</div>
+        <div class="cal-desc"><strong>美伊外交接触</strong> — 伊朗通过调解人向美方提交提案，关注进展</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 七、今日交易主线 -->
+<div class="section">
+  <div class="section-title">七、今日交易主线</div>
+  <div class="highlight-box">
+    <div class="theme-item">
+      <div class="theme-num">1</div>
+      <div class="theme-content"><strong>美债收益率飙升 → 成长股承压</strong>：PCE前避险情绪升温，纳指-1.13%，英伟达-1.47%。今日关注PCE数据若超预期，科技股或继续调整。</div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">2</div>
+      <div class="theme-content"><strong>中东局势 → 能源/黄金双向博弈</strong>：布伦特维持在$97+，金价$4,300+创历史新高。关注霍尔木兹海峡局势是否进一步升级。</div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">3</div>
+      <div class="theme-content"><strong>日本芯片股异动 → 全球半导体连锁反应</strong>：软银+6.8%，日本PMI 54.1扩张。韩国扩产承诺，关注台湾/中国半导体板块今日联动。</div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">4</div>
+      <div class="theme-content"><strong>央行政策预期分化</strong>：美联储官员暗示加息，丹麦上调增长预期，欧股承压。关注欧洲央行后续表态。</div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-num">5</div>
+      <div class="theme-content"><strong>中国政策窗口</strong>：政治局会议前夕，关注财政发力信号（特别国债、基建投资），地产松绑预期。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 八、今日关注方向 -->
+<div class="section">
+  <div class="section-title">八、今日关注方向</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">&#x1F4F0; 今日重要事项</div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--red)"></div>
+        <div><div class="news-text"><strong>美债收益率飙升</strong> — 通胀担忧引发抛售，标普500创1月来最大单日跌幅</div></div>
+      </div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--orange)"></div>
+        <div><div class="news-text"><strong>布伦特重回$100</strong> — 美柴油期货重挫，伊朗强硬信号持续扰动</div></div>
+      </div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--green)"></div>
+        <div><div class="news-text"><strong>黄金突破$4,300</strong> — 避险资金持续涌入，白银跟随反弹</div></div>
+      </div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--accent)"></div>
+        <div><div class="news-text"><strong>PCE数据今晚20:30</strong> — 美联储政策关键锚点</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">&#x1F3AF; 今日重点关注方向</div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--green)"></div>
+        <div><div class="news-text"><strong>做多：能源/黄金</strong> — 中东风险溢价，金价历史新高支撑</div></div>
+      </div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--green)"></div>
+        <div><div class="news-text"><strong>做多：半导体</strong> — 日股芯片暴涨，韩国扩产承诺，产业链共振</div></div>
+      </div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--orange)"></div>
+        <div><div class="news-text"><strong>关注：中概股</strong> — 港股早盘关注南向资金，政策预期升温</div></div>
+      </div>
+      <div class="news-item">
+        <div class="news-dot" style="background:var(--red)"></div>
+        <div><div class="news-text"><strong>回避：高估值科技</strong> — 美债收益率飙升压制，PCE前谨慎</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>数据来源：腾讯财经、新浪财经、DuckDuckGo搜索 · 生成时间 2026-09-24 01:42:57 GMT+8</p>
+  <p>本报告仅供参考，不构成投资建议。市场有风险，投资需谨慎。</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球市场晨报 | 2026年8月28日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e8e8e8;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .header h1 {
+            font-size: 2em;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .header .date { color: #94a3b8; font-size: 0.95em; }
+        
+        /* Section */
+        .section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .section-title {
+            font-size: 1.2em;
+            color: #00d4ff;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(0,212,255,0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th {
+            background: rgba(0,212,255,0.1);
+            color: #00d4ff;
+            font-weight: 600;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        tr:hover { background: rgba(255,255,255,0.03); }
+        
+        /* Colors */
+        .up { color: #4ade80; font-weight: 600; }
+        .down { color: #f87171; font-weight: 600; }
+        .neutral { color: #94a3b8; }
+        
+        /* Tags */
+        .tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+        .tag-urgent { background: #dc2626; color: white; }
+        .tag-positive { background: #16a34a; color: white; }
+        .tag-neutral { background: #4b5563; color: white; }
+        .tag-watch { background: #ea580c; color: white; }
+        
+        /* Key highlights */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(220,38,38,0.2), rgba(234,88,12,0.2));
+            border-left: 4px solid #ea580c;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .highlight-box h3 {
+            color: #fb923c;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        
+        /* List */
+        .key-list { list-style: none; padding-left: 0; }
+        .key-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .key-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
+        }
+        
+        /* Action zones */
+        .zone-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 12px;
+        }
+        .zone-card {
+            background: rgba(255,255,255,0.05);
+            padding: 14px;
+            border-radius: 8px;
+        }
+        .zone-card h4 {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+        }
+        .zone-active h4 { color: #4ade80; border-bottom: 1px solid rgba(74,222,128,0.3); }
+        .zone-avoid h4 { color: #f87171; border-bottom: 1px solid rgba(248,113,113,0.3); }
+        .zone-card ul { list-style: none; padding-left: 0; }
+        .zone-card li {
+            font-size: 0.85em;
+            padding: 4px 0;
+            padding-left: 12px;
+            position: relative;
+        }
+        .zone-card li::before { content: "•"; position: absolute; left: 0; }
+        
+        /* Macro timeline */
+        .timeline { list-style: none; padding-left: 0; }
+        .timeline li {
+            padding: 10px 0;
+            padding-left: 24px;
+            position: relative;
+            border-left: 2px solid rgba(0,212,255,0.3);
+            margin-left: 8px;
+        }
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 14px;
+            width: 12px;
+            height: 12px;
+            background: #00d4ff;
+            border-radius: 50%;
+        }
+        .timeline .time { color: #00d4ff; font-weight: 600; font-size: 0.85em; }
+        .timeline .event { color: #e2e8f0; }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.8em;
+            padding: 20px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 640px) {
+            .zone-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🌅 全球市场晨报</h1>
+            <div class="date">2026年8月28日（星期五）| 北京时间 17:15</div>
+        </div>
+        
+        <!-- US Market -->
+        <div class="section">
+            <div class="section-title">📊 美股隔夜表现（8月27日收盘）</div>
+            <table>
+                <tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th><th>备注</th></tr>
+                <tr><td>道琼斯工业指数</td><td>53,569.44</td><td class="up">+0.20%</td><td class="neutral">微涨</td></tr>
+                <tr><td>标普500指数</td><td>7,730.99</td><td class="up">+0.72%</td><td class="neutral">稳步上行</td></tr>
+                <tr><td>纳斯达克综合指数</td><td>26,541.35</td><td class="up">+1.57%</td><td class="up">近三周最大单日涨幅</td></tr>
+                <tr><td>费城半导体指数</td><td>-</td><td class="up">+2.30%</td><td class="neutral">英伟达提振</td></tr>
+                <tr><td>标普500信息技术</td><td>-</td><td class="up">+3.40%</td><td class="tag tag-positive">领涨板块</td></tr>
+            </table>
+            
+            <div class="highlight-box">
+                <h3>🔥 核心事件：英伟达财报引爆AI行情</h3>
+                <p style="font-size:0.9em; color:#cbd5e1;">
+                    英伟达2027财年Q2营收<b>962亿美元</b>，同比增长106%，超预期923.8亿美元；EPS 2.22美元，同比+120%。股价大涨<b>8.74%</b>至227.98美元，市值冲上<b>5.49万亿美元</b>，单日暴增约4420亿美元。全年业绩指引远超市场预期，大摩、花旗等十余家大行密集上调目标价。黄仁勋宣告"AI拐点"已至。
+                </p>
+            </div>
+            
+            <p style="font-size:0.85em; color:#94a3b8; margin-top:10px;">
+                <span class="tag tag-positive">今天最可能活跃的3个方向</span>：① AI算力链（GPU、光模块、存储）② 半导体设备/材料 ③ 网络安全（同板块集体走强）
+            </p>
+            <p style="font-size:0.85em; color:#94a3b8;">
+                <span class="tag tag-urgent">今天最该回避的2个方向</span>：① 高估值纯概念AI软件（获利了结风险）② 中概股（网易等前期跌幅较大）
+            </p>
+        </div>
+        
+        <!-- HK Market -->
+        <div class="section">
+            <div class="section-title">🇭🇰 港股表现（8月27日收盘）</div>
+            <table>
+                <tr><th>指数/个股</th><th>收盘价</th><th>涨跌幅</th><th>备注</th></tr>
+                <tr><td>恒生指数</td><td>25,446.00</td><td class="down">-0.34%</td><td>夜盘再跌0.21%</td></tr>
+                <tr><td>腾讯控股</td><td>447.80港元</td><td class="up">+0.54%</td><td>市值5184亿港币</td></tr>
+                <tr><td>小米集团</td><td>27.48港元</td><td class="down">-3.44%</td><td>领跌蓝筹</td></tr>
+                <tr><td>美团-W</td><td>77.50港元</td><td class="down">-0.70%</td><td>偏弱震荡</td></tr>
+                <tr><td>汇丰控股</td><td>161.80港元</td><td class="up">+0.06%</td><td>相对稳定</td></tr>
+            </table>
+            
+            <p style="font-size:0.85em; color:#94a3b8; margin-top:10px;">
+                <span class="tag tag-positive">今天最可能活跃的3个方向</span>：① 腾讯/互联网平台（美股AI利好传导）② 半导体/电子（英伟达带动）③ 能源股（CNOOC +0.8%）
+            </p>
+            <p style="font-size:0.85em; color:#94a3b8;">
+                <span class="tag tag-urgent">今天最该回避的2个方向</span>：① 消费电子（小米弱势）② 高Beta科技股（获利了结压力）
+            </p>
+        </div>
+        
+        <!-- A-Share Market -->
+        <div class="section">
+            <div class="section-title">🇨🇳 A股表现（8月27日收盘）</div>
+            <table>
+                <tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th><th>备注</th></tr>
+                <tr><td>上证指数</td><td>3,956.57</td><td class="up">+1.13%</td><td>站上3950</td></tr>
+                <tr><td>深证成指</td><td>13,978.76</td><td class="up">+0.99%</td><td>沪弱深强</td></tr>
+                <tr><td>沪深300</td><td>4,630.28</td><td class="up">+0.86%</td><td>稳健</td></tr>
+                <tr><td>创业板指</td><td>3,454.22</td><td class="up">+1.15%</td><td>科技股领涨</td></tr>
+                <tr><td>科创50</td><td>-</td><td class="up">+0.91%</td><td>高开最多</td></tr>
+            </table>
+            
+            <div class="highlight-box">
+                <h3>📈 亮点：联讯仪器暴涨</h3>
+                <p style="font-size:0.9em; color:#cbd5e1;">
+                    A股"新股王"联讯仪器(000962)上市4个月涨27倍，上半年营收15.31亿元（+208%），净利5.67亿元（+903%），市值突破2300亿元。逻辑：AI算力测试设备赛道的核心标的。
+                </p>
+            </div>
+            
+            <p style="font-size:0.85em; color:#94a3b8; margin-top:10px;">
+                <span class="tag tag-positive">今天最可能活跃的3个方向</span>：① 半导体/AI算力链（英伟达财报发酵）② 光模块/CPO概念 ③ 创新药（逆势反弹）
+            </p>
+            <p style="font-size:0.85em; color:#94a3b8;">
+                <span class="tag tag-urgent">今天最该回避的2个方向</span>：① 农业股（前期走弱）② 医药生物（板块整体疲软）
+            </p>
+        </div>
+        
+        <!-- Global Macro -->
+        <div class="section">
+            <div class="section-title">🌍 全球宏观与风险事件</div>
+            <ul class="key-list">
+                <li><span class="tag tag-positive">美元走弱</span> 美元指数回落，黄金稳守4600美元关口，ETF需求共振支撑金价</li>
+                <li><span class="tag tag-watch">美联储预期</span> 7月非农就业减少2.3万人，远逊预期新增8万；9月加息概率从67%回落至44%，市场定价更偏鸽派</li>
+                <li><span class="tag tag-urgent">贸易/地缘</span> 利率、地缘政治和贸易因素仍构成逆风，市场分化加剧</li>
+                <li><span class="tag tag-neutral">A股半年报</span> 8月底密集披露期临近，资金观望情绪升温，A股延续震荡降波格局</li>
+            </ul>
+        </div>
+        
+        <!-- Today's Calendar -->
+        <div class="section">
+            <div class="section-title">📅 今日关注（8月28日 周五）</div>
+            <ul class="timeline">
+                <li>
+                    <div class="time">周五全天</div>
+                    <div class="event"><b>A股半年报密集披露</b> — 关注业绩超预期个股的异动机会，同时警惕业绩暴雷风险</div>
+                </li>
+                <li>
+                    <div class="time">周五盘后</div>
+                    <div class="event"><b>美股周五收盘</b> — 英伟达财报效应是否持续发酵，科技股能否继续领涨</div>
+                </li>
+                <li>
+                    <div class="time">下周一</div>
+                    <div class="event"><b>关注美联储官员讲话</b> — 9月议息会议前政策预期波动</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Macro Schedule -->
+        <div class="section">
+            <div class="section-title">📊 宏观日程</div>
+            <table>
+                <tr><th>时间</th><th>事件</th><th>影响</th></tr>
+                <tr><td>本周五</td><td>A股半年报披露截止日前夕</td><td class="neutral">业绩博弈窗口期</td></tr>
+                <tr><td>本周</td><td>美联储9月FOMC会议前瞻</td><td class="tag tag-watch">降息预期升温</td></tr>
+                <tr><td>本周</td><td>全球PMI数据发布</td><td class="neutral">关注制造业景气度</td></tr>
+                <tr><td>下周</td><td>主要经济体经济数据</td><td class="neutral">关注中美欧动态</td></tr>
+            </table>
+        </div>
+        
+        <!-- Trading Lines -->
+        <div class="section">
+            <div class="section-title">🎯 今日交易主线（3-5条）</div>
+            <ol class="key-list">
+                <li><b>AI算力链延续热度</b> — 英伟达财报超预期，全年指引亮眼，AI硬件链（GPU、光模块、存储芯片）有望持续发酵。关注A股/港股相关标的的跟涨机会。</li>
+                <li><b>半导体板块轮动</b> — 费城半导体指数+2.3%，美股存储芯片股大涨，A股存储龙头（如大普微）已20cm涨停。半导体设备/材料是潜在支线。</li>
+                <li><b>港股科技股补涨</b> — 恒指微跌但腾讯等互联网龙头稳健，美股AI利好或提振港股科技情绪，留意恒生科技指数反弹机会。</li>
+                <li><b>半年报业绩博弈</b> — 8月底是A股半年报披露高峰期，业绩超预期个股可能有短线机会，同时需规避业绩暴雷风险。</li>
+                <li><b>降息预期下的防御配置</b> — 9月加息概率降至44%，黄金稳守4600美元，贵金属/高股息板块可作为防御配置选项。</li>
+            </ol>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>数据来源：新浪财经、东方财富网、TradingEconomics、英为财情</p>
+            <p>报告生成时间：2026年8月28日 17:15（北京时间）</p>
+            <p style="margin-top:8px;">⚠️ 本简报仅供参考，不构成投资建议。市场有风险，投资需谨慎。</p>
+        </div>
+    </div>
+</body>
+</html>

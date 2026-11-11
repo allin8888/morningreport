@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 | 2026年9月1日 周二</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: #f0f2f5; color: #1a1a2e; line-height: 1.6; }
+  .container { max-width: 860px; margin: 0 auto; padding: 16px; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 24px 28px; border-radius: 12px; margin-bottom: 16px; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 13px; color: #94a3b8; }
+  .header .label { display: inline-block; background: #e94560; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-left: 8px; font-weight: 600; }
+  .card { background: #fff; border-radius: 10px; padding: 18px 20px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .card-title { font-size: 14px; font-weight: 700; color: #0f3460; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+  .card-title .icon { font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f8fafc; color: #475569; font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 2px solid #e2e8f0; font-size: 12px; }
+  td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; }
+  tr:last-child td { border-bottom: none; }
+  .up { color: #16a34a; font-weight: 600; }
+  .down { color: #dc2626; font-weight: 600; }
+  .flat { color: #64748b; }
+  .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+  .badge-green { background: #dcfce7; color: #16a34a; }
+  .badge-red { background: #fee2e2; color: #dc2626; }
+  .badge-blue { background: #dbeafe; color: #2563eb; }
+  .badge-yellow { background: #fef9c3; color: #92400e; }
+  .highlight-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #f59e0b; padding: 12px 14px; border-radius: 0 8px 8px 0; margin-top: 8px; }
+  .highlight-box p { font-size: 13px; color: #78350f; margin-bottom: 4px; }
+  .highlight-box p:last-child { margin-bottom: 0; }
+  .main-line { background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); border-left: 4px solid #7c3aed; padding: 12px 14px; border-radius: 0 8px 8px 0; margin-bottom: 8px; }
+  .main-line .num { display: inline-block; background: #7c3aed; color: #fff; font-size: 11px; width: 20px; height: 20px; border-radius: 50%; text-align: center; line-height: 20px; margin-right: 8px; font-weight: 700; }
+  .main-line .text { font-size: 13px; color: #3b0764; font-weight: 500; }
+  .direction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+  .direction-col h4 { font-size: 12px; font-weight: 700; margin-bottom: 6px; padding: 4px 8px; border-radius: 6px; }
+  .dir-hot { background: #dcfce7; color: #166534; }
+  .dir-avoid { background: #fee2e2; color: #991b1b; }
+  .direction-col ul { list-style: none; padding: 0; }
+  .direction-col li { font-size: 12px; padding: 3px 0; color: #374151; border-bottom: 1px dashed #e5e7eb; }
+  .direction-col li:last-child { border-bottom: none; }
+  .direction-col li::before { content: "•"; margin-right: 4px; }
+  .tag-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 500; }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+  .tag-orange { background: #ffedd5; color: #9a3412; }
+  .tag-green { background: #dcfce7; color: #166534; }
+  .footer { text-align: center; font-size: 11px; color: #94a3b8; padding: 12px; }
+  .event-item { display: flex; align-items: flex-start; gap: 8px; padding: 6px 0; border-bottom: 1px solid #f1f5f9; font-size: 12.5px; }
+  .event-item:last-child { border-bottom: none; }
+  .event-time { background: #0f3460; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 4px; white-space: nowrap; font-weight: 600; min-width: 50px; text-align: center; }
+  .event-note { color: #475569; }
+  @media (max-width: 600px) {
+    .direction-grid { grid-template-columns: 1fr; }
+    .container { padding: 10px; }
+    .header { padding: 16px 18px; }
+    table { font-size: 12px; }
+    th, td { padding: 6px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>🌅 全球市场晨报 <span class="label">盘前版</span></h1>
+    <div class="date">2026年9月1日 星期二（北京时间） | 数据截至：8月31日收盘</div>
+  </div>
+
+  <!-- 隔夜外盘 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🌍</span>隔夜外盘速览</div>
+    <table>
+      <thead><tr><th>指数</th><th>收盘</th><th>日涨跌</th><th>8月累计</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>道琼斯工业</td><td>53,185.90</td><td class="down">−374.09 (−0.70%)</td><td class="up">+1.0%+</td><td>15个月内第15个正月份</td></tr>
+        <tr><td>标普500</td><td>7,686.14</td><td class="down">−0.33%</td><td class="up">+2.6%</td><td>8月最佳表现自2021年</td></tr>
+        <tr><td>纳斯达克综合</td><td>26,370.89</td><td class="down">−0.12%</td><td class="up">+3.9%</td><td>8月最佳表现自2021年</td></tr>
+        <tr><td>纳斯达克100</td><td>29,219.35</td><td class="down">−0.70%</td><td class="up">+1.54%</td><td>VIX 15.38</td></tr>
+        <tr><td>DAX 40</td><td>≈26,300</td><td class="down">小幅回调</td><td class="up">强势运行</td><td>逼近历史高位</td></tr>
+        <tr><td>日经225</td><td>≈65,670</td><td class="down">−1.11%</td><td>—</td><td>受地缘风险拖累</td></tr>
+        <tr><td>布伦特原油</td><td>>$90/桶</td><td class="up">+2.7%</td><td>—</td><td>🔴 美打击霍尔木兹伊朗发射架</td></tr>
+      </tbody>
+    </table>
+    <div class="tag-row" style="margin-top:10px;">
+      <span class="tag tag-red">⚠️ 地缘风险升温</span>
+      <span class="tag tag-orange">📈 美股8月收涨</span>
+      <span class="tag tag-green">🛢️ 油价突破$90</span>
+      <span class="tag tag-red">📊 9月历来是最弱月份</span>
+    </div>
+  </div>
+
+  <!-- 港股 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🇭🇰</span>港股（8月31日收盘）</div>
+    <table>
+      <thead><tr><th>指数</th><th>收盘</th><th>日涨跌</th><th>8月累计</th></tr></thead>
+      <tbody>
+        <tr><td>恒生指数</td><td>25,566.99</td><td class="down">−17.80 (−0.07%)</td><td class="down">−1.23%</td></tr>
+        <tr><td>恒生科技指数</td><td>4,619.87</td><td class="up">+14.72</td><td class="down">−4.34%</td></tr>
+        <tr><td>国企指数</td><td>8,513.18</td><td class="up">+22.79</td><td class="down">−1.15%</td></tr>
+        <tr><td>恒生指数（前收）</td><td>25,584.79</td><td class="flat">52周区间 22,518–28,056</td><td></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px; font-size:12px; color:#475569;">
+      <strong>领涨股（8月）：</strong>
+      <span class="badge badge-green">潼关黄金 +61.5%</span>
+      <span class="badge badge-green">建滔积层板 +57.7%</span>
+      <span class="badge badge-green">MiniMax-W +51.3%</span>
+      <span class="badge badge-green">山东黄金 +35.8%</span>
+    </div>
+    <div style="margin-top:8px; font-size:12px; color:#475569;">
+      <strong>资金面：</strong>长线外资6月底以来累计净流入近<strong>1000亿港元</strong>，流入医药、ETF、半导体方向
+    </div>
+    <div class="direction-grid">
+      <div class="direction-col">
+        <h4 class="dir-hot">🔥 今天最可能活跃的3个方向</h4>
+        <ul>
+          <li><strong>AI算力/半导体：</strong>MiniMax、建滔积层板趋势强劲，百度双重主要上市今日生效</li>
+          <li><strong>黄金/资源：</strong>地缘冲突支撑金价，潼关黄金、山东黄金8月领涨</li>
+          <li><strong>银行/高股息：</strong>政策托底预期下金融板块抗跌属性凸显</li>
+        </ul>
+      </div>
+      <div class="direction-col">
+        <h4 class="dir-avoid">🛑 今天最该回避的2个方向</h4>
+        <ul>
+          <li><strong>地产链：</strong>政府虽出台支持措施但PMI仍处收缩，业绩风险待释放</li>
+          <li><strong>中概互联：</strong>外部流动性扰动持续，恒生科技8月跌4.34%反映承压</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- A股 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🇨🇳</span>A股（8月31日收盘）</div>
+    <table>
+      <thead><tr><th>指数</th><th>收盘</th><th>日涨跌</th><th>8月累计</th></tr></thead>
+      <tbody>
+        <tr><td>上证指数</td><td>3,986.30</td><td class="up">+34.12 (+0.86%)</td><td class="up">+4.02%</td></tr>
+        <tr><td>深证成指</td><td>14,015.00</td><td class="up">+0.44%</td><td class="up">+3.21%</td></tr>
+        <tr><td>沪深300</td><td>4,625.09</td><td class="up">+0.35%</td><td class="up">+1.80%</td></tr>
+        <tr><td>中证500</td><td>14,832.98</td><td class="up">+0.40%</td><td class="up">+1.02%</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:10px; font-size:12px; color:#475569;">
+      <strong>宏观数据：</strong>8月官方综合PMI 49.5（前值49.3），制造业49.8、非制造业49.0，仍在收缩区间。政府出台房地产支持措施（完工后才发放抵押贷款）。
+    </div>
+    <div class="direction-grid">
+      <div class="direction-col">
+        <h4 class="dir-hot">🔥 今天最可能活跃的3个方向</h4>
+        <ul>
+          <li><strong>银行/金融：</strong>工行+2.67%、建行+2.71%、中行+5.17%领涨，政策托底下金融板块受益</li>
+          <li><strong>AI/科技：</strong>百度双重主要上市今日生效，南向资金关注可期</li>
+          <li><strong>卫星通信/智能驾驶：</strong>信维通信与睿创微纳签署战略合作</li>
+        </ul>
+      </div>
+      <div class="direction-col">
+        <h4 class="dir-avoid">🛑 今天最该回避的2个方向</h4>
+        <ul>
+          <li><strong>房地产开发：</strong>PMI疲软+政策滞后效应，短期难有起色</li>
+          <li><strong>小盘题材股：</strong>8月业绩期风险暴露，部分龙头被集中抛售</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 今日关注事件 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">📅</span>今日及本周重点关注</div>
+    <div class="event-item">
+      <span class="event-time">今日</span>
+      <span class="event-note"><strong>百度（9888.HK）双重主要上市正式生效</strong>——港交所与纳斯达克双重主要上市，普通股与ADS可互换，9月港股通纳入预期升温，南向资金或加速流入。</span>
+    </div>
+    <div class="event-item">
+      <span class="event-time">本周</span>
+      <span class="event-note"><strong>9月FOMC会议预热（9月15-16日决议）</strong>——本次会议将公布SEP经济预测摘要和点阵图，市场关注美联储9月加息概率（当前定价约40%+）及沃什主席表态。</span>
+    </div>
+    <div class="event-item">
+      <span class="event-time">9/2</span>
+      <span class="event-note"><strong>加拿大央行（BOC）利率决议</strong>——市场预期维持2.25%不变，关注前瞻指引对通胀的措辞变化。</span>
+    </div>
+    <div class="event-item">
+      <span class="event-time">9/2</span>
+      <span class="event-note"><strong>新西兰央行（RBNZ）利率决议</strong>——市场预期维持2.5%不变，需关注对住房通胀压力的评估。</span>
+    </div>
+    <div class="event-item">
+      <span class="event-time">9/3-4</span>
+      <span class="event-note"><strong>英国央行9月会议纪要公布</strong>——审视货币政策决策过程，关注通胀与增长权衡的表述变化。</span>
+    </div>
+    <div class="event-item">
+      <span class="event-time">9/16</span>
+      <span class="event-note"><strong>美联储FOMC利率决议 + 点阵图 + SEP</strong>——本年度第四次议息会议，核心看点：①利率路径信号 ②GDP/通胀预测调整 ③沃什主席新闻发布会口径。</span>
+    </div>
+    <div class="event-item">
+      <span class="event-time">9/24</span>
+      <span class="event-note"><strong>瑞士央行（SNB）利率决议</strong>——市场预期维持0%不变，关注对中东冲突能源价格传导的评估。</span>
+    </div>
+    <div class="highlight-box">
+      <p>🔴 <strong>地缘风险警报：</strong>美伊冲突持续，霍尔木兹海峡军事行动重启，布伦特原油重回$90+。国际金价周初自$4000/盎司附近跳涨约10%，黄金单月涨幅为1999年9月以来最大。</p>
+      <p>⚠️ <strong>惠誉预警：</strong>美国联邦政府停摆风险攀升，政治僵局持续，2026-27年GDP增速预期下调至1.9%。</p>
+    </div>
+  </div>
+
+  <!-- 宏观日程 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">📊</span>宏观日程（未来一周）</div>
+    <table>
+      <thead><tr><th>日期</th><th>事件</th><th>预期/影响</th></tr></thead>
+      <tbody>
+        <tr><td>9/1（今日）</td><td>百度双重主要上市生效</td><td><span class="badge badge-blue">港股通纳入预期</span></td></tr>
+        <tr><td>9/2</td><td>加拿大央行利率决议</td><td>维持2.25%不变（预期）</td></tr>
+        <tr><td>9/2</td><td>新西兰央行利率决议</td><td>维持2.5%不变（预期）</td></tr>
+        <tr><td>9/3-4</td><td>英国央行会议纪要</td><td>关注通胀/增长权衡表述</td></tr>
+        <tr><td>9/15-16</td><td><strong>美联储FOMC决议+点阵图</strong></td><td><span class="badge badge-red">⭐ 年度最关键会议之一</span></td></tr>
+        <tr><td>9/18</td><td>美联储主席叶伦演讲</td><td>主题：中低收入家庭资产积累</td></tr>
+        <tr><td>9/24</td><td>瑞士央行利率决议</td><td>维持0%不变（预期）</td></tr>
+        <tr><td>9/16-20</td><td>G20财长及央行行长会议（澳洲凯恩斯）</td><td>关注全球宏观政策协调信号</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 今日交易主线 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span>今日交易主线（3-5条）</div>
+    <div class="main-line">
+      <span class="num">1</span>
+      <span class="text">地缘冲突→油价飙升→通胀预期升温→美联储鹰派信号强化</span>
+    </div>
+    <p style="font-size:12px; color:#64748b; margin-top:4px; padding-left:28px;">美打击霍尔木兹伊朗发射架，布伦特原油重返$90上方。沃什主席Jackson Hole讲话偏鹰，市场开始定价9月加息可能。黄金单月涨10%为25年来最大。</p>
+    <div class="main-line" style="margin-top:8px;">
+      <span class="num">2</span>
+      <span class="text">百度双重主要上市生效→AI主线再燃→港股科技板块迎来催化剂</span>
+    </div>
+    <p style="font-size:12px; color:#64748b; margin-top:4px; padding-left:28px;">百度9月1日正式完成双重主要上市转换，AI业务收入占比已超50%（SOTP估值框架切换），叠加昆仑芯IPO临近与港股通纳入预期，三大催化剂共振。</p>
+    <div class="main-line" style="margin-top:8px;">
+      <span class="num">3</span>
+      <span class="text">9月历来是最弱月份→历史规律 vs 当前强势→警惕获利回吐</span>
+    </div>
+    <p style="font-size:12px; color:#64748b; margin-top:4px; padding-left:28px;">S&P 500与道指9月历史平均跌幅1.1%，纳指跌0.8%。尽管8月创下2021年以来最佳表现，但进入传统淡季需防范技术性回调压力。</p>
+    <div class="main-line" style="margin-top:8px;">
+      <span class="num">4</span>
+      <span class="text">中国PMI仍在收缩区间→政策托底预期→银行/高股息防御</span>
+    </div>
+    <p style="font-size:12px; color:#64748b; margin-top:4px; padding-left:28px;">8月官方综合PMI 49.5小幅回升但仍处收缩，政府出台房地产支持措施。银行股当日大涨（中行+5.17%）显示资金避险情绪，高股息策略短期占优。</p>
+    <div class="main-line" style="margin-top:8px;">
+      <span class="num">5</span>
+      <span class="text">"00后"投资者入场→A股散户化趋势→短期波动加大</span>
+    </div>
+    <p style="font-size:12px; color:#64748b; margin-top:4px; padding-left:28px;">券商统计国庆前一周新增开户中"00后"占比27%成主力，年轻投资者入场可能加剧市场短期波动，需关注情绪指标变化。</p>
+  </div>
+
+  <!-- 风险提示 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">⚠️</span>风险提示</div>
+    <table>
+      <thead><tr><th>风险类型</th><th>描述</th><th>潜在影响</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge badge-red">地缘</span></td><td>美伊冲突升级，霍尔木兹海峡军事行动重启</td><td>油价冲击、供应链中断、风险资产承压</td></tr>
+        <tr><td><span class="badge badge-orange">政策</span></td><td>美联储9月加息概率上升（当前约40%+）</td><td>美元走强、新兴市场资本外流</td></tr>
+        <tr><td><span class="badge badge-yellow">流动性</span></td><td>美国联邦政府停摆风险攀升（惠誉预警）</td><td>国债市场动荡、信用风险重定价</td></tr>
+        <tr><td><span class="badge badge-blue">季节性</span></td><td>9月历来是最弱交易月份</td><td>技术性回调压力</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    全球市场晨报 · 2026年9月1日 · Hermes自动化生成<br>
+    数据来源：Yahoo Finance、Trading Economics、财联社、新浪财经、BBC、Reuters、CSIS<br>
+    本报告仅供参考，不构成投资建议
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报</title>
+<style>
+:root{--bg:#f7f8fa;--card:#ffffff;--text:#1f2328;--muted:#5b6570;--line:#e3e6ea;--accent:#1a56db;--head:#f0f3f8;--up:#e0463e;--down:#1aa05a;--flat:#5b6570;}
+*{box-sizing:border-box;}
+body{margin:0;padding:28px 16px 60px;background:var(--bg);color:var(--text);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+font-size:15px;line-height:1.75;}
+.wrap{max-width:1500px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+border-radius:10px;padding:32px 34px 48px;box-shadow:0 1px 3px rgba(16,24,40,.05);}
+h1{font-size:26px;margin:0 0 18px;padding-bottom:14px;border-bottom:3px solid var(--accent);letter-spacing:.5px;}
+h2{font-size:20px;margin:34px 0 14px;padding-left:11px;border-left:5px solid var(--accent);}
+h3{font-size:17px;margin:26px 0 10px;color:#243b7a;}
+h4{font-size:15px;margin:18px 0 8px;color:var(--muted);}
+p{margin:9px 0;}
+hr{border:0;border-top:1px solid var(--line);margin:26px 0;}
+ul,ol{margin:9px 0 9px 22px;padding:0;}
+li{margin:5px 0;}
+code{background:#f2f4f7;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:13px;}
+strong{color:#0b2f6b;}
+/* MP-3/MP-4 引用块与链接 */
+blockquote{margin:10px 0;padding:8px 14px;border-left:4px solid var(--accent);background:#f8fafc;color:var(--muted);border-radius:0 6px 6px 0;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+/* P1-1 目录导航 */
+.toc{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin:0 0 26px;}
+.toc-title{font-weight:600;margin-bottom:8px;color:var(--accent);}
+.toc ul{list-style:none;margin:0;padding-left:0;}
+.toc li{margin:4px 0;}
+.toc li.lv1{font-weight:600;}
+.toc li.lv3{padding-left:18px;font-size:13.5px;color:var(--muted);}
+.toc a{color:var(--accent);text-decoration:none;}
+.toc a:hover{text-decoration:underline;}
+/* P1-2 宽表横向滚动 + 首列冻结 + 可滚动阴影提示 */
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:8px;
+box-shadow:inset -14px 0 12px -14px rgba(16,24,40,.18);}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:900px;}
+th{background:var(--head);font-weight:600;text-align:left;padding:10px 12px;border-bottom:2px solid var(--line);
+white-space:nowrap;color:#1c2b45;}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+table th:first-child,table td:first-child{position:sticky;left:0;z-index:2;background:var(--card);}
+table th:first-child{background:var(--head);z-index:3;}
+tbody tr:nth-child(even){background:#fafbfc;}
+tbody tr:hover{background:#f0f5ff;}
+em{color:var(--muted);font-style:italic;}
+/* P0 sparkline 价格迷你图（明暗自适应，SVG 用 var(--accent)） */
+.spark{margin:14px 0;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);}
+.spark svg{display:block;width:100%;}
+.spark-empty{color:var(--muted);font-size:13px;}
+/* P1-1 涨跌语义（A 股惯例：涨红跌绿），统一 token */
+.move-up{color:var(--up);font-weight:600;}
+.move-down{color:var(--down);font-weight:600;}
+.move-flat{color:var(--flat);}
+/* P0-2 决策卡：一眼可见的交易结论 */
+.decision-card{margin:16px 0;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;background:linear-gradient(180deg,#fbfdff,#fff);}
+.decision-card.stance-up{border-left-color:var(--up);}
+.decision-card.stance-down{border-left-color:var(--down);}
+.decision-card.stance-flat,.decision-card.stance-watch{border-left-color:var(--muted);}
+.decision-card.stance-watch{border-left-color:#d98a00;}
+.dc-head{margin-bottom:6px;}
+.dc-stance{font-size:17px;font-weight:700;}
+.dc-stance.stance-up{color:var(--up);} .dc-stance.stance-down{color:var(--down);} .dc-stance.stance-flat,.dc-stance.stance-watch{color:var(--muted);} .dc-stance.stance-watch{color:#d98a00;}
+.dc-summary{margin:4px 0 10px;color:var(--text);}
+.dc-levels{display:flex;flex-wrap:wrap;gap:10px 18px;margin-bottom:8px;}
+.dc-kv{display:flex;flex-direction:column;}
+.dc-k{font-size:12px;color:var(--muted);}
+.dc-v{font-size:15px;font-weight:600;}
+.dc-tlabel{font-size:12px;color:var(--muted);margin:4px 0 6px;}
+.dc-tickers{display:flex;flex-wrap:wrap;gap:8px;}
+.dc-tag{background:#f2f4f7;border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:13px;}
+.dc-tag i{color:var(--muted);font-style:normal;font-size:12px;}
+.decision-empty{color:var(--muted);border-left-color:var(--muted);}
+/* P0-2 数据不全横幅 */
+.banner-warn{margin:14px 0;padding:10px 14px;border:1px solid #f0c8c4;background:#fdf3f2;color:#b42318;border-radius:8px;font-weight:600;}
+/* P1-2 看板互链 */
+.dash-link{margin:14px 0;padding:9px 14px;border:1px solid var(--line);background:#f3f8ff;border-radius:8px;font-weight:600;}
+.dash-link a{color:var(--accent);}
+@media(prefers-color-scheme:dark){.banner-warn{background:#2a1c1b;border-color:#5b2a26;color:#ff9a8f;}.decision-card{background:linear-gradient(180deg,#1a2027,#1c2027);}.dash-link{background:#16202e;}}
+/* P2-4 移动端：表格不再强制 900px 最小宽度，表头允许换行（table 规则须置于块首） */
+@media(max-width:768px){table{min-width:0;font-size:12.5px;}th{white-space:normal;}body{padding:12px 6px;}.wrap{padding:18px 12px 32px;}h1{font-size:21px;}h2{font-size:17px;}.toc{padding:10px 12px;}}
+/* P2-2 深色模式（跟随系统） */
+@media(prefers-color-scheme:dark){
+:root{--bg:#15181d;--card:#1c2027;--text:#e6e9ef;--muted:#9aa4b2;--line:#2c323c;--accent:#6aa2ff;--head:#232a34;}
+code{background:#252b34;border-color:var(--line);}
+strong{color:#a9c6ff;}
+h3{color:#b9cdff;}
+.toc{background:#1a1f27;}
+blockquote{background:#1a1f27;}
+tbody tr:nth-child(even){background:#20252d;}
+tbody tr:hover{background:#26303d;}
+}
+/* P2-2 打印 / 导出 PDF */
+@media print{
+body{background:#fff;padding:0;}
+.wrap{border:0;box-shadow:none;max-width:none;padding:0;}
+.tw{overflow:visible;border:0;box-shadow:none;}
+table{min-width:0;font-size:11px;}
+th,td{padding:6px 8px;}
+table th:first-child,table td:first-child{position:static;}
+.toc{display:none;}
+h2{page-break-after:avoid;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="toc"><div class="toc-title">目录</div><ul><li class="lv1"><a href="#s1">全球市场晨报</a></li><li class="lv2"><a href="#s2">三句速读</a></li><li class="lv2"><a href="#s3">一、美股（11月10日收盘）</a></li><li class="lv2"><a href="#s4">二、港股（11月11日盘前/实时）</a></li><li class="lv2"><a href="#s5">三、A股（11月11日盘中/实时）</a></li><li class="lv2"><a href="#s6">四、全球宏观要闻</a></li><li class="lv2"><a href="#s7">五、外围市场速览</a></li><li class="lv3"><a href="#s8">亚洲市场（11月10日收盘）</a></li><li class="lv3"><a href="#s9">欧洲市场（11月11日盘前）</a></li><li class="lv2"><a href="#s10">六、今日交易主线（盘前研判）</a></li><li class="lv2"><a href="#s11">七、下周关键日历</a></li></ul></nav>
+<h1 id="s1">全球市场晨报</h1>
+<p><strong>2026年11月11日 · 周三（北京时间）</strong> ｜ 盘前快报 ｜ 数据来源：东方财富、新浪财经 ｜ 仅供参考，不构成投资建议</p>
+<hr>
+<h2 id="s2">三句速读</h2>
+<ol>
+<li><strong>美股周四小幅回调</strong>：道指 -0.30%（52,231.89）、纳指 -0.74%（25,065.87）、标普 -0.38%（7,520.93）——三大指数全线收跌，成长股承压。美联储鹰派预期升温，利率敏感资产短期承压。
+</li>
+<li><strong>A股午后反弹</strong>：沪指 +0.08%（3,663.72）、深成指 +0.86%（11,241.54）、创业板 +1.46%（2,494.40）——创业板领涨，成长风格占优，国内资金承接意愿尚可。
+</li>
+<li><strong>重大头条</strong>：<strong>美国10月CPI通胀再度超预期</strong>——市场关注点转向美联储政策路径与利率定价；12月加息25bp概率约八成。
+</li>
+</ol>
+<hr>
+<h2 id="s3">一、美股（11月10日收盘）</h2>
+<div class="tw"><table><thead><tr>
+<th>指数</th>
+<th>收盘</th>
+<th>涨跌额</th>
+<th>涨跌幅</th>
+<th>开盘</th>
+<th>最高</th>
+<th>最低</th>
+<th>昨收</th>
+</tr></thead><tbody>
+<tr>
+<td>道琼斯</td>
+<td>52,231.89</td>
+<td>-157.86</td>
+<td>-0.30%</td>
+<td>52,163.21</td>
+<td>52,316.89</td>
+<td>51,977.08</td>
+<td>52,389.75</td>
+</tr>
+<tr>
+<td>标普500</td>
+<td>7,520.93</td>
+<td>-29.01</td>
+<td>-0.38%</td>
+<td>7,513.09</td>
+<td>7,543.92</td>
+<td>7,470.43</td>
+<td>7,549.94</td>
+</tr>
+<tr>
+<td>纳斯达克</td>
+<td>25,065.87</td>
+<td>-187.27</td>
+<td>-0.74%</td>
+<td>25,047.45</td>
+<td>25,286.83</td>
+<td>24,816.10</td>
+<td>25,253.14</td>
+</tr>
+</tbody></table></div>
+<ul>
+<li><strong>行情特征</strong>：三大指数全线下挫，纳斯达克领跌（-0.74%），成长股承压明显。费城半导体指数待核实。
+</li>
+<li><strong>CPI冲击</strong>：头条明确提及"美国10月CPI通胀再度超预期"，叠加此前非农就业超预期（+16.5万 vs 预期6.5万），12月加息25bp概率约八成——利率敏感资产持续承压。
+</li>
+<li><strong>资金面</strong>：美元指数走强（+0.74%至102.298），美债10年期收益率维持高位（4.86%），对成长股估值构成压力。
+</li>
+</ul>
+<p><strong>今天最可能活跃的3个方向</strong>：防御性高股息（消费必需/公用事业）｜ 能源板块（地缘风险溢价）｜ 金融股（利率上行利好净息差）</p>
+<p><strong>今天最该回避的2个方向</strong>：高估值成长股（科技/AI叙事短期承压）｜ 久期敏感资产（房地产REITs/长久期国债ETF）</p>
+<hr>
+<h2 id="s4">二、港股（11月11日盘前/实时）</h2>
+<div class="tw"><table><thead><tr>
+<th>指数</th>
+<th>最新</th>
+<th>涨跌额</th>
+<th>涨跌幅</th>
+</tr></thead><tbody>
+<tr>
+<td>恒生指数</td>
+<td>24,557.04</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>恒生科技</td>
+<td>4,084.45</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<blockquote>注：港股实时行情接口仅显示昨收价，涨跌幅数据需开盘后更新。恒生指数昨日收于 24,557 附近，上周恒指已失守24,500缺口，技术位考验。</blockquote>
+<ul>
+<li><strong>隔夜联动</strong>：美股三连阴后A股午后反弹，但纳斯达克 -0.74% 对恒生科技仍存情绪压制。
+</li>
+<li><strong>资金流向</strong>：南向资金上周连续净卖出后能否回流，是港股流动性关键变量。
+</li>
+<li><strong>宏观变量</strong>：美联储鹰派预期升温 → 美元走强 → 港币联系汇率压力 → 港股风险偏好受限。
+</li>
+</ul>
+<p><strong>今天最可能活跃的3个方向</strong>：黄金股（央行连续24个月购金+金价结构性支撑）｜ 电讯公用（防御红利）｜ 能源股（地缘溢价）</p>
+<p><strong>今天最该回避的2个方向</strong>：高Beta科网权重（腾讯/阿里等跟随美股承压）｜ 地产股（政策落地不确定+利率环境偏紧）</p>
+<hr>
+<h2 id="s5">三、A股（11月11日盘中/实时）</h2>
+<div class="tw"><table><thead><tr>
+<th>指数</th>
+<th>最新</th>
+<th>涨跌额</th>
+<th>涨跌幅</th>
+</tr></thead><tbody>
+<tr>
+<td>上证指数</td>
+<td>3,663.72</td>
+<td>+2.93</td>
+<td>+0.08%</td>
+</tr>
+<tr>
+<td>深证成指</td>
+<td>11,241.54</td>
+<td>+96.05</td>
+<td>+0.86%</td>
+</tr>
+<tr>
+<td>创业板指</td>
+<td>2,494.40</td>
+<td>+35.84</td>
+<td>+1.46%</td>
+</tr>
+</tbody></table></div>
+<blockquote>注：以上为实时行情快照（数据来源：腾讯财经）。</blockquote>
+<ul>
+<li><strong>盘面特征</strong>：创业板强势领涨（+1.46%），成长风格明显占优；沪指微涨守住3,650一线，量能情况待核实。
+</li>
+<li><strong>周末催化</strong>：北京支持AI终端新产品首试首用（最高3,000万元）→ AI应用链情绪正面；央行连续购金 → 贵金属链支撑。
+</li>
+<li><strong>技术面</strong>：沪指在3,600–3,650区间震荡筑底，成交若有效放大则有望展开反弹。
+</li>
+</ul>
+<p><strong>今天最可能活跃的3个方向</strong>：黄金/贵金属链（央行购金×金价结构性牛市）｜ AI应用/算力终端（北京政策支持）｜ 银行/高股息（稳定市场机制托底）</p>
+<p><strong>今天最该回避的2个方向</strong>：光模块/高端算力硬件（上周大幅回调后仍有惯性压力）｜ 高位连板题材（获利了结风险）</p>
+<hr>
+<h2 id="s6">四、全球宏观要闻</h2>
+<div class="tw"><table><thead><tr>
+<th>事件</th>
+<th>时间</th>
+<th>重要性</th>
+</tr></thead><tbody>
+<tr>
+<td>🔴 美国10月CPI再度超预期</td>
+<td>11月10日</td>
+<td>⭐⭐⭐⭐⭐ 直接影响12月加息定价</td>
+</tr>
+<tr>
+<td>🟡 美股三大指数全线收跌</td>
+<td>11月10日</td>
+<td>⭐⭐⭐ 温和回调，未现恐慌</td>
+</tr>
+<tr>
+<td>🟢 A股午后反弹，创业板领涨</td>
+<td>11月11日</td>
+<td>⭐⭐⭐ 国内资金承接意愿尚可</td>
+</tr>
+<tr>
+<td>🟡 伊朗解除导弹射程限制声明</td>
+<td>周末</td>
+<td>⭐⭐⭐⭐ 油价/避险双向变量</td>
+</tr>
+<tr>
+<td>🟡 俄美乌三方会谈（定于11月10日）</td>
+<td>11月10日</td>
+<td>⭐⭐⭐ 地缘缓和预期 vs 现实复杂</td>
+</tr>
+<tr>
+<td>🟢 央行连续24个月增持黄金储备</td>
+<td>10月末数据</td>
+<td>⭐⭐⭐⭐ 金价结构性买盘证据</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="s7">五、外围市场速览</h2>
+<div class="tw"><table><thead><tr>
+<th>资产</th>
+<th>价格</th>
+<th>变化</th>
+<th>备注</th>
+</tr></thead><tbody>
+<tr>
+<td>美元指数</td>
+<td>102.30</td>
+<td>+0.74%</td>
+<td>加息定价推动</td>
+</tr>
+<tr>
+<td>美债10Y</td>
+<td>4.86%</td>
+<td>+2.5bp</td>
+<td>高位运行</td>
+</tr>
+<tr>
+<td>现货黄金</td>
+<td>~$4,066</td>
+<td>待核实</td>
+<td>本周累涨约4.6%（上周数据）</td>
+</tr>
+<tr>
+<td>布伦特原油</td>
+<td>~$98.3</td>
+<td>待核实</td>
+<td>地缘溢价待发酵</td>
+</tr>
+<tr>
+<td>LME铜</td>
+<td>$13,768</td>
+<td>-76美元</td>
+<td>本周累跌4.02%</td>
+</tr>
+<tr>
+<td>比特币</td>
+<td>$75,712</td>
+<td>-0.49%</td>
+<td>24小时爆仓超23万人</td>
+</tr>
+</tbody></table></div>
+<h3 id="s8">亚洲市场（11月10日收盘）</h3>
+<div class="tw"><table><thead><tr>
+<th>指数</th>
+<th>收盘</th>
+<th>涨跌幅</th>
+</tr></thead><tbody>
+<tr>
+<td>日经225</td>
+<td>60,712.79</td>
+<td>+0.42%</td>
+</tr>
+<tr>
+<td>韩国KOSPI</td>
+<td>5,244.26</td>
+<td>+0.10%</td>
+</tr>
+<tr>
+<td>澳大利亚ASX200</td>
+<td>9,120.90</td>
+<td>-0.09%</td>
+</tr>
+<tr>
+<td>新加坡STI</td>
+<td>待核实</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<h3 id="s9">欧洲市场（11月11日盘前）</h3>
+<div class="tw"><table><thead><tr>
+<th>指数</th>
+<th>收盘</th>
+<th>涨跌幅</th>
+</tr></thead><tbody>
+<tr>
+<td>德国DAX30</td>
+<td>26,347.45</td>
+<td>+0.31%</td>
+</tr>
+<tr>
+<td>法国CAC40</td>
+<td>8,278.59</td>
+<td>+0.55%</td>
+</tr>
+<tr>
+<td>意大利MIB</td>
+<td>51,755.08</td>
+<td>+0.69%</td>
+</tr>
+<tr>
+<td>英国FTSE100</td>
+<td>待核实</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="s10">六、今日交易主线（盘前研判）</h2>
+<ol>
+<li><strong>CPI后的加息重定价</strong>：非农+CPI双超预期 → 12月加息已成大概率事件 → 利率敏感资产（成长股/长久期债券）短期承压，高股息与价值股相对占优。
+</li>
+<li><strong>黄金结构性牛市延续</strong>：央行连续24个月购金 + 地缘风险 + 实际利率见顶 → 黄金股与贵金属板块仍是当前确定性较高的主题之一。
+</li>
+<li><strong>A股3,600线攻防</strong>：沪指近期围绕3,600–3,650震荡，成交放量是关键验证指标；若放量突破3,700则中期趋势有望扭转。
+</li>
+<li><strong>地缘与油价双向博弈</strong>：俄美乌谈判 vs 伊朗导弹声明 → 周一油价方向取决于消息发酵程度，能源板块波动加大。
+</li>
+</ol>
+<hr>
+<h2 id="s11">七、下周关键日历</h2>
+<div class="tw"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>影响级别</th>
+</tr></thead><tbody>
+<tr>
+<td>周二（11/12）</td>
+<td>美国10月CPI正式公布</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>周二（11/12）</td>
+<td>俄美乌三方会谈结果</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>周三（11/13）</td>
+<td>美联储会议纪要</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>周四（11/14）</td>
+<td>中国10月PPI/CPI</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>周五（11/15）</td>
+<td>美国初请失业金人数</td>
+<td>⭐⭐⭐</td>
+</tr>
+</tbody></table></div>
+<hr>
+<p><em>本报告由 Hermes Agent 自动生成，数据来源公开网络，仅供参考，不构成任何投资建议。</em></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 · 2026-10-01</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; background: #f0f2f5; color: #1a1a1a; line-height: 1.6; }
+.container { max-width: 960px; margin: 0 auto; padding: 20px 16px; }
+.header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 28px 32px; border-radius: 16px; margin-bottom: 20px; }
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+.header .sub { font-size: 13px; opacity: 0.75; }
+.header .date-line { font-size: 15px; margin-top: 10px; font-weight: 500; }
+.card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.card-title { font-size: 15px; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #e8eaf6; display: flex; align-items: center; gap: 8px; }
+.card-title .icon { font-size: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #f8f9fc; color: #555; font-weight: 600; text-align: left; padding: 10px 12px; border-bottom: 1px solid #e0e4e8; font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px; }
+td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafbfd; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.tag-green { background: #e8f5e9; color: #2e7d32; }
+.tag-red { background: #ffebee; color: #c62828; }
+.tag-gray { background: #f5f5f5; color: #666; }
+.tag-blue { background: #e3f2fd; color: #1565c0; }
+.tag-orange { background: #fff3e0; color: #e65100; }
+.highlight { font-size: 20px; font-weight: 700; }
+.sub-text { font-size: 11px; color: #888; margin-top: 10px; }
+.news-item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+.news-item:last-child { border-bottom: none; }
+.news-item .time { font-size: 11px; color: #999; margin-bottom: 3px; }
+.news-item .title { font-size: 13px; font-weight: 600; color: #1a1a2e; margin-bottom: 4px; }
+.news-item .body { font-size: 12px; color: #555; line-height: 1.7; }
+.news-item .source { font-size: 11px; color: #999; margin-top: 4px; }
+.main-themes { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 20px 24px; border-radius: 12px; margin-bottom: 16px; }
+.main-themes h3 { font-size: 15px; font-weight: 700; margin-bottom: 14px; }
+.theme-item { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.2); }
+.theme-item:last-child { border-bottom: none; }
+.theme-item .num { display: inline-block; width: 22px; height: 22px; background: rgba(255,255,255,0.25); border-radius: 50%; text-align: center; line-height: 22px; font-size: 12px; font-weight: 700; margin-right: 10px; }
+.theme-item .text { font-size: 13px; }
+.warn { background: #fff8e1; border-left: 4px solid #ffc107; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-bottom: 16px; font-size: 13px; }
+.warn strong { color: #e65100; }
+.direction { margin-top: 10px; }
+.direction h4 { font-size: 13px; font-weight: 700; margin-bottom: 8px; color: #1a1a2e; }
+.direction ul { list-style: none; padding: 0; }
+.direction li { font-size: 12px; padding: 4px 0; padding-left: 16px; position: relative; color: #444; }
+.direction li::before { content: "→"; position: absolute; left: 0; color: #666; }
+.direction.warn li::before { content: "✗"; color: #c62828; }
+.footer { text-align: center; font-size: 11px; color: #aaa; padding: 20px 0; }
+@media (max-width: 600px) {
+  .header { padding: 20px 18px; }
+  .card { padding: 16px; }
+  table { font-size: 12px; }
+  th, td { padding: 8px 6px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <h1>🌅 全球市场晨报</h1>
+  <div class="date-line">2026-10-01（周四）· 北京时间 09:33 生成</div>
+  <div class="sub">覆盖：美股隔夜 · 亚太早盘 · A股/港股 · 宏观日程 · 交易主线</div>
+</div>
+
+<!-- 休市提示 -->
+<div class="warn">
+  <strong>⚠️ 国庆休市提醒：</strong>A股、港股 10月1日（周四）至 10月7日（周三）休市，10月8日（周四）起照常开市。今日为国庆首日，A股/港股无交易。
+</div>
+
+<!-- ═══ 隔夜外盘 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">📊</span> 隔夜外盘（9月30日收盘）</div>
+  <table>
+    <thead>
+      <tr><th>指数</th><th>收盘</th><th>涨跌</th><th>52周高/低</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>道指 ^DJI</strong></td>
+        <td class="highlight">50,906.05</td>
+        <td style="text-align:center"><span style="color:#f04040">-0.86</span></td>
+        <td style="font-size:11px;color:#888">54,744 / 45,057</td>
+        <td><span class="tag tag-red">连跌</span></td>
+      </tr>
+      <tr>
+        <td><strong>纳指 ^IXIC</strong></td>
+        <td class="highlight">26,861.06</td>
+        <td style="text-align:center"><span style="color:#00a86b">+0.24</span></td>
+        <td style="font-size:11px;color:#888">27,289 / 20,690</td>
+        <td><span class="tag tag-green">翻红</span></td>
+      </tr>
+      <tr>
+        <td><strong>标普 ^GSPC</strong></td>
+        <td class="highlight">7,651.54</td>
+        <td style="text-align:center"><span style="color:#f04040">-0.25</span></td>
+        <td style="font-size:11px;color:#888">— / —</td>
+        <td><span class="tag tag-red">小幅收跌</span></td>
+      </tr>
+      <tr>
+        <td><strong>德国 DAX</strong></td>
+        <td>25,399.21</td>
+        <td style="text-align:center"><span style="color:#00a86b">+0.10</span></td>
+        <td style="font-size:11px;color:#888">— / —</td>
+        <td><span class="tag tag-gray">9/29数据</span></td>
+      </tr>
+      <tr>
+        <td><strong>欧洲 Stoxx 50</strong></td>
+        <td>6,320.26</td>
+        <td style="text-align:center"><span style="color:#00a86b">+0.30</span></td>
+        <td style="font-size:11px;color:#888">— / —</td>
+        <td><span class="tag tag-gray">9/29数据</span></td>
+      </tr>
+      <tr>
+        <td><strong>日本 日经225</strong></td>
+        <td>67,977.40</td>
+        <td style="text-align:center"><span style="color:#00a86b">+3.81</span></td>
+        <td style="font-size:11px;color:#888">72,832 / 44,358</td>
+        <td><span class="tag tag-green">今日跳空高开 +3.8%</span></td>
+      </tr>
+      <tr>
+        <td><strong>香港 恒生指数</strong></td>
+        <td>24,523.57</td>
+        <td style="text-align:center"><span style="color:#f04040">-0.48</span></td>
+        <td style="font-size:11px;color:#888">28,056 / 22,518</td>
+        <td><span class="tag tag-gray">9/29数据，今日休市</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="sub-text" style="margin-top:10px">
+    📉 VIX 恐慌指数：<strong>16.34</strong>（<span style="color:#00a86b">+0.30</span>）· 原油 WTI：<strong>90.07 美元</strong> · 黄金：<strong>4,190 美元/oz</strong>
+  </div>
+</div>
+
+<!-- ═══ 今日亚太盘前 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">🌏</span> 亚太盘前动态（东京 10:33 已开盘）</div>
+  <table>
+    <thead>
+      <tr><th>指数</th><th>最新</th><th>日内涨跌</th><th>开盘</th><th>最高/最低</th></tr>
+    </thead>
+    <tbody>
+      <tr style="background:#e8f5e9">
+        <td><strong>日经225</strong></td>
+        <td class="highlight" style="color:#2e7d32">68,043.82</td>
+        <td><span class="tag tag-green">+3.80%</span></td>
+        <td>66,753.72</td>
+        <td>— / —</td>
+      </tr>
+      <tr>
+        <td><strong>恒生指数</strong></td>
+        <td style="color:#888">24,523.57</td>
+        <td><span class="tag tag-gray">休市中</span></td>
+        <td style="color:#888">—</td>
+        <td style="color:#888">—</td>
+      </tr>
+      <tr>
+        <td><strong>上证综指</strong></td>
+        <td style="color:#888">3,842.19</td>
+        <td><span class="tag tag-gray">休市中</span></td>
+        <td style="color:#888">—</td>
+        <td style="color:#888">—</td>
+      </tr>
+      <tr>
+        <td><strong>沪深300</strong></td>
+        <td style="color:#888">4,357.62</td>
+        <td><span class="tag tag-green">—</span></td>
+        <td style="color:#888">—</td>
+        <td style="color:#888">—</td>
+      </tr>
+      <tr>
+        <td><strong>创业板指</strong></td>
+        <td style="color:#888">3,135.28</td>
+        <td><span class="tag tag-red">—</span></td>
+        <td style="color:#888">—</td>
+        <td style="color:#888">—</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="sub-text" style="margin-top:10px">
+    💡 日经今日跳空高开源于 BOJ 9/18 加息至 1.25%（31年新高）后市场消化利空、叠加美元/日元维持 158 高位，出口股受汇率支撑反弹。
+  </div>
+</div>
+
+<!-- ═══ 今日宏观日程 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">📅</span> 今日宏观日程</div>
+  <table>
+    <thead>
+      <tr><th>时间</th><th>事件</th><th>影响</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tag tag-gray">全天</span></td>
+        <td><strong>国庆假期 · A股/港股休市</strong></td>
+        <td>沪深港通关闭，无交易</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-blue">实时</span></td>
+        <td><strong>日经225 已开盘（+3.8%跳空高开后震荡）</strong></td>
+        <td>关注日元走势与日股资金流向</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-orange">晚间</span></td>
+        <td><strong>美股期货 21:30 开盘（北京时间）</strong></td>
+        <td>美债收益率 & 原油价格扰动</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-gray">10/2（周五）</span></td>
+        <td><strong>美国 9月 PCE 物价指数（核心）公布</strong></td>
+        <td>美联储议息关键前置数据</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-gray">10/2-3</span></td>
+        <td><strong>美联储 FOMC 会议开幕</strong></td>
+        <td>利率决议 + 点阵图 + 鲍威尔讲话</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-gray">10月</span></td>
+        <td><strong>多家科技/银行财报季开启</strong></td>
+        <td>JPMorgan、Visa、Nike 等陆续披露</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 隔夜要闻 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">📰</span> 隔夜要闻速递</div>
+
+  <div class="news-item">
+    <div class="time">9/30</div>
+    <div class="title">美股 9/30 收官：道指重挫 0.87%，纳指微涨 0.24%，标普小幅收跌 0.25%</div>
+    <div class="body">道指以 50,906 收盘，创 9 月新低；纳指在科技股分化中勉强翻红；美债收益率继续上行施压蓝筹，VIX 维持在 16.3 低位震荡。市场观望本周 PCE 与 FOMC 决议。</div>
+  </div>
+
+  <div class="news-item">
+    <div class="time">9/18（本周五）</div>
+    <div class="title">BOJ 加息至 1.25%，31 年新高，意外鹰派</div>
+    <div class="body">日本央行出乎市场意料，将政策利率从 1.0% 上调至 1.25%（而非预期的 1.0%），并暗示将继续加息之路。日元一度急跌至 158 区间后有所反弹，日股当日大跌后今日跳空高开来消化利空。</div>
+    <div class="source">来源：Reuters</div>
+  </div>
+
+  <div class="news-item">
+    <div class="time">10/1</div>
+    <div class="title">韩国向美国投资项目拨付首笔 24 亿美元</div>
+    <div class="body">据韩国媒体消息，韩国已汇出 24 亿美元作为对美投资协议的首笔款项。根据两国去年达成的协议，韩国将在美国进行最高达 2000 亿美元的投资，市场对韩元汇率与双边的关注升温。</div>
+  </div>
+
+  <div class="news-item">
+    <div class="time">10/1</div>
+    <div class="title">武汉：新出让土地商品住房项目优先选择现房销售</div>
+    <div class="body">武汉市发布实施意见，2026年8月28日起新出让土地的商品住房项目优先选择现房销售，支持项目按最小单元分批竣工备案，为房地产销售制度改革的重要信号。</div>
+  </div>
+
+  <div class="news-item">
+    <div class="time">10/1</div>
+    <div class="title">日本财务省将于 10/8 拍卖 3.0 万亿日元短期国债</div>
+    <div class="body">日本财务省公告将于 10 月 8 日拍卖 3.0 万亿日元短期国债（T-bill），市场关注央行购债节奏对收益率曲线的影响。</div>
+  </div>
+</div>
+
+<!-- ═══ 大宗商品 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">🛢️</span> 大宗商品 & 汇率</div>
+  <table>
+    <thead>
+      <tr><th>品种</th><th>最新价</th><th>52周区间</th><th>方向</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>WTI 原油</strong></td>
+        <td>90.07 美元</td>
+        <td style="font-size:11px;color:#888">55.0 ~ 119.5</td>
+        <td><span class="tag tag-gray">≈90 关口上方</span></td>
+      </tr>
+      <tr>
+        <td><strong>伦敦金</strong></td>
+        <td>4,190 美元/oz</td>
+        <td style="font-size:11px;color:#888">3,843 ~ 5,586</td>
+        <td><span class="tag tag-green">高位运行</span></td>
+      </tr>
+      <tr>
+        <td><strong>美元指数 DXY</strong></td>
+        <td>101.481</td>
+        <td style="font-size:11px;color:#888">95.55 ~ 101.80</td>
+        <td><span class="tag tag-orange">偏强</span></td>
+      </tr>
+      <tr>
+        <td><strong>欧元/美元</strong></td>
+        <td>0.8818</td>
+        <td style="font-size:11px;color:#888">—</td>
+        <td><span class="tag tag-gray">—</span></td>
+      </tr>
+      <tr>
+        <td><strong>美元/日元</strong></td>
+        <td>157.30</td>
+        <td style="font-size:11px;color:#888">—</td>
+        <td><span class="tag tag-orange">日元偏弱</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 交易主线 ═══ -->
+<div class="main-themes">
+  <h3>📌 今日交易主线（10月1日）</h3>
+  <div class="theme-item">
+    <span class="num">1</span>
+    <span class="text"><strong>日股开盘大涨 3.8% 消化 BOJ 加息利空：</strong>BOJ 9/18 加息至 1.25% 虽为鹰派意外，但市场反应趋于钝化，日股今日跳空高开消化利空。关注日元 158 区间是否进一步走弱，以及出口板块（丰田、索尼）的持续性。⚠️ 警惕开盘后获利了结回落风险。</span>
+  </div>
+  <div class="theme-item">
+    <span class="num">2</span>
+    <span class="text"><strong>本周 PCE + FOMC 决议双驱动：</strong>10/2 美国核心 PCE 物价指数公布 + 10/2-3 美联储 FOMC 会议，将成为本月最重要的宏观事件。市场定价利率维持不变，但鲍威尔讲话的措辞（鸽/鹰）将决定后续美股方向。关注美债收益率是否突破 4.5%。</span>
+  </div>
+  <div class="theme-item">
+    <span class="num">3</span>
+    <span class="text"><strong>国庆假期资产定价真空期：</strong>A股/港股 10/1-7 休市，境外市场（美股、日股、欧股）正常交易。北向资金无数据参考，节前避险情绪可能延续至节后首个工作日（10/8）。关注假期期间外围市场波动对节后 A股的冲击。</span>
+  </div>
+  <div class="theme-item">
+    <span class="num">4</span>
+    <span class="text"><strong>原油 90 美元关口博弈：</strong>WTI 原油现报 90.07 美元，在美伊局势缓和预期下高位承压，但若利比亚/中东供给扰动再现，或快速上攻。黄金维持 4190 美元高位震荡，避险需求与美元强势形成拉锯。</span>
+  </div>
+  <div class="theme-item">
+    <span class="num">5</span>
+    <span class="text"><strong>韩国 2000 亿美元对美投资落地：</strong>韩国汇出首笔 24 亿美元对美投资，美元/韩元汇率及双边贸易关系值得关注。此类政府间大额资金流动对新兴市场汇率有示范效应，跟踪后续国家动向。</span>
+  </div>
+</div>
+
+<!-- ═══ 各市场今日预判 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">🔭</span> 今日各市场预判</div>
+
+  <div class="direction">
+    <h4>🇺🇸 美股（今晚 21:30 开盘）</h4>
+    <div style="display:flex;gap:24px;flex-wrap:wrap">
+      <div style="flex:1;min-width:200px">
+        <strong style="font-size:12px;color:#2e7d32">🟢 最可能活跃的 3 个方向</strong>
+        <ul>
+          <li>能源/石油（WTI 90 美元关口博弈）</li>
+          <li>半导体（Micron 财报在即，盘前异动）</li>
+          <li>银行股（财报季开启，JPM/Visa 前瞻）</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:200px">
+        <strong style="font-size:12px;color:#c62828">🔴 最该回避的 2 个方向</strong>
+        <ul>
+          <li>高估值成长股（美债收益率上行压力）</li>
+          <li>与日元强相关的日股关联标的</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="direction" style="margin-top:16px">
+    <h4>🇭🇰 港股（国庆休市）</h4>
+    <div style="font-size:12px;color:#666;padding:8px 0">
+      10/1-7 休市，10/8 开市。节前恒指收于 24,523（9/29），处于 52 周低位区间（22,518-28,056），南向资金近期净流入趋缓。建议关注节后首个交易日开盘方向，以及 A 股假期外围表现对港股的传导。
+    </div>
+  </div>
+
+  <div class="direction" style="margin-top:16px">
+    <h4>🇨🇳 A 股（国庆休市）</h4>
+    <div style="font-size:12px;color:#666;padding:8px 0">
+      10/1-7 休市，10/8 开市。上证指数 9/29 收于 3,830（52 周低位 3,741 附近），沪深 300 收 4,357（接近 52 周高点 4,369），创业板指 3,135（52 周低点 3,125 附近）。节前资金避险情绪浓厚，节后首周需关注外围市场走势对 A 股的冲击与传导。
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 风险提示 ═══ -->
+<div class="card">
+  <div class="card-title"><span class="icon">⚠️</span> 风险提示</div>
+  <div style="font-size:12px;color:#555;line-height:1.8">
+    <ul style="padding-left:18px">
+      <li>美股本周 FOMC 会议 + PCE 数据为最大不确定性，波动可能放大。</li>
+      <li>日股今日跳空高开 3.8%，注意开盘后获利了结风险，不宜追高。</li>
+      <li>A 股/港股国庆休市期间外围市场正常交易，节后者需防范传导冲击。</li>
+      <li>原油 90 美元关口博弈，地缘政治风险仍需警惕。</li>
+      <li>本报告仅供参考，不构成投资建议。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  生成时间：2026-10-01 09:33（北京时间） · 数据来源：Yahoo Finance / 新浪财经快讯 / DDGS 搜索
+</div>
+
+</div>
+</body>
+</html>
