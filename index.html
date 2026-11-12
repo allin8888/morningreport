@@ -2,282 +2,309 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>全球市场晨报 2026年11月12日 · 周三</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 2026年11月12日（周三）</title>
 <style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--muted:#8b949e;--blue:#58a6ff;--green:#3fb950;--red:#f85149;--orange:#d29922;--purple:#bc8cff}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:#0d1117;color:#c9d1d9;line-height:1.6;font-size:14px}
-.wrap{max-width:900px;margin:0 auto;padding:20px 16px}
-h1{font-size:20px;color:#58a6ff;text-align:center;margin-bottom:4px}
-.sub{text-align:center;color:#8b949e;font-size:12px;margin-bottom:20px}
-.stripe{height:3px;background:linear-gradient(90deg,#58a6ff,#f0883e,#3fb950,#bc8cff);border-radius:2px;margin-bottom:20px}
-.sec{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin-bottom:16px}
-.sec-title{font-size:13px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;border-bottom:1px solid #21262d;padding-bottom:6px}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{color:#8b949e;text-align:left;font-weight:500;padding:6px 8px;border-bottom:1px solid #21262d;font-size:12px}
-td{padding:6px 8px;border-bottom:1px solid #21262d;vertical-align:top}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+h1{color:var(--blue);font-size:1.4rem;text-align:center;padding:12px 0 4px;border-bottom:2px solid var(--border);margin-bottom:2px}
+.subtitle{text-align:center;color:var(--muted);font-size:.82rem;margin-bottom:14px}
+.stripe{height:3px;background:linear-gradient(90deg,var(--blue),var(--green),var(--orange),var(--red));border-radius:2px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.card-title{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;border-bottom:1px solid var(--border);padding-bottom:6px;display:flex;align-items:center;gap:6px}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{text-align:left;color:var(--muted);font-weight:500;padding:5px 8px;border-bottom:1px solid var(--border);font-size:.75rem}
+td{padding:5px 8px;border-bottom:1px solid #21262d;vertical-align:top}
 tr:last-child td{border-bottom:none}
-.up{color:#3fb950;font-weight:600}
-.down{color:#f85149;font-weight:600}
-.flat{color:#8b949e}
-.tag{display:inline-block;padding:1px 7px;border-radius:12px;font-size:11px;margin-right:4px;font-weight:500}
-.tag-blue{background:rgba(56,139,253,.15);color:#58a6ff;border:1px solid rgba(56,139,253,.3)}
-.tag-orange{background:rgba(240,136,62,.15);color:#f0883e;border:1px solid rgba(240,136,62,.3)}
-.tag-green{background:rgba(63,185,80,.15);color:#3fb950;border:1px solid rgba(63,185,80,.3)}
-.tag-red{background:rgba(248,81,73,.15);color:#f85149;border:1px solid rgba(248,81,73,.3)}
-.tag-gray{background:rgba(139,148,158,.15);color:#8b949e;border:1px solid rgba(139,148,158,.3)}
-.h-line{font-size:12px;color:#8b949e;padding:2px 0;border-left:2px solid #30363d;padding-left:8px;margin:3px 0}
-.h-line strong{color:#c9d1d9}
+.up{color:var(--green);font-weight:600}
+.dn{color:var(--red);font-weight:600}
+.flat{color:var(--muted)}
+.tag{display:inline-block;padding:1px 7px;border-radius:10px;font-size:.7rem;font-weight:600;margin-right:4px}
+.t-blue{background:rgba(88,166,255,.13);color:var(--blue)}
+.t-green{background:rgba(63,185,80,.13);color:var(--green)}
+.t-red{background:rgba(248,81,73,.13);color:var(--red)}
+.t-orange{background:rgba(210,153,34,.13);color:var(--orange)}
+.t-purple{background:rgba(188,140,255,.13);color:var(--purple)}
+.t-gray{background:rgba(139,148,158,.13);color:var(--muted)}
+.num-lg{font-size:1.15rem;font-weight:700;letter-spacing:-.02em}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media(max-width:600px){.grid2{grid-template-columns:1fr}}
-.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
-@media(max-width:600px){.three-col{grid-template-columns:1fr}}
-.box{background:#0d1117;border:1px solid #30363d;border-radius:6px;padding:10px;text-align:center}
-.box-label{font-size:11px;color:#8b949e;margin-bottom:4px}
-.box-val{font-size:22px;font-weight:700}
-.big-num{font-size:28px;font-weight:800;letter-spacing:-.02em}
-.note{font-size:11px;color:#8b949e;margin-top:4px;font-style:italic}
-.divider{height:1px;background:#21262d;margin:12px 0}
-.warning{background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.3);border-radius:6px;padding:10px;font-size:12px;color:#d29922;margin-top:12px}
-.footer{font-size:10px;color:#484f58;text-align:center;margin-top:20px;padding-top:12px;border-top:1px solid #21262d}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media(max-width:600px){.grid3{grid-template-columns:1fr}}
+.box{background:#0d1117;border:1px solid var(--border);border-radius:6px;padding:10px;text-align:center}
+.box-label{font-size:.7rem;color:var(--muted);margin-bottom:2px}
+.box-val{font-size:1.1rem;font-weight:700}
+.hlines{margin-top:8px}
+.hline{font-size:.78rem;color:var(--muted);padding:2px 0 2px 10px;border-left:2px solid var(--border);margin:4px 0}
+.hline strong{color:var(--text)}
+.action{font-size:.78rem;margin-top:6px;padding:8px;border-radius:6px;line-height:1.5}
+.action-up{background:rgba(63,185,80,.07);border:1px solid rgba(63,185,80,.2)}
+.action-down{background:rgba(248,81,73,.07);border:1px solid rgba(248,81,73,.2)}
+.action-title{font-weight:700;margin-bottom:4px;font-size:.8rem}
+.warn{background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.25);border-radius:6px;padding:10px;font-size:.78rem;color:var(--orange);margin-top:10px}
+.foot{font-size:.68rem;color:var(--muted);text-align:center;margin-top:16px;padding-top:10px;border-top:1px solid var(--border);line-height:1.5}
+.center{text-align:center}
+.mono{font-family:"SF Mono",Monaco,Consolas,monospace;font-size:.78rem}
 </style>
 </head>
 <body>
 <div class="wrap">
+
 <h1>🌍 全球市场晨报</h1>
-<p class="sub">2026年11月12日 · 周三 ｜盘前快速阅读</p>
+<p class="subtitle">2026年11月12日（周三）· 盘前快速阅读 | 数据截止：11月11日夜收盘</p>
 <div class="stripe"></div>
 
-<!-- ========== 核心指标卡片 ========== -->
-<div class="sec">
-<div class="sec-title">📊 隔夜指数收盘 11月11日</div>
-<div class="three-col">
-<div class="box">
-<div class="box-label">道琼斯</div>
-<div class="box-val down">46,936</div>
-<div class="up" style="font-size:14px;margin-top:2px">−0.59%</div>
+<!-- ═══════════ 核心指数卡片 ═══════════ -->
+<div class="card">
+<div class="card-title">📊 隔夜指数收盘 11/11</div>
+<div class="grid3">
+<div class="box"><div class="box-label">道琼斯</div><div class="box-val dn">46,936</div><div class="dn">−0.59%</div></div>
+<div class="box"><div class="box-label">标普500</div><div class="box-val dn">6,586</div><div class="dn">−0.19%</div></div>
+<div class="box"><div class="box-label">纳斯达克</div><div class="box-val dn">22,266</div><div class="dn">−0.25%</div></div>
 </div>
-<div class="box">
-<div class="box-label">标普500</div>
-<div class="box-val down">6,586</div>
-<div class="up" style="font-size:14px;margin-top:2px">−0.19%</div>
+<div class="grid3" style="margin-top:8px">
+<div class="box"><div class="box-label">恒生指数</div><div class="box-val dn">27,909</div><div class="dn">−2.98%</div><div class="note mono" style="font-size:.65rem;color:var(--muted)">2024年4月以来新低</div></div>
+<div class="box"><div class="box-label">上证指数</div><div class="box-val up">3,680.64</div><div class="up">+0.46%</div></div>
+<div class="box"><div class="box-label">创业板指</div><div class="box-val up">2,572.07</div><div class="up">+3.11%</div><div class="note mono" style="font-size:.65rem;color:var(--green)">最强 · 算力硬件驱动</div></div>
 </div>
-<div class="box">
-<div class="box-label">纳斯达克</div>
-<div class="box-val down">22,266</div>
-<div class="up" style="font-size:14px;margin-top:2px">−0.25%</div>
+<div style="margin-top:10px;font-size:.78rem;color:var(--muted)" class="center">
+VIX <span class="mono dn">17.18 ↑3.08%</span> ｜ 沪深两市成交 <span class="mono up">16,763亿（放量+1,714亿）</span> ｜ A股上涨<span class="up">3,538</span>/下跌<span class="dn">1,827</span>（66%涨）
 </div>
-</div>
-<div class="note" style="margin-top:8px">恒指 <span class="flat">27,909</span>（−2.98%）｜沪指 <span class="up">3,680.64</span>（+0.46%）｜深成指 <span class="up">11,389.74</span>（+1.32%）｜创指 <span class="up">2,572.07</span>（+3.11%）</div>
 </div>
 
-<!-- ========== 全球宏观 ========== -->
-<div class="sec">
-<div class="sec-title">🏦 全球宏观与风险事件</div>
+<!-- ═══════════ 全球宏观 ═══════════ -->
+<div class="card">
+<div class="card-title">🏦 全球宏观与风险事件</div>
 <table>
-<thead><tr><th>主题</th><th>要点</th></tr></thead>
+<thead><tr><th>主题</th><th>要点</th><th>影响</th></tr></thead>
 <tbody>
 <tr>
-<td><span class="tag tag-orange">美债收益率飙升</span></td>
-<td><strong>10Y美债突破5.20%↑ 13BP</strong>，创近2年来新高；30Y突破5.45%。<br>背景：中期选举共和党有望拿下参议院 → 减税法案重燃希望，市场预期未来通胀与赤字扩大 → 长端利率定价上调。<br>影响：<strong>估值天花板系统性上移</strong>；成长/科技股首当其冲；港股高久期资产估值压力加倍。</td>
+<td><span class="tag t-blue">美债收益率飙升</span></td>
+<td>10Y突破 <strong class="dn">5.19%</strong>，创近2年新髙<br>共和党有望拿下参议院→减税预期升温→通胀定价上调</td>
+<td>成长股估值天花板系统性上移；港股高久期资产首当其冲</td>
 </tr>
 <tr>
-<td><span class="tag tag-red">油价急坠后反弹</span></td>
-<td><strong>WTI 11/5暴跌至$83.2</strong>（周跌12.6%），因中东停火预期与伊朗重返市场。<br>最新<strong>WTI $86.40 / Brent $92.26</strong>，11/10反弹回升。<br>关注：特朗普对伊政策能否主导油价方向，停火协议是否兑现。</td>
+<td><span class="tag t-red">美元走强</span></td>
+<td>DXY 99.65(+0.46%)逼近100关口<br>CNH跌破7.0整数关口</td>
+<td>资金回流美国；新兴市场货币承压；A股北向或观望</td>
 </tr>
 <tr>
-<td><span class="tag tag-green">黄金走强</span></td>
-<td><strong>现货金 $4,068/oz ↑0.95%</strong>，白银 $53.01 ↑3.48%。<br>避险资金持续涌入贵金属对冲国债卖压与地缘不确定性。</td>
+<td><span class="tag t-orange">油价急坠后反弹</span></td>
+<td>WTI $86.40/Brent $92.26，11/5暴跌至$83.2后修复<br>中东停火协议博弈进行中</td>
+<td>能源股分化；若停火落地则继续承压，紧张升级则冲$90+</td>
 </tr>
 <tr>
-<td><span class="tag tag-blue">美联储路径</span></td>
-<td>FOMC维持5.25–5.50%不变，点阵图显示本轮周期仅减一次即结束。<br>鲍威尔措辞转鹰，暗示可能重新讨论加息。<br>12月维持现状概率>90%；市场转向博弈下一轮降息节奏。</td>
+<td><span class="tag t-green">黄金创新高</span></td>
+<td>现货金 <strong>$4,068/oz</strong>（历史新高区间）<br>避险资金持续涌入贵金属</td>
+<td>对冲通胀与地缘不确定性，短期看多但需警惕获利回吐</td>
+</tr>
+<tr>
+<td><span class="tag t-purple">美联储路径</span></td>
+<td>FOMC维持5.25–5.50%不变；点阵图显示本轮仅减一次<br>鲍威尔措辞转鹰，暗示可能重新讨论加息</td>
+<td>12月维持概率&gt;90%；市场转向博弈下一轮降息节奏</td>
+</tr>
+<tr>
+<td><span class="tag t-red">港股内房股危机</span></td>
+<td>碧桂园等债务重组引发行业负反馈<br>恒指收跌近3%，创2024年4月以来新低</td>
+<td>南向资金连续净卖出；港股流动性困境短期难解</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-<!-- ========== 美股 ========== -->
-<div class="sec">
-<div class="sec-title">🇺🇸 美股隔夜动态</div>
+<!-- ═══════════ 美股 ═══════════ -->
+<div class="card">
+<div class="card-title">🇺🇸 美股隔夜动态</div>
 <table>
-<thead><tr><th>公司/板块</th><th>详情</th></tr></thead>
+<thead><tr><th>标的</th><th>涨跌</th><th>背景</th></tr></thead>
 <tbody>
-<tr>
-<td><span class="tag tag-red">NVDA −5.47%</span></td>
-<td><strong>盘中一度跌至$158（跌超7%）</strong>，尾盘部分回升。<br>触发因素：AI需求放缓担忧；微软下调数据中心资本支出指引；AMD MI900量产后替代压力显现。<br>影响：拖累费城半导体指数与纳指；<strong>英伟达生态链</strong>（光模块/PCB）今日承压。</td>
-</tr>
-<tr>
-<td><span class="tag tag-blue">MSFT +1.3%</span></td>
-<td>逆势上涨，财报当日公布。微软成为少数在市场下跌中表现坚韧的科技巨头。</td>
-</tr>
-<tr>
-<td><span class="tag tag-orange">费城半导体 −3%</span></td>
-<td>SOX指数全线下挫，AI算力硬件方向集体回调。NVDA拖拽效应显著。</td>
-</tr>
+<tr><td>NVDA 英伟达</td><td><span class="dn">−5.47%</span> 盘中一度跌至$158</td><td>AI需求放缓担忧+微软下调CapEx指引+AMD MI900替代叙事</td></tr>
+<tr><td>费城半导体 SOX</td><td><span class="dn">−3.00%</span></td><td>全线回调，英伟达拖拽效应显著</td></tr>
+<tr><td>MSFT 微软</td><td><span class="up">+1.3%</span></td><td>财报当日逆势上涨，科技股中表现相对稳健</td></tr>
+<tr><td>META Meta</td><td><span class="up">+4.7%</span></td><td>财报亮眼，成为少数强势科技股</td></tr>
 </tbody>
 </table>
-<div class="divider"></div>
-<div style="font-size:12px">
-<p style="margin-bottom:4px"><strong style="color:#3fb950">🔥 今日最可能活跃的方向</strong></p>
-<ul style="padding-left:16px;margin-bottom:8px">
-<li><strong>消费/AI应用层</strong> — NVDA回调降低估值锚，资金可能转向软件与应用层（如MSFT财报催化）</li>
-<li><strong>防御性板块</strong> — 公用事业、必需消费品、医疗 — 利率上行期的天然避风港</li>
-<li><strong>能源股</strong> — WTI油价$86.40，布伦特$92.26在反弹修复通道中；若中东局势升温将再涨</li>
-</ul>
-<p style="margin-bottom:4px"><strong style="color:#f85149">⚠️ 今日最该回避的方向</strong></p>
-<ul style="padding-left:16px">
-<li><strong>AI算力硬件链</strong> — NVDA破位、AMD替代叙事发酵，SOX短期难有表现空间</li>
-<li><strong>高久期纯概念股</strong> — 无盈利支撑的远端现金流标的在利率5.2%+环境下受双重挤压</li>
-</ul>
+<div class="hlines">
+<div class="hline"><strong>🔥 今天最可能活跃的3个方向</strong></div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">① AI应用层/软件</div>
+NVDA硬件回调降低估值锚，资金可能流向MSFT/META等AI落地更清晰的标的
+</div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">② 防御性板块</div>
+公用事业、必需消费、医疗 — 利率5.2%+环境下的天然避风港
+</div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">③ 能源股</div>
+WTI $86.40在反弹修复通道中；若中东局势升温将再涨
+</div>
+<div class="hline"><strong>⚠️ 今天最该回避的2个方向</strong></div>
+<div class="action action-down">
+<div class="action-title" style="color:var(--red)">① AI算力硬件链</div>
+NVDA破位、AMD替代叙事发酵，SOX短期难有表现空间
+</div>
+<div class="action action-down">
+<div class="action-title" style="color:var(--red)">② 高久期纯概念股</div>
+无盈利支撑的远端现金流标的在利率高位下受双重挤压
+</div>
 </div>
 </div>
 
-<!-- ========== 港股 ========== -->
-<div class="sec">
-<div class="sec-title">🇭🇰 港股隔夜动态</div>
+<!-- ═══════════ 港股 ═══════════ -->
+<div class="card">
+<div class="card-title">🇭🇰 港股隔夜动态</div>
 <table>
-<thead><tr><th>项目</th><th>详情</th></tr></thead>
+<thead><tr><th>指数/标的</th><th>收盘</th><th>涨跌</th><th>备注</th></tr></thead>
 <tbody>
-<tr>
-<td><span class="tag tag-red">恒指 −2.98%</span></td>
-<td>收于<strong>27,909</strong>，为2024年4月以来新低。<br>背景：南向净卖出+内房股大跌（碧桂园等负反馈）；恒科股跌幅2.35%（腾讯−1.5%、阿里−2.4%）；人民币贬值压力传导。</td>
-</tr>
-<tr>
-<td><span class="tag tag-blue">人民币走弱</span></td>
-<td>离岸CNH兑美元跌破7.0整数关口。汇率压力加剧港股流动性困境，外资流出压力加大。</td>
-</tr>
+<tr><td>恒生指数</td><td>27,909</td><td><span class="dn">−2.98%</span></td><td>2024年4月以来新低</td></tr>
+<tr><td>腾讯</td><td>—</td><td><span class="dn">−1.5%</span></td><td>恒科拖累</td></tr>
+<tr><td>阿里巴巴</td><td>—</td><td><span class="dn">−2.4%</span></td><td>跟随恒科弱势</td></tr>
+<tr><td>港元汇率</td><td>CNH破7.0</td><td><span class="dn">贬值压力</span></td><td>外资流出加剧</td></tr>
 </tbody>
 </table>
-<div class="divider"></div>
-<div style="font-size:12px">
-<p style="margin-bottom:4px"><strong style="color:#3fb950">🔥 今日最可能活跃的方向</strong></p>
-<ul style="padding-left:16px;margin-bottom:8px">
-<li><strong>防御低估值</strong> — 内银/电信/能源等高股息板块，港股资金在风险偏好下降时回流价值股</li>
-<li><strong>超跌科技龙头</strong> — 腾讯、美团等若出现技术面修复，短线博反弹资金会集中流入</li>
-<li><strong>新能源/光伏</strong> — 近期超跌且存在政策扶持预期</li>
-</ul>
-<p style="margin-bottom:4px"><strong style="color:#f85149">⚠️ 今日最该回避的方向</strong></p>
-<ul style="padding-left:16px">
-<li><strong>内房股</strong> — 碧桂园债务重组引发行业信任危机，负反馈循环尚未结束</li>
-<li><strong>高贝塔成长/题材股</strong> — 人民币贬值期间外资减仓首选方向，波动率极高</li>
-</ul>
+<div style="font-size:.78rem;color:var(--muted);margin-top:8px">
+背景：南向资金连续净卖出 + 内房股信用危机负反馈 + NVDA暴跌外溢传导。港股流动性困境短期难解。
+</div>
+<div class="hlines">
+<div class="hline"><strong>🔥 今天最可能活跃的3个方向</strong></div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">① 防御低估值</div>
+内银/电信/能源等高股息板块，风险偏好下降时资金回流价值股
+</div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">② 超跌科技龙头</div>
+腾讯、美团等技术面超跌，短线博反弹资金可能集中流入
+</div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">③ 新能源/光伏</div>
+近期超跌且存在政策扶持预期，可能吸引抄底资金
+</div>
+<div class="hline"><strong>⚠️ 今天最该回避的2个方向</strong></div>
+<div class="action action-down">
+<div class="action-title" style="color:var(--red)">① 内房股</div>
+碧桂园债务重组引发行业信任危机，负反馈循环尚未结束
+</div>
+<div class="action action-down">
+<div class="action-title" style="color:var(--red)">② 高贝塔成长/题材股</div>
+人民币贬值期间外资减仓首选方向，波动率极高
+</div>
 </div>
 </div>
 
-<!-- ========== A股 ========== -->
-<div class="sec">
-<div class="sec-title">🇨🇳 A股隔夜动态</div>
+<!-- ═══════════ A股 ═══════════ -->
+<div class="card">
+<div class="card-title">🇨🇳 A股隔夜动态</div>
 <table>
-<thead><tr><th>指数</th><th>收盘</th><th>涨跌</th><th>特征</th></tr></thead>
+<thead><tr><th>指数</th><th>收盘</th><th>涨跌</th><th>成交额</th></tr></thead>
 <tbody>
-<tr><td>上证指数</td><td>3,680.64</td><td class="up">+0.46%</td><td>开盘微跌后震荡回升</td></tr>
-<tr><td>深证成指</td><td>11,389.74</td><td class="up">+1.32%</td><td>成交9,401亿居首</td></tr>
-<tr><td>创业板指</td><td>2,572.07</td><td class="up">+3.11%</td><td>全天最强，算力硬件驱动</td></tr>
-<tr><td>科创50</td><td>1,300.38</td><td class="up">+2.80%</td><td>科技成长主线延续</td></tr>
-<tr><td>沪深300</td><td>4,075.71</td><td class="up">+0.41%</td><td>大盘蓝筹偏弱</td></tr>
-<tr><td>成交额</td><td colspan="2">~16,763亿元</td><td class="up">较上一日放量+1,714亿 🔥</td></tr>
+<tr><td>上证指数</td><td>3,680.64</td><td><span class="up">+0.46%</span></td><td>7,362亿</td></tr>
+<tr><td>深证成指</td><td>11,389.74</td><td><span class="up">+1.32%</span></td><td>9,401亿</td></tr>
+<tr><td>创业板指</td><td>2,572.07</td><td><span class="up">+3.11%</span></td><td>4,784亿 🔥最强</td></tr>
+<tr><td>科创50</td><td>1,300.38</td><td><span class="up">+2.80%</span></td><td>—</td></tr>
+<tr><td>沪深300</td><td>4,075.71</td><td><span class="up">+0.41%</span></td><td>—</td></tr>
 </tbody>
 </table>
-<div class="note" style="margin-top:8px">全市场上涨3,538只、下跌1,827只（63%上涨占比）；涨停85只/跌停1只</div>
-<div class="divider"></div>
-<table>
+<div style="font-size:.78rem;color:var(--muted);margin-top:8px" class="center">
+全市场上涨 <span class="up">3,538</span> 只 / 下跌 <span class="dn">1,827</span> 只（63%占比）｜涨停 <span class="up">85</span> 只 / 跌停 <span class="dn">1</span> 只｜成交 <span class="up">16,763亿</span>（较前日放量+1,714亿）
+</div>
+<table style="margin-top:10px">
 <thead><tr><th>板块</th><th>表现</th></tr></thead>
 <tbody>
-<tr><td><span class="tag tag-green">领涨</span> 通信设备/元件/CPO/光纤/PCB</td><td>算力硬件爆发：中际旭创约+15%、新易盛+16~17%、「易中天」成交前排集中在光模块</td></tr>
-<tr><td><span class="tag tag-green">活跃</span> 机器人概念</td><td>反复活跃，部分连板股延续势头</td></tr>
-<tr><td><span class="tag tag-red">领跌</span> 白酒/机场航运/乳业/食品饮料</td><td>消费板块普遍调整，白酒约-3%</td></tr>
+<tr><td><span class="tag t-green">领涨</span> 通信设备/元件/CPO/光纤/PCB</td><td>"易中天"集体大涨：中际旭创约+15%、新易盛+16~17%，算力硬件午后爆发</td></tr>
+<tr><td><span class="tag t-green">活跃</span> 机器人概念</td><td>反复活跃，部分连板股延续势头</td></tr>
+<tr><td><span class="tag t-red">领跌</span> 白酒/机场航运/乳业</td><td>消费板块普遍调整，白酒约−3%</td></tr>
 </tbody>
 </table>
-<div class="divider"></div>
-<div style="font-size:12px">
-<p style="margin-bottom:4px"><strong style="color:#3fb950">🔥 今日最可能活跃的方向</strong></p>
-<ul style="padding-left:16px;margin-bottom:8px">
-<li><strong>算力硬件（CPO/光模块）</strong> — 昨日最强主线，午后加速，若美股NVDA明日企稳则延续强势</li>
-<li><strong>机器人/具身智能</strong> — 连续两日活跃，产业催化密集，机构增仓迹象明显</li>
-<li><strong>PCB/通信元件</strong> — 算力基建产业链外溢，四会富仕等已走出趋势</li>
-</ul>
-<p style="margin-bottom:4px"><strong style="color:#f85149">⚠️ 今日最该回避的方向</strong></p>
-<ul style="padding-left:16px">
-<li><strong>白酒/消费</strong> — 昨日领跌，估值偏高叠加资金从消费向科技切换，短期缺乏催化</li>
-<li><strong>机场航运/航空</strong> — 运价低迷+人民币贬值成本压力，板块景气度仍弱</li>
-</ul>
+<div class="hlines">
+<div class="hline"><strong>🔥 今天最可能活跃的3个方向</strong></div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">① 算力硬件（CPO/光模块）</div>
+昨日最强主线，若美股NVDA明日企稳则延续强势，关注是否延续午后加速特征
+</div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">② 机器人/具身智能</div>
+连续两日活跃，产业催化密集，机构增仓迹象明显
+</div>
+<div class="action action-up">
+<div class="action-title" style="color:var(--green)">③ PCB/通信元件</div>
+算力基建产业链外溢，四会富仕等已走出趋势
+</div>
+<div class="hline"><strong>⚠️ 今天最该回避的2个方向</strong></div>
+<div class="action action-down">
+<div class="action-title" style="color:var(--red)">① 白酒/消费</div>
+昨日领跌，估值偏高叠加资金从消费向科技切换，短期缺乏催化
+</div>
+<div class="action action-down">
+<div class="action-title" style="color:var(--red)">② 机场航运/航空</div>
+运价低迷+人民币贬值成本压力，板块景气度仍弱
+</div>
 </div>
 </div>
 
-<!-- ========== 今日经济日历 ========== -->
-<div class="sec">
-<div class="sec-title">📅 今日（11月12日）关注日程</div>
+<!-- ═══════════ 今日日程 ═══════════ -->
+<div class="card">
+<div class="card-title">📅 今日（11/12）关注日程</div>
 <table>
-<thead><tr><th>时间</th><th>事项</th><th>重要程度</th><th>潜在影响</th></tr></thead>
+<thead><tr><th>时间</th><th>事项</th><th>重要度</th><th>潜在影响</th></tr></thead>
 <tbody>
-<tr>
-<td>09:30 北京时间</td>
-<td>A股开市</td>
-<td><span class="tag tag-orange">★</span></td>
-<td>关注算力硬件板块是否能延续前日涨幅；白酒/消费是否继续承压</td>
-</tr>
-<tr>
-<td>21:30 北京时间</td>
-<td>美国10月成屋销售数据</td>
-<td><span class="tag tag-blue">◆</span></td>
-<td>反映房地产韧性，若低于预期将压低利率并利好股市</td>
-</tr>
-<tr>
-<td>—</td>
-<td>中东局势发展</td>
-<td><span class="tag tag-red">▲</span></td>
-<td>停火协议进展直接影响油价与风险偏好；特朗普对伊表态是关键变量</td>
-</tr>
-<tr>
-<td>—</td>
-<td>10Y美债收益率是否继续上攻</td>
-<td><span class="tag tag-red">▲</span></td>
-<td>突破5.25%将进一步压制成长股估值，A股科技股联动承压</td>
-</tr>
+<tr><td class="mono">09:30</td><td>A股开市</td><td><span class="tag t-orange">★★★</span></td><td>算力硬件延续性？白酒/消费是否继续承压？</td></tr>
+<tr><td class="mono">全天</td><td>中东局势进展</td><td><span class="tag t-red">★★★</span></td><td>停火协议兑现→油价承压；紧张升级→油价冲$90+</td></tr>
+<tr><td class="mono">全天</td><td>10Y美债收益率走向</td><td><span class="tag t-red">★★★</span></td><td>突破5.25%将进一步压制成长股估值</td></tr>
+<tr><td class="mono">全天</td><td>人民币中间价</td><td><span class="tag t-blue">★★☆</span></td><td>央行态度观测窗口，中间价调升或为托底信号</td></tr>
+<tr><td class="mono">11/13(周四)</td><td>FOMC会议纪要</td><td><span class="tag t-orange">★★★</span></td><td>鹰派纪要→加息预期升温；鸽派→降息信心恢复</td></tr>
+<tr><td class="mono">11/12</td><td>中国10月工业增加值/社零</td><td><span class="tag t-blue">★★☆</span></td><td>经济基本面验证，超预期→A股利好</td></tr>
 </tbody>
 </table>
 </div>
 
-<!-- ========== 今日交易主线 ========== -->
-<div class="sec">
-<div class="sec-title">🎯 三大今日交易主线</div>
+<!-- ═══════════ 三大主线 ═══════════ -->
+<div class="card">
+<div class="card-title">🎯 三大今日交易主线</div>
 
-<div class="h-line"><strong>主线一：AI算力链分化 — 硬件 vs 应用</strong> <span class="tag tag-blue">★★★★</span></div>
-<p style="font-size:12px;color:#8b949e;margin:6px 0 12px">英伟达暴跌+AMD MI900量产替代叙事 = 算力硬件板块短期承压。A股「易中天」昨日暴涨，今日需观察是否有获利了结；港股AI链同样面临NVDA牵制。交易策略：关注硬件回调后的低吸机会，而非追高。软件/应用层因受益于AI落地逻辑但估值更稳，成为资金可能的分歧方向。</p>
+<div class="hline"><strong>主线一：AI算力链分化 — 硬件 vs 应用</strong> <span class="tag t-blue">★★★★</span></div>
+<p style="font-size:.78rem;color:var(--muted);margin:6px 0 12px">
+英伟达暴跌+AMD MI900量产替代叙事 = 算力硬件板块短期承压。A股"易中天"昨日暴涨，今日需观察是否有获利了结；港股AI链同样面临NVDA牵制。<strong>策略：</strong>关注硬件回调后的低吸机会，而非追高。软件/应用层因受益于AI落地逻辑但估值更稳，成为资金可能的分歧方向。
+</p>
 
-<div class="h-line"><strong>主线二：美元走强 vs 新兴市场货币压力</strong> <span class="tag tag-orange">★★★☆</span></div>
-<p style="font-size:12px;color:#8b949e;margin:6px 0 12px">美元指数逼近100，人民币离岸跌破7.0整数关口。港股首当其冲（外资流出+估值双重压力），A股北向资金可能阶段性观望。关注：央行今日公开市场操作（逆回购回笼或投放）及中间价走势，作为政策托底信号观测窗口。</p>
+<div class="hline"><strong>主线二：美元走强 vs 新兴市场货币压力</strong> <span class="tag t-orange">★★★☆</span></div>
+<p style="font-size:.78rem;color:var(--muted);margin:6px 0 12px">
+美元指数逼近100，人民币离岸跌破7.0整数关口。港股首当其冲（外资流出+估值双重压力），A股北向资金可能阶段性观望。<strong>关注：</strong>央行今日公开市场操作（逆回购回笼或投放）及中间价走势，作为政策托底信号观测窗口。
+</p>
 
-<div class="h-line"><strong>主线三：油价方向选择 — 地缘 vs 需求</strong> <span class="tag tag-green">★★★</span></div>
-<p style="font-size:12px;color:#8b949e;margin:6px 0 12px">WTI从$110高位跌至$83.2后反弹至$86.4，处于关键变盘区间。停火协议若巩固 → 油继续承压；伊朗局势重启紧张 → 油价冲$90+。能源股今日分化较大，建议等待方向明确后再做配置决策。</p>
+<div class="hline"><strong>主线三：油价方向选择 — 地缘 vs 需求</strong> <span class="tag t-green">★★★</span></div>
+<p style="font-size:.78rem;color:var(--muted);margin:6px 0 12px">
+WTI从$110高位跌至$83.2后反弹至$86.4，处于关键变盘区间。停火协议若巩固→油继续承压；伊朗局势重启紧张→油价冲$90+。<strong>策略：</strong>能源股今日分化较大，建议等待方向明确后再做配置决策。
+</p>
 </div>
 
-<!-- ========== 历史水位参考 ========== -->
-<div class="sec">
-<div class="sec-title">📈 历史水位快速对照</div>
+<!-- ═══════════ 历史水位 ═══════════ -->
+<div class="card">
+<div class="card-title">📈 历史水位快速对照</div>
 <table>
 <thead><tr><th>品种</th><th>当前</th><th>2025年均值</th><th>相对位置</th></tr></thead>
 <tbody>
-<tr><td>WTI原油</td><td>$86.4</td><td>$74.2</td><td class="up">偏高约+16%</td></tr>
-<tr><td>布油</td><td>$92.3</td><td>$79.5</td><td class="up">偏高约+16%</td></tr>
-<tr><td>现货金</td><td>$4,068</td><td>$2,050</td><td class="up">历史新高区间</td></tr>
-<tr><td>恒生指数</td><td>27,909</td><td>~25,000</td><td>高位回落中</td></tr>
-<tr><td>标普500</td><td>6,586</td><td>~5,500</td><td class="up">历史高位</td></tr>
+<tr><td>WTI原油</td><td class="mono">$86.4</td><td class="mono">$74.2</td><td class="up">偏高约+16%</td></tr>
+<tr><td>布伦特原油</td><td class="mono">$92.3</td><td class="mono">$79.5</td><td class="up">偏高约+16%</td></tr>
+<tr><td>现货黄金</td><td class="mono">$4,068</td><td class="mono">$2,050</td><td class="up">历史新高区间</td></tr>
+<tr><td>恒生指数</td><td class="mono">27,909</td><td class="mono">~25,000</td><td>高位回落中</td></tr>
+<tr><td>标普500</td><td class="mono">6,586</td><td class="mono">~5,500</td><td class="up">历史高位</td></tr>
+<tr><td>10Y美债收益率</td><td class="mono">5.19%</td><td class="mono">~4.2%</td><td class="dn">偏高约+1.0pp</td></tr>
 </tbody>
 </table>
 </div>
 
-<!-- ========== 待核实提示 ========== -->
-<div class="warning">
-⚠️ <strong>待核实项</strong>：今日恒指正式收盘价（部分来源标注±1.75%至−2.98%不等，取最可靠收盘数据）、12月美联储会议详细议息声明发布时间、A股今日北向资金流向实时数据。以上数据将在盘后验证后补充。
+<!-- ═══════════ 待核实提示 ═══════════ -->
+<div class="warn">
+⚠️ <strong>待核实项</strong>：①恒指准确收盘幅度（各源标注−1.75%至−2.98%不等，以港交所官方为准）；②A股今日北向资金实时流向；③10月中国工业增加值/社零数据正式公布值（盘中预估待官方）。以上数据将在盘后验证后补充更新。
 </div>
 
-<div class="footer">
-本报告仅供参考，不构成投资建议。市场有风险，投资需谨慎。<br>
-数据来源：Investing.com · WSJ · Bloomberg · Forbes · 新浪财经 · X/Twitter（检索于2026-11-12）<br>
-© 2026 Hermes Agent · 全球市场晨报系统
+<div class="foot">
+<strong>免责声明：</strong>本报告仅供参考，不构成投资建议。市场有风险，投资需谨慎。<br>
+数据来源：Investing.com · WSJ · Bloomberg · Forbes · 新浪财经 · 腾讯财经 · X/Twitter（检索于2026-11-12）
 </div>
-</div>
+
+</div><!-- /wrap -->
 </body>
 </html>
