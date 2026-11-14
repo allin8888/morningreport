@@ -10,6 +10,9 @@
 
 
 
+
+
+
 <style class="mb-baseline">
 :root{--up:#c0392b;--down:#1e8e3e;--ink:#1f2329;--muted:#8a919f;--line:#e5e6eb;--bg:#ffffff;--card:#ffffff}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -92,7 +95,60 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 
 </style>
 
-
+<style class="ref-layout">
+/* 参考结构：浅色白底 + 蓝系强调（行业趋势 --bg:#fff / 热榜 --c-blue:#1d4ed8） */
+:root{--ref-bg:#ffffff;--ref-panel:#f5f8fc;--ref-text:#182334;--ref-muted:#526176;
+  --ref-line:#dbe4ef;--ref-accent:#2459ad;--ref-th:#eaf0f8;--ref-zebra:#f8fafc;
+  --ref-up:#c0392b;--ref-down:#1e8e3e;--ref-watch:#b45309}
+html,body{background:var(--ref-bg)!important;color:var(--ref-text)!important}
+body{font-size:16px;line-height:1.75;letter-spacing:.01em}
+h1{font-size:27px;line-height:1.35;margin:8px 0 6px}
+h2{font-size:21px;line-height:1.45;margin:28px 0 14px;padding:10px 14px;
+  background:var(--ref-panel);border-left:4px solid var(--ref-accent);border-radius:0 8px 8px 0}
+h3{font-size:17px;margin:18px 0 8px}
+p,li{font-size:16px;line-height:1.75}
+a{color:var(--ref-accent)}
+/* 粘性目录（参考热榜 datenav / 行业趋势 toc） */
+.ref-toc{position:sticky;top:0;z-index:20;display:flex;gap:8px;flex-wrap:wrap;
+  padding:10px 14px;margin:0 0 20px;background:var(--ref-panel);
+  border:1px solid var(--ref-line);border-radius:10px;font-size:13px}
+.ref-toc a{color:var(--ref-accent);text-decoration:none;padding:3px 8px;border-radius:5px}
+.ref-toc a:hover{background:#e6eefb}
+.ref-toc a.active{background:var(--ref-accent);color:#fff;font-weight:600}
+/* 章节卡片与导读（参考行业趋势 reading-guide / 热榜 dash-card） */
+.ref-guide{border-left:4px solid var(--ref-accent);background:var(--ref-panel);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:12px 0 16px}
+.ref-guide p{display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:10px;margin:6px 0;font-size:15px}
+.ref-guide b{color:var(--ref-accent);font-weight:700}
+.ref-card{background:var(--ref-panel);border:1px solid var(--ref-line);
+  border-radius:10px;padding:14px 16px;margin:12px 0}
+.ref-badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;
+  border-radius:10px;margin:0 4px 4px 0;background:#e6eefb;color:var(--ref-accent)}
+.ref-badge.watch{background:#fff2df;color:var(--ref-watch)}
+.ref-badge.avoid{background:#fdeaea;color:var(--ref-up)}
+.ref-badge.opp{background:#e6f4ea;color:var(--ref-down)}
+/* 表格：不折叠，包滚动容器 + sticky 表头 + 斑马纹（行业趋势 table-wrap / 热榜 tbl-scroll） */
+.ref-tbl-wrap{margin:10px 0 18px;border:1px solid var(--ref-line);border-radius:8px;overflow:hidden}
+.ref-tbl-bar{display:flex;justify-content:space-between;align-items:center;
+  padding:7px 12px;background:var(--ref-panel);border-bottom:1px solid var(--ref-line)}
+.ref-tbl-label{font-size:13px;color:var(--ref-muted)}
+.ref-copy-btn{font-size:13px;padding:3px 10px;cursor:pointer;border:1px solid var(--ref-line);
+  border-radius:5px;background:#fff;color:var(--ref-accent)}
+.ref-copy-btn:hover{background:#e6eefb}
+.ref-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ref-tbl-wrap table{width:100%;border-collapse:collapse;margin:0;font-size:15px;min-width:520px}
+.ref-tbl-wrap th,.ref-tbl-wrap td{padding:9px 11px;border:1px solid var(--ref-line);
+  text-align:left;line-height:1.6;vertical-align:top}
+.ref-tbl-wrap thead th{position:sticky;top:0;background:var(--ref-th);color:#243b5a;font-weight:700;z-index:2}
+.ref-tbl-wrap tbody tr:nth-child(even){background:var(--ref-zebra)}
+.ref-up{color:var(--ref-up);font-weight:600}
+.ref-down{color:var(--ref-down);font-weight:600}
+.ref-watch{color:var(--ref-watch)}
+@media(max-width:760px){body{font-size:15px}h1{font-size:23px}h2{font-size:19px}
+  .ref-tbl-wrap th,.ref-tbl-wrap td{padding:7px 9px;white-space:nowrap}}
+@media print{.ref-toc,.ref-copy-btn{display:none!important}
+  .ref-scroll{overflow:visible!important}}
+</style>
 </head>
 <body>
 <section class="mb-spark"><h4>指标近况</h4><div class="mb-spark-row"><span class="mb-spark-item" title="恒生指数 23,637.60（较前日 -1.55%）"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val down">23,637.60<span class="mb-spark-chg">-1.55%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,23.2 40.7,3.0 79.3,24.9 118.0,27.0"/></svg></span><span class="mb-spark-item" title="上证指数 3,634.35（较前日 -0.59%）"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val down">3,634.35<span class="mb-spark-chg">-0.59%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,3.0 40.7,18.6 79.3,23.1 118.0,27.0"/></svg></span><span class="mb-spark-item" title="纳斯达克 25,136.27（较前日 -0.91%）"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val down">25,136.27<span class="mb-spark-chg">-0.91%</span></span><span class="mb-spark-pct">近20日 P50</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,27.0 60.0,3.0 118.0,4.8"/></svg></span><span class="mb-spark-item" title="布伦特原油 95.54（较前日 -0.29%）"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val down">95.54<span class="mb-spark-chg">-0.29%</span></span><span class="mb-spark-pct">近20日 P33.3</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,3.0 40.7,27.0 79.3,20.8 118.0,21.3"/></svg></span><span class="mb-spark-item" title="现货黄金 3,889.69（较前日 +0.66%）"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val up">3,889.69<span class="mb-spark-chg">+0.66%</span></span><span class="mb-spark-pct">近20日 P50</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#dc2626" stroke-width="1.5" points="2.0,3.0 60.0,27.0 118.0,24.0"/></svg></span></div></section>
@@ -121,14 +177,14 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <div class="section">
 <h2 id="sec-2">一、美股（11月13日 收盘 + 今晨期货前瞻）</h2>
 <div class="mb-conclusion">上周五三大指数收跌，纳指领跌近1%，但仍录得年内首个周涨幅；AMD暴跌近9%，AI硬件链承压明显。</div>
-<table>
+<div class="ref-tbl-wrap"><div class="ref-tbl-bar"><span class="ref-tbl-label">数据表 · 4 行（可左右滑动）</span><button class="ref-copy-btn" type="button">复制 TSV</button></div><div class="ref-scroll"><table>
 <thead><tr><th>指标</th><th>收盘价</th><th>当日涨跌</th><th>周累计</th></tr></thead>
 <tbody>
 <tr><td>道琼斯工业指数</td><td>52,347.55</td><td class="mb-up">+0.10%</td><td>—</td></tr>
 <tr><td>S&P 500</td><td>7,561.67</td><td class="mb-down">-0.40%</td><td class="mb-up">+2.5%</td></tr>
 <tr><td>纳斯达克综合指数</td><td>25,136.27</td><td class="mb-down">-0.91%</td><td>—</td></tr>
 </tbody>
-</table>
+</table></div></div>
 <h3>核心事件</h3>
 <ul>
 <li><strong>AMD暴跌8.75%</strong>至534美元，英伟达继续下跌约2%，AI硬件链承压</li>
@@ -154,14 +210,14 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <div class="section">
 <h2 id="sec-3">二、港股（11月13日 收盘 + 今日前瞻）</h2>
 <div class="mb-conclusion">港股延续调整，恒生科技指数全周暴跌6.5%，AI概念股遭遇重创，南向资金仍净买入超23亿港元。</div>
-<table>
+<div class="ref-tbl-wrap"><div class="ref-tbl-bar"><span class="ref-tbl-label">数据表 · 4 行（可左右滑动）</span><button class="ref-copy-btn" type="button">复制 TSV</button></div><div class="ref-scroll"><table>
 <thead><tr><th>指标</th><th>收盘点位</th><th>当日涨跌</th><th>周累计</th></tr></thead>
 <tbody>
 <tr><td>恒生指数</td><td>23,637.60</td><td class="mb-down">-1.55%</td><td class="mb-down">-3.45%</td></tr>
 <tr><td>恒生科技指数</td><td>3,813.19</td><td class="mb-down">-3.02%</td><td class="mb-down">-6.50%</td></tr>
 <tr><td>国企指数</td><td>7,937.53</td><td class="mb-down">-1.48%</td><td class="mb-down">-4.07%</td></tr>
 </tbody>
-</table>
+</table></div></div>
 <h3>板块异动</h3>
 <ul>
 <li class="mb-down">🔴 PCB概念大跌：景旺电子-13.7%、胜宏科技-13.5%</li>
@@ -195,14 +251,14 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <div class="section">
 <h2 id="sec-4">三、A股（11月13日 收盘 + 今日前瞻）</h2>
 <div class="mb-conclusion">沪指微跌收红，创业板领跌逾3%；半导体主题ETF逆势放量领涨，抖音互动剧利好文化传媒板块爆发。</div>
-<table>
+<div class="ref-tbl-wrap"><div class="ref-tbl-bar"><span class="ref-tbl-label">数据表 · 4 行（可左右滑动）</span><button class="ref-copy-btn" type="button">复制 TSV</button></div><div class="ref-scroll"><table>
 <thead><tr><th>指标</th><th>收盘点位</th><th>当日涨跌</th></tr></thead>
 <tbody>
 <tr><td>上证指数</td><td>3,634.35</td><td class="mb-down">-0.59%</td></tr>
 <tr><td>深证成指</td><td>10,968.79</td><td class="mb-down">-2.05%</td></tr>
 <tr><td>创业板指</td><td>2,426.08</td><td class="mb-down">-3.32%</td></tr>
 </tbody>
-</table>
+</table></div></div>
 <p class="mb-muted">成交额：沪深两市合计1.66万亿元，较上一交易日缩量2764亿元 | 涨停38家，跌停39家，炸板率36.67%</p>
 <h3>今日盘面特征</h3>
 <ul>
@@ -234,7 +290,7 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <div class="section">
 <h2 id="sec-5">四、政策动态（当日期要点）</h2>
 <div class="mb-conclusion">证监会明确表态维稳，MSCI调整生效在即，进博会进行中，宏观政策基调保持积极。</div>
-<table>
+<div class="ref-tbl-wrap"><div class="ref-tbl-bar"><span class="ref-tbl-label">数据表 · 5 行（可左右滑动）</span><button class="ref-copy-btn" type="button">复制 TSV</button></div><div class="ref-scroll"><table>
 <thead><tr><th>事件</th><th>时间</th><th>影响评估</th></tr></thead>
 <tbody>
 <tr><td>证监会：完善稳市机制，增强股市内在稳定性</td><td>11月12日</td><td><span class="tag-ok">适合观察</span></td></tr>
@@ -242,14 +298,14 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <tr><td>央行MLF续作，流动性维持中性偏松</td><td>近期</td><td><span class="tag-neutral">—</span></td></tr>
 <tr><td>第九届进博会进行中</td><td>11月5日–10日</td><td><span class="tag-ok">适合关注</span></td></tr>
 </tbody>
-</table>
+</table></div></div>
 </div>
 
 <!-- 五、外围速览 -->
 <div class="section">
 <h2 id="sec-6">五、外围速览（11月13日 收盘）</h2>
 <div class="mb-conclusion">欧股偏弱，亚股分化；布油连续第二周下跌，黄金从低点小幅反弹，美元和美债收益率维持高位。</div>
-<table>
+<div class="ref-tbl-wrap"><div class="ref-tbl-bar"><span class="ref-tbl-label">数据表 · 6 行（可左右滑动）</span><button class="ref-copy-btn" type="button">复制 TSV</button></div><div class="ref-scroll"><table>
 <thead><tr><th>资产</th><th>价格/水平</th><th>变动/说明</th></tr></thead>
 <tbody>
 <tr><td>布伦特原油</td><td>~$95.54/桶</td><td class="mb-down">连续第二周下跌，周跌幅约2.4%</td></tr>
@@ -258,7 +314,7 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <tr><td>10年期美债收益率</td><td>~5.13%</td><td class="mb-up">高位震荡</td></tr>
 <tr><td>2年期美债收益率</td><td>~4.86%</td><td class="mb-up">对加息预期敏感</td></tr>
 </tbody>
-</table>
+</table></div></div>
 <p class="mb-muted">大宗商品逻辑链：美联储鹰派发言→加息预期升温→美元走强→大宗承压；中东地缘风险对冲部分跌幅。</p>
 </div>
 
@@ -289,7 +345,7 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <div class="section">
 <h2 id="sec-8">七、今日关键日历</h2>
 <div class="mb-conclusion">下周关键数据密集，尤其周二美国CPI和周三阿里财报将决定市场方向。</div>
-<table>
+<div class="ref-tbl-wrap"><div class="ref-tbl-bar"><span class="ref-tbl-label">数据表 · 7 行（可左右滑动）</span><button class="ref-copy-btn" type="button">复制 TSV</button></div><div class="ref-scroll"><table>
 <thead><tr><th>日期</th><th>事件</th><th>重要性</th></tr></thead>
 <tbody>
 <tr><td>11/17 周一</td><td>A股/港股开盘</td><td class="mb-muted">—</td></tr>
@@ -299,7 +355,7 @@ html, body { background: #ffffff !important; color: #1f2329 !important; }
 <tr><td>11/20 周四</td><td>美联储会议纪要释放12月动向</td><td>★★★★</td></tr>
 <tr><td>11/21 周五</td><td>美国初请失业金人数</td><td>★★</td></tr>
 </tbody>
-</table>
+</table></div></div>
 </div>
 
 <!-- 八、待核实与口径说明 -->
@@ -355,5 +411,31 @@ ts.forEach(function(t){
 </script>
 
 
+
+<!--ref-layout--><script>
+(function(){try{
+  document.querySelectorAll('.ref-copy-btn').forEach(function(b){
+    b.onclick=function(){
+      var wrap=b.closest('.ref-tbl-wrap');var t=wrap?wrap.querySelector('table'):null;if(!t)return;
+      var lines=[];t.querySelectorAll('tr').forEach(function(r){
+        var cells=[];r.querySelectorAll('th,td').forEach(function(c){
+          cells.push((c.textContent||'').replace(/\s+/g,' ').replace(/\t/g,' ').trim());});
+        lines.push(cells.join('\t'));});
+      var text=lines.join('\n');
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){b.textContent='已复制';
+          setTimeout(function(){b.textContent='复制 TSV';},1500);});
+      }
+    };});
+  var links=document.querySelectorAll('.ref-toc a');
+  if(links.length&&'IntersectionObserver' in window){
+    var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+    var ob=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(a){a.classList.remove('active');});
+        var a=map[e.target.id];if(a)a.classList.add('active');}});},{rootMargin:'-15% 0px -75% 0px'});
+    Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)ob.observe(el);});
+  }
+}catch(e){}})();
+</script>
 </body>
 </html>
