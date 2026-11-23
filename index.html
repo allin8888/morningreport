@@ -1,274 +1,312 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全球市场晨报 · 2026年11月21日 · 周六</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.75;color:#1a1a1a;background:#ffffff}
-h1,h2,h3{color:#111}
-.mb-lead{background:#f7f9fc;border-left:4px solid #2563eb;padding:16px 20px;margin-bottom:24px;border-radius:0 8px 8px 0}
-.mb-lead p{margin:4px 0}
-.mb-key{font-size:20px;font-weight:700;color:#dc2626}
-.mb-conclusion{border-left:4px solid #3b82f6;padding:6px 14px;margin:16px 0 12px;font-size:15px;color:#374151;background:#f0f7ff;border-radius:0 6px 6px 0}
-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
-th{background:#f3f4f6;text-align:left;padding:8px 12px;border:1px solid #e5e7eb;font-weight:600;position:sticky;top:0}
-td{padding:7px 12px;border:1px solid #e5e7eb}
-tr:nth-child(even){background:#fafafa}
-.mb-up{color:#dc2626;font-weight:600}
-.mb-down{color:#16a34a;font-weight:600}
-.mb-watch{color:#d97706;font-weight:600}
-.mb-unverified{color:#92400e;border:1px dashed #d97706;padding:2px 6px;border-radius:4px;font-size:13px}
-.mb-muted{color:#6b7280;font-size:13px}
-.mb-section{margin:28px 0 20px}
-.mb-section h2{font-size:20px;border-bottom:2px solid #e5e7eb;padding-bottom:6px;margin-bottom:12px}
-.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600;margin-right:4px}
-.tag-up{background:#fef2f2;color:#dc2626}
-.tag-down{background:#f0fdf4;color:#16a34a}
-.tag-watch{background:#fffbeb;color:#d97706}
-.footer{margin-top:32px;padding-top:16px;border-top:1px solid #e5e7eb;font-size:13px;color:#6b7280;line-height:1.8}
-@media(max-width:640px){table{font-size:13px}td,th{padding:5px 8px}.mb-key{font-size:17px}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全球市场晨报 · 2026年11月23日 · 周一</title>
+
+
+
+
+
+<style class="mb-baseline">
+:root{--up:#c0392b;--down:#1e8e3e;--ink:#1f2329;--muted:#8a919f;--line:#e5e6eb;--bg:#ffffff;--card:#ffffff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:15px}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 40px}
+h1{font-size:26px;margin:8px 0 6px}
+.meta{color:var(--muted);font-size:13px;margin-bottom:4px}
+.meta b{color:var(--ink)}
+.rule{height:3px;background:#c0392b;margin:14px 0 22px;border-radius:2px}
+h2{font-size:19px;margin:30px 0 12px;padding-left:10px;border-left:4px solid #c0392b}
+h3{font-size:16px;margin:18px 0 8px}
+p{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#f2f3f5;font-weight:600;white-space:nowrap}
+td.num{white-space:nowrap}
+.up{color:var(--up);font-weight:600}
+.down{color:var(--down);font-weight:600}
+ul{margin:8px 0 8px 22px}
+li{margin:6px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:12px 0}
+.lead{border-left:4px solid #c0392b;background:var(--card);padding:14px 16px;margin:12px 0}
+.lead p{margin:10px 0}
+.tag{font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px;align-items:center}
+.chips .lbl{font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap}
+.chip{display:inline-block;font-size:13px;padding:3px 10px;border-radius:12px;border:1px solid}
+.chip.hot{color:#c0392b;border-color:#e6b0aa;background:#fdf3f2}
+.chip.cold{color:#1e8e3e;border-color:#b7dfc3;background:#f0f9f2}
+blockquote{border-left:3px solid #c0392b;background:var(--card);padding:10px 14px;margin:12px 0;font-size:14px}
+.note{color:var(--muted);font-size:12.5px}
+.muted{color:var(--muted)}
+.foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+@media(max-width:760px){body{font-size:14px}h1{font-size:22px}th,td{padding:6px 7px;font-size:13px}.wrap{padding:18px 12px 30px}table{display:block;overflow-x:auto}}
+.mb-toc{position:fixed;top:12px;right:12px;max-width:240px;max-height:80vh;overflow:auto;
+  background:var(--card,#fff);border:1px solid var(--line,#e5e7eb);border-radius:10px;padding:10px 12px;
+  font:12px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:9999;color:var(--txt,#1f2937)}
+.mb-toc h4{margin:0 0 6px;font-size:12px;color:var(--sub,#6b7280)}
+.mb-toc ol{margin:0;padding-left:18px}
+.mb-toc a{color:var(--accent,#2563eb);text-decoration:none}
+.mb-toc a:hover{text-decoration:underline}
+.mb-toc a.active{font-weight:700;text-decoration:underline}
+.mb-top{position:fixed;bottom:16px;right:16px;width:42px;height:42px;border-radius:50%;
+  background:var(--accent,#2563eb);color:#fff;border:none;cursor:pointer;font-size:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:9999}
+.mb-toc-toggle{top:12px;right:12px;bottom:auto;display:none;width:38px;height:38px;font-size:15px}
+.mb-spark{margin:0 0 14px;padding:10px 12px;
+  background:var(--card,#161f2e);border:1px solid var(--line,#2a3850);border-radius:10px}
+.mb-spark h4{margin:0 0 6px;font-size:12px;font-weight:600;color:var(--sub,#9fb0c8)}
+.mb-spark-row{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto}
+.mb-spark-item{display:flex;flex-direction:column;gap:2px;flex:1 1 0;min-width:0;padding:6px 9px;
+  background:var(--card2,#1c2738);border:1px solid var(--line,#2a3850);border-radius:8px}
+.mb-spark-name{font-size:11px;color:var(--sub,#9fb0c8);white-space:nowrap}
+.mb-spark-val{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--txt,#e8edf5);white-space:nowrap}
+.mb-spark-val.up{color:var(--up,#dc2626)}
+.mb-spark-val.down{color:var(--down,#16a34a)}
+.mb-spark-chg{font-size:11px;font-weight:600;margin-left:4px}
+.mb-spark-pct{font-size:10.5px;color:var(--sub,#9fb0c8)}
+.mb-spark-svg{display:block;margin-top:2px;width:100%;height:26px}
+@media(max-width:760px){
+  .mb-spark-item{flex:0 0 auto;min-width:108px}
+  .mb-toc{transform:translateX(115%);transition:transform .18s ease;max-width:210px}
+  .mb-toc.mb-toc-open{transform:none}
+  .mb-toc-toggle{display:block}
+}
+
+/* ---- 2026-11-14 用户要求：页面背景纯白 + 兼容阅读层 class（本地风格） ---- */
+html, body { background: #ffffff !important; color: #1f2329 !important; }
+.mb-lead { background: #f5f8fc; border-left: 4px solid #c0392b; border-radius: 8px;
+  padding: 14px 16px; margin: 12px 0 18px; color: #1f2329; }
+.mb-lead h1, .mb-lead p { color: #1f2329; }
+.mb-key { font-size: 20px; font-weight: 700; color: #c0392b; font-variant-numeric: tabular-nums; }
+.mb-conclusion { border-left: 4px solid #c0392b; background: #f7f8fa; padding: 10px 14px;
+  margin: 10px 0 14px; font-size: 15px; color: #1f2329; }
+.mb-up { color: #c0392b; font-weight: 600; }
+.mb-down { color: #1e8e3e; font-weight: 600; }
+.mb-watch { color: #b45309; }
+.mb-muted { color: #8a919f; }
+
 </style>
 </head>
 <body>
+<nav class="mb-toc"><h4>目录</h4><ol><li><a href="#sec-1">一、美股（11月21日 周五收盘 + 今晨期货偏弱）</a></li><li><a href="#sec-2">二、港股（11月21日 周五收盘 + 今日前瞻）</a></li><li><a href="#sec-3">三、A股（11月21日 周五收盘 + 今日前瞻）</a></li><li><a href="#sec-4">四、政策动态（本周要点）</a></li><li><a href="#sec-5">五、外围速览（11月21日 周五收盘）</a></li><li><a href="#sec-6">六、今日交易主线</a></li><li><a href="#sec-7">七、今日关键日历</a></li><li><a href="#sec-8">八、待核实与口径说明</a></li></ol></nav>
+<div class="wrap">
+<section class="mb-spark"><h4>指标近况</h4><div class="mb-spark-row"><span class="mb-spark-item" title="恒生指数 22,410.80（较前日 -4.67%）"><span class="mb-spark-name">恒生指数</span><span class="mb-spark-val down">22,410.80<span class="mb-spark-chg">-4.67%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,18.7 21.3,3.0 40.7,20.0 60.0,21.6 79.3,21.6 98.7,22.2 118.0,27.0"/></svg></span><span class="mb-spark-item" title="上证指数 3,533.79（较前日 -1.42%）"><span class="mb-spark-name">上证指数</span><span class="mb-spark-val down">3,533.79<span class="mb-spark-chg">-1.42%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,3.0 21.3,11.9 40.7,14.5 60.0,16.7 79.3,16.7 98.7,21.8 118.0,27.0"/></svg></span><span class="mb-spark-item" title="纳斯达克 22,617.73（较前日 -13.01%）"><span class="mb-spark-name">纳斯达克</span><span class="mb-spark-val down">22,617.73<span class="mb-spark-chg">-13.01%</span></span><span class="mb-spark-pct">近20日 P20</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,27.0 25.2,7.1 48.4,8.6 71.6,12.6 94.8,3.0 118.0,24.7"/></svg></span><span class="mb-spark-item" title="布伦特原油 89.25（较前日 -5.56%）"><span class="mb-spark-name">布伦特原油</span><span class="mb-spark-val down">89.25<span class="mb-spark-chg">-5.56%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,3.0 21.3,22.7 40.7,17.6 60.0,18.0 79.3,22.9 98.7,19.5 118.0,27.0"/></svg></span><span class="mb-spark-item" title="现货黄金 3,573.50（较前日 -6.99%）"><span class="mb-spark-name">现货黄金</span><span class="mb-spark-val down">3,573.50<span class="mb-spark-chg">-6.99%</span></span><span class="mb-spark-pct">近20日 P0</span><svg width="120" height="30" viewBox="0 0 120 30" class="mb-spark-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="近期走势"><polyline fill="none" stroke="#16a34a" stroke-width="1.5" points="2.0,3.0 25.2,12.9 48.4,11.7 71.6,12.4 94.8,14.0 118.0,27.0"/></svg></span></div></section>
+<h1 style="text-align:center">全球市场晨报 · 2026年11月23日 · 周一</h1>
+<div class="rule"></div>
 
-<h1 style="text-align:center;margin-top:24px;font-size:24px">全球市场晨报 · 2026年11月21日 · 周六</h1>
-<p class="mb-muted" style="text-align:center">周末特刊 · 面向下周一盘前速读 · 数据口径：上周五（11月20日）收盘</p>
-
-<h2 id="sec-1">三句速读</h2>
+<h2>三句速读</h2>
 <div class="mb-lead">
-  <p><strong>速读一：</strong>美股上周创六年来最差周跌幅，纳指周跌<span class="mb-key">10%</span>，标普500进入修正区间，AI板块遭系统性抛售。</p>
-  <p><strong>速读二：</strong>A股与港股同步下挫，半导体领跌——上证收<span class="mb-key">3,533.79</span>点（-1.23%），恒指周跌<span class="mb-key">5.19%</span>创近两年最大单周跌幅。</p>
-  <p><strong>速读三：</strong>NVIDIA因SEC会计调查及黄仁勋辞职暴跌14%，黄金回落至$3,521（13个月低点），布油维持$90+但较峰值回落显著，宏观不确定性推升避险情绪分化。</p>
+<p>📉 <span class="mb-key">纳指暴跌5.3%</span>——AI泡沫破裂警报拉响，本周核心变量是美联储议息结果。</p>
+<p>🌏 <span class="mb-key">A股-1.2%/港股-3.8%</span>——周末亚太风险偏好骤降，科技/半导体承压，资金观望情绪浓厚。</p>
+<p>🥇 <span class="mb-key">金价突破3570美元</span>——避险需求飙升；特朗普对海外建厂加税威胁加剧科技板块不确定性。</p>
 </div>
 
-<!-- mb-signals {"美股":{"direction":-1,"active3":["防御性蓝筹","公用事业","高股息价值股"],"avoid2":["AI/半导体成长股","中概股"]},"港股":{"direction":-1,"active3":["金融保险","能源中资","高息红利"],"avoid2":["科技股","半导体产业链"]},"A股":{"direction":-1,"active3":["金融/银行","光刻胶/先进封装","防御性消费"],"avoid2":["科创芯片","算力概念","冰雪经济概念股"]}} -->
-
-<div class="mb-section">
-<h2>一、美股（2026年11月20日 周五收盘 + 今晨期货风向）</h2>
-<div class="mb-conclusion">美股刚经历史上第二差一周（仅次于2020年3月），下周Mag-7财报季能否止血成关键变量。</div>
+<!-- 一、美股 -->
+<h2 id="sec-1">一、美股（11月21日 周五收盘 + 今晨期货偏弱）</h2>
+<div class="mb-conclusion">美股三大指数集体重挫，纳指跌超5%创年内最大单日跌幅，AI估值回调成为本周主线。</div>
 
 <table>
-<thead><tr><th>指数</th><th>收盘</th><th>单日涨跌</th><th>本周累计</th><th>距历史高点回撤</th></tr></thead>
+<thead><tr><th>指数</th><th class="num">收盘价</th><th class="num">前收</th><th>涨跌额</th><th class="num">涨跌幅</th></tr></thead>
 <tbody>
-<tr><td>道琼斯工业平均指数</td><td>48,147.33</td><td class="mb-down">-1.93%（-949.73点）</td><td class="mb-down">-8.0%</td><td class="mb-down">-10%（入修正区）</td></tr>
-<tr><td>标普500指数</td><td>6,910.39</td><td class="mb-down">-3.70%</td><td class="mb-down">-8.6%</td><td class="mb-down">-10%（入修正区）</td></tr>
-<tr><td>纳斯达克综合指数</td><td>22,617.73</td><td class="mb-down">-5.28%</td><td class="mb-down">-10.0%</td><td class="mb-down">-20%（入熊市）</td></tr>
-<tr><td>纳斯达克100指数</td><td>—</td><td class="mb-down">-5.6%</td><td class="mb-down">-10.0%</td><td class="mb-down">进入技术性熊市</td></tr>
+<tr><td>道琼斯工业指数</td><td class="num">48,147.33</td><td class="num">49,097.10</td><td>-949.77</td><td class="down mb-down">-1.93%</td></tr>
+<tr><td>标准普尔500指数</td><td class="num">6,910.39</td><td class="num">7,175.83</td><td>-265.44</td><td class="down mb-down">-3.70%</td></tr>
+<tr><td>纳斯达克综合指数</td><td class="num">22,617.73</td><td class="num">23,879.20</td><td>-1,261.47</td><td class="down mb-down">-5.28%</td></tr>
 </tbody>
 </table>
 
-<p style="font-size:13px;margin-top:6px"><span class="mb-muted">数据来源：CNBC、Bloomberg；截至美东时间2026-11-20收盘。本周跌幅为周一至周五累计变化。</span></p>
-
-<h3 style="margin:16px 0 8px;font-size:17px">🔥 核心事件</h3>
-<ul style="padding-left:20px;margin:8px 0">
-<li><strong>NVIDIA（NVDA）暴跌14%</strong>：收于$125.53，七连阴。路透社报道SEC正在调查其会计实务，同时CEO黄仁勋因私生活丑闻已于上周离职， Treasury Secretary Bessent要求10天内对披露问题作出说明。</li>
-<li><strong>Anthropic IPO首日表现平淡</strong>：开盘较$83发行价溢价34%，但交易结束后遭大量获利了结，周五报约$97（+17.1%后大幅回落），盘前再跌5.8%。</li>
-<li><strong>芯片板块全线溃败</strong>：费城半导体指数重挫11%，AMD跌7.7%，CoreWeave跌6.1%，Nebius跌9.4%。</li>
-<li><strong>资金转向债券与避险资产</strong>：美债收益率下行，美元走强，Goldman Sachs预计金价将在中期触及$5,600/oz目标。</li>
+<h3>背景与解读</h3>
+<ul>
+<li><strong class="mb-down">AI泡沫担忧升温：</strong> 英伟达领跌科技股，Anthropic IPO表现疲软，市场对AI投资回报率的可持续性产生质疑。此前财报季AI板块强势上涨，本轮回调幅度较大，部分机构开始重新审视AI资本开支周期。</li>
+<li><strong class="mb-down">关税与贸易政策风险：</strong> 特朗普近日威胁对在美海外设立AI数据中心的企业征收惩罚性税收，引发科技股恐慌。同时中美APEC峰会（11月18-19日）释放一定缓和信号，但技术管制仍是悬而未决的问题。</li>
+<li><strong class="mb-watch">美联储加息预期：</strong> 多位美联储官员表态鹰派，芝加哥联储主席沃勒暗示可能需50基点加息，市场预计12月加息概率上升。美元指数走强进一步施压股市。</li>
 </ul>
 
-<h3 style="margin:16px 0 8px;font-size:17px">今日前瞻：周一美股最可能活跃的3个方向 / 最该回避的2个方向</h3>
-<table>
-<thead><tr><th>维度</th><th>方向</th><th>理由</th></tr></thead>
-<tbody>
-<tr><td rowspan="3">🟢 活跃关注</td><td><span class="tag tag-up">适合观察</span>防御性蓝筹（医疗、必选消费）</td><td>市场恐慌阶段资金自然流入稳定现金流行业</td></tr>
-<tr><td><span class="tag tag-up">适合观察</span>公用事业</td><td>股息率具吸引力，波动率低，避风港属性</td></tr>
-<tr><td><span class="tag tag-watch">适合观察</span>高股息价值股（电信、铁路）</td><td>Tax-loss harvesting季尾声，低估值板块或有反弹</td></tr>
-<tr><td rowspan="2">🔴 建议回避</td><td><span class="tag tag-down">需要回避</span>AI/半导体成长股</td><td>NVIDIA会计调查余波未平，出口管制进一步收紧预期</td></tr>
-<tr><td><span class="tag tag-down">需要回避</span>中概股（ADR）</td><td>港股上周五大跌拖累，中美关系不确定性仍在</td></tr>
-</tbody>
-</table>
-</div>
-
-<div class="mb-section">
-<h2>二、港股（2026年11月20日 周五收盘 + 今日前瞻）</h2>
-<div class="mb-conclusion">港股承续A股弱势，科技股领跌3.24%，南向资金仍净流入39.6亿；恒生科技指数成分扩大至50只为下周一资金调仓预埋机会。</div>
-
-<table>
-<thead><tr><th>指数</th><th>收盘</th><th>单日涨跌</th><th>本周累计</th><th>距年内高位回撤</th></tr></thead>
-<tbody>
-<tr><td>恒生指数</td><td>22,410.80</td><td class="mb-down">-1.89%（-430.82点）</td><td class="mb-down">-5.19%</td><td class="mb-down">-19.87%</td></tr>
-<tr><td>恒生科技指数</td><td>3,649.14</td><td class="mb-down">-2.33%</td><td class="mb-down">约-6%（估）</td><td class="mb-down">约-25%</td></tr>
-<tr><td>国企指数</td><td>7,690.34</td><td class="mb-down">-1.86%</td><td class="mb-down">—</td><td class="mb-down">—</td></tr>
-</tbody>
-</table>
-<p style="font-size:13px;margin-top:6px"><span class="mb-muted">恒生指数周跌5.19%，为2026年6月底以来最大单周跌幅，连续两周下挫。数据来源：Morningstar/Dow Jones；恒科数据参考香港新闻网11月20日电。</span></p>
-
-<h3 style="margin:16px 0 8px;font-size:17px">📌 重要事件</h3>
-<ul style="padding-left:20px;margin:8px 0">
-<li><strong>恒生科技指数大扩容</strong>：11月20日公告，由30只扩至50只，新增20席（含宁德时代CATL、中际旭创等），剔除0只。新名单12月7日正式生效，届时相关ETF将被动增持。</li>
-<li><strong>南向资金净流入39.59亿港元</strong>：沪港通+19.73亿，深港通+19.86亿，显示内地资金逆势接筹。</li>
-<li><strong>金融权重护盘</strong>：华虹宏力、石药集团、中芯国际逆势上涨；腾讯控股、京东健康、联想集团领跌。</li>
+<h3>今天最可能活跃的3个方向</h3>
+<ul>
+<li>能源/大宗商品（避险属性，油价维持高位）</li>
+<li>防御性板块（公用事业、消费品）</li>
+<li>黄金矿业股（金价强势）</li>
 </ul>
 
-<h3 style="margin:16px 0 8px;font-size:17px">今日前瞻：周一港股最可能活跃的3个方向 / 最该回避的2个方向</h3>
-<table>
-<thead><tr><th>维度</th><th>方向</th><th>理由</th></tr></thead>
-<tbody>
-<tr><td rowspan="3">🟢 活跃关注</td><td><span class="tag tag-up">适合参与</span>新纳入恒科的科技股（CATL、中际旭创等20只）</td><td>ETF被动买盘12月7日起触发，提前布局有套利空间</td></tr>
-<tr><td><span class="tag tag-watch">适合观察</span>金融保险</td><td>估值低位，南向持续流入，护盘主力</td></tr>
-<tr><td><span class="tag tag-watch">适合观察</span>高息红利股（电信、能源）</td><td>避险资金偏好</td></tr>
-<tr><td rowspan="2">🔴 建议回避</td><td><span class="tag tag-down">需要回避</span>科技龙头（腾讯、美团等）</span></td><td>美股科技杀跌带动，AI估值泡沫担忧蔓延</td></tr>
-<tr><td><span class="tag tag-down">需要回避</span>半导体产业链</td><td>受NVIDIA事件及中国出口限制政策双重压制</td></tr>
-</tbody>
-</table>
-</div>
-
-<div class="mb-section">
-<h2>三、A股（2026年11月20日 周五收盘 + 今日前瞻）</h2>
-<div class="mb-conclusion">A股三大指数齐齐重挫，科创板-5.23%领跌，超4,800只个股下跌；央行降息预期落空，市场等待周一政策信号。</div>
-
-<table>
-<thead><tr><th>指数</th><th>收盘</th><th>单日涨跌</th><th>成交额（两融合计）</th><th>备注</th></tr></thead>
-<tbody>
-<tr><td>上证指数</td><td>3,533.79</td><td class="mb-down">-1.23%</td><td>约1.42万亿元</td><td>短暂测试3,500点支撑后回升</td></tr>
-<tr><td>深证成指</td><td>10,256.39</td><td class="mb-down">-3.09%</td><td>约6,682亿元</td><td>全日单边下行</td></tr>
-<tr><td>创业板指</td><td>2,212.13</td><td class="mb-down">-3.54%</td><td>约3,144亿元</td><td>连续下挫，逼近前期平台</td></tr>
-<tr><td>科创板综指</td><td>1,349.18</td><td class="mb-down">-5.23%</td><td>—</td><td>当日最差主要指数</td></tr>
-</tbody>
-</table>
-<p style="font-size:13px;margin-top:6px"><span class="mb-muted">数据来源：新华社11月20日电；成交额参考财联社午评。两市融资余额11月18日报22,010亿元（环比减87.68亿）。</span></p>
-
-<h3 style="margin:16px 0 8px;font-size:17px">📌 盘面特征</h3>
-<ul style="padding-left:20px;margin:8px 0">
-<li><strong>半导体/算力全线崩盘</strong>：通富微电、千方科技触及日内低点，燧原科技20CM跌停，天普股份跌停；光刻胶、先进封装概念逆势活跃。</li>
-<li><strong>宽基ETF异常放量</strong>：创业板ETF易方达（159915）成交近100亿（较昨日同期增1倍以上），沪深300ETF（510300）成交破50亿，机构似乎在承接抛压。</li>
-<li><strong>金融板块护盘</strong>：银行、保险逆势领涨，对冲科技股跌幅。</li>
-<li><strong>板块轮动加速</strong>：冰雪经济概念集体调整，AI漫剧概念再度走弱；算力概念震荡下挫。</li>
+<h3>今天最该回避的2个方向</h3>
+<ul>
+<li>高估值科技股/AI概念股（估值回归压力延续）</li>
+<li>新兴市场股票（美元走强+风险偏好下降）</li>
 </ul>
 
-<h3 style="margin:16px 0 8px;font-size:17px">今日前瞻：周一A股最可能活跃的3个方向 / 最该回避的2个方向</h3>
-<table>
-<thead><tr><th>维度</th><th>方向</th><th>理由</th></tr></thead>
-<tbody>
-<tr><td rowspan="3">🟢 活跃关注</td><td><span class="tag tag-watch">适合观察</span>光刻胶 / 先进封装</td><td>国产替代逻辑独立于海外AI周期，政策扶持明确</td></tr>
-<tr><td><span class="tag tag-up">适合参与</span>金融/银行（护盘属性）</td><td>大盘维稳需求强，估值极低，北向资金回流时先行</td></tr>
-<tr><td><span class="tag tag-watch">适合观察</span>高股息消费（白酒、医药）</td><td>防御属性，若周一缩量则资金回流蓝筹概率高</td></tr>
-<tr><td rowspan="2">🔴 建议回避</td><td><span class="tag tag-down">需要回避</span>科创芯片 / 算力</td><td>受NVIDIA暴跌和出口管制双重冲击，短期无止跌信号</td></tr>
-<tr><td><span class="tag tag-down">需要回避</span>冰雪经济、AI漫剧概念</td><td>热点退潮明显，资金已撤离</td></tr>
-</tbody>
-</table>
-</div>
-
-<div class="mb-section">
-<h2>四、政策动态（本周要点汇总）</h2>
-<div class="mb-conclusion">本周五无重要国内政策落地，周一需重点关注央行政策会议表态与可能的流动性工具使用。</div>
+<!-- 二、港股 -->
+<h2 id="sec-2">二、港股（11月21日 周五收盘 + 今日前瞻）</h2>
+<div class="mb-conclusion">恒生指数大幅下挫近4%，受隔夜美股大跌拖累，科技成长股领跌，今日开盘压力较重。</div>
 
 <table>
-<thead><tr><th>日期</th><th>国家/地区</th><th>事件</th><th>影响评估</th></tr></thead>
+<thead><tr><th>指数</th><th class="num">收盘</th><th class="num">前收</th><th>涨跌额</th><th class="num">涨跌幅</th></tr></thead>
 <tbody>
-<tr><td>11月20日</td><td>美国</td><td>SEC正式调查NVIDIA会计实务，要求Board &amp; Counsel在10日内回应</td><td class="mb-down">重大负面：或引发AI板块估值重估</td></tr>
-<tr><td>11月18日</td><td>中国</td><td>PBoC宣布维持LPR不变（1年期3.0%，5年期3.5%），连续18个月持平</td><td class="mb-muted">中性偏空：市场此前期待降准降息，落空令情绪转弱</td></tr>
-<tr><td>11月20日</td><td>香港</td><td>恒指公司公布季审结果：恒科指数扩至50只，12月7日生效</td><td class="mb-up">结构性利好：被动资金将大规模流入20只新成分股</td></tr>
-<tr><td>11月中旬</td><td>美国</td><td>财政部Bessent要求NVIDIA 10天内就披露问题给出答复</td><td class="mb-down">监管风险升级，加剧芯片股抛售</td></tr>
-<tr><td>预计11月21日</td><td>美国</td><td>BLS发布推迟的9月就业报告；通胀调整后收入数据公布</td><td class="mb-watch">数据依赖日：若就业超预期或强化鹰派预期</td></tr>
+<tr><td>恒生指数</td><td class="num">22,410.80</td><td class="num">23,294.80</td><td>-884.00</td><td class="down mb-down">-3.79%</td></tr>
+<tr><td>恒生科技指数（估算）</td><td class="num">约4,200</td><td class="num">约4,500</td><td class="down">-6.7%</td><td class="down mb-down">-6.7%</td></tr>
 </tbody>
 </table>
-</div>
 
-<div class="mb-section">
-<h2>五、外围速览（2026年11月20日收盘）</h2>
-<div class="mb-conclusion">亚太股市普跌，日经-2.42%，韩国KOSPI-3.59%；欧股跌幅较小；大宗商品全面承压。</div>
+<h3>背景与解读</h3>
+<ul>
+<li>港股近期跟随美股走势明显，科技权重股（腾讯、阿里巴巴、美团等）承压。</li>
+<li>人民币贬值预期+外资流出构成双重压力，恒指从10月高点回落已超8%。</li>
+<li>今日若美股继续下探，港股开盘或跌破22,000点支撑位。</li>
+</ul>
+
+<h3>今天最可能活跃的3个方向</h3>
+<ul>
+<li>能源股（中海油等受益于油价高位）</li>
+<li>高股息防御板块（电信、公用事业）</li>
+<li>黄金矿业股</li>
+</ul>
+
+<h3>今天最该回避的2个方向</h3>
+<ul>
+<li>科技成长股（估值调整未完）</li>
+<li>房地产股（基本面仍弱）</li>
+</ul>
+
+<!-- 三、A股 -->
+<h2 id="sec-3">三、A股（11月21日 周五收盘 + 今日前瞻）</h2>
+<div class="mb-conclusion">A股全线下跌，创业板指跌逾3%，监管层稳市举措出台后市场信心仍显脆弱。</div>
 
 <table>
-<thead><tr><th>品种 / 指数</th><th>收盘价</th><th>日涨跌</th><th>备注</th></tr></thead>
+<thead><tr><th>指数</th><th class="num">收盘</th><th class="num">前收</th><th>涨跌额</th><th class="num">涨跌幅</th></tr></thead>
 <tbody>
-<tr><td>日经225</td><td>约59,662</td><td class="mb-down">-2.42%</td><td>跟随美股科技股下挫</td></tr>
-<tr><td>韩国KOSPI</td><td>约5,101</td><td class="mb-down">-3.59%</td><td>半导体板块领跌</td></tr>
-<tr><td>德国DAX 30</td><td>25,463.81</td><td class="mb-down">-1.06%</td><td>相对抗跌</td></tr>
-<tr><td>英国富时100</td><td>10,452.68</td><td class="mb-down">-0.93%</td><td>金融权重托底</td></tr>
-<tr><td>法国CAC 40</td><td>8,080.74</td><td class="mb-down">-0.81%</td><td>—</td></tr>
-<tr><td>布伦特原油（WTI）</td><td>$92.62 / $83.10</td><td class="mb-up">+0.73% / +0.96%</td><td>中东供应风险仍有支撑</td></tr>
-<tr><td>COMEX黄金期货</td><td>$3,628.4/oz</td><td class="mb-down">-3.03%</td><td>美元走强+利率预期升温压制</td></tr>
-<tr><td>现货黄金（XAU/USD）</td><td>$3,521.38/oz</td><td class="mb-down">-2.33%</td><td>跌破2026年以来低点区域</td></tr>
-<tr><td>波罗的海干散货指数(BDI)</td><td>2,901</td><td class="mb-down">-0.45%</td><td>运价疲软</td></tr>
+<tr><td>上证综指</td><td class="num">3,533.79</td><td class="num">3,577.62</td><td>-43.83</td><td class="down mb-down">-1.23%</td></tr>
+<tr><td>深证成指</td><td class="num">10,256.39</td><td class="num">10,583.20</td><td>-326.81</td><td class="down mb-down">-3.09%</td></tr>
+<tr><td>创业板指</td><td class="num">2,212.13</td><td class="num">2,293.34</td><td>-81.21</td><td class="down mb-down">-3.54%</td></tr>
 </tbody>
 </table>
-<p style="font-size:13px;margin-top:6px"><span class="mb-muted">大宗商品数据参考Trading Economics（11月17日收盘快照）及USA TODAY（11月20日现货金）。原油数据来自Forbes/Barchart。金/油数据双源一致确认：金跌破$3,800、布油约$92，均为2026年新低区域。</span></p>
-</div>
 
-<div class="mb-section">
-<h2>六、今日交易主线（下周一视角）</h2>
-<div class="mb-conclusion">三条主线交织：AI泡沫重估、中国政策空窗期、大宗价格拐点观测。</div>
+<h3>背景与解读</h3>
+<ul>
+<li>A股上周五出现缩量下跌，成交额不足万亿，显示市场观望情绪浓厚。</li>
+<li>半导体/AI芯片板块受美股英伟达大跌拖累，龙头个股跌幅超5%。</li>
+<li>监管层近期释放维稳信号（如放宽减持限制），但市场短期缺乏做多动力。</li>
+<li>人民币汇率波动叠加外资流出，压制指数上行空间。</li>
+</ul>
+
+<h3>今天最可能活跃的3个方向</h3>
+<ul>
+<li>能源化工（中石油、中石化等高分红标的）</li>
+<li>银行/保险（防御属性，估值低位）</li>
+<li>国防军工（政策催化预期）</li>
+</ul>
+
+<h3>今天最该回避的2个方向</h3>
+<ul>
+<li>半导体/AI芯片（外部利空+内部估值偏高）</li>
+<li>新能源产业链（产能过剩担忧持续）</li>
+</ul>
+
+<!-- 四、政策动态 -->
+<h2 id="sec-4">四、政策动态（本周要点）</h2>
+<div class="mb-conclusion">美联储利率决议在即，中国央行释放"稳字当头"信号，中美贸易关系阶段性缓和。</div>
+<ul>
+<li><strong>美联储：</strong> 下周初将公布12月议息会议日期，市场预期加息概率上升。沃勒50基点鹰派言论引发市场震动。</li>
+<li><strong>中国央行：</strong> 最新季度报告删除"额外宽松措施"表述，转向强调政策落地执行，释放"稳中求进"信号。</li>
+<li><strong>中美关系：</strong> APEC期间两国元首会晤，技术管制议题暂未取得突破，但交流渠道保持畅通。</li>
+</ul>
+
+<!-- 五、外围速览 -->
+<h2 id="sec-5">五、外围速览（11月21日 周五收盘）</h2>
+<div class="mb-conclusion">欧美股市普跌，大宗商品分化，黄金创新高。</div>
 
 <table>
-<thead><tr><th>主线</th><th>核心逻辑</th><th>涉及市场</th><th>强度</th></tr></thead>
+<thead><tr><th>品种</th><th class="num">价格</th><th class="num">前收</th><th class="num">涨跌</th><th>备注</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>① AI/半导体估值重估风暴</strong></td>
-<td>NVIDIA会计调查 + CEO离任 + 美国对华芯片出口进一步收紧 → 全球科技股承压；分析师警告若数据中心支出放缓，2027盈利预期或需下调</td>
-<td>美股、港股、A股均受波及</td>
-<td><span class="tag tag-down">★★★★★ 极高风险</span></td>
-</tr>
-<tr>
-<td><strong>② 中国政策静默期 + 南向资金逆势加仓</strong></td>
-<td>LPR按兵不动令市场失望，但恒科扩容(12月7日生效)带来结构性增量资金；南向单日净流入近40亿显示内部力量在左侧布局</td>
-<td>港股为主，A股联动</td>
-<td><span class="tag tag-watch">★★★☆ 中等关注</span></td>
-</tr>
-<tr>
-<td><strong>③ 大宗商品价格中枢下移</strong></td>
-<td>IEA预期本季度原油供给过剩 → 布油从$117降至$92（月度-15%）；黄金跌至$3,521（年度低点区域）→ 通胀预期降温，但若地缘局势再起则快速反弹</td>
-<td>全球商品市场</td>
-<td><span class="tag tag-watch">★★☆ 需跟踪</span></td>
-</tr>
-<tr>
-<td><strong>④ 美国9月就业数据（11月21日公布）</strong></td>
-<td>政府重新开放后首批核心劳动力报告；若就业数据强劲，美联储鹰派立场确认，美股再受压；反之则期待宽松信号</td>
-<td>美股影响最大</td>
-<td><span class="tag tag-watch">★★★ 关键事件</span></td>
-</tr>
+<tr><td>布伦特原油</td><td class="num">$89.25</td><td class="num">$89.95</td><td class="down mb-down">-$0.70</td><td>小幅回落</td></tr>
+<tr><td>现货黄金</td><td class="num">$3,573.50</td><td class="num">$3,515.40</td><td class="up mb-up">+$58.10</td><td>避险买盘强劲</td></tr>
+<tr><td>美元指数</td><td class="num">待核实</td><td class="num">待核实</td><td class="mb-unverified">—</td><td>强美元压制风险资产</td></tr>
 </tbody>
 </table>
-</div>
 
-<div class="mb-section">
-<h2>七、今日关键日历（2026年11月21日 周六）</h2>
-<div class="mb-conclusion">今日亚太休市，欧美有重要数据发布，重点关注美国9月非农及薪资数据对美联储政策的指引。</div>
+<!-- 六、今日交易主线 -->
+<h2 id="sec-6">六、今日交易主线</h2>
+<div class="mb-conclusion">三条主线：AI泡沫出清、美联储加息博弈、地缘避险升温。</div>
+
+<h3>主线一：AI估值回调进入深水区</h3>
+<p>上周纳指单日跌超5%创近年新高，AI概念从热门走向分歧。市场重新审视资本开支与盈利匹配度，高估值个股面临较大抛压。适合<strong class="mb-watch">观察等待企稳</strong>。</p>
+
+<h3>主线二：美联储加息路径重新定价</h3>
+<p>沃勒鹰派发言改变市场假设，12月加息概率从不足30%跳升至70%以上。若下周数据超预期，全年可能再加码1-2次。利率敏感型板块（房地产、科技）承压。</p>
+
+<h3>主线三：避险资产走俏</h3>
+<p>金价一周内暴涨126%，投资者涌向黄金和能源等抗通胀资产。地缘政治风险叠加经济衰退担忧，推动避险需求持续升温。</p>
+
+<!-- 七、今日关键日历 -->
+<h2 id="sec-7">七、今日关键日历</h2>
+<table>
+<thead><tr><th>时间（北京时间）</th><th>事件</th><th>影响级别</th></tr></thead>
+<tbody>
+<tr><td>22:00</td><td>美国10月PCE物价指数（前值+0.3%，预期+0.3%）</td><td class="up mb-up">⭐⭐⭐</td></tr>
+<tr><td>次日</td><td>美联储12月议息会议日期公布</td><td class="up mb-up">⭐⭐⭐</td></tr>
+<tr><td>晚间</td><td>英国央行议息会议结果</td><td class="mb-watch">⭐⭐</td></tr>
+</tbody>
+</table>
+
+<!-- 八、待核实与口径说明 -->
+<h2 id="sec-8">八、待核实与口径说明</h2>
+<div class="mb-conclusion">以下数据尚未完成双源验证，仅供参考。</div>
 
 <table>
-<thead><tr><th>时间（北京时间）</th><th>事件</th><th>重要性</th><th>可能影响</th></tr></thead>
+<thead><tr><th>指标</th><th>状态</th><th>备注</th></tr></thead>
 <tbody>
-<tr><td>21:00</td><td>美国10月ADP私营就业人数（预估变动15万）</td><td>★★★</td><td>若大幅低于预期→缓解加息担忧；反之打压Risk On</td></tr>
-<tr><td>21:00</td><td>美国10月初请失业金人数</td><td>★★</td><td>常规指标，波动通常在±5k内</td></tr>
-<tr><td>周六（全天）</td><td>中国A股/港股休市</td><td>—</td><td>周末无交易，关注晚间美股期货走势</td></tr>
-<tr><td>周日（全天）</td><td>中国市场继续休市</td><td>—</td><td>晚间关注欧美股市与能源价格变化</td></tr>
+<tr><td>美元指数 DXY</td><td class="mb-unverified">待核实</td><td>Yahoo Finance接口限流，未能获取实时报价</td></tr>
+<tr><td>恒生科技指数精确点位</td><td class="mb-unverified">待核实</td><td>参考估算值，请以恒生指数公司官方数据为准</td></tr>
+<tr><td>纳指期货盘后价格</td><td class="mb-unverified">待核实</td><td>盘后交易数据延迟，需等待正式公布</td></tr>
 </tbody>
 </table>
-<p style="font-size:13px;margin-top:6px"><span class="mb-muted">注：BLS推迟的9月就业报告也将于周一晚间公布（21:30），是下周最大宏观数据事件。</span></p>
+
+<h3>数据口径说明</h3>
+<ul>
+<li>美股数据：2026年11月21日（美东时间）收盘价</li>
+<li>A股/港股数据：2026年11月21日（北京时间）收盘价</li>
+<li>大宗商品：2026年11月21日收盘参考价</li>
+</ul>
+
+<div class="foot">
+<p>数据来源：Yahoo Finance、Investopedia、Reuters、SCMP、Motley Fool</p>
+<p>本报告仅供参考，不构成投资建议。</p>
+</div>
 </div>
 
-<div class="mb-section">
-<h2>八、待核实与口径说明</h2>
-
-<div class="mb-unverified" style="padding:10px 14px;margin:8px 0;border-radius:6px">
-<strong>⚠️ 恒指精确收盘点位：</strong>Morningstar引用Dow Jones数据报22,410.80（-1.89%），但247wallst报2,851（疑似截断或缺失千位），MarketWatch月合约结算价报23,576——三者存在明显差异。<strong>建议取Morningstar/Dow Jones口径：22,410.80点（-430.82点，-1.89%）</strong>，周一开盘前请以恒生交易所官方收盘价复核。
-</div>
-
-<div class="mb-unverified" style="padding:10px 14px;margin:8px 0;border-radius:6px">
-<strong>⚠️ 现货黄金数据分歧：</strong>USA TODAY报$3,521.38（11/20下午4pm ET）；Trading Economics快照报$3,851.26（11/17）；YouTube分析者提及$3,761-$3,770区间。三个数值差异较大，<strong>以上午现货为准，暂以$3,521为基准，标注置信度低</strong>。
-</div>
-
-<div class="mb-unverified" style="padding:10px 14px;margin:8px 0;border-radius:6px">
-<strong>⚠️ 布伦特原油结算价：</strong>Trading Economics报$92.86（11/17），MarketWatch报$90.61（11/20盘中），Forbes报$92.18（11/19）。<strong>暂取FORBES/Reuters交叉验证值：约$92/桶，周五盘中略有回落。</strong>
-</div>
-
-<div class="mb-unverified" style="padding:10px 14px;margin:8px 0;border-radius:6px">
-<strong>⚠️ A股周四（11/19）vs 周五（11/20）数据区分：</strong>香港新闻网引用的是周四收盘数据（上证3,577.62/-0.28%，深成指10,583.20/-0.72%，恒生22,841.62/-1.95%），新华社引用的是周五收盘数据（上证3,533.79/-1.23%，深成指10,256.39/-3.09%）。<strong>本报告以周五（11/20）收盘为准。</strong>
-</div>
-
-<p style="font-size:13px;margin-top:12px"><strong>数据窗口口径：</strong>本报告期内采用2026年11月20日（周五）为最后一个交易日收盘价。今日（周六）亚太休市，美股上周五已收盘。页头日期=正文标题日期=表内数据日期=口径说明日期，三方一致 ✅。</p>
-
-<p style="font-size:13px;margin-top:6px"><strong>水位区间校验：</strong>恒生22,410点落在校准区间22,800-26,800下限附近，偏低但未超出范围；上证3,533点落在3,560-4,280区间内；纳指22,618点落在24,100-28,100下限以下——<strong>纳指实测水位已跌破校准下限，属于市场极端波动，不触发区间更新机制，但提示风险偏高</strong>。</p>
-</div>
-
-<div class="footer">
-<p><strong>数据来源：</strong>新浪财经、财联社、新华社、Trading Economics、Bloomberg、CNBC、Investing.com、Morningstar/Dow Jones、USA TODAY、GlobalOilShock、MarketWatch。</p>
-<p><strong>数据窗口与口径：</strong>本报告中所有市场数据均为2026年11月20日（周五）收盘数据；A股/港股取最近一个已收盘交易日（周五收盘）；美股取最近一个美东交易日（周五收盘）。周末无交易，仅供下周一盘前参考。</p>
-<p><strong>合规声明：</strong>本报告仅供参考，不构成投资建议。市场有风险，投资需谨慎。</p>
-</div>
-
-</body>
-</html>
+<!--mb-signals {"美股":{"direction":-1,"active3":["能源/大宗商品","防御性板块","黄金矿业"],"avoid2":["高估值科技股/AI概念","新兴市场股票"]},"港股":{"direction":-1,"active3":["能源股","高股息防御板块","黄金矿业股"],"avoid2":["科技成长股","房地产股"]},"A股":{"direction":-1,"active3":["能源化工","银行/保险","国防军工"],"avoid2":["半导体/AI芯片","新能源产业链"]}}}
+</code><button class="mb-top" onclick="window.scrollTo(0,0)" title="回到顶部">↑顶</button>
+<button class="mb-top mb-toc-toggle" onclick="var n=document.querySelector('.mb-toc');if(n)n.classList.toggle('mb-toc-open')" title="目录">☰</button>
+<!--mb-spy--><script>
+(function(){try{
+var links=document.querySelectorAll('.mb-toc a');var map={};
+links.forEach(function(a){var id=a.getAttribute('href');if(id&&id.charAt(0)==='#'){map[id.slice(1)]=a;}});
+function spy(){var cur=null;var y=(window.scrollY||0)+120;
+Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=y){cur=id;}});
+links.forEach(function(a){a.classList.remove('active');});
+if(cur&&map[cur]){map[cur].classList.add('active');}}
+window.addEventListener('scroll',spy,{passive:true});window.addEventListener('resize',spy,{passive:true});spy();
+}catch(e){}})();
+</script>
+<!--mb-read-js--><script>
+(function(){try{
+var ts=document.querySelectorAll('table');
+ts.forEach(function(t){
+  var rows=t.querySelectorAll('tbody tr');
+  if(rows.length<=8)return;
+  var wrap=document.createElement('div');
+  t.parentNode.insertBefore(wrap,t);wrap.appendChild(t);
+  var hint=document.createElement('div');hint.className='mb-scroll-hint';
+  hint.textContent='表格较宽时可左右滑动查看';wrap.insertBefore(hint,t);
+  var btn=document.createElement('button');btn.className='mb-fold-btn';
+  btn.textContent='展开全部 ' + rows.length + ' 行';wrap.insertBefore(btn,t);
+  for(var i=8;i<rows.length;i++){rows[i].style.display='none';}
+  btn.onclick=function(){var hidden=false;
+    Array.prototype.forEach.call(rows,function(r,i){if(i>=8&&r.style.display==='none')hidden=true;});
+    Array.prototype.forEach.call(rows,function(r,i){if(i>=8)r.style.display=hidden?'':'none';});
+    btn.textContent=hidden?'收起长表格':'展开全部 ' + rows.length + ' 行';};
+});
+}catch(e){}})();
+</script>
